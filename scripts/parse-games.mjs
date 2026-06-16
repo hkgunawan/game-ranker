@@ -35,6 +35,30 @@ const normKey = (title) =>
     .replace(/\s+/g, " ")
     .trim();
 
+// The two source docs use 72 inconsistent free-text genre strings (e.g.
+// "Action-adventure" vs "Action-Adventure", "Co-op shooter" vs "Co-op Shooter").
+// Collapse them into a small set of canonical buckets so the genre filter is
+// usable. Each game has exactly one genre; first matching rule wins (order matters).
+const canonicalGenre = (raw) => {
+  const t = raw.toLowerCase();
+  if (/soulslike/.test(t)) return "Soulslike";
+  if (/fighting/.test(t)) return "Fighting";
+  if (/racing|vehicular|sports/.test(t)) return "Racing & Sports";
+  if (/mmo|moba/.test(t)) return "MMO & Online";
+  if (/metroidvania|platformer/.test(t)) return "Platformer & Metroidvania";
+  if (/fps|shooter|run-and-gun|battle royale/.test(t)) return "Shooter & FPS";
+  if (/horror/.test(t)) return "Horror";
+  if (/strategy|4x|\brts\b/.test(t)) return "Strategy & 4X";
+  if (/roguelike/.test(t)) return "Roguelike";
+  if (/rpg/.test(t)) return "RPG";
+  if (/puzzle|exploration|mystery/.test(t)) return "Puzzle & Exploration";
+  if (/stealth/.test(t)) return "Stealth";
+  if (/factory|survival|space exploration|creature/.test(t)) return "Survival & Sim";
+  if (/narrative|visual novel|tactics/.test(t)) return "Narrative & Tactics";
+  if (/action|adventure|traversal|immersive|western/.test(t)) return "Action & Adventure";
+  return "Other";
+};
+
 const firstYear = (s) => {
   const m = s.match(/\b(19|20)\d{2}\b/);
   return m ? parseInt(m[0], 10) : null;
@@ -232,7 +256,8 @@ const games = [...byKey.values()]
   .map((g) => ({
     ...g,
     developer: g.developer || "—",
-    genre: g.genre || "—",
+    genreDetail: g.genre || "—", // original wording, shown in the per-game detail
+    genre: canonicalGenre(g.genre || ""), // canonical bucket, used by the table + filter
     modes: g.modes.length ? g.modes : ["Single-player"],
   }));
 

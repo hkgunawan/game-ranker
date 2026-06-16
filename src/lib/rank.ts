@@ -2,32 +2,30 @@
 //
 // Both source docs score on the same /100 conceptual scale (7 weighted axes for
 // PC, 6 for PS5 — both anchored on critical consensus + long-tail reception).
-// A naive merge would just average the two numbers. We do better: we weight by
-// how much *evidence* stands behind each score, then shrink thin evidence toward
-// the population mean. This is a small Bayesian model, and it's fully transparent.
+// Those scores are themselves the output of a careful model, so we TRUST them —
+// the only thing worth adjusting is genuine uncertainty.
 //
-//   1. Evidence (n)  — a game reviewed on BOTH platforms has two independent
-//      expert assessments, so it carries more weight than a one-platform title.
-//      Long-tail age matters too: the docs weight "Steam/PSN reviews 6+ months
-//      post-launch" heavily, and explicitly flag post-Jun-2025 titles as
-//      provisional (±2 expected drift). Older, settled scores = more evidence.
+// The docs weight "Steam/PSN reviews 6+ months post-launch" heavily and flag
+// post-Jun-2025 titles as provisional (±2 expected drift). So a freshly released
+// score is less trustworthy than one with years of settled reviews behind it.
 //
-//   2. Shrinkage   — composite = (raw·n + prior·k) / (n + k). With thin evidence
-//      the score is pulled toward the prior (the dataset mean); with strong
-//      evidence it stays at its raw value. k is a mild prior strength.
+//   Confidence (n) — high for a settled title (≥2 years of long-tail data),
+//   low for a brand-new one. A second platform's verdict adds a little more.
 //
-//   3. Corroboration bonus — a small, capped bump when both platforms agree a
-//      game is great (two independent panels reaching the same verdict).
+//   Shrinkage — composite = (raw·n + prior·k) / (n + k). With n ≫ k a settled
+//   score barely moves (it keeps its editorial value); only thin, recent scores
+//   are nudged toward the dataset mean, by at most ~2–3 points.
 //
-// The result reorders the raw editorial numbers in a defensible way: generational
-// cross-platform classics rise; hype-y brand-new single-platform entries cool off
-// slightly until their long tail settles.
+// Net effect: settled classics sit at their real score regardless of platform
+// (exclusives are not penalized); only brand-new titles are tempered until their
+// reviews settle. Those are flagged "provisional" in the UI.
 
 export interface Game {
   title: string;
   year: number;
   developer: string;
-  genre: string;
+  genre: string; // canonical bucket (used by table + filter)
+  genreDetail: string; // original wording (shown in the per-game detail)
   platforms: ("PC" | "PlayStation")[];
   pcScore: number | null;
   psScore: number | null;
@@ -49,8 +47,7 @@ export interface Ranked extends Game {
 export type Tier = "S" | "A" | "A−" | "B" | "C";
 
 export const CURRENT_YEAR = 2026;
-const PRIOR_STRENGTH = 1.2; // k — how hard thin scores are pulled to the mean
-const CROSS_BONUS = 0.8; // max bump for both-platform corroboration
+const PRIOR_STRENGTH = 0.8; // k — the prior is deliberately weak; we trust the editorial scores
 const PROVISIONAL_AFTER = 2025; // releases this year or later have a thin long tail
 
 const editorialScores = (g: Game): number[] =>
@@ -65,13 +62,16 @@ export function isProvisional(g: Game): boolean {
   return g.year >= PROVISIONAL_AFTER;
 }
 
-// Evidence weight n: number of expert sources, scaled by how settled the long
-// tail is (ramps 0→1 over the first 2 years; provisional titles are dampened).
-function evidence(g: Game): number {
-  const sources = editorialScores(g).length; // 1 or 2
+// Confidence weight n: how settled the score is. A title with 2+ years of
+// long-tail reviews is high-confidence (n large ⇒ no shrinkage); a brand-new
+// one is low-confidence (n small ⇒ nudged toward the prior). A second platform's
+// independent verdict adds a little. Tuned so settled titles keep their score
+// and the newest move by at most ~2–3 points.
+function confidence(g: Game): number {
   const age = CURRENT_YEAR - g.year;
-  const tail = isProvisional(g) ? 0.4 : Math.min(1, Math.max(0.3, age / 2));
-  return sources * (0.6 + 0.4 * tail);
+  const settle = age >= 2 ? 10 : age >= 1 ? 2.5 : 1.3; // per-source weight by recency
+  const sources = editorialScores(g).length; // 1 or 2 independent verdicts
+  return settle * (1 + 0.6 * (sources - 1)); // 2nd source adds 60%
 }
 
 export function tierOf(score: number): Tier {
@@ -88,13 +88,11 @@ export function rank(games: Game[]): Ranked[] {
     .map((g) => {
       const scores = editorialScores(g);
       const rawMean = scores.reduce((a, b) => a + b, 0) / scores.length;
-      const n = evidence(g);
-      const bayes = (rawMean * n + p * PRIOR_STRENGTH) / (n + PRIOR_STRENGTH);
-      const cross = g.platforms.length === 2 ? CROSS_BONUS * (Math.min(...scores) / 100) : 0;
-      const composite = Math.round((bayes + cross) * 10) / 10;
+      const n = confidence(g);
+      const composite = (rawMean * n + p * PRIOR_STRENGTH) / (n + PRIOR_STRENGTH);
       return {
         ...g,
-        composite,
+        composite: Math.round(composite * 10) / 10,
         rawMean: Math.round(rawMean * 10) / 10,
         evidence: Math.round(n * 100) / 100,
         tier: tierOf(composite),
@@ -106,10 +104,14 @@ export function rank(games: Game[]): Ranked[] {
 
 // --- filtering --------------------------------------------------------------
 
+export const MODES = ["Single-player", "Co-op", "PvP", "Live-service"] as const;
+export type Mode = (typeof MODES)[number];
+
 export interface Filters {
   yearMin: number;
   yearMax: number;
   platforms: { PC: boolean; PlayStation: boolean };
+  modes: Record<Mode, boolean>;
   genre: string; // "" = all
   search: string;
   indieOnly: boolean;
@@ -119,11 +121,11 @@ export function applyFilters(games: Game[], f: Filters): Game[] {
   const q = f.search.trim().toLowerCase();
   return games.filter((g) => {
     if (g.year < f.yearMin || g.year > f.yearMax) return false;
-    const platOk = g.platforms.some((p) => f.platforms[p]);
-    if (!platOk) return false;
+    if (!g.platforms.some((p) => f.platforms[p])) return false;
+    if (!g.modes.some((m) => f.modes[m as Mode])) return false;
     if (f.genre && g.genre !== f.genre) return false;
     if (f.indieOnly && !g.indie) return false;
-    if (q && !(`${g.title} ${g.developer} ${g.genre}`.toLowerCase().includes(q))) return false;
+    if (q && !`${g.title} ${g.developer} ${g.genre} ${g.genreDetail}`.toLowerCase().includes(q)) return false;
     return true;
   });
 }
