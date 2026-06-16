@@ -20,7 +20,10 @@
       "Co-op"
     ],
     "note": "TGA GOTY 2022; 96 MC; redefined the open-world template entirely; 25M+ copies; SotE DLC is itself a standalone masterwork.",
-    "genreDetail": "Open-world Soulslike"
+    "genreDetail": "Open-world Soulslike",
+    "steamAppId": "1245620",
+    "steamPositive": 93.1,
+    "steamReviews": 1138366
   },
   {
     "title": "Baldur's Gate 3",
@@ -43,7 +46,10 @@
       "Co-op"
     ],
     "note": "TGA GOTY 2023; 96 MC; genre-defining reactivity and branching; exceptional both solo and in co-op up to four players.",
-    "genreDetail": "CRPG"
+    "genreDetail": "CRPG",
+    "steamAppId": "1086940",
+    "steamPositive": 96.8,
+    "steamReviews": 843043
   },
   {
     "title": "Red Dead Redemption 2",
@@ -64,7 +70,10 @@
       "Live-service"
     ],
     "note": "97 MC; most cinematic and detail-saturated open world of the generation; player devotion sustained at an extraordinary level seven years on.",
-    "genreDetail": "Open-world Western"
+    "genreDetail": "Open-world Western",
+    "steamAppId": "1174180",
+    "steamPositive": 92.4,
+    "steamReviews": 885775
   },
   {
     "title": "God of War",
@@ -86,7 +95,10 @@
       "Single-player"
     ],
     "note": "TGA GOTY 2018; 94 MC; rebooted the franchise and set a generation's prestige-action template for narrative and combat pacing alike.",
-    "genreDetail": "Action-Adventure"
+    "genreDetail": "Action-Adventure",
+    "steamAppId": "1593500",
+    "steamPositive": 96,
+    "steamReviews": 179868
   },
   {
     "title": "Sekiro: Shadows Die Twice",
@@ -108,7 +120,10 @@
       "Single-player"
     ],
     "note": "TGA GOTY 2019; 90 MC; peerless posture-based combat; the most skill-pure FromSoft entry and still the best the studio has ever felt to control.",
-    "genreDetail": "Action"
+    "genreDetail": "Action",
+    "steamAppId": "814380",
+    "steamPositive": 95.3,
+    "steamReviews": 349162
   },
   {
     "title": "Dark Souls III",
@@ -129,7 +144,10 @@
       "Co-op"
     ],
     "note": "89 MC; capstone of the trilogy; boss design reaches a series peak before Elden Ring — Nameless King and Soul of Cinder remain benchmarks.",
-    "genreDetail": "Soulslike"
+    "genreDetail": "Soulslike",
+    "steamAppId": "374320",
+    "steamPositive": 94.3,
+    "steamReviews": 436487
   },
   {
     "title": "Cyberpunk 2077",
@@ -149,7 +167,10 @@
       "Single-player"
     ],
     "note": "The greatest comeback in gaming; v2.0's reworked systems and Phantom Liberty's spy thriller narrative turned a troubled launch into a top-tier RPG.",
-    "genreDetail": "Open-world RPG"
+    "genreDetail": "Open-world RPG",
+    "steamAppId": "1091500",
+    "steamPositive": 86.5,
+    "steamReviews": 943015
   },
   {
     "title": "Resident Evil 2 Remake",
@@ -169,7 +190,10 @@
       "Single-player"
     ],
     "note": "93 MC; remake gold standard; made the RE Engine a franchise engine; Mr. X remains the most oppressive level-design device in the genre.",
-    "genreDetail": "Survival Horror"
+    "genreDetail": "Survival Horror",
+    "steamAppId": "883710",
+    "steamPositive": 97,
+    "steamReviews": 213711
   },
   {
     "title": "Metaphor: ReFantazio",
@@ -189,7 +213,10 @@
       "Single-player"
     ],
     "note": "94 MC; the Persona team's fantasy pivot; deep political narrative, flexible job system, and the most fully realized world Atlus has ever built.",
-    "genreDetail": "JRPG"
+    "genreDetail": "JRPG",
+    "steamAppId": "2679460",
+    "steamPositive": 89.8,
+    "steamReviews": 41379
   },
   {
     "title": "Metal Gear Solid V: The Phantom Pain",
@@ -208,7 +235,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Open-world Stealth"
+    "genreDetail": "Open-world Stealth",
+    "steamAppId": "287700",
+    "steamPositive": 91.9,
+    "steamReviews": 106842
   },
   {
     "title": "Alan Wake 2",
@@ -228,7 +258,10 @@
       "Single-player"
     ],
     "note": "89 MC; multiple TGA 2023 wins; Remedy's most ambitious narrative; live-action sequences are a swing no one else in the medium took.",
-    "genreDetail": "Psychological Horror"
+    "genreDetail": "Psychological Horror",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
   },
   {
     "title": "The Witcher 3: Wild Hunt",
@@ -248,7 +281,10 @@
       "Single-player"
     ],
     "note": "93 MC; 50M+ copies; richest RPG writing of its era; Dec 2022 PS5 patch adds ray tracing, DualSense haptics, and 60 fps — the definitive version.",
-    "genreDetail": "Open-world RPG"
+    "genreDetail": "Open-world RPG",
+    "steamAppId": "292030",
+    "steamPositive": 96.8,
+    "steamReviews": 872020
   },
   {
     "title": "Persona 5 Royal",
@@ -268,7 +304,10 @@
       "Single-player"
     ],
     "note": "95 MC; definitive version of a generation-defining JRPG; the added third semester is the best writing in the series.",
-    "genreDetail": "JRPG"
+    "genreDetail": "JRPG",
+    "steamAppId": "1687950",
+    "steamPositive": 96.4,
+    "steamReviews": 131735
   },
   {
     "title": "NieR: Automata",
@@ -288,7 +327,10 @@
       "Single-player"
     ],
     "note": "88 MC; 8M+ copies; most-cited game in academic and fan critical discourse of the era; user scores consistently 9+/10 long-tail — the gap between press and player is the story.",
-    "genreDetail": "Action RPG"
+    "genreDetail": "Action RPG",
+    "steamAppId": "524220",
+    "steamPositive": 87.4,
+    "steamReviews": 151315
   },
   {
     "title": "Control",
@@ -307,7 +349,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Action-Adventure"
+    "genreDetail": "Action-Adventure",
+    "steamAppId": "870780",
+    "steamPositive": 86.1,
+    "steamReviews": 61155
   },
   {
     "title": "Silent Hill 2 Remake",
@@ -327,7 +372,10 @@
       "Single-player"
     ],
     "note": "86 MC; the remake no one believed Bloober could deliver, delivered; monster redesigns and fog-heavy lighting push the original's atmosphere further.",
-    "genreDetail": "Survival Horror"
+    "genreDetail": "Survival Horror",
+    "steamAppId": "2124490",
+    "steamPositive": 94.8,
+    "steamReviews": 61608
   },
   {
     "title": "Resident Evil 4 Remake",
@@ -347,7 +395,10 @@
       "Single-player"
     ],
     "note": "93 MC; essentially perfected remake; new combat feel while honoring every beat of the original.",
-    "genreDetail": "Survival Horror"
+    "genreDetail": "Survival Horror",
+    "steamAppId": "2050650",
+    "steamPositive": 97.3,
+    "steamReviews": 256498
   },
   {
     "title": "Dishonored 2",
@@ -366,7 +417,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Immersive Sim"
+    "genreDetail": "Immersive Sim",
+    "steamAppId": "403640",
+    "steamPositive": 89.6,
+    "steamReviews": 65891
   },
   {
     "title": "Ghost of Tsushima: Director's Cut",
@@ -387,7 +441,10 @@
       "Co-op"
     ],
     "note": "85 MC base; 10M+ sales; Iki Island DLC is tighter and more emotionally focused than the main game's third act.",
-    "genreDetail": "Open-world Action"
+    "genreDetail": "Open-world Action",
+    "steamAppId": "2215430",
+    "steamPositive": 93.9,
+    "steamReviews": 92131
   },
   {
     "title": "Crusader Kings III",
@@ -407,7 +464,10 @@
       "Co-op"
     ],
     "note": "",
-    "genreDetail": "Grand Strategy RPG"
+    "genreDetail": "Grand Strategy RPG",
+    "steamAppId": "1158310",
+    "steamPositive": 90.5,
+    "steamReviews": 140490
   },
   {
     "title": "Half-Life: Alyx",
@@ -426,7 +486,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "VR FPS"
+    "genreDetail": "VR FPS",
+    "steamAppId": "546560",
+    "steamPositive": 98.3,
+    "steamReviews": 104061
   },
   {
     "title": "Kingdom Come: Deliverance II",
@@ -446,7 +509,10 @@
       "Single-player"
     ],
     "note": "88 MC; systemic medieval simulation with dramatically tightened pacing vs the first game; the most grounded RPG writing of 2025.",
-    "genreDetail": "Historical RPG"
+    "genreDetail": "Historical RPG",
+    "steamAppId": "1771300",
+    "steamPositive": 94,
+    "steamReviews": 184861
   },
   {
     "title": "Black Myth: Wukong",
@@ -468,7 +534,10 @@
       "Single-player"
     ],
     "note": "TGA 2024 Players' Voice winner; 20M+ copies; watershed moment for Chinese AAA game development.",
-    "genreDetail": "Action RPG"
+    "genreDetail": "Action RPG",
+    "steamAppId": "2358720",
+    "steamPositive": 96.5,
+    "steamReviews": 1201332
   },
   {
     "title": "No Man's Sky",
@@ -488,7 +557,10 @@
       "Co-op"
     ],
     "note": "",
-    "genreDetail": "Space Exploration"
+    "genreDetail": "Space Exploration",
+    "steamAppId": "275850",
+    "steamPositive": 84.9,
+    "steamReviews": 409768
   },
   {
     "title": "Hearts of Iron IV",
@@ -508,7 +580,10 @@
       "Co-op"
     ],
     "note": "",
-    "genreDetail": "Grand Strategy"
+    "genreDetail": "Grand Strategy",
+    "steamAppId": "394360",
+    "steamPositive": 90.1,
+    "steamReviews": 368119
   },
   {
     "title": "Resident Evil 7: Biohazard",
@@ -527,7 +602,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Survival Horror"
+    "genreDetail": "Survival Horror",
+    "steamAppId": "418370",
+    "steamPositive": 95.3,
+    "steamReviews": 122034
   },
   {
     "title": "Prey",
@@ -546,7 +624,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Immersive Sim"
+    "genreDetail": "Immersive Sim",
+    "steamAppId": "480490",
+    "steamPositive": 90.8,
+    "steamReviews": 53935
   },
   {
     "title": "DOOM (2016)",
@@ -566,7 +647,10 @@
       "Co-op"
     ],
     "note": "",
-    "genreDetail": "FPS"
+    "genreDetail": "FPS",
+    "steamAppId": "379720",
+    "steamPositive": 95.5,
+    "steamReviews": 218798
   },
   {
     "title": "Titanfall 2",
@@ -585,7 +669,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "FPS"
+    "genreDetail": "FPS",
+    "steamAppId": "1237970",
+    "steamPositive": 95.6,
+    "steamReviews": 280861
   },
   {
     "title": "Lies of P",
@@ -605,7 +692,10 @@
       "Single-player"
     ],
     "note": "80 MC; best non-FromSoft Soulslike to date; the Pinocchio framing is surprisingly resonant and the weapon assembly system rewards experimentation.",
-    "genreDetail": "Soulslike"
+    "genreDetail": "Soulslike",
+    "steamAppId": "1627720",
+    "steamPositive": 91.7,
+    "steamReviews": 78783
   },
   {
     "title": "Europa Universalis IV",
@@ -625,7 +715,10 @@
       "Co-op"
     ],
     "note": "",
-    "genreDetail": "Grand Strategy"
+    "genreDetail": "Grand Strategy",
+    "steamAppId": "236850",
+    "steamPositive": 87.6,
+    "steamReviews": 136596
   },
   {
     "title": "Total War: Warhammer III",
@@ -645,7 +738,10 @@
       "Co-op"
     ],
     "note": "",
-    "genreDetail": "Real-time Strategy"
+    "genreDetail": "Real-time Strategy",
+    "steamAppId": "1142710",
+    "steamPositive": 70.6,
+    "steamReviews": 144396
   },
   {
     "title": "Satisfactory",
@@ -665,7 +761,10 @@
       "Co-op"
     ],
     "note": "",
-    "genreDetail": "Factory Automation"
+    "genreDetail": "Factory Automation",
+    "steamAppId": "526870",
+    "steamPositive": 97.3,
+    "steamReviews": 272849
   },
   {
     "title": "Hi-Fi Rush",
@@ -684,7 +783,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Rhythm Action"
+    "genreDetail": "Rhythm Action",
+    "steamAppId": "1817230",
+    "steamPositive": 97.1,
+    "steamReviews": 35384
   },
   {
     "title": "Final Fantasy VII Remake Intergrade",
@@ -703,7 +805,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Action RPG"
+    "genreDetail": "Action RPG",
+    "steamAppId": "1462040",
+    "steamPositive": 87.6,
+    "steamReviews": 47516
   },
   {
     "title": "13 Sentinels: Aegis Rim",
@@ -722,7 +827,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Narrative / Tactics"
+    "genreDetail": "Narrative / Tactics",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
   },
   {
     "title": "Wolfenstein II: The New Colossus",
@@ -741,7 +849,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "FPS"
+    "genreDetail": "FPS",
+    "steamAppId": "612880",
+    "steamPositive": 81.3,
+    "steamReviews": 48672
   },
   {
     "title": "Death Stranding: Director's Cut",
@@ -760,7 +871,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Traversal / Sim"
+    "genreDetail": "Traversal / Sim",
+    "steamAppId": "1850570",
+    "steamPositive": 92.4,
+    "steamReviews": 65123
   },
   {
     "title": "Indiana Jones and the Great Circle",
@@ -779,7 +893,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Action-Adventure"
+    "genreDetail": "Action-Adventure",
+    "steamAppId": "2677660",
+    "steamPositive": 90.5,
+    "steamReviews": 19493
   },
   {
     "title": "Stellaris",
@@ -799,7 +916,10 @@
       "Co-op"
     ],
     "note": "",
-    "genreDetail": "Grand Strategy / 4X"
+    "genreDetail": "Grand Strategy / 4X",
+    "steamAppId": "281990",
+    "steamPositive": 85.9,
+    "steamReviews": 194627
   },
   {
     "title": "Metro Exodus",
@@ -818,7 +938,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "FPS Survival"
+    "genreDetail": "FPS Survival",
+    "steamAppId": "412020",
+    "steamPositive": 90,
+    "steamReviews": 132747
   },
   {
     "title": "Persona 3 Reload",
@@ -837,7 +960,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "JRPG"
+    "genreDetail": "JRPG",
+    "steamAppId": "2161700",
+    "steamPositive": 94.4,
+    "steamReviews": 57414
   },
   {
     "title": "Marvel's Spider-Man 2",
@@ -857,7 +983,10 @@
       "Single-player"
     ],
     "note": "90 MC; two-hero structure and Venom arc; fastest-selling PS5 exclusive at launch.",
-    "genreDetail": "Action-Adventure"
+    "genreDetail": "Action-Adventure",
+    "steamAppId": "2651280",
+    "steamPositive": 82.3,
+    "steamReviews": 38705
   },
   {
     "title": "Dead Space Remake",
@@ -877,7 +1006,10 @@
       "Single-player"
     ],
     "note": "89 MC; audio design alone earns its rank; honored every beat of the original while tightening the pacing and giving Isaac a coherent voice.",
-    "genreDetail": "Survival Horror"
+    "genreDetail": "Survival Horror",
+    "steamAppId": 1693980,
+    "steamPositive": 90.7,
+    "steamReviews": 65638
   },
   {
     "title": "Armored Core VI: Fires of Rubicon",
@@ -896,7 +1028,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Mecha Action"
+    "genreDetail": "Mecha Action",
+    "steamAppId": "1888160",
+    "steamPositive": 91.7,
+    "steamReviews": 83881
   },
   {
     "title": "Subnautica",
@@ -915,7 +1050,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Underwater Survival"
+    "genreDetail": "Underwater Survival",
+    "steamAppId": "264710",
+    "steamPositive": 97.1,
+    "steamReviews": 372333
   },
   {
     "title": "Horizon Forbidden West: Complete",
@@ -934,7 +1072,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Open-world Action"
+    "genreDetail": "Open-world Action",
+    "steamAppId": "2420110",
+    "steamPositive": 88.3,
+    "steamReviews": 28967
   },
   {
     "title": "Doom Eternal",
@@ -954,7 +1095,10 @@
       "Co-op"
     ],
     "note": "",
-    "genreDetail": "FPS"
+    "genreDetail": "FPS",
+    "steamAppId": "782330",
+    "steamPositive": 91.4,
+    "steamReviews": 215113
   },
   {
     "title": "Like a Dragon: Infinite Wealth",
@@ -974,7 +1118,10 @@
       "Single-player"
     ],
     "note": "89 MC; Ichiban saga's boldest entry; Hawaii setting and expanded job system are a series high in both ambition and execution.",
-    "genreDetail": "JRPG"
+    "genreDetail": "JRPG",
+    "steamAppId": "2072450",
+    "steamPositive": 90.7,
+    "steamReviews": 23319
   },
   {
     "title": "Civilization VI",
@@ -994,7 +1141,10 @@
       "Co-op"
     ],
     "note": "",
-    "genreDetail": "4X Strategy"
+    "genreDetail": "4X Strategy",
+    "steamAppId": "289070",
+    "steamPositive": 86,
+    "steamReviews": 374730
   },
   {
     "title": "A Plague Tale: Requiem",
@@ -1013,7 +1163,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Stealth Action"
+    "genreDetail": "Stealth Action",
+    "steamAppId": "1182900",
+    "steamPositive": 90.9,
+    "steamReviews": 25139
   },
   {
     "title": "Frostpunk 2",
@@ -1032,7 +1185,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "City-builder Strategy"
+    "genreDetail": "City-builder Strategy",
+    "steamAppId": "1601580",
+    "steamPositive": 75,
+    "steamReviews": 26073
   },
   {
     "title": "Hellblade: Senua's Sacrifice",
@@ -1051,7 +1207,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Psychological Action"
+    "genreDetail": "Psychological Action",
+    "steamAppId": "414340",
+    "steamPositive": 89.9,
+    "steamReviews": 75991
   },
   {
     "title": "Star Wars Jedi: Survivor",
@@ -1070,7 +1229,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Action-Adventure"
+    "genreDetail": "Action-Adventure",
+    "steamAppId": "1774580",
+    "steamPositive": 70.8,
+    "steamReviews": 83538
   },
   {
     "title": "Pentiment",
@@ -1089,7 +1251,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Narrative Adventure"
+    "genreDetail": "Narrative Adventure",
+    "steamAppId": "1205520",
+    "steamPositive": 95.1,
+    "steamReviews": 9389
   },
   {
     "title": "Fallout 4",
@@ -1108,7 +1273,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Open-world RPG"
+    "genreDetail": "Open-world RPG",
+    "steamAppId": "377160",
+    "steamPositive": 81.2,
+    "steamReviews": 425296
   },
   {
     "title": "Monster Hunter: World",
@@ -1129,7 +1297,10 @@
       "Co-op"
     ],
     "note": "90 MC; 25M+ copies; the game that brought Monster Hunter mainstream in the West and made the hunt loop feel fluid for the first time.",
-    "genreDetail": "Action RPG"
+    "genreDetail": "Action RPG",
+    "steamAppId": "582010",
+    "steamPositive": 88.8,
+    "steamReviews": 510144
   },
   {
     "title": "It Takes Two",
@@ -1152,7 +1323,10 @@
       "Single-player"
     ],
     "note": "89 MC; TGA GOTY 2021; every chapter rebuilds its mechanics from scratch; the most celebrated co-op experience ever made and the rare GOTY winner that earns unanimous agreement.",
-    "genreDetail": "Co-op Platformer"
+    "genreDetail": "Co-op Platformer",
+    "steamAppId": "1426210",
+    "steamPositive": 95.4,
+    "steamReviews": 262033
   },
   {
     "title": "Deep Rock Galactic",
@@ -1171,7 +1345,10 @@
       "Co-op"
     ],
     "note": "",
-    "genreDetail": "Co-op Shooter"
+    "genreDetail": "Co-op Shooter",
+    "steamAppId": "548430",
+    "steamPositive": 97.2,
+    "steamReviews": 376760
   },
   {
     "title": "Counter-Strike 2 (succeeds CS:GO)",
@@ -1191,7 +1368,10 @@
       "Live-service"
     ],
     "note": "",
-    "genreDetail": "Tactical FPS"
+    "genreDetail": "Tactical FPS",
+    "steamAppId": "730",
+    "steamPositive": 86.1,
+    "steamReviews": 9664252
   },
   {
     "title": "Final Fantasy XIV",
@@ -1211,7 +1391,10 @@
       "Live-service"
     ],
     "note": "",
-    "genreDetail": "MMORPG"
+    "genreDetail": "MMORPG",
+    "steamAppId": "39210",
+    "steamPositive": 86.5,
+    "steamReviews": 84775
   },
   {
     "title": "Dota 2",
@@ -1231,7 +1414,10 @@
       "Live-service"
     ],
     "note": "",
-    "genreDetail": "MOBA"
+    "genreDetail": "MOBA",
+    "steamAppId": "570",
+    "steamPositive": 80.7,
+    "steamReviews": 2723962
   },
   {
     "title": "Path of Exile",
@@ -1252,7 +1438,10 @@
       "Live-service"
     ],
     "note": "",
-    "genreDetail": "ARPG"
+    "genreDetail": "ARPG",
+    "steamAppId": "238960",
+    "steamPositive": 89.1,
+    "steamReviews": 247407
   },
   {
     "title": "Monster Hunter Wilds",
@@ -1273,7 +1462,10 @@
       "Co-op"
     ],
     "note": "Series peak for onboarding and seamless world design; wound mechanics and Living World biomes are genuine advances over World.",
-    "genreDetail": "Action RPG"
+    "genreDetail": "Action RPG",
+    "steamAppId": "2246340",
+    "steamPositive": 48.6,
+    "steamReviews": 321050
   },
   {
     "title": "Split Fiction",
@@ -1292,7 +1484,10 @@
       "Co-op"
     ],
     "note": "",
-    "genreDetail": "Co-op Adventure"
+    "genreDetail": "Co-op Adventure",
+    "steamAppId": "2001120",
+    "steamPositive": 97,
+    "steamReviews": 121327
   },
   {
     "title": "Rocket League",
@@ -1312,7 +1507,10 @@
       "Live-service"
     ],
     "note": "",
-    "genreDetail": "Vehicular Sports"
+    "genreDetail": "Vehicular Sports",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
   },
   {
     "title": "World of Warcraft: The War Within",
@@ -1332,7 +1530,10 @@
       "Live-service"
     ],
     "note": "",
-    "genreDetail": "MMORPG"
+    "genreDetail": "MMORPG",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
   },
   {
     "title": "Age of Empires II: Definitive Edition",
@@ -1353,7 +1554,10 @@
       "PvP"
     ],
     "note": "",
-    "genreDetail": "RTS"
+    "genreDetail": "RTS",
+    "steamAppId": "813780",
+    "steamPositive": 94.9,
+    "steamReviews": 179198
   },
   {
     "title": "Don't Starve Together",
@@ -1373,7 +1577,10 @@
       "Co-op"
     ],
     "note": "",
-    "genreDetail": "Survival"
+    "genreDetail": "Survival",
+    "steamAppId": "322330",
+    "steamPositive": 95,
+    "steamReviews": 533286
   },
   {
     "title": "Warframe",
@@ -1393,7 +1600,10 @@
       "Live-service"
     ],
     "note": "",
-    "genreDetail": "Co-op Action Shooter"
+    "genreDetail": "Co-op Action Shooter",
+    "steamAppId": "230410",
+    "steamPositive": 87.7,
+    "steamReviews": 666007
   },
   {
     "title": "Marvel Rivals",
@@ -1413,7 +1623,10 @@
       "Live-service"
     ],
     "note": "",
-    "genreDetail": "Hero Shooter"
+    "genreDetail": "Hero Shooter",
+    "steamAppId": "2767030",
+    "steamPositive": 76.3,
+    "steamReviews": 393671
   },
   {
     "title": "Elden Ring: Nightreign",
@@ -1432,7 +1645,10 @@
       "Co-op"
     ],
     "note": "",
-    "genreDetail": "Co-op Roguelike"
+    "genreDetail": "Co-op Roguelike",
+    "steamAppId": "2622380",
+    "steamPositive": 81.9,
+    "steamReviews": 185031
   },
   {
     "title": "Apex Legends",
@@ -1452,7 +1668,10 @@
       "Live-service"
     ],
     "note": "",
-    "genreDetail": "Hero Battle Royale"
+    "genreDetail": "Hero Battle Royale",
+    "steamAppId": "1172470",
+    "steamPositive": 67.7,
+    "steamReviews": 1053393
   },
   {
     "title": "Valorant",
@@ -1472,7 +1691,10 @@
       "Live-service"
     ],
     "note": "",
-    "genreDetail": "Tactical FPS"
+    "genreDetail": "Tactical FPS",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
   },
   {
     "title": "Overwatch 2",
@@ -1492,7 +1714,10 @@
       "Live-service"
     ],
     "note": "",
-    "genreDetail": "Hero Shooter"
+    "genreDetail": "Hero Shooter",
+    "steamAppId": 2357570,
+    "steamPositive": 30.4,
+    "steamReviews": 405992
   },
   {
     "title": "Disco Elysium: The Final Cut",
@@ -1512,7 +1737,10 @@
       "Single-player"
     ],
     "note": "97 OC; multiple BAFTAs; the best-written video game of the era — possibly of any era.",
-    "genreDetail": "Narrative RPG"
+    "genreDetail": "Narrative RPG",
+    "steamAppId": "632470",
+    "steamPositive": 92.6,
+    "steamReviews": 127621
   },
   {
     "title": "Hades",
@@ -1532,7 +1760,10 @@
       "Single-player"
     ],
     "note": "93 MC; Hugo Award winner; best-in-class run-based narrative integration — every death advances the story meaningfully.",
-    "genreDetail": "Roguelike"
+    "genreDetail": "Roguelike",
+    "steamAppId": "1145360",
+    "steamPositive": 98,
+    "steamReviews": 304364
   },
   {
     "title": "Hollow Knight: Silksong",
@@ -1551,7 +1782,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Metroidvania"
+    "genreDetail": "Metroidvania",
+    "steamAppId": "1030300",
+    "steamPositive": 89.3,
+    "steamReviews": 409912
   },
   {
     "title": "Clair Obscur: Expedition 33",
@@ -1571,7 +1805,10 @@
       "Single-player"
     ],
     "note": "92 MC; multiple TGA 2025 wins; breakout debut that set a new gold standard for indie-scale RPG craft, art direction, and parry-based timing combat.",
-    "genreDetail": "Turn-based RPG"
+    "genreDetail": "Turn-based RPG",
+    "steamAppId": "1903340",
+    "steamPositive": 95.4,
+    "steamReviews": 269338
   },
   {
     "title": "Inside",
@@ -1590,7 +1827,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Puzzle Platformer"
+    "genreDetail": "Puzzle Platformer",
+    "steamAppId": "304430",
+    "steamPositive": 97,
+    "steamReviews": 74572
   },
   {
     "title": "Hollow Knight",
@@ -1609,7 +1849,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Metroidvania"
+    "genreDetail": "Metroidvania",
+    "steamAppId": "367520",
+    "steamPositive": 96.9,
+    "steamReviews": 545576
   },
   {
     "title": "Ori and the Blind Forest",
@@ -1628,7 +1871,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Metroidvania"
+    "genreDetail": "Metroidvania",
+    "steamAppId": "387290",
+    "steamPositive": 95.1,
+    "steamReviews": 70689
   },
   {
     "title": "The Witness",
@@ -1647,7 +1893,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Puzzle"
+    "genreDetail": "Puzzle",
+    "steamAppId": "210970",
+    "steamPositive": 84.5,
+    "steamReviews": 20843
   },
   {
     "title": "SOMA",
@@ -1666,7 +1915,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Sci-fi Horror"
+    "genreDetail": "Sci-fi Horror",
+    "steamAppId": "282140",
+    "steamPositive": 95.9,
+    "steamReviews": 51472
   },
   {
     "title": "What Remains of Edith Finch",
@@ -1685,7 +1937,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Narrative Adventure"
+    "genreDetail": "Narrative Adventure",
+    "steamAppId": "501300",
+    "steamPositive": 95.6,
+    "steamReviews": 51096
   },
   {
     "title": "Neon White",
@@ -1704,7 +1959,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Speedrun FPS"
+    "genreDetail": "Speedrun FPS",
+    "steamAppId": "1533420",
+    "steamPositive": 98,
+    "steamReviews": 20151
   },
   {
     "title": "Nine Sols",
@@ -1723,7 +1981,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Action Metroidvania"
+    "genreDetail": "Action Metroidvania",
+    "steamAppId": "1809540",
+    "steamPositive": 94.4,
+    "steamReviews": 42178
   },
   {
     "title": "Cocoon",
@@ -1742,7 +2003,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Puzzle Adventure"
+    "genreDetail": "Puzzle Adventure",
+    "steamAppId": "1497440",
+    "steamPositive": 94.7,
+    "steamReviews": 8706
   },
   {
     "title": "Cuphead",
@@ -1761,7 +2025,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Run-and-gun"
+    "genreDetail": "Run-and-gun",
+    "steamAppId": "268910",
+    "steamPositive": 96.2,
+    "steamReviews": 212370
   },
   {
     "title": "Stray",
@@ -1780,7 +2047,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Adventure"
+    "genreDetail": "Adventure",
+    "steamAppId": "1332010",
+    "steamPositive": 97.2,
+    "steamReviews": 173588
   },
   {
     "title": "Firewatch",
@@ -1799,7 +2069,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Narrative Adventure"
+    "genreDetail": "Narrative Adventure",
+    "steamAppId": "383870",
+    "steamPositive": 90.5,
+    "steamReviews": 97530
   },
   {
     "title": "Palworld",
@@ -1819,7 +2092,10 @@
       "Co-op"
     ],
     "note": "",
-    "genreDetail": "Survival / Creature"
+    "genreDetail": "Survival / Creature",
+    "steamAppId": "1623730",
+    "steamPositive": 94.3,
+    "steamReviews": 423058
   },
   {
     "title": "Pyre",
@@ -1838,7 +2114,10 @@
       "Single-player"
     ],
     "note": "",
-    "genreDetail": "Narrative Tactics"
+    "genreDetail": "Narrative Tactics",
+    "steamAppId": "462770",
+    "steamPositive": 90.4,
+    "steamReviews": 9305
   },
   {
     "title": "God of War Ragnarök",
@@ -1857,7 +2136,10 @@
       "Single-player"
     ],
     "note": "94 MC; most TGA nominations in show history; masterclass narrative closure for the Norse arc.",
-    "genreDetail": "Action-adventure"
+    "genreDetail": "Action-adventure",
+    "steamAppId": "2322010",
+    "steamPositive": 88.7,
+    "steamReviews": 46815
   },
   {
     "title": "Bloodborne",
@@ -1876,7 +2158,10 @@
       "Single-player"
     ],
     "note": "92 MC; player devotion unmatched on this list — still speedrun, modded, and dissected a decade on; Gothic atmosphere and interconnected world design set a ceiling no soulslike has since cleared.",
-    "genreDetail": "Soulslike"
+    "genreDetail": "Soulslike",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
   },
   {
     "title": "The Last of Us Part II Remastered",
@@ -1895,7 +2180,10 @@
       "Single-player"
     ],
     "note": "93 MC base; No Return roguelike mode + PS5 polish elevate an already generational craft benchmark for character performance and animation.",
-    "genreDetail": "Action-adventure"
+    "genreDetail": "Action-adventure",
+    "steamAppId": "2531310",
+    "steamPositive": 91,
+    "steamReviews": 50827
   },
   {
     "title": "Demon's Souls",
@@ -1914,7 +2202,10 @@
       "Single-player"
     ],
     "note": "92 MC; PS5 launch showpiece; remake that respected the skeleton without sanding off the spikes.",
-    "genreDetail": "Soulslike"
+    "genreDetail": "Soulslike",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
   },
   {
     "title": "Street Fighter 6",
@@ -1935,7 +2226,10 @@
       "PvP"
     ],
     "note": "92 MC; TGA 2023 Best Fighting Game; revived the franchise after SF5's troubled launch; World Tour, Modern controls, and rollback netcode make it the most accessible-yet-deep fighter ever shipped.",
-    "genreDetail": "Fighting"
+    "genreDetail": "Fighting",
+    "steamAppId": "1364780",
+    "steamPositive": 82.8,
+    "steamReviews": 75577
   },
   {
     "title": "Astro Bot",
@@ -1956,7 +2250,10 @@
       "Single-player"
     ],
     "note": "TGA GOTY 2024; 94 MC; maxes PS5 platform craft — every level is built around a new DualSense trick, and every trick earns its moment.",
-    "genreDetail": "3D platformer"
+    "genreDetail": "3D platformer",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
   },
   {
     "title": "Tekken 8",
@@ -1977,7 +2274,10 @@
       "PvP"
     ],
     "note": "90 MC; TGA 2024 Best Fighting Game; Heat System and Aggressive play style reinvigorate the 3D fighting formula; best story mode in franchise history.",
-    "genreDetail": "Fighting"
+    "genreDetail": "Fighting",
+    "steamAppId": "1778820",
+    "steamPositive": 55.8,
+    "steamReviews": 70710
   },
   {
     "title": "Returnal",
@@ -1998,7 +2298,10 @@
       "PvP"
     ],
     "note": "BAFTA GOTY 2022; 86 MC; DualSense authored into the combat loop — a genuine PS5-defining experience that nothing before or after has quite replicated.",
-    "genreDetail": "Roguelike shooter"
+    "genreDetail": "Roguelike shooter",
+    "steamAppId": "1649240",
+    "steamPositive": 81.3,
+    "steamReviews": 10516
   },
   {
     "title": "Final Fantasy VII Rebirth",
@@ -2017,7 +2320,10 @@
       "Single-player"
     ],
     "note": "92 MC; the middle act that justified the remake trilogy; open-world exploration is the most expansive the series has ever attempted.",
-    "genreDetail": "Action JRPG"
+    "genreDetail": "Action JRPG",
+    "steamAppId": "2909400",
+    "steamPositive": 76,
+    "steamReviews": 31528
   },
   {
     "title": "Marvel's Spider-Man",
@@ -2036,7 +2342,10 @@
       "Single-player"
     ],
     "note": "87 MC; defined traversal feel for a generation; best-selling superhero game, and the emotional baseline all its successors build on.",
-    "genreDetail": "Open-world action"
+    "genreDetail": "Open-world action",
+    "steamAppId": 1817070,
+    "steamPositive": 96,
+    "steamReviews": 133095
   },
   {
     "title": "Horizon Forbidden West",
@@ -2055,7 +2364,10 @@
       "Single-player"
     ],
     "note": "88 MC; PS5's most technically dazzling open world — machine design and biome variety remain a visual benchmark.",
-    "genreDetail": "Open-world action"
+    "genreDetail": "Open-world action",
+    "steamAppId": "2420110",
+    "steamPositive": 88.3,
+    "steamReviews": 28967
   },
   {
     "title": "Uncharted 4: A Thief's End",
@@ -2074,7 +2386,10 @@
       "Single-player"
     ],
     "note": "93 MC; Drake's farewell executed with dignity; set-pieces and character writing that defined PS4's creative peak.",
-    "genreDetail": "Action-adventure"
+    "genreDetail": "Action-adventure",
+    "steamAppId": 1659420,
+    "steamPositive": 90.6,
+    "steamReviews": 41350
   },
   {
     "title": "Ratchet & Clank: Rift Apart",
@@ -2093,7 +2408,10 @@
       "Single-player"
     ],
     "note": "88 MC; only game on this list whose core conceit fundamentally requires the PS5 SSD — dimensional rifting is not a cutscene trick.",
-    "genreDetail": "Action-platformer"
+    "genreDetail": "Action-platformer",
+    "steamAppId": "1895880",
+    "steamPositive": 90.6,
+    "steamReviews": 17374
   },
   {
     "title": "Diablo IV",
@@ -2112,7 +2430,10 @@
       "Single-player"
     ],
     "note": "88 MC; revived the ARPG kingpin with a dark tone, open world, and seasonal content; Vessel of Hatred expansion deepened the end-game loop substantially.",
-    "genreDetail": "Action RPG"
+    "genreDetail": "Action RPG",
+    "steamAppId": "2344520",
+    "steamPositive": 65.2,
+    "steamReviews": 72643
   },
   {
     "title": "Ghost of Yōtei",
@@ -2131,7 +2452,10 @@
       "Single-player"
     ],
     "note": "Sucker Punch sharpens Tsushima's combat and trims open-world bloat; Atsu's arc is the stronger protagonist story.",
-    "genreDetail": "Open-world action"
+    "genreDetail": "Open-world action",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
   },
   {
     "title": "Gran Turismo 7",
@@ -2150,7 +2474,10 @@
       "PvP"
     ],
     "note": "87 MC; the PS5 racing benchmark — 500+ cars, Scapes photography, GT Café career arc; DualSense trigger resistance for brake feel is the best haptic-to-racing integration on the platform.",
-    "genreDetail": "Racing sim"
+    "genreDetail": "Racing sim",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
   },
   {
     "title": "Final Fantasy XVI",
@@ -2169,7 +2496,10 @@
       "Single-player"
     ],
     "note": "87 MC; boldest tonal swing the mainline series has ever made; Eikon battles are spectacle benchmarks even if the open-world connective tissue sags.",
-    "genreDetail": "Action RPG"
+    "genreDetail": "Action RPG",
+    "steamAppId": "2515020",
+    "steamPositive": 78.7,
+    "steamReviews": 31452
   },
   {
     "title": "Outer Wilds",
@@ -2190,7 +2520,10 @@
       "Single-player"
     ],
     "note": "BAFTA GOTY 2020; 85 MC; the most sustained \"don't spoil it\" reputation in gaming — the game that inspired a generation of designers to think in systemic mysteries.",
-    "genreDetail": "Exploration / mystery"
+    "genreDetail": "Exploration / mystery",
+    "steamAppId": "753640",
+    "steamPositive": 95.6,
+    "steamReviews": 103432
   },
   {
     "title": "Guilty Gear Strive",
@@ -2209,7 +2542,10 @@
       "PvP"
     ],
     "note": "87 MC; sparked the current fighting game renaissance — rollback netcode and streamlined systems brought millions of new players to the genre and proved accessible-yet-deep is achievable.",
-    "genreDetail": "Fighting"
+    "genreDetail": "Fighting",
+    "steamAppId": "1384160",
+    "steamPositive": 88,
+    "steamReviews": 65757
   },
   {
     "title": "Doom: The Dark Ages",
@@ -2228,7 +2564,10 @@
       "Single-player"
     ],
     "note": "~88 MC (May 2026 launch); shield-bash parry loop reimagines the formula; id's boldest design swing since 2016 — slower, heavier, and more deliberate than Eternal.",
-    "genreDetail": "FPS"
+    "genreDetail": "FPS",
+    "steamAppId": "3017860",
+    "steamPositive": 88,
+    "steamReviews": 40174
   },
   {
     "title": "Spider-Man: Miles Morales",
@@ -2247,7 +2586,10 @@
       "Single-player"
     ],
     "note": "85 MC; PS5 launch-window showcase; DualSense tuned for web traversal; Miles' emotional arc is more focused than Peter's in the first game.",
-    "genreDetail": "Open-world action"
+    "genreDetail": "Open-world action",
+    "steamAppId": "1817190",
+    "steamPositive": 93.3,
+    "steamReviews": 52939
   },
   {
     "title": "Helldivers 2",
@@ -2267,6 +2609,9 @@
       "PvP"
     ],
     "note": "82 MC; 12M+ copies in months; the biggest PS5 cultural moment of 2024 — democratically governed galactic war, Automaton twist, and true player-driven narrative redefined live-service co-op.",
-    "genreDetail": "Co-op shooter"
+    "genreDetail": "Co-op shooter",
+    "steamAppId": "553850",
+    "steamPositive": 75,
+    "steamReviews": 1146325
   }
 ]

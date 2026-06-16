@@ -9,6 +9,7 @@ import {
   MODES,
   TIER_LABEL,
   CURRENT_YEAR,
+  DEFAULT_USER_WEIGHT,
   type Game,
   type Ranked,
   type Tier,
@@ -18,7 +19,6 @@ import {
 import { useTableSort, SortTh } from "@/components/sortable";
 
 const GAMES = gamesData as Game[];
-const RANKED = rank(GAMES); // global ranking — scores are stable regardless of filters
 const ALL_GENRES = genres(GAMES);
 const MIN_YEAR = Math.min(...GAMES.map((g) => g.year));
 
@@ -128,20 +128,27 @@ function Detail({ g }: { g: Ranked }) {
         </div>
       </div>
       <dl className="grid grid-cols-2 gap-x-4 gap-y-1 self-start font-mono text-[11px] sm:text-right">
-        <dt className="text-[#484f58]">PC score</dt>
-        <dd className="text-[#e6edf3]">{g.pcScore ?? "—"}</dd>
-        <dt className="text-[#484f58]">PS score</dt>
-        <dd className="text-[#e6edf3]">{g.psScore ?? "—"}</dd>
+        <dt className="text-[#484f58]">PC / PS</dt>
+        <dd className="text-[#e6edf3]">
+          {g.pcScore ?? "—"} / {g.psScore ?? "—"}
+        </dd>
         <dt className="text-[#484f58]">Metacritic</dt>
         <dd className="text-[#e6edf3]">{g.metacritic ?? "—"}</dd>
-        <dt className="text-[#484f58]">raw mean</dt>
-        <dd className="text-[#e6edf3]">{g.rawMean}</dd>
-        <dt className="text-[#484f58]" title="confidence weight — higher = more settled, less adjustment">
-          confidence
+        <dt className="text-[#484f58]" title="critic-anchored editorial score">
+          editorial
         </dt>
-        <dd className="text-[#e6edf3]">{g.evidence}</dd>
+        <dd className="text-[#58a6ff]">{g.editorial}</dd>
+        <dt className="text-[#484f58]" title="Steam % positive · review count">
+          players
+        </dt>
+        <dd className="text-[#3fb950]">
+          {g.userScore != null ? `${g.userScore}%` : "—"}
+          {g.steamReviews != null && (
+            <span className="text-[#484f58]"> ({g.steamReviews.toLocaleString()})</span>
+          )}
+        </dd>
         <dt className="text-[#484f58]">composite</dt>
-        <dd className="font-semibold text-[#3fb950]">{g.composite}</dd>
+        <dd className="font-semibold text-[#e6edf3]">{g.composite}</dd>
       </dl>
     </div>
   );
@@ -149,29 +156,37 @@ function Detail({ g }: { g: Ranked }) {
 
 export default function Home() {
   const [filters, setFilters] = useState<Filters>(DEFAULT_FILTERS);
+  const [userPct, setUserPct] = useState(Math.round(DEFAULT_USER_WEIGHT * 100)); // 0=critics, 100=players
   const [showMethod, setShowMethod] = useState(false);
   const [expanded, setExpanded] = useState<string | null>(null);
 
-  // hydrate filters from the URL after mount (SSR renders defaults first)
+  // hydrate filters + weighting from the URL after mount (SSR renders defaults first)
   useEffect(() => {
     if (window.location.search) {
-      /* eslint-disable-next-line react-hooks/set-state-in-effect */
+      const p = new URLSearchParams(window.location.search);
+      const w = p.get("w");
+      /* eslint-disable react-hooks/set-state-in-effect */
       setFilters(filtersFromQuery(window.location.search));
+      if (w != null && /^\d{1,3}$/.test(w)) setUserPct(Math.min(100, +w));
+      /* eslint-enable react-hooks/set-state-in-effect */
     }
   }, []);
 
   // keep the URL in sync so any filtered view is shareable / linkable
   useEffect(() => {
-    const url = `${window.location.pathname}${filtersToQuery(filters)}`;
-    window.history.replaceState(null, "", url);
-  }, [filters]);
+    const q = filtersToQuery(filters);
+    const wPart = userPct === Math.round(DEFAULT_USER_WEIGHT * 100) ? "" : `${q ? "&" : "?"}w=${userPct}`;
+    window.history.replaceState(null, "", `${window.location.pathname}${q}${wPart}`);
+  }, [filters, userPct]);
 
   const set = useCallback(
     <K extends keyof Filters>(key: K, value: Filters[K]) => setFilters((f) => ({ ...f, [key]: value })),
     []
   );
 
-  const visible = useMemo(() => applyFilters(RANKED, filters) as Ranked[], [filters]);
+  // global ranking at the current critic↔player weight (recomputed live as the slider moves)
+  const ranked = useMemo(() => rank(GAMES, userPct / 100), [userPct]);
+  const visible = useMemo(() => applyFilters(ranked, filters) as Ranked[], [ranked, filters]);
 
   const { sorted, sort, toggle } = useTableSort<Ranked>(
     visible,
@@ -203,39 +218,59 @@ export default function Home() {
 
       <p className="mb-4 max-w-3xl font-mono text-xs leading-relaxed text-[#8b949e]">
         The best PC &amp; PlayStation games, 2015→today — {GAMES.length} titles merged from two curated rankings and
-        re-scored with one transparent algorithm. Filter by year, platform and mode; click any row for the breakdown.
+        blended with real Steam player sentiment. Slide the <span className="text-[#e6edf3]">critics ↔ players</span>{" "}
+        weighting to re-rank live; filter by year, platform and mode; click any row for the breakdown.
       </p>
 
       {showMethod && (
         <section className="mb-5 rounded-lg border border-[#30363d] bg-[#0d1117] p-4 font-mono text-xs leading-relaxed text-[#8b949e]">
           <p className="mb-2 text-[#e6edf3]">How the score is computed</p>
           <p className="mb-2">
-            Each game starts from expert /100 composites (7 weighted axes for PC, 6 for PS5 — both anchored on critical
-            consensus + long-tail player reception). Those scores are already carefully built, so the algorithm{" "}
-            <span className="text-[#e6edf3]">trusts them</span> and only adjusts genuine uncertainty:
+            Each game has an <span className="text-[#58a6ff]">editorial</span> score (curated /100 docs — critic-anchored)
+            and, where available, real <span className="text-[#3fb950]">player</span> sentiment from Steam (% of reviews
+            positive). The composite blends them:
           </p>
+          <p className="mb-2 pl-1 text-[#e6edf3]">composite = editorial·(1−w′) + players%·w′</p>
           <ol className="mb-2 list-decimal space-y-1 pl-5">
             <li>
-              <span className="text-[#e6edf3]">Confidence (n)</span> — high for a settled title (2+ years of reviews
-              behind it), low for a brand-new release. A second platform&apos;s independent verdict adds a little.
+              <span className="text-[#e6edf3]">w</span> is the player weight you set with the slider (0 = critics only, 1
+              = players only).
             </li>
             <li>
-              <span className="text-[#e6edf3]">Light shrinkage</span> — composite = (raw·n + prior·k) / (n + k). With high
-              confidence the score barely moves; only thin, recent scores are nudged toward the dataset mean, by at most
-              ~2–3 points.
+              <span className="text-[#e6edf3]">w′</span> scales <span className="text-[#e6edf3]">w</span> by review
+              volume — a verdict from a million reviews counts fully, a thin one less, and a game with no Steam data (a
+              console exclusive) keeps its editorial score.
             </li>
           </ol>
           <p>
-            Net effect: settled classics keep their real score regardless of platform (exclusives aren&apos;t penalized);
-            only brand-new titles are tempered until their reviews settle — these are marked{" "}
-            <span className="text-[#e6edf3]">provisional</span>. Scores are global: filtering changes what&apos;s shown,
-            never the scores.
+            Why: professional scores can drift from how players actually feel — blending Steam&apos;s large-sample
+            sentiment corrects for that, and the knob lets you decide how much to trust each side. Scores are global:
+            filtering changes what&apos;s shown, never the scores.
           </p>
         </section>
       )}
 
       {/* filter bar */}
       <section className="mb-5 space-y-3 rounded-lg border border-[#30363d] bg-[#0d1117] p-4">
+        <div className="flex flex-wrap items-center gap-3 border-b border-[#21262d] pb-3 font-mono text-xs">
+          <span className="text-[#484f58]">weighting</span>
+          <span className={userPct < 50 ? "text-[#58a6ff]" : "text-[#8b949e]"}>critics</span>
+          <input
+            type="range"
+            min={0}
+            max={100}
+            step={5}
+            value={userPct}
+            onChange={(e) => setUserPct(+e.target.value)}
+            aria-label="Critics to players weighting"
+            className="h-1 w-40 cursor-pointer accent-emerald-500"
+          />
+          <span className={userPct > 50 ? "text-[#3fb950]" : "text-[#8b949e]"}>players</span>
+          <span className="text-[#484f58]">
+            · {100 - userPct}% critics / {userPct}% players (Steam)
+          </span>
+        </div>
+
         <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
           <div className="flex items-center gap-2 font-mono text-xs text-[#8b949e]">
             <span className="text-[#484f58]">years</span>
@@ -440,8 +475,8 @@ export default function Home() {
       </section>
 
       <footer className="mt-8 text-center font-mono text-xs text-[#484f58]">
-        {GAMES.length} games · settled scores trusted, recent ones tempered · opinionated, for fun · not affiliated with
-        any publisher
+        {GAMES.length} games · editorial scores blended with Steam player reviews · opinionated, for fun · not
+        affiliated with any publisher
       </footer>
     </main>
   );

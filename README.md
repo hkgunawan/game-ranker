@@ -3,8 +3,8 @@
 [![CI](https://github.com/hkgunawan/game-ranker/actions/workflows/ci.yml/badge.svg)](https://github.com/hkgunawan/game-ranker/actions/workflows/ci.yml)
 
 An interactive leaderboard of the best **PC & PlayStation** games, 2015 → today.
-Filter by year range and platform; every score is re-computed with one transparent
-algorithm and broken down on click.
+Filter by year, platform and mode; slide the **critics ↔ players** weighting to
+re-rank live; every score is broken down on click.
 
 **Stack:** Next.js 16 (App Router, Turbopack) · React 19 · TypeScript · Tailwind v4.
 Fully static — no runtime API calls, deploys clean to Vercel.
@@ -20,23 +20,27 @@ parsed from two source rankings in `data-sources/`:
 
 28 titles appear on both platforms and are merged into a single entry.
 
+Each game also carries real **player sentiment** from Steam (% of reviews positive
++ review count), pulled at build time by `scripts/enrich-steam.mjs` for the ~105 of
+115 titles on Steam (console exclusives fall back to editorial-only).
+
 ### The ranking algorithm (`src/lib/rank.ts`)
 
-Both docs score on the same /100 scale, so a naive merge would just average the two
-numbers. Instead the scores are weighted by **evidence** and shrunk with a small
-**Bayesian model**:
+The composite blends the curated **editorial** score (critic-anchored) with the
+**player** score (Steam % positive):
 
-1. **Evidence (n)** — a game reviewed on both platforms carries two independent
-   verdicts; older titles have a settled long tail, so they count for more. Releases
-   from 2025+ are flagged _provisional_ (their reviews are still settling).
-2. **Shrinkage** — `composite = (raw·n + prior·k) / (n + k)`. Thin evidence is pulled
-   toward the dataset mean; strong evidence stays at its raw value.
-3. **Corroboration** — a small, capped bump when both platforms independently rate a
-   game highly.
+```
+composite = editorial·(1 − w′) + players%·w′
+```
 
-Net effect: generational cross-platform classics rise, while brand-new
-single-platform titles cool off slightly until their long tail settles. Scores are
-**global** — filtering changes what's shown, never the scores themselves.
+- **w** is the player weight, set live in the UI (0 = critics only, 1 = players only).
+- **w′** scales `w` by review-volume confidence: a verdict from a million reviews
+  counts fully, a thin one counts less, and a game with no Steam data keeps its
+  editorial score (`w′ = 0`).
+
+Professional scores can drift from how players actually feel — blending Steam's
+large-sample sentiment corrects for that, and the slider lets you decide how much to
+trust each side. Scores are **global** — filtering changes what's shown, not the scores.
 
 ## Develop
 
@@ -44,6 +48,7 @@ single-platform titles cool off slightly until their long tail settles. Scores a
 npm install
 npm run dev      # http://localhost:3000
 npm run data     # regenerate src/data/games.json from data-sources/*.md
+npm run enrich   # add Steam player sentiment to src/data/games.json (run after `data`)
 npm run lint
 npm test         # vitest — algorithm + filter unit tests
 npm run build

@@ -1,24 +1,19 @@
 // The ranking algorithm.
 //
-// Both source docs score on the same /100 conceptual scale (7 weighted axes for
-// PC, 6 for PS5 — both anchored on critical consensus + long-tail reception).
-// Those scores are themselves the output of a careful model, so we TRUST them —
-// the only thing worth adjusting is genuine uncertainty.
+// Each game has an editorial score (the curated /100 docs — critic-anchored) and,
+// where available, real player sentiment from Steam (% of reviews positive). The
+// composite blends the two, and the critic↔player balance is a live, tunable knob.
 //
-// The docs weight "Steam/PSN reviews 6+ months post-launch" heavily and flag
-// post-Jun-2025 titles as provisional (±2 expected drift). So a freshly released
-// score is less trustworthy than one with years of settled reviews behind it.
+//   composite = editorial·(1 − w′) + players%·w′
 //
-//   Confidence (n) — high for a settled title (≥2 years of long-tail data),
-//   low for a brand-new one. A second platform's verdict adds a little more.
+//   w  — the player weight (0 = critics only, 1 = players only). Set in the UI.
+//   w′ — w scaled by review-volume confidence: a verdict from 1M reviews counts
+//        fully; a thin one counts less; a game with no Steam data (console
+//        exclusive) keeps its editorial score (w′ = 0).
 //
-//   Shrinkage — composite = (raw·n + prior·k) / (n + k). With n ≫ k a settled
-//   score barely moves (it keeps its editorial value); only thin, recent scores
-//   are nudged toward the dataset mean, by at most ~2–3 points.
-//
-// Net effect: settled classics sit at their real score regardless of platform
-// (exclusives are not penalized); only brand-new titles are tempered until their
-// reviews settle. Those are flagged "provisional" in the UI.
+// Why: professional review scores can drift from how players actually feel —
+// blending in Steam's large-sample player sentiment corrects for that, and the
+// knob lets you decide how much to trust each side.
 
 export interface Game {
   title: string;
@@ -34,12 +29,17 @@ export interface Game {
   indie: boolean;
   modes: string[];
   note: string;
+  steamAppId: number | null;
+  steamPositive: number | null; // % of Steam reviews that are positive, 0–100
+  steamReviews: number | null; // Steam review count (sample size)
 }
 
 export interface Ranked extends Game {
-  composite: number; // final algorithm score, /100
-  rawMean: number; // simple mean of available editorial scores
-  evidence: number; // n — how much the raw score is trusted
+  composite: number; // final blended score, /100
+  editorial: number; // mean of available editorial (critic-anchored) scores
+  userScore: number | null; // Steam % positive (player sentiment), if any
+  reviewConfidence: number; // 0–1, from review volume
+  effWeight: number; // player weight actually applied after confidence scaling
   tier: Tier;
   provisional: boolean;
 }
@@ -47,8 +47,9 @@ export interface Ranked extends Game {
 export type Tier = "S" | "A" | "A−" | "B" | "C";
 
 export const CURRENT_YEAR = 2026;
-const PRIOR_STRENGTH = 0.8; // k — the prior is deliberately weak; we trust the editorial scores
 const PROVISIONAL_AFTER = 2025; // releases this year or later have a thin long tail
+const REVIEW_FULL = 50_000; // review count at which player sentiment is fully trusted
+export const DEFAULT_USER_WEIGHT = 0.5; // balanced critics ↔ players
 
 const editorialScores = (g: Game): number[] =>
   [g.pcScore, g.psScore].filter((s): s is number => s != null);
@@ -62,16 +63,11 @@ export function isProvisional(g: Game): boolean {
   return g.year >= PROVISIONAL_AFTER;
 }
 
-// Confidence weight n: how settled the score is. A title with 2+ years of
-// long-tail reviews is high-confidence (n large ⇒ no shrinkage); a brand-new
-// one is low-confidence (n small ⇒ nudged toward the prior). A second platform's
-// independent verdict adds a little. Tuned so settled titles keep their score
-// and the newest move by at most ~2–3 points.
-function confidence(g: Game): number {
-  const age = CURRENT_YEAR - g.year;
-  const settle = age >= 2 ? 10 : age >= 1 ? 2.5 : 1.3; // per-source weight by recency
-  const sources = editorialScores(g).length; // 1 or 2 independent verdicts
-  return settle * (1 + 0.6 * (sources - 1)); // 2nd source adds 60%
+// How much to trust the Steam player score, from its review volume (0–1).
+// No Steam data → 0, so the game keeps its editorial score.
+export function reviewConfidence(g: Game): number {
+  if (g.steamPositive == null || !g.steamReviews) return 0;
+  return Math.min(1, Math.log10(g.steamReviews) / Math.log10(REVIEW_FULL));
 }
 
 export function tierOf(score: number): Tier {
@@ -82,24 +78,28 @@ export function tierOf(score: number): Tier {
   return "C";
 }
 
-export function rank(games: Game[]): Ranked[] {
-  const p = prior(games);
+// userWeight: 0 = critics only, 1 = players only.
+export function rank(games: Game[], userWeight: number = DEFAULT_USER_WEIGHT): Ranked[] {
+  const w = Math.min(1, Math.max(0, userWeight));
   return games
     .map((g) => {
       const scores = editorialScores(g);
-      const rawMean = scores.reduce((a, b) => a + b, 0) / scores.length;
-      const n = confidence(g);
-      const composite = (rawMean * n + p * PRIOR_STRENGTH) / (n + PRIOR_STRENGTH);
+      const editorial = scores.reduce((a, b) => a + b, 0) / scores.length;
+      const conf = reviewConfidence(g);
+      const effW = w * conf;
+      const composite = g.steamPositive != null ? editorial * (1 - effW) + g.steamPositive * effW : editorial;
       return {
         ...g,
         composite: Math.round(composite * 10) / 10,
-        rawMean: Math.round(rawMean * 10) / 10,
-        evidence: Math.round(n * 100) / 100,
+        editorial: Math.round(editorial * 10) / 10,
+        userScore: g.steamPositive,
+        reviewConfidence: Math.round(conf * 100) / 100,
+        effWeight: Math.round(effW * 100) / 100,
         tier: tierOf(composite),
         provisional: isProvisional(g),
       };
     })
-    .sort((a, b) => b.composite - a.composite || b.rawMean - a.rawMean || a.title.localeCompare(b.title));
+    .sort((a, b) => b.composite - a.composite || b.editorial - a.editorial || a.title.localeCompare(b.title));
 }
 
 // --- filtering --------------------------------------------------------------

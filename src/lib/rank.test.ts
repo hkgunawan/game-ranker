@@ -1,5 +1,15 @@
 import { describe, expect, it } from "vitest";
-import { rank, applyFilters, tierOf, prior, isProvisional, MODES, type Game, type Filters } from "./rank";
+import {
+  rank,
+  applyFilters,
+  tierOf,
+  prior,
+  isProvisional,
+  reviewConfidence,
+  MODES,
+  type Game,
+  type Filters,
+} from "./rank";
 
 const make = (over: Partial<Game>): Game => ({
   title: "Game",
@@ -15,6 +25,9 @@ const make = (over: Partial<Game>): Game => ({
   indie: false,
   modes: ["Single-player"],
   note: "",
+  steamAppId: null,
+  steamPositive: null,
+  steamReviews: null,
   ...over,
 });
 
@@ -52,51 +65,47 @@ describe("prior", () => {
   });
 });
 
-describe("rank", () => {
+describe("reviewConfidence", () => {
+  it("is 0 without Steam data and ~1 with many reviews", () => {
+    expect(reviewConfidence(make({ steamPositive: null, steamReviews: null }))).toBe(0);
+    expect(reviewConfidence(make({ steamPositive: 90, steamReviews: 1_000_000 }))).toBe(1);
+  });
+});
+
+describe("rank — critic/player blend", () => {
   it("sorts by composite descending", () => {
     const out = rank([make({ title: "Low", pcScore: 80 }), make({ title: "High", pcScore: 98 })]);
     expect(out[0].title).toBe("High");
     expect(out[0].composite).toBeGreaterThan(out[1].composite);
   });
 
-  it("leaves a settled score essentially unchanged (trusts the editorial score)", () => {
-    // a 6-year-old, high-confidence title should sit within ~0.5 of its raw score
-    const out = rank([
-      make({ title: "Settled", pcScore: 95, year: 2018 }),
-      make({ title: "Anchor", pcScore: 88, year: 2018 }),
-    ]);
-    const settled = out.find((g) => g.title === "Settled")!;
-    expect(Math.abs(settled.composite - settled.rawMean)).toBeLessThan(0.6);
+  it("at players=0, the composite is exactly the editorial score", () => {
+    const g = make({ pcScore: 90, steamPositive: 60, steamReviews: 100_000 });
+    expect(rank([g], 0)[0].composite).toBe(90);
   });
 
-  it("shrinks a thin provisional score toward the mean more than a settled one", () => {
-    const both: Game["platforms"] = ["PC", "PlayStation"];
-    const games = [
-      make({ title: "Anchor", pcScore: 88, psScore: 88, year: 2016, platforms: both }),
-      make({ title: "Settled", pcScore: 95, psScore: 95, year: 2017, platforms: both }),
-      make({ title: "Fresh", pcScore: 95, year: 2026 }),
-    ];
-    const out = rank(games);
-    const settled = out.find((g) => g.title === "Settled")!;
-    const fresh = out.find((g) => g.title === "Fresh")!;
-    expect(settled.rawMean).toBe(fresh.rawMean); // same raw input
-    expect(settled.composite).toBeGreaterThan(fresh.composite); // thin evidence shrinks more
+  it("at players=1, a low player score drags a critic favourite down", () => {
+    const g = make({ pcScore: 90, steamPositive: 60, steamReviews: 100_000 });
+    const r = rank([g], 1)[0];
+    expect(r.userScore).toBe(60);
+    expect(r.composite).toBeLessThan(65); // pulled toward the 60% player score
   });
 
-  it("does not penalize a single-platform exclusive vs an equal cross-platform title", () => {
-    // an above-average exclusive stays within a hair of its cross-platform equal —
-    // no additive cross-platform bonus, so exclusivity barely matters
-    const both: Game["platforms"] = ["PC", "PlayStation"];
+  it("a game with no Steam data keeps its editorial score at any weight", () => {
+    const g = make({ pcScore: 91, steamPositive: null, steamReviews: null });
+    expect(rank([g], 1)[0].composite).toBe(91);
+    expect(rank([g], 0.5)[0].composite).toBe(91);
+  });
+
+  it("more reviews give player sentiment more pull", () => {
     const games = [
-      make({ title: "Anchor", pcScore: 80, year: 2016 }),
-      make({ title: "Both", pcScore: 95, psScore: 95, year: 2018, platforms: both }),
-      make({ title: "Exclusive", pcScore: 95, year: 2018 }),
+      make({ title: "Few", pcScore: 90, steamPositive: 60, steamReviews: 50 }),
+      make({ title: "Many", pcScore: 90, steamPositive: 60, steamReviews: 500_000 }),
     ];
-    const out = rank(games);
-    const both2 = out.find((g) => g.title === "Both")!;
-    const excl = out.find((g) => g.title === "Exclusive")!;
-    expect(both2.composite).toBeGreaterThanOrEqual(excl.composite); // corroboration only via confidence
-    expect(both2.composite - excl.composite).toBeLessThan(0.5); // but the gap is tiny
+    const out = rank(games, 1);
+    const few = out.find((g) => g.title === "Few")!;
+    const many = out.find((g) => g.title === "Many")!;
+    expect(many.composite).toBeLessThan(few.composite); // big sample -> closer to the 60% score
   });
 });
 
