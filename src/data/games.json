@@ -1,0 +1,2157 @@
+[
+  {
+    "title": "Elden Ring",
+    "year": 2022,
+    "developer": "FromSoftware",
+    "genre": "Open-world Soulslike",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "pcScore": 98,
+    "psScore": 97,
+    "metacritic": 96,
+    "awards": [
+      "TGA GOTY 2022"
+    ],
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Co-op"
+    ],
+    "note": "TGA GOTY 2022; 96 MC; redefined the open-world template entirely; 25M+ copies; SotE DLC is itself a standalone masterwork."
+  },
+  {
+    "title": "Baldur's Gate 3",
+    "year": 2023,
+    "developer": "Larian Studios",
+    "genre": "CRPG",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "pcScore": 97,
+    "psScore": 96,
+    "metacritic": 96,
+    "awards": [
+      "TGA GOTY 2023"
+    ],
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Co-op"
+    ],
+    "note": "TGA GOTY 2023; 96 MC; genre-defining reactivity and branching; exceptional both solo and in co-op up to four players."
+  },
+  {
+    "title": "Red Dead Redemption 2",
+    "year": 2018,
+    "developer": "Rockstar Games",
+    "genre": "Open-world Western",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "pcScore": 96,
+    "psScore": 96,
+    "metacritic": 97,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Live-service"
+    ],
+    "note": "97 MC; most cinematic and detail-saturated open world of the generation; player devotion sustained at an extraordinary level seven years on."
+  },
+  {
+    "title": "God of War",
+    "year": 2018,
+    "developer": "Santa Monica Studio",
+    "genre": "Action-Adventure",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "pcScore": 95,
+    "psScore": 91,
+    "metacritic": 94,
+    "awards": [
+      "TGA GOTY 2018"
+    ],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "TGA GOTY 2018; 94 MC; rebooted the franchise and set a generation's prestige-action template for narrative and combat pacing alike."
+  },
+  {
+    "title": "Sekiro: Shadows Die Twice",
+    "year": 2019,
+    "developer": "FromSoftware",
+    "genre": "Action",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "pcScore": 94,
+    "psScore": 93,
+    "metacritic": 90,
+    "awards": [
+      "TGA GOTY 2019"
+    ],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "TGA GOTY 2019; 90 MC; peerless posture-based combat; the most skill-pure FromSoft entry and still the best the studio has ever felt to control."
+  },
+  {
+    "title": "Dark Souls III",
+    "year": 2016,
+    "developer": "FromSoftware",
+    "genre": "Soulslike",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "pcScore": 94,
+    "psScore": 87,
+    "metacritic": 89,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Co-op"
+    ],
+    "note": "89 MC; capstone of the trilogy; boss design reaches a series peak before Elden Ring — Nameless King and Soul of Cinder remain benchmarks."
+  },
+  {
+    "title": "Cyberpunk 2077",
+    "year": 2023,
+    "developer": "CD Projekt Red",
+    "genre": "Open-world RPG",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "pcScore": 93,
+    "psScore": 92,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "The greatest comeback in gaming; v2.0's reworked systems and Phantom Liberty's spy thriller narrative turned a troubled launch into a top-tier RPG."
+  },
+  {
+    "title": "Resident Evil 2 Remake",
+    "year": 2019,
+    "developer": "Capcom",
+    "genre": "Survival Horror",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "pcScore": 92,
+    "psScore": 93,
+    "metacritic": 93,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "93 MC; remake gold standard; made the RE Engine a franchise engine; Mr. X remains the most oppressive level-design device in the genre."
+  },
+  {
+    "title": "Metaphor: ReFantazio",
+    "year": 2024,
+    "developer": "Atlus",
+    "genre": "JRPG",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "pcScore": 92,
+    "psScore": 91,
+    "metacritic": 94,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "94 MC; the Persona team's fantasy pivot; deep political narrative, flexible job system, and the most fully realized world Atlus has ever built."
+  },
+  {
+    "title": "Metal Gear Solid V: The Phantom Pain",
+    "year": 2015,
+    "developer": "Kojima Productions / Konami",
+    "genre": "Open-world Stealth",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 92,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Alan Wake 2",
+    "year": 2023,
+    "developer": "Remedy Entertainment",
+    "genre": "Psychological Horror",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "pcScore": 91,
+    "psScore": 90,
+    "metacritic": 89,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "89 MC; multiple TGA 2023 wins; Remedy's most ambitious narrative; live-action sequences are a swing no one else in the medium took."
+  },
+  {
+    "title": "The Witcher 3: Wild Hunt",
+    "year": 2015,
+    "developer": "CD Projekt Red",
+    "genre": "Open-world RPG",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "pcScore": 91,
+    "psScore": 96,
+    "metacritic": 93,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "93 MC; 50M+ copies; richest RPG writing of its era; Dec 2022 PS5 patch adds ray tracing, DualSense haptics, and 60 fps — the definitive version."
+  },
+  {
+    "title": "Persona 5 Royal",
+    "year": 2022,
+    "developer": "Atlus",
+    "genre": "JRPG",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "pcScore": 90,
+    "psScore": 90,
+    "metacritic": 95,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "95 MC; definitive version of a generation-defining JRPG; the added third semester is the best writing in the series."
+  },
+  {
+    "title": "NieR: Automata",
+    "year": 2017,
+    "developer": "PlatinumGames / Square Enix",
+    "genre": "Action RPG",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "pcScore": 90,
+    "psScore": 91,
+    "metacritic": 88,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "88 MC; 8M+ copies; most-cited game in academic and fan critical discourse of the era; user scores consistently 9+/10 long-tail — the gap between press and player is the story."
+  },
+  {
+    "title": "Control",
+    "year": 2019,
+    "developer": "Remedy Entertainment",
+    "genre": "Action-Adventure",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 89,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Silent Hill 2 Remake",
+    "year": 2024,
+    "developer": "Bloober Team",
+    "genre": "Survival Horror",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "pcScore": 89,
+    "psScore": 88,
+    "metacritic": 86,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "86 MC; the remake no one believed Bloober could deliver, delivered; monster redesigns and fog-heavy lighting push the original's atmosphere further."
+  },
+  {
+    "title": "Resident Evil 4 Remake",
+    "year": 2023,
+    "developer": "Capcom",
+    "genre": "Survival Horror",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "pcScore": 89,
+    "psScore": 92,
+    "metacritic": 93,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "93 MC; essentially perfected remake; new combat feel while honoring every beat of the original."
+  },
+  {
+    "title": "Dishonored 2",
+    "year": 2016,
+    "developer": "Arkane Studios",
+    "genre": "Immersive Sim",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 89,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Ghost of Tsushima: Director's Cut",
+    "year": 2021,
+    "developer": "Sucker Punch",
+    "genre": "Open-world Action",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "pcScore": 89,
+    "psScore": 88,
+    "metacritic": 85,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Co-op"
+    ],
+    "note": "85 MC base; 10M+ sales; Iki Island DLC is tighter and more emotionally focused than the main game's third act."
+  },
+  {
+    "title": "Crusader Kings III",
+    "year": 2020,
+    "developer": "Paradox Development Studio",
+    "genre": "Grand Strategy RPG",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 89,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Co-op"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Half-Life: Alyx",
+    "year": 2020,
+    "developer": "Valve",
+    "genre": "VR FPS",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 88,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Kingdom Come: Deliverance II",
+    "year": 2025,
+    "developer": "Warhorse Studios",
+    "genre": "Historical RPG",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "pcScore": 88,
+    "psScore": 87,
+    "metacritic": 88,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "88 MC; systemic medieval simulation with dramatically tightened pacing vs the first game; the most grounded RPG writing of 2025."
+  },
+  {
+    "title": "Black Myth: Wukong",
+    "year": 2024,
+    "developer": "Game Science",
+    "genre": "Action RPG",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "pcScore": 88,
+    "psScore": 87,
+    "metacritic": null,
+    "awards": [
+      "TGA Players' Voice"
+    ],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "TGA 2024 Players' Voice winner; 20M+ copies; watershed moment for Chinese AAA game development."
+  },
+  {
+    "title": "No Man's Sky",
+    "year": 2016,
+    "developer": "Hello Games",
+    "genre": "Space Exploration",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 88,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Co-op"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Hearts of Iron IV",
+    "year": 2016,
+    "developer": "Paradox Development Studio",
+    "genre": "Grand Strategy",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 88,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Co-op"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Resident Evil 7: Biohazard",
+    "year": 2017,
+    "developer": "Capcom",
+    "genre": "Survival Horror",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 88,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Prey",
+    "year": 2017,
+    "developer": "Arkane Studios",
+    "genre": "Immersive Sim",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 88,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "DOOM (2016)",
+    "year": 2016,
+    "developer": "id Software",
+    "genre": "FPS",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 88,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Co-op"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Titanfall 2",
+    "year": 2016,
+    "developer": "Respawn Entertainment",
+    "genre": "FPS",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 88,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Lies of P",
+    "year": 2023,
+    "developer": "Round8 Studio",
+    "genre": "Soulslike",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "pcScore": 87,
+    "psScore": 85,
+    "metacritic": 80,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "80 MC; best non-FromSoft Soulslike to date; the Pinocchio framing is surprisingly resonant and the weapon assembly system rewards experimentation."
+  },
+  {
+    "title": "Europa Universalis IV",
+    "year": 2013,
+    "developer": "Paradox Development Studio",
+    "genre": "Grand Strategy",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 87,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Co-op"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Total War: Warhammer III",
+    "year": 2022,
+    "developer": "Creative Assembly",
+    "genre": "Real-time Strategy",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 87,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Co-op"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Satisfactory",
+    "year": 2024,
+    "developer": "Coffee Stain",
+    "genre": "Factory Automation",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 87,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Co-op"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Hi-Fi Rush",
+    "year": 2023,
+    "developer": "Tango Gameworks",
+    "genre": "Rhythm Action",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 87,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Final Fantasy VII Remake Intergrade",
+    "year": 2022,
+    "developer": "Square Enix",
+    "genre": "Action RPG",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 87,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "13 Sentinels: Aegis Rim",
+    "year": 2022,
+    "developer": "Vanillaware",
+    "genre": "Narrative / Tactics",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 87,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Wolfenstein II: The New Colossus",
+    "year": 2017,
+    "developer": "MachineGames",
+    "genre": "FPS",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 87,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Death Stranding: Director's Cut",
+    "year": 2022,
+    "developer": "Kojima Productions",
+    "genre": "Traversal / Sim",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 86,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Indiana Jones and the Great Circle",
+    "year": 2024,
+    "developer": "MachineGames",
+    "genre": "Action-Adventure",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 86,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Stellaris",
+    "year": 2016,
+    "developer": "Paradox Development Studio",
+    "genre": "Grand Strategy / 4X",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 86,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Co-op"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Metro Exodus",
+    "year": 2019,
+    "developer": "4A Games",
+    "genre": "FPS Survival",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 86,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Persona 3 Reload",
+    "year": 2024,
+    "developer": "Atlus",
+    "genre": "JRPG",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 86,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Marvel's Spider-Man 2",
+    "year": 2023,
+    "developer": "Insomniac Games",
+    "genre": "Action-Adventure",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "pcScore": 86,
+    "psScore": 90,
+    "metacritic": 90,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "90 MC; two-hero structure and Venom arc; fastest-selling PS5 exclusive at launch."
+  },
+  {
+    "title": "Dead Space Remake",
+    "year": 2023,
+    "developer": "Motive Studio",
+    "genre": "Survival Horror",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "pcScore": 86,
+    "psScore": 86,
+    "metacritic": 89,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "89 MC; audio design alone earns its rank; honored every beat of the original while tightening the pacing and giving Isaac a coherent voice."
+  },
+  {
+    "title": "Armored Core VI: Fires of Rubicon",
+    "year": 2023,
+    "developer": "FromSoftware",
+    "genre": "Mecha Action",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 86,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Subnautica",
+    "year": 2018,
+    "developer": "Unknown Worlds",
+    "genre": "Underwater Survival",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 86,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Horizon Forbidden West: Complete",
+    "year": 2024,
+    "developer": "Guerrilla Games",
+    "genre": "Open-world Action",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 85,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Doom Eternal",
+    "year": 2020,
+    "developer": "id Software",
+    "genre": "FPS",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 85,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Co-op"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Like a Dragon: Infinite Wealth",
+    "year": 2024,
+    "developer": "RGG Studio",
+    "genre": "JRPG",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "pcScore": 85,
+    "psScore": 86,
+    "metacritic": 89,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "89 MC; Ichiban saga's boldest entry; Hawaii setting and expanded job system are a series high in both ambition and execution."
+  },
+  {
+    "title": "Civilization VI",
+    "year": 2016,
+    "developer": "Firaxis Games",
+    "genre": "4X Strategy",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 85,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Co-op"
+    ],
+    "note": ""
+  },
+  {
+    "title": "A Plague Tale: Requiem",
+    "year": 2022,
+    "developer": "Asobo Studio",
+    "genre": "Stealth Action",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 85,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Frostpunk 2",
+    "year": 2024,
+    "developer": "11 bit studios",
+    "genre": "City-builder Strategy",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 85,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Hellblade: Senua's Sacrifice",
+    "year": 2017,
+    "developer": "Ninja Theory",
+    "genre": "Psychological Action",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 85,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Star Wars Jedi: Survivor",
+    "year": 2023,
+    "developer": "Respawn Entertainment",
+    "genre": "Action-Adventure",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 84,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Pentiment",
+    "year": 2022,
+    "developer": "Obsidian Entertainment",
+    "genre": "Narrative Adventure",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 84,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Fallout 4",
+    "year": 2015,
+    "developer": "Bethesda Game Studios",
+    "genre": "Open-world RPG",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 84,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Monster Hunter: World",
+    "year": 2018,
+    "developer": "Capcom",
+    "genre": "Action RPG",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "pcScore": 93,
+    "psScore": 87,
+    "metacritic": 90,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Co-op"
+    ],
+    "note": "90 MC; 25M+ copies; the game that brought Monster Hunter mainstream in the West and made the hunt loop feel fluid for the first time."
+  },
+  {
+    "title": "It Takes Two",
+    "year": 2021,
+    "developer": "Hazelight Studios",
+    "genre": "Co-op Platformer",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "pcScore": 91,
+    "psScore": 90,
+    "metacritic": 89,
+    "awards": [
+      "TGA GOTY 2021"
+    ],
+    "indie": false,
+    "modes": [
+      "Co-op",
+      "Single-player"
+    ],
+    "note": "89 MC; TGA GOTY 2021; every chapter rebuilds its mechanics from scratch; the most celebrated co-op experience ever made and the rare GOTY winner that earns unanimous agreement."
+  },
+  {
+    "title": "Deep Rock Galactic",
+    "year": 2020,
+    "developer": "Ghost Ship Games",
+    "genre": "Co-op Shooter",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 90,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": true,
+    "modes": [
+      "Co-op"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Counter-Strike 2 (succeeds CS:GO)",
+    "year": 2023,
+    "developer": "Valve",
+    "genre": "Tactical FPS",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 90,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "PvP",
+      "Live-service"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Final Fantasy XIV",
+    "year": 2013,
+    "developer": "Square Enix",
+    "genre": "MMORPG",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 90,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Co-op",
+      "Live-service"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Dota 2",
+    "year": 2013,
+    "developer": "Valve",
+    "genre": "MOBA",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 90,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "PvP",
+      "Live-service"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Path of Exile",
+    "year": 2013,
+    "developer": "Grinding Gear Games",
+    "genre": "ARPG",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 89,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Co-op",
+      "Live-service"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Monster Hunter Wilds",
+    "year": 2025,
+    "developer": "Capcom",
+    "genre": "Action RPG",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "pcScore": 87,
+    "psScore": 87,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Co-op"
+    ],
+    "note": "Series peak for onboarding and seamless world design; wound mechanics and Living World biomes are genuine advances over World."
+  },
+  {
+    "title": "Split Fiction",
+    "year": 2025,
+    "developer": "Hazelight Studios",
+    "genre": "Co-op Adventure",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 85,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Co-op"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Rocket League",
+    "year": 2015,
+    "developer": "Psyonix",
+    "genre": "Vehicular Sports",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 85,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "PvP",
+      "Live-service"
+    ],
+    "note": ""
+  },
+  {
+    "title": "World of Warcraft: The War Within",
+    "year": 2004,
+    "developer": "Blizzard Entertainment",
+    "genre": "MMORPG",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 85,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Co-op",
+      "Live-service"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Age of Empires II: Definitive Edition",
+    "year": 2019,
+    "developer": "Forgotten Empires",
+    "genre": "RTS",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 85,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Co-op",
+      "PvP"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Don't Starve Together",
+    "year": 2016,
+    "developer": "Klei Entertainment",
+    "genre": "Survival",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 84,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Co-op"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Warframe",
+    "year": 2013,
+    "developer": "Digital Extremes",
+    "genre": "Co-op Action Shooter",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 84,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Co-op",
+      "Live-service"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Marvel Rivals",
+    "year": 2024,
+    "developer": "NetEase Games",
+    "genre": "Hero Shooter",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 84,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "PvP",
+      "Live-service"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Elden Ring: Nightreign",
+    "year": 2025,
+    "developer": "FromSoftware",
+    "genre": "Co-op Roguelike",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 83,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Co-op"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Apex Legends",
+    "year": 2019,
+    "developer": "Respawn Entertainment",
+    "genre": "Hero Battle Royale",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 83,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "PvP",
+      "Live-service"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Valorant",
+    "year": 2020,
+    "developer": "Riot Games",
+    "genre": "Tactical FPS",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 83,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "PvP",
+      "Live-service"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Overwatch 2",
+    "year": 2022,
+    "developer": "Blizzard Entertainment",
+    "genre": "Hero Shooter",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 82,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "PvP",
+      "Live-service"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Disco Elysium: The Final Cut",
+    "year": 2021,
+    "developer": "ZA/UM",
+    "genre": "Narrative RPG",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "pcScore": 95,
+    "psScore": 91,
+    "metacritic": 97,
+    "awards": [],
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "97 OC; multiple BAFTAs; the best-written video game of the era — possibly of any era."
+  },
+  {
+    "title": "Hades",
+    "year": 2020,
+    "developer": "Supergiant Games",
+    "genre": "Roguelike",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "pcScore": 93,
+    "psScore": 88,
+    "metacritic": 93,
+    "awards": [],
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "93 MC; Hugo Award winner; best-in-class run-based narrative integration — every death advances the story meaningfully."
+  },
+  {
+    "title": "Hollow Knight: Silksong",
+    "year": 2025,
+    "developer": "Team Cherry",
+    "genre": "Metroidvania",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 91,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Clair Obscur: Expedition 33",
+    "year": 2025,
+    "developer": "Sandfall Interactive",
+    "genre": "Turn-based RPG",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "pcScore": 91,
+    "psScore": 89,
+    "metacritic": 92,
+    "awards": [],
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "92 MC; multiple TGA 2025 wins; breakout debut that set a new gold standard for indie-scale RPG craft, art direction, and parry-based timing combat."
+  },
+  {
+    "title": "Inside",
+    "year": 2016,
+    "developer": "Playdead",
+    "genre": "Puzzle Platformer",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 91,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Hollow Knight",
+    "year": 2018,
+    "developer": "Team Cherry",
+    "genre": "Metroidvania",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 90,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Ori and the Blind Forest",
+    "year": 2015,
+    "developer": "Moon Studios",
+    "genre": "Metroidvania",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 88,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "The Witness",
+    "year": 2016,
+    "developer": "Thekla, Inc.",
+    "genre": "Puzzle",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 87,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "SOMA",
+    "year": 2015,
+    "developer": "Frictional Games",
+    "genre": "Sci-fi Horror",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 87,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "What Remains of Edith Finch",
+    "year": 2017,
+    "developer": "Giant Sparrow",
+    "genre": "Narrative Adventure",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 87,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Neon White",
+    "year": 2022,
+    "developer": "Angel Matrix",
+    "genre": "Speedrun FPS",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 86,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Nine Sols",
+    "year": 2024,
+    "developer": "Red Candle Games",
+    "genre": "Action Metroidvania",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 86,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Cocoon",
+    "year": 2023,
+    "developer": "Geometric Interactive",
+    "genre": "Puzzle Adventure",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 86,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Cuphead",
+    "year": 2017,
+    "developer": "StudioMDHR",
+    "genre": "Run-and-gun",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 86,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Stray",
+    "year": 2022,
+    "developer": "BlueTwelve Studio",
+    "genre": "Adventure",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 85,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Firewatch",
+    "year": 2016,
+    "developer": "Campo Santo",
+    "genre": "Narrative Adventure",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 85,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Palworld",
+    "year": 2025,
+    "developer": "Pocketpair",
+    "genre": "Survival / Creature",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 84,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": true,
+    "modes": [
+      "Single-player",
+      "Co-op"
+    ],
+    "note": ""
+  },
+  {
+    "title": "Pyre",
+    "year": 2017,
+    "developer": "Supergiant Games",
+    "genre": "Narrative Tactics",
+    "platforms": [
+      "PC"
+    ],
+    "pcScore": 83,
+    "psScore": null,
+    "metacritic": null,
+    "awards": [],
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": ""
+  },
+  {
+    "title": "God of War Ragnarök",
+    "year": 2022,
+    "developer": "Santa Monica Studio",
+    "genre": "Action-adventure",
+    "platforms": [
+      "PlayStation"
+    ],
+    "pcScore": null,
+    "psScore": 95,
+    "metacritic": 94,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "94 MC; most TGA nominations in show history; masterclass narrative closure for the Norse arc."
+  },
+  {
+    "title": "Bloodborne",
+    "year": 2015,
+    "developer": "FromSoftware / Japan Studio",
+    "genre": "Soulslike",
+    "platforms": [
+      "PlayStation"
+    ],
+    "pcScore": null,
+    "psScore": 94,
+    "metacritic": 92,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "92 MC; player devotion unmatched on this list — still speedrun, modded, and dissected a decade on; Gothic atmosphere and interconnected world design set a ceiling no soulslike has since cleared."
+  },
+  {
+    "title": "The Last of Us Part II Remastered",
+    "year": 2024,
+    "developer": "Naughty Dog",
+    "genre": "Action-adventure",
+    "platforms": [
+      "PlayStation"
+    ],
+    "pcScore": null,
+    "psScore": 93,
+    "metacritic": 93,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "93 MC base; No Return roguelike mode + PS5 polish elevate an already generational craft benchmark for character performance and animation."
+  },
+  {
+    "title": "Demon's Souls",
+    "year": 2020,
+    "developer": "Bluepoint Games",
+    "genre": "Soulslike",
+    "platforms": [
+      "PlayStation"
+    ],
+    "pcScore": null,
+    "psScore": 92,
+    "metacritic": 92,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "92 MC; PS5 launch showpiece; remake that respected the skeleton without sanding off the spikes."
+  },
+  {
+    "title": "Street Fighter 6",
+    "year": 2023,
+    "developer": "Capcom",
+    "genre": "Fighting",
+    "platforms": [
+      "PlayStation"
+    ],
+    "pcScore": null,
+    "psScore": 92,
+    "metacritic": 92,
+    "awards": [
+      "TGA Best Fighting Game"
+    ],
+    "indie": false,
+    "modes": [
+      "PvP"
+    ],
+    "note": "92 MC; TGA 2023 Best Fighting Game; revived the franchise after SF5's troubled launch; World Tour, Modern controls, and rollback netcode make it the most accessible-yet-deep fighter ever shipped."
+  },
+  {
+    "title": "Astro Bot",
+    "year": 2024,
+    "developer": "Team Asobi",
+    "genre": "3D platformer",
+    "platforms": [
+      "PlayStation"
+    ],
+    "pcScore": null,
+    "psScore": 91,
+    "metacritic": 94,
+    "awards": [
+      "TGA GOTY 2024"
+    ],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "TGA GOTY 2024; 94 MC; maxes PS5 platform craft — every level is built around a new DualSense trick, and every trick earns its moment."
+  },
+  {
+    "title": "Tekken 8",
+    "year": 2024,
+    "developer": "Bandai Namco",
+    "genre": "Fighting",
+    "platforms": [
+      "PlayStation"
+    ],
+    "pcScore": null,
+    "psScore": 90,
+    "metacritic": 90,
+    "awards": [
+      "TGA Best Fighting Game"
+    ],
+    "indie": false,
+    "modes": [
+      "PvP"
+    ],
+    "note": "90 MC; TGA 2024 Best Fighting Game; Heat System and Aggressive play style reinvigorate the 3D fighting formula; best story mode in franchise history."
+  },
+  {
+    "title": "Returnal",
+    "year": 2021,
+    "developer": "Housemarque",
+    "genre": "Roguelike shooter",
+    "platforms": [
+      "PlayStation"
+    ],
+    "pcScore": null,
+    "psScore": 90,
+    "metacritic": 86,
+    "awards": [
+      "BAFTA GOTY 2022"
+    ],
+    "indie": false,
+    "modes": [
+      "PvP"
+    ],
+    "note": "BAFTA GOTY 2022; 86 MC; DualSense authored into the combat loop — a genuine PS5-defining experience that nothing before or after has quite replicated."
+  },
+  {
+    "title": "Final Fantasy VII Rebirth",
+    "year": 2024,
+    "developer": "Square Enix",
+    "genre": "Action JRPG",
+    "platforms": [
+      "PlayStation"
+    ],
+    "pcScore": null,
+    "psScore": 90,
+    "metacritic": 92,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "92 MC; the middle act that justified the remake trilogy; open-world exploration is the most expansive the series has ever attempted."
+  },
+  {
+    "title": "Marvel's Spider-Man",
+    "year": 2018,
+    "developer": "Insomniac Games",
+    "genre": "Open-world action",
+    "platforms": [
+      "PlayStation"
+    ],
+    "pcScore": null,
+    "psScore": 89,
+    "metacritic": 87,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "87 MC; defined traversal feel for a generation; best-selling superhero game, and the emotional baseline all its successors build on."
+  },
+  {
+    "title": "Horizon Forbidden West",
+    "year": 2022,
+    "developer": "Guerrilla Games",
+    "genre": "Open-world action",
+    "platforms": [
+      "PlayStation"
+    ],
+    "pcScore": null,
+    "psScore": 88,
+    "metacritic": 88,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "88 MC; PS5's most technically dazzling open world — machine design and biome variety remain a visual benchmark."
+  },
+  {
+    "title": "Uncharted 4: A Thief's End",
+    "year": 2016,
+    "developer": "Naughty Dog",
+    "genre": "Action-adventure",
+    "platforms": [
+      "PlayStation"
+    ],
+    "pcScore": null,
+    "psScore": 88,
+    "metacritic": 93,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "93 MC; Drake's farewell executed with dignity; set-pieces and character writing that defined PS4's creative peak."
+  },
+  {
+    "title": "Ratchet & Clank: Rift Apart",
+    "year": 2021,
+    "developer": "Insomniac Games",
+    "genre": "Action-platformer",
+    "platforms": [
+      "PlayStation"
+    ],
+    "pcScore": null,
+    "psScore": 88,
+    "metacritic": 88,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "88 MC; only game on this list whose core conceit fundamentally requires the PS5 SSD — dimensional rifting is not a cutscene trick."
+  },
+  {
+    "title": "Diablo IV",
+    "year": 2023,
+    "developer": "Blizzard Entertainment",
+    "genre": "Action RPG",
+    "platforms": [
+      "PlayStation"
+    ],
+    "pcScore": null,
+    "psScore": 87,
+    "metacritic": 88,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "88 MC; revived the ARPG kingpin with a dark tone, open world, and seasonal content; Vessel of Hatred expansion deepened the end-game loop substantially."
+  },
+  {
+    "title": "Ghost of Yōtei",
+    "year": 2025,
+    "developer": "Sucker Punch Productions",
+    "genre": "Open-world action",
+    "platforms": [
+      "PlayStation"
+    ],
+    "pcScore": null,
+    "psScore": 87,
+    "metacritic": null,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Sucker Punch sharpens Tsushima's combat and trims open-world bloat; Atsu's arc is the stronger protagonist story."
+  },
+  {
+    "title": "Gran Turismo 7",
+    "year": 2022,
+    "developer": "Polyphony Digital",
+    "genre": "Racing sim",
+    "platforms": [
+      "PlayStation"
+    ],
+    "pcScore": null,
+    "psScore": 86,
+    "metacritic": 87,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "PvP"
+    ],
+    "note": "87 MC; the PS5 racing benchmark — 500+ cars, Scapes photography, GT Café career arc; DualSense trigger resistance for brake feel is the best haptic-to-racing integration on the platform."
+  },
+  {
+    "title": "Final Fantasy XVI",
+    "year": 2023,
+    "developer": "Square Enix",
+    "genre": "Action RPG",
+    "platforms": [
+      "PlayStation"
+    ],
+    "pcScore": null,
+    "psScore": 86,
+    "metacritic": 87,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "87 MC; boldest tonal swing the mainline series has ever made; Eikon battles are spectacle benchmarks even if the open-world connective tissue sags."
+  },
+  {
+    "title": "Outer Wilds",
+    "year": 2021,
+    "developer": "Mobius Digital",
+    "genre": "Exploration / mystery",
+    "platforms": [
+      "PlayStation"
+    ],
+    "pcScore": null,
+    "psScore": 86,
+    "metacritic": 85,
+    "awards": [
+      "BAFTA GOTY 2020"
+    ],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "BAFTA GOTY 2020; 85 MC; the most sustained \"don't spoil it\" reputation in gaming — the game that inspired a generation of designers to think in systemic mysteries."
+  },
+  {
+    "title": "Guilty Gear Strive",
+    "year": 2021,
+    "developer": "Arc System Works",
+    "genre": "Fighting",
+    "platforms": [
+      "PlayStation"
+    ],
+    "pcScore": null,
+    "psScore": 86,
+    "metacritic": 87,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "PvP"
+    ],
+    "note": "87 MC; sparked the current fighting game renaissance — rollback netcode and streamlined systems brought millions of new players to the genre and proved accessible-yet-deep is achievable."
+  },
+  {
+    "title": "Doom: The Dark Ages",
+    "year": 2026,
+    "developer": "id Software",
+    "genre": "FPS",
+    "platforms": [
+      "PlayStation"
+    ],
+    "pcScore": null,
+    "psScore": 85,
+    "metacritic": 88,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "~88 MC (May 2026 launch); shield-bash parry loop reimagines the formula; id's boldest design swing since 2016 — slower, heavier, and more deliberate than Eternal."
+  },
+  {
+    "title": "Spider-Man: Miles Morales",
+    "year": 2020,
+    "developer": "Insomniac Games",
+    "genre": "Open-world action",
+    "platforms": [
+      "PlayStation"
+    ],
+    "pcScore": null,
+    "psScore": 85,
+    "metacritic": 85,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "85 MC; PS5 launch-window showcase; DualSense tuned for web traversal; Miles' emotional arc is more focused than Peter's in the first game."
+  },
+  {
+    "title": "Helldivers 2",
+    "year": 2024,
+    "developer": "Arrowhead Game Studios",
+    "genre": "Co-op shooter",
+    "platforms": [
+      "PlayStation"
+    ],
+    "pcScore": null,
+    "psScore": 83,
+    "metacritic": 82,
+    "awards": [],
+    "indie": false,
+    "modes": [
+      "Co-op",
+      "PvP"
+    ],
+    "note": "82 MC; 12M+ copies in months; the biggest PS5 cultural moment of 2024 — democratically governed galactic war, Automaton twist, and true player-driven narrative redefined live-service co-op."
+  }
+]
