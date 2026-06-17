@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://games.hendragunawan.com"),
   title: "game-ranker — best PC & PlayStation games 2015→today",
   description:
     "An interactive, algorithmically-ranked leaderboard of the best PC and PlayStation games. Filter by year and platform; scores merged with a transparent Bayesian model.",

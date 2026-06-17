@@ -1,6 +1,7 @@
 "use client";
 
 import { Fragment, useCallback, useEffect, useMemo, useState } from "react";
+import Link from "next/link";
 import gamesData from "@/data/games.json";
 import {
   rank,
@@ -274,6 +275,26 @@ export default function Home() {
         <span className="text-[#e6edf3]">critics ↔ players</span> weighting to re-rank live; filter by year, platform and
         mode; click any row for the breakdown.
       </p>
+
+      <nav aria-label="Best-of lists" className="mb-5 flex flex-wrap items-center gap-2 font-mono text-xs">
+        <span className="text-[#7d8590]">best of:</span>
+        {[
+          { href: "/best/2024", label: "2024" },
+          { href: "/best/2023", label: "2023" },
+          { href: "/best/rpg", label: "RPGs" },
+          { href: "/best/shooter-fps", label: "Shooters" },
+          { href: "/best/action-adventure", label: "Action-Adventure" },
+          { href: "/best/indie", label: "Indies" },
+        ].map((l) => (
+          <Link
+            key={l.href}
+            href={l.href}
+            className="rounded border border-[#30363d] px-2 py-0.5 text-[#8b949e] hover:border-emerald-500/60 hover:text-[#e6edf3]"
+          >
+            {l.label}
+          </Link>
+        ))}
+      </nav>
 
       {showMethod && (
         <section className="mb-5 rounded-lg border border-[#30363d] bg-[#0d1117] p-4 font-mono text-xs leading-relaxed text-[#8b949e]">
