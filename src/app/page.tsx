@@ -152,6 +152,7 @@ export default function Home() {
   const [filters, setFilters] = useState<Filters>(DEFAULT_FILTERS);
   const [userPct, setUserPct] = useState(Math.round(DEFAULT_USER_WEIGHT * 100)); // 0=critics, 100=players
   const [showMethod, setShowMethod] = useState(false);
+  const [showBuild, setShowBuild] = useState(false);
   const [expanded, setExpanded] = useState<string | null>(null);
 
   // hydrate filters + weighting from the URL after mount (SSR renders defaults first)
@@ -207,13 +208,64 @@ export default function Home() {
         <h1 className="font-mono text-lg text-[#e6edf3]">
           <span className="text-[#3fb950]">$</span> game-ranker
         </h1>
-        <button
-          onClick={() => setShowMethod((s) => !s)}
-          className="font-mono text-xs text-[#8b949e] hover:text-[#e6edf3]"
-        >
-          {showMethod ? "hide" : "how scoring works"} ▾
-        </button>
+        <div className="flex items-center gap-4">
+          <button
+            onClick={() => setShowMethod((s) => !s)}
+            className="font-mono text-xs text-[#8b949e] hover:text-[#e6edf3]"
+            aria-expanded={showMethod}
+          >
+            {showMethod ? "hide" : "how scoring works"} ▾
+          </button>
+          <button
+            onClick={() => setShowBuild((s) => !s)}
+            className="font-mono text-xs text-[#8b949e] hover:text-[#e6edf3]"
+            aria-expanded={showBuild}
+          >
+            {showBuild ? "hide" : "how it's built"} ▾
+          </button>
+        </div>
       </header>
+
+      {showBuild && (
+        <section className="mb-5 rounded-lg border border-[#30363d] bg-[#0d1117] p-4 font-mono text-xs leading-relaxed text-[#8b949e]">
+          <p className="mb-2 text-[#e6edf3]">How it&apos;s built</p>
+          <ul className="space-y-1.5">
+            <li>
+              <span className="text-[#3fb950]">Fully automated data pipeline.</span> No hand-curated lists — a build
+              script discovers games from the RAWG API in three passes (acclaimed by Metacritic, broadly popular, and
+              recent releases where Metacritic is still sparse), then a second pass enriches each with real Steam
+              player sentiment by matching titles (accent/edition/sequel-number-aware) against the Steam catalog.
+            </li>
+            <li>
+              <span className="text-[#58a6ff]">A transparent, tested ranking model.</span> The composite blends
+              Metacritic (critics) with Steam %-positive or RAWG community rating (players), player-leaning by default,
+              and scales the player weight by sample-size confidence. RAWG ratings are calibrated onto the Steam-%
+              scale with an empirical fit so console exclusives aren&apos;t underrated. It&apos;s a set of pure,
+              unit-tested functions.
+            </li>
+            <li>
+              <span className="text-[#d29922]">Static and self-updating.</span> There are no runtime API calls — the
+              whole leaderboard is static and fast. A weekly GitHub Actions cron regenerates the dataset and commits
+              it, which triggers a Vercel redeploy. Free-tier only.
+            </li>
+            <li>
+              <span className="text-[#a371f7]">Stack.</span> Next.js&nbsp;16 (App Router) · React&nbsp;19 · TypeScript ·
+              Tailwind&nbsp;v4 · Vitest. Filters are URL-synced, so any view is a shareable link.
+            </li>
+          </ul>
+          <p className="mt-3 text-[#7d8590]">
+            Source:{" "}
+            <a
+              href="https://github.com/hkgunawan/game-ranker"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#58a6ff] hover:underline"
+            >
+              github.com/hkgunawan/game-ranker
+            </a>
+          </p>
+        </section>
+      )}
 
       <p className="mb-4 max-w-3xl font-mono text-xs leading-relaxed text-[#8b949e]">
         The best PC &amp; PlayStation games, 2015→today — {GAMES.length} titles discovered automatically from RAWG,
