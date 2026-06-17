@@ -9,8 +9,10 @@
     "lint": "eslint",
     "test": "vitest run",
     "test:watch": "vitest",
-    "data": "node scripts/parse-games.mjs",
-    "enrich": "node scripts/enrich-steam.mjs"
+    "data": "node scripts/fetch-rawg.mjs",
+    "enrich": "node scripts/enrich-steam.mjs",
+    "refresh": "node scripts/fetch-rawg.mjs && node scripts/enrich-steam.mjs",
+    "data:docs": "node scripts/parse-games.mjs"
   },
   "dependencies": {
     "next": "16.2.9",

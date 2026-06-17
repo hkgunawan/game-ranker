@@ -99,6 +99,7 @@ function filtersFromQuery(search: string): Filters {
 }
 
 function Detail({ g }: { g: Ranked }) {
+  const playerLabel = g.playerSource === "steam" ? "Steam" : g.playerSource === "rawg" ? "RAWG" : "—";
   return (
     <div className="grid gap-3 px-3 py-3 text-xs sm:grid-cols-[1fr_auto]">
       <div className="space-y-2">
@@ -107,11 +108,6 @@ function Detail({ g }: { g: Ranked }) {
         </p>
         {g.note && <p className="leading-relaxed text-[#8b949e]">{g.note}</p>}
         <div className="flex flex-wrap gap-1.5">
-          {g.awards.map((a) => (
-            <span key={a} className="rounded border border-[#d29922]/40 px-1.5 py-0.5 font-mono text-[10px] text-[#d29922]">
-              🏆 {a}
-            </span>
-          ))}
           {g.indie && (
             <span className="rounded border border-[#a371f7]/40 px-1.5 py-0.5 font-mono text-[10px] text-[#a371f7]">
               ◆ indie
@@ -120,7 +116,7 @@ function Detail({ g }: { g: Ranked }) {
           {g.provisional && (
             <span
               className="rounded border border-[#484f58] px-1.5 py-0.5 font-mono text-[10px] text-[#8b949e]"
-              title="released recently — long-tail reviews still settling, so the score is nudged toward the mean"
+              title="released recently — long-tail reviews still settling, so the player score carries less weight"
             >
               provisional
             </span>
@@ -128,25 +124,21 @@ function Detail({ g }: { g: Ranked }) {
         </div>
       </div>
       <dl className="grid grid-cols-2 gap-x-4 gap-y-1 self-start font-mono text-[11px] sm:text-right">
-        <dt className="text-[#484f58]">PC / PS</dt>
-        <dd className="text-[#e6edf3]">
-          {g.pcScore ?? "—"} / {g.psScore ?? "—"}
-        </dd>
-        <dt className="text-[#484f58]">Metacritic</dt>
-        <dd className="text-[#e6edf3]">{g.metacritic ?? "—"}</dd>
-        <dt className="text-[#484f58]" title="critic-anchored editorial score">
-          editorial
+        <dt className="text-[#484f58]" title="Metacritic critic aggregate">
+          critics
         </dt>
-        <dd className="text-[#58a6ff]">{g.editorial}</dd>
-        <dt className="text-[#484f58]" title="Steam % positive · review count">
-          players
+        <dd className="text-[#58a6ff]">{g.critics ?? "—"}</dd>
+        <dt className="text-[#484f58]" title={`player sentiment (${playerLabel})`}>
+          players ({playerLabel})
         </dt>
         <dd className="text-[#3fb950]">
-          {g.userScore != null ? `${g.userScore}%` : "—"}
-          {g.steamReviews != null && (
-            <span className="text-[#484f58]"> ({g.steamReviews.toLocaleString()})</span>
-          )}
+          {g.players != null ? `${g.players}${g.playerSource === "steam" ? "%" : ""}` : "—"}
+          {g.playerSample > 0 && <span className="text-[#484f58]"> ({g.playerSample.toLocaleString()})</span>}
         </dd>
+        <dt className="text-[#484f58]" title="how much the player score is trusted, from sample size">
+          confidence
+        </dt>
+        <dd className="text-[#8b949e]">{Math.round(g.confidence * 100)}%</dd>
         <dt className="text-[#484f58]">composite</dt>
         <dd className="font-semibold text-[#e6edf3]">{g.composite}</dd>
       </dl>
@@ -217,35 +209,38 @@ export default function Home() {
       </header>
 
       <p className="mb-4 max-w-3xl font-mono text-xs leading-relaxed text-[#8b949e]">
-        The best PC &amp; PlayStation games, 2015→today — {GAMES.length} titles merged from two curated rankings and
-        blended with real Steam player sentiment. Slide the <span className="text-[#e6edf3]">critics ↔ players</span>{" "}
-        weighting to re-rank live; filter by year, platform and mode; click any row for the breakdown.
+        The best PC &amp; PlayStation games, 2015→today — {GAMES.length} titles discovered automatically from RAWG,
+        scored with Metacritic (critics) and real Steam player sentiment. Defaults{" "}
+        <span className="text-[#3fb950]">player-leaning</span> on purpose. Slide the{" "}
+        <span className="text-[#e6edf3]">critics ↔ players</span> weighting to re-rank live; filter by year, platform and
+        mode; click any row for the breakdown.
       </p>
 
       {showMethod && (
         <section className="mb-5 rounded-lg border border-[#30363d] bg-[#0d1117] p-4 font-mono text-xs leading-relaxed text-[#8b949e]">
           <p className="mb-2 text-[#e6edf3]">How the score is computed</p>
           <p className="mb-2">
-            Each game has an <span className="text-[#58a6ff]">editorial</span> score (curated /100 docs — critic-anchored)
-            and, where available, real <span className="text-[#3fb950]">player</span> sentiment from Steam (% of reviews
-            positive). The composite blends them:
+            Games are pulled automatically from RAWG. Each carries a{" "}
+            <span className="text-[#58a6ff]">critics</span> score (Metacritic) and a{" "}
+            <span className="text-[#3fb950]">players</span> score — Steam % positive where the game is on Steam, otherwise
+            the RAWG community rating. The composite blends them:
           </p>
-          <p className="mb-2 pl-1 text-[#e6edf3]">composite = editorial·(1−w′) + players%·w′</p>
+          <p className="mb-2 pl-1 text-[#e6edf3]">composite = critics·(1−w′) + players·w′</p>
           <ol className="mb-2 list-decimal space-y-1 pl-5">
             <li>
               <span className="text-[#e6edf3]">w</span> is the player weight you set with the slider (0 = critics only, 1
-              = players only).
+              = players only). It <span className="text-[#3fb950]">defaults player-heavy</span> — pro scores can drift
+              from how people who actually play feel.
             </li>
             <li>
-              <span className="text-[#e6edf3]">w′</span> scales <span className="text-[#e6edf3]">w</span> by review
-              volume — a verdict from a million reviews counts fully, a thin one less, and a game with no Steam data (a
-              console exclusive) keeps its editorial score.
+              <span className="text-[#e6edf3]">w′</span> scales <span className="text-[#e6edf3]">w</span> by sample size —
+              a verdict from a million reviews counts fully, a thin one less. No critic score → players alone; no player
+              data → critics alone.
             </li>
           </ol>
           <p>
-            Why: professional scores can drift from how players actually feel — blending Steam&apos;s large-sample
-            sentiment corrects for that, and the knob lets you decide how much to trust each side. Scores are global:
-            filtering changes what&apos;s shown, never the scores.
+            Why player-leaning: large-sample player sentiment is harder to skew than a handful of professional reviews.
+            Scores are global — filtering changes what&apos;s shown, never the scores.
           </p>
         </section>
       )}
@@ -267,7 +262,7 @@ export default function Home() {
           />
           <span className={userPct > 50 ? "text-[#3fb950]" : "text-[#8b949e]"}>players</span>
           <span className="text-[#484f58]">
-            · {100 - userPct}% critics / {userPct}% players (Steam)
+            · {100 - userPct}% critics / {userPct}% players (Steam · RAWG)
           </span>
         </div>
 
@@ -475,8 +470,8 @@ export default function Home() {
       </section>
 
       <footer className="mt-8 text-center font-mono text-xs text-[#484f58]">
-        {GAMES.length} games · editorial scores blended with Steam player reviews · opinionated, for fun · not
-        affiliated with any publisher
+        {GAMES.length} games · auto-discovered from RAWG · Metacritic blended with Steam player reviews · refreshed
+        weekly · not affiliated with any publisher
       </footer>
     </main>
   );

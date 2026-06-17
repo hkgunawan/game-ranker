@@ -11,47 +11,57 @@ Fully static — no runtime API calls, deploys clean to Vercel.
 
 ## How it works
 
-The data is a curated, static dataset (`src/data/games.json`, 115 unique titles)
-parsed from two source rankings in `data-sources/`:
+The game list is built **fully automatically** from the [RAWG](https://rawg.io)
+database (`src/data/games.json`) — no hand-curation, so new releases appear on
+their own. `scripts/fetch-rawg.mjs` discovers PC + PlayStation titles released
+2015 → today in two passes:
 
-- **PC** — 93 games scored on a 7-axis /100 rubric (Parts 1, 2, 4; the cross-cut
-  Parts 3 & 5 are re-listings and are excluded).
-- **PlayStation** — 50 games scored on a 6-axis /100 rubric.
+- **critically acclaimed** — Metacritic ≥ 75
+- **popular & well-rated** — most-added titles, kept only if the community rates
+  them well with a real sample (filters out shovelware)
 
-28 titles appear on both platforms and are merged into a single entry.
+Each kept game then gets real **player sentiment** from Steam (% of reviews
+positive + count), layered on by `scripts/enrich-steam.mjs`. Titles not on Steam
+fall back to the RAWG community rating.
 
-Each game also carries real **player sentiment** from Steam (% of reviews positive
-+ review count), pulled at build time by `scripts/enrich-steam.mjs` for the ~105 of
-115 titles on Steam (console exclusives fall back to editorial-only).
+A GitHub Actions cron (`.github/workflows/refresh.yml`) re-runs this every week
+and commits the result, which triggers Vercel to redeploy — so the board stays
+current with zero manual work.
 
 ### The ranking algorithm (`src/lib/rank.ts`)
 
-The composite blends the curated **editorial** score (critic-anchored) with the
-**player** score (Steam % positive):
+Up to three signals, all normalized to /100, drive one composite:
+
+- **critics** — Metacritic aggregate
+- **players** — Steam % positive (or, with no Steam data, the RAWG community rating ×20)
 
 ```
-composite = editorial·(1 − w′) + players%·w′
+composite = critics·(1 − w′) + players·w′
 ```
 
 - **w** is the player weight, set live in the UI (0 = critics only, 1 = players only).
-- **w′** scales `w` by review-volume confidence: a verdict from a million reviews
-  counts fully, a thin one counts less, and a game with no Steam data keeps its
-  editorial score (`w′ = 0`).
+  It **defaults player-heavy** (`0.7`) — pro scores can drift from how people who
+  actually play the game feel, and large-sample player sentiment is harder to skew.
+- **w′** scales `w` by sample-size confidence: a verdict from a million reviews
+  counts fully, a thin one counts less. No critic score → players alone; no player
+  data → critics alone.
 
-Professional scores can drift from how players actually feel — blending Steam's
-large-sample sentiment corrects for that, and the slider lets you decide how much to
-trust each side. Scores are **global** — filtering changes what's shown, not the scores.
+Scores are **global** — filtering changes what's shown, not the scores.
 
 ## Develop
 
 ```bash
 npm install
-npm run dev      # http://localhost:3000
-npm run data     # regenerate src/data/games.json from data-sources/*.md
-npm run enrich   # add Steam player sentiment to src/data/games.json (run after `data`)
+RAWG_API_KEY=xxxx npm run data   # rebuild src/data/games.json from RAWG (free key: rawg.io/apidocs)
+npm run enrich                   # add Steam player sentiment (run after `data`)
+RAWG_API_KEY=xxxx npm run refresh # data + enrich in one go
+npm run dev                      # http://localhost:3000
 npm run lint
-npm test         # vitest — algorithm + filter unit tests
+npm test                         # vitest — algorithm + filter unit tests
 npm run build
 ```
+
+> The weekly refresh needs a `RAWG_API_KEY` repo secret (free, no card, 20k req/month).
+> The legacy markdown-doc parser is kept as `npm run data:docs` for reference.
 
 _Opinionated, for fun. Not affiliated with any publisher._

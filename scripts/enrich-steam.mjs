@@ -16,13 +16,22 @@ const FILE = join(ROOT, "src/data/games.json");
 const UA = { "User-Agent": "Mozilla/5.0 (game-ranker data build)" };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+// roman → arabic so "Baldur's Gate III" matches "Baldur's Gate 3" (and the
+// sequel-number guard below treats both forms the same)
+const ROMAN = { ii: "2", iii: "3", iv: "4", v: "5", vi: "6", vii: "7", viii: "8", ix: "9", x: "10" };
+
 const norm = (s) =>
   s
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "") // strip accents: ABZÛ → ABZU
     .toLowerCase()
-    .replace(/[™®©:'.,!?-]/g, " ")
-    .replace(/\b(the|a|of|and|edition|definitive|complete|intergrade|directors|director|cut|goty)\b/g, " ")
+    .replace(/[™®©:'’‘`´.,!?–—-]/g, " ")
+    .replace(/\b(the|a|of|and|edition|definitive|complete|intergrade|directors|director|cut|goty|hd|version)\b/g, " ")
     .replace(/\s+/g, " ")
-    .trim();
+    .trim()
+    .split(" ")
+    .map((t) => ROMAN[t] ?? t)
+    .join(" ");
 
 const tokens = (s) => new Set(norm(s).split(" ").filter(Boolean));
 const jaccard = (a, b) => {
@@ -43,12 +52,17 @@ async function getJson(url) {
 // base-vs-sequel match (e.g. "Spider-Man" → "Spider-Man 2"). Edition words
 // like remake/remastered usually denote the canonical Steam release of the
 // SAME game, so they are NOT penalized.
-const SEQUEL_NUM = /^(2|3|4|5|6|7|8|ii|iii|iv|v|vi|vii|viii)$/;
+// roman numerals are converted to arabic by norm(), so only guard arabic here
+const SEQUEL_NUM = /^(2|3|4|5|6|7|8|9|10)$/;
 function matchScore(query, name) {
   if (norm(query) === norm(name)) return 2; // exact normalized match wins outright
   let score = jaccard(query, name);
   const q = tokens(query);
-  for (const t of tokens(name)) if (!q.has(t) && SEQUEL_NUM.test(t)) score -= 0.6;
+  const n = tokens(name);
+  // a sequel/version numeral on one side but not the other = wrong entry
+  // ("Spider-Man" → "Spider-Man 2", or "GTA VI" → "GTA San Andreas")
+  for (const t of n) if (!q.has(t) && SEQUEL_NUM.test(t)) score -= 0.6;
+  for (const t of q) if (!n.has(t) && SEQUEL_NUM.test(t)) score -= 0.6;
   return score;
 }
 
@@ -75,9 +89,17 @@ const OVERRIDES = {
   "Overwatch 2": 2357570, // listed as "Overwatch®"
   "Uncharted 4: A Thief's End": 1659420, // Legacy of Thieves Collection
 };
+// match overrides by normalized title so curly apostrophes / accents still hit
+const OVERRIDE_BY_NORM = new Map(Object.entries(OVERRIDES).map(([k, v]) => [norm(k), v]));
+
+// Below this we don't trust the match — leave Steam null and fall back to the
+// RAWG community rating. Better no Steam data than wrong Steam data (e.g.
+// "GTA VI" grabbing San Andreas, or a console exclusive grabbing a soundalike).
+const STRONG = 0.5;
 
 async function resolve(title) {
-  if (OVERRIDES[title]) return { appid: OVERRIDES[title], name: "(verified override)", score: 2 };
+  const ov = OVERRIDE_BY_NORM.get(norm(title));
+  if (ov) return { appid: ov, name: "(verified override)", score: 2 };
   const candidates = [searchTerm(title)];
   const preColon = searchTerm(title.split(":")[0]); // fallback: drop subtitle
   if (preColon && preColon !== candidates[0]) candidates.push(preColon);
@@ -85,10 +107,10 @@ async function resolve(title) {
   for (const q of candidates) {
     const r = await searchBest(q);
     if (r && (!best || r.score > best.score)) best = r;
-    if (best && best.score >= 0.5) break; // good enough, stop
+    if (best && best.score >= STRONG) break; // good enough, stop
   }
-  if (!best) return null;
-  return best.score >= 0.34 ? best : { ...best, weak: true };
+  if (!best || best.score < STRONG) return null; // reject weak — fall back to RAWG
+  return best;
 }
 
 async function reviews(appid) {

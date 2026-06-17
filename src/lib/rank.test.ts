@@ -5,7 +5,7 @@ import {
   tierOf,
   prior,
   isProvisional,
-  reviewConfidence,
+  confidenceOf,
   MODES,
   type Game,
   type Filters,
@@ -18,13 +18,13 @@ const make = (over: Partial<Game>): Game => ({
   genre: "RPG",
   genreDetail: "JRPG",
   platforms: ["PC"],
-  pcScore: 88,
-  psScore: null,
-  metacritic: null,
-  awards: [],
+  metacritic: 88,
+  rawgRating: null,
+  rawgRatingsCount: null,
   indie: false,
   modes: ["Single-player"],
   note: "",
+  rawgSlug: "game",
   steamAppId: null,
   steamPositive: null,
   steamReviews: null,
@@ -44,9 +44,9 @@ const baseFilters: Filters = {
 describe("tierOf", () => {
   it("maps scores to tiers", () => {
     expect(tierOf(95)).toBe("S");
-    expect(tierOf(90)).toBe("A");
-    expect(tierOf(86)).toBe("A−");
-    expect(tierOf(83)).toBe("B");
+    expect(tierOf(92)).toBe("A");
+    expect(tierOf(89)).toBe("A−");
+    expect(tierOf(86)).toBe("B");
     expect(tierOf(70)).toBe("C");
   });
 });
@@ -59,48 +59,62 @@ describe("isProvisional", () => {
 });
 
 describe("prior", () => {
-  it("averages every available editorial score", () => {
-    const p = prior([make({ pcScore: 80 }), make({ pcScore: 90, psScore: 100 })]);
+  it("averages every available Metacritic score", () => {
+    const p = prior([make({ metacritic: 80 }), make({ metacritic: 90 }), make({ metacritic: 100 })]);
     expect(p).toBeCloseTo((80 + 90 + 100) / 3, 5);
   });
 });
 
-describe("reviewConfidence", () => {
-  it("is 0 without Steam data and ~1 with many reviews", () => {
-    expect(reviewConfidence(make({ steamPositive: null, steamReviews: null }))).toBe(0);
-    expect(reviewConfidence(make({ steamPositive: 90, steamReviews: 1_000_000 }))).toBe(1);
+describe("confidenceOf", () => {
+  it("is 0 with no sample and ~1 with a large sample", () => {
+    expect(confidenceOf(0)).toBe(0);
+    expect(confidenceOf(1_000_000)).toBe(1);
   });
 });
 
 describe("rank — critic/player blend", () => {
   it("sorts by composite descending", () => {
-    const out = rank([make({ title: "Low", pcScore: 80 }), make({ title: "High", pcScore: 98 })]);
+    const out = rank([make({ title: "Low", metacritic: 80 }), make({ title: "High", metacritic: 98 })]);
     expect(out[0].title).toBe("High");
     expect(out[0].composite).toBeGreaterThan(out[1].composite);
   });
 
-  it("at players=0, the composite is exactly the editorial score", () => {
-    const g = make({ pcScore: 90, steamPositive: 60, steamReviews: 100_000 });
+  it("at players=0, the composite is exactly the Metacritic score", () => {
+    const g = make({ metacritic: 90, steamPositive: 60, steamReviews: 100_000 });
     expect(rank([g], 0)[0].composite).toBe(90);
   });
 
   it("at players=1, a low player score drags a critic favourite down", () => {
-    const g = make({ pcScore: 90, steamPositive: 60, steamReviews: 100_000 });
+    const g = make({ metacritic: 90, steamPositive: 60, steamReviews: 100_000 });
     const r = rank([g], 1)[0];
-    expect(r.userScore).toBe(60);
+    expect(r.players).toBe(60);
+    expect(r.playerSource).toBe("steam");
     expect(r.composite).toBeLessThan(65); // pulled toward the 60% player score
   });
 
-  it("a game with no Steam data keeps its editorial score at any weight", () => {
-    const g = make({ pcScore: 91, steamPositive: null, steamReviews: null });
+  it("falls back to the RAWG community rating when there is no Steam data", () => {
+    const g = make({ metacritic: 80, rawgRating: 4.5, rawgRatingsCount: 5000 });
+    const r = rank([g], 1)[0];
+    expect(r.playerSource).toBe("rawg");
+    expect(r.players).toBe(90); // 4.5 × 20
+    expect(r.composite).toBeGreaterThan(80); // pulled up toward 90
+  });
+
+  it("a game with no player signal keeps its critic score at any weight", () => {
+    const g = make({ metacritic: 91, steamPositive: null, steamReviews: null, rawgRating: null });
     expect(rank([g], 1)[0].composite).toBe(91);
     expect(rank([g], 0.5)[0].composite).toBe(91);
   });
 
+  it("a game with no critic score rides on players alone", () => {
+    const g = make({ metacritic: null, steamPositive: 95, steamReviews: 200_000 });
+    expect(rank([g], 0)[0].composite).toBe(95); // critics-only weight ignored — no critic data
+  });
+
   it("more reviews give player sentiment more pull", () => {
     const games = [
-      make({ title: "Few", pcScore: 90, steamPositive: 60, steamReviews: 50 }),
-      make({ title: "Many", pcScore: 90, steamPositive: 60, steamReviews: 500_000 }),
+      make({ title: "Few", metacritic: 90, steamPositive: 60, steamReviews: 50 }),
+      make({ title: "Many", metacritic: 90, steamPositive: 60, steamReviews: 500_000 }),
     ];
     const out = rank(games, 1);
     const few = out.find((g) => g.title === "Few")!;

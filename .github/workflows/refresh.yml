@@ -1,0 +1,47 @@
+name: Refresh games
+
+# Re-discovers games from RAWG + Steam weekly so new releases appear
+# automatically. Commits the regenerated dataset, which triggers Vercel's
+# auto-deploy. Can also be run on demand from the Actions tab.
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # every Monday 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Discover games from RAWG
+        env:
+          RAWG_API_KEY: ${{ secrets.RAWG_API_KEY }}
+        run: npm run data
+
+      - name: Add Steam player sentiment
+        run: npm run enrich
+
+      - name: Sanity-check the dataset
+        run: npm test
+
+      - name: Commit if the dataset changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- src/data/games.json; then
+            echo "No changes — nothing to deploy."
+          else
+            git add src/data/games.json
+            git commit -m "chore: weekly RAWG + Steam refresh"
+            git push
+          fi
