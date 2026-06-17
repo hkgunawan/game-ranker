@@ -150,6 +150,7 @@ function platformsOf(platformList) {
 }
 
 const yearOf = (released) => (released ? parseInt(released.slice(0, 4), 10) : null);
+const TODAY = new Date().toISOString().slice(0, 10);
 const trimNote = (s) => {
   if (!s) return "";
   const firstPara = s.split(/\n+/)[0].replace(/\s+/g, " ").trim();
@@ -166,6 +167,9 @@ function consider(r) {
   if (!plats.length) return;
   const year = yearOf(r.released);
   if (!year || year < FROM_YEAR || year > TO_YEAR) return;
+  // Skip unreleased games — RAWG lists them (GTA VI, RE9, Pragmata) but they have
+  // no real player verdict yet, and any Steam % they pick up is a wrong match.
+  if (!r.released || (r.tba ?? false) || r.released > TODAY) return;
   bySlug.set(r.slug, { row: r, plats, year });
 }
 
