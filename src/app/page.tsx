@@ -279,8 +279,8 @@ export default function Home() {
       <nav aria-label="Best-of lists" className="mb-5 flex flex-wrap items-center gap-2 font-mono text-xs">
         <span className="text-[#7d8590]">best of:</span>
         {[
-          { href: "/best/2024", label: "2024" },
-          { href: "/best/2023", label: "2023" },
+          { href: `/best/${CURRENT_YEAR}`, label: `${CURRENT_YEAR}` },
+          { href: `/best/${CURRENT_YEAR - 1}`, label: `${CURRENT_YEAR - 1}` },
           { href: "/best/rpg", label: "RPGs" },
           { href: "/best/shooter-fps", label: "Shooters" },
           { href: "/best/action-adventure", label: "Action-Adventure" },

@@ -56,7 +56,10 @@ export interface Ranked extends Game {
 
 export type Tier = "S" | "A" | "A−" | "B" | "C";
 
-export const CURRENT_YEAR = 2026;
+// Derived from the calendar (the dataset is rebuilt weekly by the cron, so this
+// stays current) — a hardcoded year would silently filter out next year's
+// releases and break the /best/<year> pages once the year rolls over.
+export const CURRENT_YEAR = new Date().getFullYear();
 const PROVISIONAL_AFTER = 2025; // releases this year or later have a thin long tail
 const SAMPLE_FULL = 20_000; // player-sample size at which the verdict is fully trusted
 export const DEFAULT_USER_WEIGHT = 0.7; // player-leaning by default (critics drift)

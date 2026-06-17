@@ -16,7 +16,8 @@ export const slugify = (s: string) =>
     .replace(/^-|-$/g, "");
 
 const GENRE_BY_SLUG = new Map(genres(GAMES).map((g) => [slugify(g), g]));
-const PRESET_YEARS = [2026, 2025, 2024, 2023, 2022, 2021, 2020];
+// the seven most recent years, derived so it tracks CURRENT_YEAR automatically
+const PRESET_YEARS = Array.from({ length: 7 }, (_, i) => CURRENT_YEAR - i);
 
 export interface BestView {
   heading: string;
