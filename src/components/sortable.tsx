@@ -58,18 +58,28 @@ export function SortTh({
   const active = sortable && sort?.key === sortKey;
   return (
     <th
-      title={title ?? (sortable ? "click to sort" : undefined)}
-      onClick={sortable ? () => onSort(sortKey!) : undefined}
-      className={`${className ?? ""} ${sortable ? "cursor-pointer select-none hover:text-[#8b949e]" : ""}`}
+      scope="col"
+      aria-sort={active ? (sort?.dir === "asc" ? "ascending" : "descending") : sortable ? "none" : undefined}
+      className={`${className ?? ""} ${sortable ? "select-none" : ""}`}
     >
-      <span className="inline-flex items-center gap-1">
-        {label}
-        {sortable && (
-          <span className={active ? "text-[#58a6ff]" : "text-[#30363d]"}>
+      {sortable ? (
+        // a real <button> so the column is keyboard-operable; inherits the th's font/colour
+        <button
+          type="button"
+          title={title ?? "click to sort"}
+          onClick={() => onSort(sortKey!)}
+          className="inline-flex cursor-pointer items-center gap-1 uppercase hover:text-[#8b949e] focus:outline-none focus-visible:ring-1 focus-visible:ring-emerald-500/60"
+        >
+          {label}
+          <span className={active ? "text-[#58a6ff]" : "text-[#30363d]"} aria-hidden="true">
             {active ? (sort?.dir === "asc" ? "▲" : "▼") : "↕"}
           </span>
-        )}
-      </span>
+        </button>
+      ) : (
+        <span title={title} className="inline-flex items-center gap-1">
+          {label}
+        </span>
+      )}
     </th>
   );
 }

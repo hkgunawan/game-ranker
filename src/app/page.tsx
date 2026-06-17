@@ -50,7 +50,7 @@ const TIER_COLOR: Record<Tier, string> = {
   A: "text-[#3fb950] border-[#3fb950]/40 bg-[#3fb950]/10",
   "A−": "text-[#58a6ff] border-[#58a6ff]/40 bg-[#58a6ff]/10",
   B: "text-[#8b949e] border-[#8b949e]/40 bg-[#8b949e]/10",
-  C: "text-[#484f58] border-[#484f58]/40 bg-[#484f58]/10",
+  C: "text-[#7d8590] border-[#484f58]/40 bg-[#484f58]/10",
 };
 
 // --- URL <-> filter state (shareable, linkable views) -----------------------
@@ -105,7 +105,7 @@ function Detail({ g }: { g: Ranked }) {
   return (
     <div className="grid gap-3 px-3 py-3 text-xs sm:grid-cols-[1fr_auto]">
       <div className="space-y-2">
-        <p className="font-mono text-[11px] text-[#484f58]">
+        <p className="font-mono text-[11px] text-[#7d8590]">
           {g.genreDetail} · {g.modes.join(" / ")}
         </p>
         {g.note && <p className="leading-relaxed text-[#8b949e]">{g.note}</p>}
@@ -126,22 +126,22 @@ function Detail({ g }: { g: Ranked }) {
         </div>
       </div>
       <dl className="grid grid-cols-2 gap-x-4 gap-y-1 self-start font-mono text-[11px] sm:text-right">
-        <dt className="text-[#484f58]" title="Metacritic critic aggregate">
+        <dt className="text-[#7d8590]" title="Metacritic critic aggregate">
           critics
         </dt>
         <dd className="text-[#58a6ff]">{g.critics ?? "—"}</dd>
-        <dt className="text-[#484f58]" title={`player sentiment (${playerLabel})`}>
+        <dt className="text-[#7d8590]" title={`player sentiment (${playerLabel})`}>
           players ({playerLabel})
         </dt>
         <dd className="text-[#3fb950]">
           {g.players != null ? `${g.players}${g.playerSource === "steam" ? "%" : ""}` : "—"}
-          {g.playerSample > 0 && <span className="text-[#484f58]"> ({g.playerSample.toLocaleString()})</span>}
+          {g.playerSample > 0 && <span className="text-[#7d8590]"> ({g.playerSample.toLocaleString()})</span>}
         </dd>
-        <dt className="text-[#484f58]" title="how much the player score is trusted, from sample size">
+        <dt className="text-[#7d8590]" title="how much the player score is trusted, from sample size">
           confidence
         </dt>
         <dd className="text-[#8b949e]">{Math.round(g.confidence * 100)}%</dd>
-        <dt className="text-[#484f58]">composite</dt>
+        <dt className="text-[#7d8590]">composite</dt>
         <dd className="font-semibold text-[#e6edf3]">{g.composite}</dd>
       </dl>
     </div>
@@ -256,7 +256,7 @@ export default function Home() {
       {/* filter bar */}
       <section className="mb-5 space-y-3 rounded-lg border border-[#30363d] bg-[#0d1117] p-4">
         <div className="flex flex-wrap items-center gap-3 border-b border-[#21262d] pb-3 font-mono text-xs">
-          <span className="text-[#484f58]">weighting</span>
+          <span className="text-[#7d8590]">weighting</span>
           <span className={userPct < 50 ? "text-[#58a6ff]" : "text-[#8b949e]"}>critics</span>
           <input
             type="range"
@@ -269,14 +269,14 @@ export default function Home() {
             className="h-1 w-40 cursor-pointer accent-emerald-500"
           />
           <span className={userPct > 50 ? "text-[#3fb950]" : "text-[#8b949e]"}>players</span>
-          <span className="text-[#484f58]">
+          <span className="text-[#7d8590]">
             · {100 - userPct}% critics / {userPct}% players (Steam · RAWG)
           </span>
         </div>
 
         <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
           <div className="flex items-center gap-2 font-mono text-xs text-[#8b949e]">
-            <span className="text-[#484f58]">years</span>
+            <span className="text-[#7d8590]">years</span>
             <select
               value={filters.yearMin}
               onChange={(e) => set("yearMin", Math.min(+e.target.value, filters.yearMax))}
@@ -289,7 +289,7 @@ export default function Home() {
                 </option>
               ))}
             </select>
-            <span className="text-[#484f58]">→</span>
+            <span className="text-[#7d8590]">→</span>
             <select
               value={filters.yearMax}
               onChange={(e) => set("yearMax", Math.max(+e.target.value, filters.yearMin))}
@@ -305,7 +305,7 @@ export default function Home() {
           </div>
 
           <div className="flex items-center gap-3 font-mono text-xs">
-            <span className="text-[#484f58]">platform</span>
+            <span className="text-[#7d8590]">platform</span>
             {(["PC", "PlayStation"] as const).map((p) => (
               <label key={p} className="flex cursor-pointer items-center gap-1.5 text-[#8b949e] hover:text-[#e6edf3]">
                 <input
@@ -320,7 +320,7 @@ export default function Home() {
           </div>
 
           <div className="flex items-center gap-3 font-mono text-xs">
-            <span className="text-[#484f58]">mode</span>
+            <span className="text-[#7d8590]">mode</span>
             {MODES.map((m) => (
               <label key={m} className="flex cursor-pointer items-center gap-1.5 text-[#8b949e] hover:text-[#e6edf3]">
                 <input
@@ -337,7 +337,7 @@ export default function Home() {
 
         <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
           <div className="flex items-center gap-2 font-mono text-xs text-[#8b949e]">
-            <span className="text-[#484f58]">genre</span>
+            <span className="text-[#7d8590]">genre</span>
             <select
               value={filters.genre}
               onChange={(e) => set("genre", e.target.value)}
@@ -396,7 +396,7 @@ export default function Home() {
           </button>
         </div>
 
-        <p className="font-mono text-[11px] text-[#484f58]">
+        <p className="font-mono text-[11px] text-[#7d8590]">
           {sorted.length > DISPLAY_CAP ? (
             <>
               showing <span className="text-[#8b949e]">top {DISPLAY_CAP}</span> of {sorted.length} matching ({GAMES.length}{" "}
@@ -414,7 +414,7 @@ export default function Home() {
       <section className="overflow-x-auto rounded-lg border border-[#30363d] bg-[#0d1117]">
         <table className="w-full text-left">
           <thead>
-            <tr className="border-b border-[#21262d] font-mono text-[11px] uppercase text-[#484f58]">
+            <tr className="border-b border-[#21262d] font-mono text-[11px] uppercase text-[#7d8590]">
               <th className="py-2 pl-3 pr-2">#</th>
               <SortTh label="Game" sortKey="title" sort={sort} onSort={toggle} className="py-2 pr-3" />
               <SortTh label="Year" sortKey="year" sort={sort} onSort={toggle} className="py-2 pr-3" />
@@ -451,11 +451,11 @@ export default function Home() {
                     aria-label={`${g.title} — score ${g.composite}. Toggle details.`}
                     className="cursor-pointer border-b border-[#161b22] hover:bg-[#161b22] focus:bg-[#161b22] focus:outline-none focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-emerald-500/60"
                   >
-                    <td className="py-2 pl-3 pr-2 font-mono text-xs text-[#484f58]">{i + 1}</td>
+                    <td className="py-2 pl-3 pr-2 font-mono text-xs text-[#7d8590]">{i + 1}</td>
                     <td className="py-2 pr-3">
                       <span className="text-sm text-[#e6edf3]">{g.title}</span>
                       {g.indie && <span className="ml-1.5 text-[10px] text-[#a371f7]">◆</span>}
-                      <span className="ml-2 font-mono text-[11px] text-[#484f58]">{g.developer}</span>
+                      <span className="ml-2 font-mono text-[11px] text-[#7d8590]">{g.developer}</span>
                     </td>
                     <td className="py-2 pr-3 font-mono text-xs text-[#8b949e]">{g.year}</td>
                     <td className="py-2 pr-3">
@@ -492,7 +492,7 @@ export default function Home() {
             })}
             {sorted.length === 0 && (
               <tr>
-                <td colSpan={7} className="py-16 text-center font-mono text-sm text-[#484f58]">
+                <td colSpan={7} className="py-16 text-center font-mono text-sm text-[#7d8590]">
                   no games match these filters
                 </td>
               </tr>
@@ -501,7 +501,7 @@ export default function Home() {
         </table>
       </section>
 
-      <footer className="mt-8 text-center font-mono text-xs text-[#484f58]">
+      <footer className="mt-8 text-center font-mono text-xs text-[#7d8590]">
         {GAMES.length} games · auto-discovered from RAWG · Metacritic blended with Steam player reviews · refreshed
         weekly · not affiliated with any publisher
       </footer>
