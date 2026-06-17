@@ -196,6 +196,11 @@ export default function Home() {
 
   const years = Array.from({ length: CURRENT_YEAR - MIN_YEAR + 1 }, (_, i) => CURRENT_YEAR - i);
 
+  // Cap the leaderboard to the top 100 of the current view — keeps it a tight
+  // "best of" list and the table light, no matter how many match.
+  const DISPLAY_CAP = 100;
+  const shown = sorted.slice(0, DISPLAY_CAP);
+
   return (
     <main className="mx-auto w-full max-w-5xl px-4 py-8">
       <header className="mb-2 flex flex-wrap items-baseline justify-between gap-2">
@@ -392,7 +397,16 @@ export default function Home() {
         </div>
 
         <p className="font-mono text-[11px] text-[#484f58]">
-          showing <span className="text-[#8b949e]">{sorted.length}</span> of {GAMES.length} games
+          {sorted.length > DISPLAY_CAP ? (
+            <>
+              showing <span className="text-[#8b949e]">top {DISPLAY_CAP}</span> of {sorted.length} matching ({GAMES.length}{" "}
+              total)
+            </>
+          ) : (
+            <>
+              showing <span className="text-[#8b949e]">{sorted.length}</span> of {GAMES.length} games
+            </>
+          )}
         </p>
       </section>
 
@@ -418,7 +432,7 @@ export default function Home() {
             </tr>
           </thead>
           <tbody>
-            {sorted.map((g, i) => {
+            {shown.map((g, i) => {
               const open = expanded === g.title;
               const toggleRow = () => setExpanded(open ? null : g.title);
               return (

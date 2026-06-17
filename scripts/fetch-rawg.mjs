@@ -37,13 +37,16 @@ const DATES = `${FROM_YEAR}-01-01,${TO_YEAR}-12-31`;
 // quality gates for the popularity pass (the critic pass is gated by metacritic)
 const MIN_RATING = 3.8; // RAWG community rating, 0–5
 const MIN_RATINGS_COUNT = 300; // real sample, not a handful of votes
-const MAX_GAMES = 500; // cap detail calls / list size
+const MAX_GAMES = 800; // cap detail calls / list size (richer per-year coverage)
 
-// recent releases have thinner samples — softer gate so they aren't all filtered
-const RECENT_FROM = 2025;
-const RECENT_MIN_RATING = 3.4;
-const RECENT_MIN_RATINGS_COUNT = 40;
-const RECENT_RESERVE = 90; // slots guaranteed for recent games before the back-catalog fills up
+// RAWG's `metacritic` field is barely populated for ~2023+ (e.g. Metaphor:
+// ReFantazio, Alan Wake 2 all show null), so the acclaimed pass misses recent
+// hits entirely. Cover recent years with a popularity/rating gate instead, and
+// reserve enough slots that they aren't crowded out by the acclaimed back-catalog.
+const RECENT_FROM = 2022; // RAWG metacritic coverage thins out from ~2022 on
+const RECENT_MIN_RATING = 3.6;
+const RECENT_MIN_RATINGS_COUNT = 40; // RAWG's user base is small; great niche games (Metaphor: 71) sit low
+const RECENT_RESERVE = 320; // ~all qualifying 2022→today games
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
