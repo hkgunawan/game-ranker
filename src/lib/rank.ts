@@ -65,14 +65,25 @@ const clamp = (n: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, n
 const round1 = (n: number) => Math.round(n * 10) / 10;
 const round2 = (n: number) => Math.round(n * 100) / 100;
 
+// RAWG's 0–5 community rating and Steam's % positive live on different scales —
+// a naive ×20 systematically *underrates* non-Steam games (RAWG ratings cluster
+// ~3.5–4.7, never near 100). This maps a RAWG rating onto the Steam-% scale using
+// a linear fit over the games that carry BOTH signals (steam% ≈ 50.9 + 9.38·rating,
+// from 331 pairs), so a great PlayStation exclusive isn't penalised for not being
+// on Steam.
+export function rawgToPercent(rating: number): number {
+  return Math.min(100, Math.max(0, 50.9 + 9.38 * rating));
+}
+
 // The player-side signal: prefer Steam (huge samples, explicit % positive),
-// fall back to RAWG's community rating (0–5 → /100). null if neither exists.
+// fall back to RAWG's community rating (mapped onto the Steam scale). null if
+// neither exists.
 function playerSignal(g: Game): { score: number; source: PlayerSource; sample: number } | null {
   if (g.steamPositive != null && g.steamReviews) {
     return { score: g.steamPositive, source: "steam", sample: g.steamReviews };
   }
   if (g.rawgRating != null && g.rawgRatingsCount) {
-    return { score: g.rawgRating * 20, source: "rawg", sample: g.rawgRatingsCount };
+    return { score: rawgToPercent(g.rawgRating), source: "rawg", sample: g.rawgRatingsCount };
   }
   return null;
 }
@@ -149,6 +160,9 @@ export function rank(games: Game[], userWeight: number = DEFAULT_USER_WEIGHT): R
 export const MODES = ["Single-player", "Co-op", "PvP", "Live-service"] as const;
 export type Mode = (typeof MODES)[number];
 
+// indie filter is tri-state: include everything / only indies / hide indies
+export type IndieFilter = "all" | "only" | "exclude";
+
 export interface Filters {
   yearMin: number;
   yearMax: number;
@@ -156,7 +170,7 @@ export interface Filters {
   modes: Record<Mode, boolean>;
   genre: string; // "" = all
   search: string;
-  indieOnly: boolean;
+  indie: IndieFilter;
 }
 
 export function applyFilters(games: Game[], f: Filters): Game[] {
@@ -166,7 +180,8 @@ export function applyFilters(games: Game[], f: Filters): Game[] {
     if (!g.platforms.some((p) => f.platforms[p])) return false;
     if (!g.modes.some((m) => f.modes[m as Mode])) return false;
     if (f.genre && g.genre !== f.genre) return false;
-    if (f.indieOnly && !g.indie) return false;
+    if (f.indie === "only" && !g.indie) return false;
+    if (f.indie === "exclude" && g.indie) return false;
     if (q && !`${g.title} ${g.developer} ${g.genre} ${g.genreDetail}`.toLowerCase().includes(q)) return false;
     return true;
   });

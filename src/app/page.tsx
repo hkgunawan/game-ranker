@@ -29,7 +29,7 @@ const DEFAULT_FILTERS: Filters = {
   modes: { "Single-player": true, "Co-op": true, PvP: true, "Live-service": true },
   genre: "",
   search: "",
-  indieOnly: false,
+  indie: "all",
 };
 
 const MODE_SHORT: Record<Mode, string> = {
@@ -65,7 +65,7 @@ function filtersToQuery(f: Filters): string {
   if (modes.length !== MODES.length) p.set("mode", modes.map((m) => MODE_SHORT[m]).join(","));
   if (f.genre) p.set("genre", f.genre);
   if (f.search) p.set("q", f.search);
-  if (f.indieOnly) p.set("indie", "1");
+  if (f.indie !== "all") p.set("indie", f.indie); // "only" | "exclude"
   const s = p.toString();
   return s ? `?${s}` : "";
 }
@@ -94,7 +94,9 @@ function filtersFromQuery(search: string): Filters {
   const genre = p.get("genre");
   if (genre && ALL_GENRES.includes(genre)) f.genre = genre;
   f.search = p.get("q") ?? "";
-  f.indieOnly = p.get("indie") === "1";
+  const indie = p.get("indie");
+  if (indie === "only" || indie === "exclude") f.indie = indie;
+  else if (indie === "1") f.indie = "only"; // back-compat with old links
   return f;
 }
 
@@ -223,7 +225,8 @@ export default function Home() {
             Games are pulled automatically from RAWG. Each carries a{" "}
             <span className="text-[#58a6ff]">critics</span> score (Metacritic) and a{" "}
             <span className="text-[#3fb950]">players</span> score — Steam % positive where the game is on Steam, otherwise
-            the RAWG community rating. The composite blends them:
+            the RAWG community rating <span className="text-[#8b949e]">calibrated onto the same Steam-% scale</span> (so a
+            great console exclusive isn&apos;t underrated). The composite blends them:
           </p>
           <p className="mb-2 pl-1 text-[#e6edf3]">composite = critics·(1−w′) + players·w′</p>
           <ol className="mb-2 list-decimal space-y-1 pl-5">
@@ -347,15 +350,30 @@ export default function Home() {
             </select>
           </div>
 
-          <label className="flex cursor-pointer items-center gap-1.5 font-mono text-xs text-[#8b949e] hover:text-[#e6edf3]">
-            <input
-              type="checkbox"
-              checked={filters.indieOnly}
-              onChange={(e) => set("indieOnly", e.target.checked)}
-              className="accent-emerald-500"
-            />
-            indie only ◆
-          </label>
+          <button
+            type="button"
+            onClick={() =>
+              set("indie", filters.indie === "all" ? "only" : filters.indie === "only" ? "exclude" : "all")
+            }
+            aria-label={`Indie filter: ${
+              filters.indie === "all" ? "show all" : filters.indie === "only" ? "indies only" : "indies hidden"
+            } (click to change)`}
+            title="indie: all → only ◆ → hide ✕"
+            className="flex items-center gap-1.5 rounded border border-[#30363d] px-2 py-1 font-mono text-xs text-[#8b949e] hover:border-emerald-500/60 hover:text-[#e6edf3]"
+          >
+            <span
+              className={`inline-flex h-4 w-4 items-center justify-center rounded-sm border text-[10px] leading-none ${
+                filters.indie === "only"
+                  ? "border-[#a371f7] text-[#a371f7]"
+                  : filters.indie === "exclude"
+                    ? "border-[#f85149] text-[#f85149]"
+                    : "border-[#30363d] text-transparent"
+              }`}
+            >
+              {filters.indie === "only" ? "◆" : filters.indie === "exclude" ? "✕" : "·"}
+            </span>
+            indie {filters.indie === "all" ? "(all)" : filters.indie === "only" ? "only" : "hidden"}
+          </button>
 
           <input
             value={filters.search}

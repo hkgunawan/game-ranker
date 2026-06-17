@@ -38,7 +38,7 @@ const baseFilters: Filters = {
   modes: { "Single-player": true, "Co-op": true, PvP: true, "Live-service": true },
   genre: "",
   search: "",
-  indieOnly: false,
+  indie: "all",
 };
 
 describe("tierOf", () => {
@@ -92,12 +92,12 @@ describe("rank — critic/player blend", () => {
     expect(r.composite).toBeLessThan(65); // pulled toward the 60% player score
   });
 
-  it("falls back to the RAWG community rating when there is no Steam data", () => {
+  it("falls back to the RAWG community rating (calibrated) when there is no Steam data", () => {
     const g = make({ metacritic: 80, rawgRating: 4.5, rawgRatingsCount: 5000 });
     const r = rank([g], 1)[0];
     expect(r.playerSource).toBe("rawg");
-    expect(r.players).toBe(90); // 4.5 × 20
-    expect(r.composite).toBeGreaterThan(80); // pulled up toward 90
+    expect(r.players).toBe(93.1); // 50.9 + 9.38·4.5, calibrated onto the Steam-% scale
+    expect(r.composite).toBeGreaterThan(80); // pulled up toward ~93
   });
 
   it("a game with no player signal keeps its critic score at any weight", () => {
@@ -147,10 +147,17 @@ describe("applyFilters", () => {
     expect(out.map((g) => g.title)).toEqual(["Both 2020"]);
   });
 
-  it("filters by genre, search, and indie", () => {
+  it("filters by genre and search", () => {
     expect(applyFilters(games, { ...baseFilters, genre: "Action & Adventure" })).toHaveLength(1);
     expect(applyFilters(games, { ...baseFilters, search: "rpg 2016" })).toHaveLength(1);
-    expect(applyFilters(games, { ...baseFilters, indieOnly: true })).toHaveLength(1);
+  });
+
+  it("indie filter is tri-state: all / only / exclude", () => {
+    expect(applyFilters(games, { ...baseFilters, indie: "all" })).toHaveLength(3);
+    expect(applyFilters(games, { ...baseFilters, indie: "only" }).map((g) => g.title)).toEqual(["Both 2020"]);
+    const noIndie = applyFilters(games, { ...baseFilters, indie: "exclude" });
+    expect(noIndie).toHaveLength(2);
+    expect(noIndie.some((g) => g.indie)).toBe(false);
   });
 
   it("exposes the four canonical modes", () => {
