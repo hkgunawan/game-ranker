@@ -3,6 +3,7 @@
 import { Fragment, useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import gamesData from "@/data/games.json";
+import SiteFooter from "@/components/site-footer";
 import {
   rank,
   applyFilters,
@@ -574,10 +575,10 @@ export default function Home() {
         </table>
       </section>
 
-      <footer className="mt-8 text-center font-mono text-xs text-[#7d8590]">
+      <SiteFooter>
         {GAMES.length} games · auto-discovered from RAWG · Metacritic blended with Steam player reviews · refreshed
         weekly · not affiliated with any publisher
-      </footer>
+      </SiteFooter>
     </main>
   );
 }

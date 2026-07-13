@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { GAME_COUNT, bestStaticParams, resolveBest, topGames } from "@/lib/best";
 import { TIER_LABEL, type Tier } from "@/lib/rank";
+import SiteFooter from "@/components/site-footer";
 
 // Statically-generated, shareable "best of" pages: /best/2024, /best/rpg,
 // /best/indie, … Each is a server-rendered top-25 snapshot of the same ranking
@@ -122,12 +123,12 @@ export default async function BestPage({ params }: { params: Promise<{ slug: str
         </section>
       )}
 
-      <footer className="mt-8 text-center font-mono text-xs text-[#7d8590]">
+      <SiteFooter>
         ranked from {GAME_COUNT} games · Metacritic blended with Steam player reviews · refreshed weekly ·{" "}
         <Link href="/" className="text-[#58a6ff] hover:underline">
           explore all
         </Link>
-      </footer>
+      </SiteFooter>
     </main>
   );
 }

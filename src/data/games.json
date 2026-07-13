@@ -14808,29 +14808,6 @@
     "steamReviews": 7663
   },
   {
-    "title": "Black Myth: Wu Kong",
-    "year": 2024,
-    "developer": "Game Science",
-    "genre": "RPG",
-    "genreDetail": "Action, Adventure, RPG",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 4.26,
-    "rawgRatingsCount": 41,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Digital Deluxe Edition",
-    "rawgSlug": "black-myth-wukong",
-    "steamAppId": "2358720",
-    "steamPositive": 96.5,
-    "steamReviews": 1202914
-  },
-  {
     "title": "Reanimal",
     "year": 2026,
     "developer": "Tarsier Studios",

@@ -255,21 +255,40 @@ for (const { row, plats, year } of bySlug.values()) {
   if (++done % 25 === 0) console.log(`  ${done}/${bySlug.size}`);
 }
 
-// stable, useful default order: metacritic then rawg rating
-games.sort((a, b) => (b.metacritic ?? 0) - (a.metacritic ?? 0) || (b.rawgRating ?? 0) - (a.rawgRating ?? 0));
+// RAWG sometimes lists the same game twice under different slugs — e.g. a base
+// edition and a "Digital Deluxe Edition" SKU (Black Myth: Wukong / Wu Kong).
+// The slug-based dedupe above misses these since the slugs differ. Catch them
+// here by normalized title + year, keeping whichever listing has the larger
+// community sample (the primary listing, not the edition variant).
+const normTitle = (s) => s.toLowerCase().replace(/[^a-z0-9]/g, "");
+const byTitleYear = new Map();
+for (const g of games) {
+  const key = `${normTitle(g.title)}|${g.year}`;
+  const existing = byTitleYear.get(key);
+  if (!existing || (g.rawgRatingsCount ?? 0) > (existing.rawgRatingsCount ?? 0)) {
+    byTitleYear.set(key, g);
+  }
+}
+const deduped = [...byTitleYear.values()];
+if (deduped.length < games.length) {
+  console.log(`\ndeduped ${games.length - deduped.length} duplicate title/edition listing(s)`);
+}
 
-writeFileSync(OUT, JSON.stringify(games, null, 2) + "\n");
+// stable, useful default order: metacritic then rawg rating
+deduped.sort((a, b) => (b.metacritic ?? 0) - (a.metacritic ?? 0) || (b.rawgRating ?? 0) - (a.rawgRating ?? 0));
+
+writeFileSync(OUT, JSON.stringify(deduped, null, 2) + "\n");
 
 // --- stats ------------------------------------------------------------------
 
-const both = games.filter((g) => g.platforms.length === 2).length;
-const pcOnly = games.filter((g) => g.platforms.length === 1 && g.platforms[0] === "PC").length;
-const psOnly = games.filter((g) => g.platforms.length === 1 && g.platforms[0] === "PlayStation").length;
-const withMC = games.filter((g) => g.metacritic != null).length;
-console.log(`\ngames:        ${games.length}`);
+const both = deduped.filter((g) => g.platforms.length === 2).length;
+const pcOnly = deduped.filter((g) => g.platforms.length === 1 && g.platforms[0] === "PC").length;
+const psOnly = deduped.filter((g) => g.platforms.length === 1 && g.platforms[0] === "PlayStation").length;
+const withMC = deduped.filter((g) => g.metacritic != null).length;
+console.log(`\ngames:        ${deduped.length}`);
 console.log(`  cross-plat: ${both}`);
 console.log(`  PC only:    ${pcOnly}`);
 console.log(`  PS only:    ${psOnly}`);
 console.log(`with MC:      ${withMC}`);
-console.log(`year range:   ${Math.min(...games.map((g) => g.year))}–${Math.max(...games.map((g) => g.year))}`);
+console.log(`year range:   ${Math.min(...deduped.map((g) => g.year))}–${Math.max(...deduped.map((g) => g.year))}`);
 console.log(`\nnext: node scripts/enrich-steam.mjs  (adds Steam player sentiment)`);
