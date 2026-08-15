@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: write
+  issues: write # so a failed run can raise (and later close) an alert issue
 
 jobs:
   refresh:
@@ -44,4 +45,48 @@ jobs:
             git add src/data/games.json
             git commit -m "chore: weekly RAWG + Steam refresh"
             git push
+          fi
+
+      # A cron that fails quietly is a cron you can't trust: this one went down
+      # for three weeks (RAWG returned 522) with no signal at all. These two
+      # steps make the pipeline say so — GitHub emails on issue activity, so the
+      # open issue IS the alert. One issue is reused rather than a new one
+      # weekly, and it self-closes once a run succeeds again.
+      - name: Raise an alert issue on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TITLE: "🔴 Weekly game refresh is failing"
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          # Exact title match over the open list, not `--search`: GitHub's search
+          # index lags by seconds-to-minutes and would let duplicates through.
+          existing=$(gh issue list --state open --limit 100 --json number,title \
+            --jq ".[] | select(.title == \"$TITLE\") | .number" | head -n1)
+          body="The scheduled \`refresh.yml\` run failed, so \`src/data/games.json\` is now stale and the live site is serving the last good dataset.
+
+          Failed run: $RUN_URL
+
+          Check the log for the \`RAWG preflight failed:\` line — it names the cause (auth / quota / upstream outage) and what to do about it.
+
+          This issue closes itself automatically once a run succeeds."
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body "Still failing — $RUN_URL"
+          else
+            gh issue create --title "$TITLE" --body "$body"
+          fi
+
+      - name: Close the alert issue once healthy again
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TITLE: "🔴 Weekly game refresh is failing"
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          # Exact title match over the open list, not `--search`: GitHub's search
+          # index lags by seconds-to-minutes and would let duplicates through.
+          existing=$(gh issue list --state open --limit 100 --json number,title \
+            --jq ".[] | select(.title == \"$TITLE\") | .number" | head -n1)
+          if [ -n "$existing" ]; then
+            gh issue close "$existing" --comment "Recovered — refresh succeeded in $RUN_URL"
           fi

@@ -54,17 +54,62 @@ async function api(path, params = {}) {
   const u = new URL(`${BASE}/${path}`);
   u.searchParams.set("key", KEY);
   for (const [k, v] of Object.entries(params)) u.searchParams.set(k, String(v));
+  let last = "no response";
   for (let attempt = 0; attempt < 4; attempt++) {
-    const res = await fetch(u, { headers: { "User-Agent": "game-ranker data build" } });
+    let res;
+    try {
+      res = await fetch(u, { headers: { "User-Agent": "game-ranker data build" } });
+    } catch (err) {
+      // DNS / connection reset / TLS — retryable, and the usual shape of an
+      // upstream outage. Without this catch it escapes as an opaque crash.
+      last = `network error (${err.cause?.code ?? err.message})`;
+      await sleep(1000 * (attempt + 1));
+      continue;
+    }
     if (res.ok) return res.json();
+    last = `HTTP ${res.status}`;
     if (res.status === 429 || res.status >= 500) {
       await sleep(1000 * (attempt + 1));
       continue;
     }
     throw new Error(`RAWG ${res.status} on ${path}`);
   }
-  throw new Error(`RAWG repeatedly failed on ${path}`);
+  // Say what actually went wrong — a bare "repeatedly failed" sent us digging
+  // through logs to find out RAWG's origin was down, not that our key expired.
+  throw new Error(`RAWG unreachable on ${path} after 4 attempts (last: ${last})`);
 }
+
+// One cheap probe before the long build, so an upstream outage is diagnosed in
+// seconds with a plain-English reason instead of dying 90s in on pass R.
+async function preflight() {
+  const u = new URL(`${BASE}/games`);
+  u.searchParams.set("key", KEY);
+  u.searchParams.set("page_size", "1");
+  let status;
+  try {
+    const res = await fetch(u, { headers: { "User-Agent": "game-ranker data build" } });
+    if (res.ok) return;
+    status = `HTTP ${res.status}`;
+  } catch (err) {
+    status = `network error (${err.cause?.code ?? err.message})`;
+  }
+  console.error(`\nRAWG preflight failed: ${status}`);
+  if (status === "HTTP 401" || status === "HTTP 403") {
+    console.error("That's an auth failure — the RAWG_API_KEY secret is invalid or revoked.");
+    console.error("Fix: regenerate at https://rawg.io/apidocs and update the repo secret.");
+  } else if (status === "HTTP 429") {
+    console.error("Rate limited — the free tier's monthly quota is likely exhausted.");
+    console.error("Fix: nothing to do; next month's window reopens it.");
+  } else {
+    console.error("RAWG's own API is down (5xx/522 = their origin isn't answering).");
+    console.error("Nothing is wrong with this repo, the key, or the code — wait for RAWG.");
+    console.error("If this persists for weeks, RAWG may be gone: plan a move to IGDB.");
+  }
+  console.error("\nsrc/data/games.json is untouched; the live site keeps its last good data.\n");
+  process.exit(75); // EX_TEMPFAIL — transient upstream failure, not a code bug
+}
+
+await preflight();
 
 // Walk a paginated list endpoint, yielding result rows up to `cap`.
 async function* discover(params, cap) {
