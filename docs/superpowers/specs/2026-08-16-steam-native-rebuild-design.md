@@ -197,7 +197,9 @@ than left as dead defence.
   cross-platform framing.
 - `Game` drops `rawgSlug`, `rawgRating`, `rawgRatingsCount`. `steamAppId`
   becomes required rather than nullable.
-- Per-game links point at the Steam store page instead of RAWG.
+- Each game gains an outbound link to its Steam store page. Note this is a new
+  capability, not a replacement: `rawgSlug` is stored but never rendered as a
+  link anywhere in the current app.
 - `scripts/fetch-rawg.mjs` and the legacy `scripts/parse-games.mjs` are deleted.
 
 41 games leave the board, 5% of the total, including Bloodborne, The Last of Us
@@ -254,3 +256,12 @@ production.
 - **Steam throttling at 3x the current call volume.** The 250 ms figure is
   proven at ~1,400 calls, not ~4,500. If throttling appears, the metadata cache
   deferred above is the answer.
+- **Genre granularity degrades.** RAWG supplied fine-grained genres; Steam's
+  `appdetails` returns only coarse ones (Action, RPG, Indie, Simulation,
+  Strategy) and exposes no user tags. Elden Ring reports `Action, RPG` -- not
+  Soulslike. The Soulslike, Horror, Roguelike, Platformer & Metroidvania,
+  Shooter & FPS, Puzzle & Exploration and Stealth buckets will empty out even
+  though `canonicalGenre()` still recognises them. Accepted for this rebuild.
+  The recovery path, if the genre filter proves too blunt, is SteamSpy's per-app
+  `request=appdetails` endpoint, which does return user tags -- at the cost of
+  one extra rate-limited call per game.
