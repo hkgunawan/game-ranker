@@ -36,6 +36,10 @@ yarn-error.log*
 # vercel
 .vercel
 
+# steam metadata cache: data/steam-meta.json IS committed; its atomic-write
+# temp files (left behind only if a build dies mid-write) are not
+/data/.steam-meta.*.tmp
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
