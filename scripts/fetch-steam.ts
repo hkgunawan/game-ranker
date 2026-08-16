@@ -16,7 +16,7 @@
 // every scheduled run pays the full ~2-hour cold build and times out.
 //
 //   npm run data
-import { writeFileSync, readFileSync, existsSync, mkdirSync } from "node:fs";
+import { writeFileSync, readFileSync, existsSync, mkdirSync, renameSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import {
@@ -24,6 +24,7 @@ import {
   modesFromCategories, capWithYearFloor, totalReviews, positivePct,
   BOARD_CAP, YEAR_FLOOR, type SteamSpyRow, type SteamDetail,
 } from "../src/lib/steam-catalog";
+import { cacheState, entryAgeMs, type SteamMetaCache } from "../src/lib/steam-cache";
 import { steamSpyPage, appDetails, appReviews } from "./lib/steam-api";
 import { rank, type Game } from "../src/lib/rank";
 
@@ -44,10 +45,10 @@ const REVIEWS_SPACING_MS = 250;
 const BOARD_FLOOR = 0.8;          // refuse to write a board this much smaller than the live one
 
 // Metadata cache: bounds stage 3's weekly cost and makes the (multi-attempt)
-// first build resumable instead of all-or-nothing.
-const CACHE_MAX_AGE_MS = 180 * 24 * 60 * 60 * 1000; // re-check a cached appid after 180 days
+// first build resumable instead of all-or-nothing. The expiry rules live in
+// src/lib/steam-cache.ts, where they are unit-tested.
 // Bounds ONE thing only: re-fetching entries that ARE in the cache but have
-// aged past CACHE_MAX_AGE_MS. That keeps a steady-state weekly run doing a
+// aged past their expiry. That keeps a steady-state weekly run doing a
 // little maintenance rather than a lot.
 //
 // It deliberately does NOT bound appids absent from the cache — those are all
@@ -69,24 +70,39 @@ const round1 = (n: number) => Math.round(n * 10) / 10;
 const FAILURE_BUDGET = 0.1;
 const FAILURE_MIN_SAMPLE = 20; // don't trip the budget on a handful of early flukes
 
-interface CacheEntry {
-  fetchedAt: string; // ISO timestamp
-  detail: SteamDetail | null; // null is cached too — a delisted app stays delisted
-}
-type MetaCache = Record<string, CacheEntry>;
+// Hard failures (429, 5xx, network, unparseable body) throw and land in
+// FAILURE_BUDGET. A `null` return is the other, quieter failure mode: Steam
+// answered HTTP 200 with `{"<appid>": {"success": false}}`, which it sends for
+// delisted/region-locked apps AND for soft-throttled requests. Nulls are never
+// cached (see steam-cache.ts), so a bad run costs only time — but it must still
+// be loud, or a run where Steam says success:false to everything looks like a
+// clean run that simply found nothing. Genuine delistings above the 2,000-review
+// gate are a rounding error, so anything past 20% means Steam, not the catalogue.
+const NULL_BUDGET = 0.2;
 
-function loadCache(): MetaCache {
+// Stage 3 runs for ~2 hours. Writing the cache only at the end means a Ctrl-C,
+// crash or CI timeout banks nothing; every 100 calls bounds the loss instead.
+const SAVE_EVERY = 100;
+
+function loadCache(): SteamMetaCache {
   if (!existsSync(CACHE_PATH)) return {};
   try {
-    return JSON.parse(readFileSync(CACHE_PATH, "utf8")) as MetaCache;
+    return JSON.parse(readFileSync(CACHE_PATH, "utf8")) as SteamMetaCache;
   } catch {
     return {}; // a corrupt cache just means everything looks "absent" this run
   }
 }
 
-function saveCache(cache: MetaCache) {
-  mkdirSync(dirname(CACHE_PATH), { recursive: true });
-  writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2) + "\n");
+// Atomic: a death mid-write must not leave truncated JSON behind, because
+// loadCache() swallows a parse error and returns {} — which would silently
+// discard hours of banked lookups. Temp file in the SAME directory so the
+// rename stays within one filesystem and is therefore atomic.
+function saveCache(cache: SteamMetaCache) {
+  const dir = dirname(CACHE_PATH);
+  mkdirSync(dir, { recursive: true });
+  const tmp = join(dir, `.steam-meta.${process.pid}.tmp`);
+  writeFileSync(tmp, JSON.stringify(cache, null, 2) + "\n");
+  renameSync(tmp, CACHE_PATH);
 }
 
 // Probe both upstreams before a ~30-minute run, and name which one is down.
@@ -152,27 +168,17 @@ async function main() {
   // Two distinct populations, kept apart on purpose (see EXPIRED_REFRESH_CAP):
   //
   //   absent   no cache entry at all -> fetched, ALL of them, no cap
-  //   expired  cached but older than CACHE_MAX_AGE_MS -> oldest-first,
-  //            at most EXPIRED_REFRESH_CAP of them per run
+  //   expired  cached but past its expiry (180 days, or one week while the
+  //            game is still coming soon) -> oldest-first, at most
+  //            EXPIRED_REFRESH_CAP of them per run
   //
   // Do not re-merge these into one "needs a call" list with a single cap: that
   // starves the initial cache fill, which is the whole point of the cache.
-  // Returns null for absent (which is not a kind of "old"), age in ms otherwise.
-  const cachedAgeMs = (appid: number): number | null => {
-    const entry = cache[String(appid)];
-    if (!entry) return null;
-    const fetchedAt = Date.parse(entry.fetchedAt);
-    // An entry with an unreadable timestamp is present but untrustworthy:
-    // treat it as maximally expired, so it refreshes under the cap rather
-    // than jumping the queue as if it were absent.
-    return Number.isNaN(fetchedAt) ? Infinity : now - fetchedAt;
-  };
+  const cachedAgeMs = (appid: number): number | null => entryAgeMs(cache[String(appid)], now);
+  const stateOf = (appid: number) => cacheState(cache[String(appid)], now);
 
-  const absent = gated.filter((row) => cachedAgeMs(row.appid) === null);
-  const expired = gated.filter((row) => {
-    const age = cachedAgeMs(row.appid);
-    return age !== null && age > CACHE_MAX_AGE_MS;
-  });
+  const absent = gated.filter((row) => stateOf(row.appid) === "absent");
+  const expired = gated.filter((row) => stateOf(row.appid) === "expired");
   expired.sort((a, b) => cachedAgeMs(b.appid)! - cachedAgeMs(a.appid)!); // oldest first
   const refreshing = expired.slice(0, EXPIRED_REFRESH_CAP);
   const toFetch = new Set([...absent, ...refreshing].map((r) => r.appid));
@@ -187,6 +193,7 @@ async function main() {
   let processed = 0;   // every gated row examined (cache hits + calls + still-absent)
   let attempted = 0;   // appdetails calls actually made this run
   let detailFailures = 0;
+  let detailNulls = 0; // calls that returned success:false — never cached, only counted
 
   for (const row of gated) {
     const key = String(row.appid);
@@ -196,18 +203,33 @@ async function main() {
       await sleep(DETAIL_SPACING_MS);
       try {
         detail = await appDetails(row.appid);
-        cache[key] = { fetchedAt: new Date().toISOString(), detail };
+        // Only real details are banked. A null here is Steam's success:false,
+        // which means "delisted" OR "throttled" and cannot be told apart —
+        // caching it would mark a live game missing for 180 days, and no later
+        // run could tell the poison from a real delisting.
+        if (detail) cache[key] = { fetchedAt: new Date().toISOString(), detail };
+        else detailNulls++;
       } catch (err) {
         console.warn(`  ${row.appid} detail failed — ${(err as Error).message}`);
         detail = null;
         detailFailures++; // no cache write — retried on a future run, not banked as "checked"
       }
       attempted++;
+      if (attempted % SAVE_EVERY === 0) saveCache(cache); // resumable across a crash, not just a clean bail
       if (attempted >= FAILURE_MIN_SAMPLE && detailFailures / attempted > FAILURE_BUDGET) {
         console.error(`\nToo many appdetails failures: ${detailFailures}/${attempted} (>${FAILURE_BUDGET * 100}%).`);
         console.error("Steam's store API may be throttling or blocking this run.");
         saveCache(cache); // bank whatever this run did complete
-        console.error(`Banked ${attempted - detailFailures} successful lookups to ${CACHE_PATH}.`);
+        console.error(`Banked ${attempted - detailFailures - detailNulls} successful lookups to ${CACHE_PATH}.`);
+        console.error("\nsrc/data/games.json is untouched; the live site keeps its last good data.\n");
+        process.exit(75);
+      }
+      if (attempted >= FAILURE_MIN_SAMPLE && detailNulls / attempted > NULL_BUDGET) {
+        console.error(`\nToo many appdetails "not found" replies: ${detailNulls}/${attempted} (>${NULL_BUDGET * 100}%).`);
+        console.error("Steam appears to be answering success:false en masse — that is soft throttling,");
+        console.error("not thousands of games being delisted at once. Nothing was cached for them.");
+        saveCache(cache); // bank whatever this run did complete
+        console.error(`Banked ${attempted - detailFailures - detailNulls} successful lookups to ${CACHE_PATH}.`);
         console.error("\nsrc/data/games.json is untouched; the live site keeps its last good data.\n");
         process.exit(75);
       }
@@ -223,11 +245,19 @@ async function main() {
       kept.push({ row, detail, year: parseSteamYear(detail.releaseDate, detail.comingSoon)! });
     }
     ++processed;
-    if (processed % 250 === 0) console.log(`  detail ${processed}/${gated.length} (${kept.length} kept, ${attempted} fetched)`);
+    if (processed % 250 === 0) {
+      console.log(
+        `  detail ${processed}/${gated.length} (${kept.length} kept, ${attempted} fetched, ` +
+          `${detailNulls} not found, ${detailFailures} failed)`,
+      );
+    }
   }
 
   saveCache(cache); // stage 3's completed work is banked whether or not later stages succeed
-  console.log(`\ncatalogue gate: ${kept.length}/${gated.length} kept (${attempted} fresh calls, ${detailFailures} failed)`);
+  console.log(
+    `\ncatalogue gate: ${kept.length}/${gated.length} kept ` +
+      `(${attempted} fresh calls, ${detailNulls} not found, ${detailFailures} failed)`,
+  );
 
   // --- 5. rank and cap -----------------------------------------------------
   const provisional: Game[] = kept.map(({ row, detail, year }) => ({
