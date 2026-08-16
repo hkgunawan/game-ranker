@@ -16,21 +16,23 @@ export async function getJsonWithRetry(url: string, deps: Deps = {}): Promise<un
   const { fetcher = fetch, sleep = defaultSleep, attempts = 4, baseDelayMs = 1_000 } = deps;
   let last = "no response";
   for (let i = 0; i < attempts; i++) {
-    let res: Response;
     try {
-      res = await fetcher(url, { headers: UA });
+      const res = await fetcher(url, { headers: UA });
+      if (res.ok) return await res.json();
+      last = `HTTP ${res.status}`;
+      if (res.status !== 429 && res.status < 500) {
+        throw Object.assign(new Error(`${url} failed: ${last}`), { nonRetryable: true });
+      }
     } catch (err) {
-      // DNS / connection reset / TLS — retryable, and the usual shape of an
-      // upstream outage. Uncaught, it escapes as an opaque crash.
+      if ((err as { nonRetryable?: boolean }).nonRetryable) throw err;
+      // DNS / connection reset / TLS / a malformed body (Steam occasionally
+      // serves an HTML error page with a 200) — all retryable, and the usual
+      // shape of an upstream outage. Uncaught, any of these escapes as an
+      // opaque crash with no URL context.
       const e = err as Error & { cause?: { code?: string } };
       last = `network error (${e.cause?.code ?? e.message})`;
-      await sleep(baseDelayMs * (i + 1));
-      continue;
     }
-    if (res.ok) return res.json();
-    last = `HTTP ${res.status}`;
-    if (res.status !== 429 && res.status < 500) throw new Error(`${url} failed: ${last}`);
-    await sleep(baseDelayMs * (i + 1));
+    if (i < attempts - 1) await sleep(baseDelayMs * (i + 1));
   }
   throw new Error(`${url} unreachable after ${attempts} attempts (last: ${last})`);
 }
@@ -85,6 +87,9 @@ export async function appReviews(
   appid: number,
   deps: Deps = {}
 ): Promise<{ totalPositive: number; totalReviews: number } | null> {
+  // No cc/l here, unlike appDetails: those exist to pin release_date's format,
+  // and this endpoint returns no dates. `language=all` is the locale parameter
+  // that actually applies to reviews.
   const body = (await getJsonWithRetry(
     `https://store.steampowered.com/appreviews/${appid}?json=1&language=all&purchase_type=all&num_per_page=0`,
     deps
