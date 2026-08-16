@@ -265,3 +265,56 @@ production.
   The recovery path, if the genre filter proves too blunt, is SteamSpy's per-app
   `request=appdetails` endpoint, which does return user tags -- at the cost of
   one extra rate-limited call per game.
+
+---
+
+## Amendment 1 — scoring, after the first real build (2026-08-16)
+
+The first full build exposed a wrong premise in this spec. Under "Approach" it
+claims: *"Metacritic lives inside Steam's own app data, so dropping RAWG does
+not cost the critic signal."* That was verified against ELDEN RING alone and
+generalised. Real coverage is **181 of 1000 games (18.1%)**.
+
+With 82% of the board carrying no critic score, games rank on Steam's percent-
+positive alone -- and that measures satisfaction, not ambition. Its quartiles
+sit at 93.3 / 95.0 / 96.7, a 3.4-point band across the whole board. A cosy
+five-hour game scores 99.4%; ELDEN RING scores 93.1%. The resulting board put
+The WereCleaner at #1, Aseprite (a pixel-art tool) at #4, ELDEN RING at #644
+and Red Dead Redemption 2 at #784, with S tier covering 55% of entries against
+an 8% design target.
+
+Two changes, agreed with the user:
+
+**1. Reach joins the player signal.** How many people played a game is
+evidence about it, not merely a confidence weight on the percentage. Define
+
+```
+reach(v) = 100 * clamp((log10(v) - log10(MIN_REVIEWS)) / (log10(REACH_FULL) - log10(MIN_REVIEWS)), 0, 1)
+REACH_FULL = 2_000_000
+```
+
+and fold it into the player side only, at `REACH_WEIGHT = 0.3`:
+
+```
+playerScore = 0.7 * steamPositive + 0.3 * reach(steamReviews)
+```
+
+The critic/player blend, the confidence shrinkage and the user-facing
+critics-to-players slider are all unchanged. Folding reach into the player side
+rather than the composite keeps "critics only" (w = 0) meaning exactly that.
+
+**2. Software is not a game.** Steam sells tools under `type: "game"` --
+Blender, Wallpaper Engine, ShareX, Aseprite all cleared the gate. Reject any
+title carrying a software genre (Utilities, Audio Production, Video Production,
+Web Publishing, Photo Editing, Design & Illustration, Animation & Modeling,
+Software Training, Education, Game Development), regardless of what other
+genres accompany it -- Wallpaper Engine also lists Casual and Indie.
+
+`tierOf()`'s cutoffs are recalibrated against the resulting distribution so S
+returns to roughly the top 8%.
+
+**Deferred, not solved.** This restores a sane ordering but does not restore
+critic coverage, and the site's central feature is a critics-to-players slider
+that is meaningless for 82% of the board. The real fix is a second critic
+source -- IGDB's `aggregated_rating` covers far more titles than Steam's
+`metacritic` field. That is a separate piece of work.
