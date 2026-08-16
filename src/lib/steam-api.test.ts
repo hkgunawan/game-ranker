@@ -49,6 +49,16 @@ describe("getJsonWithRetry", () => {
       .rejects.toThrow(/after 3 attempts[\s\S]*503/);
     expect(fetcher).toHaveBeenCalledTimes(3);
   });
+
+  // Steam occasionally serves an HTML error page with a 200 status. A bare
+  // JSON.parse throw here would escape uncaught with no URL context and never
+  // get retried — treat it like any other transport failure.
+  it("retries a 200 response with an unparsable body, and the final error names the url", async () => {
+    const fetcher = vi.fn().mockImplementation(async () => new Response("<html>not json</html>", { status: 200 }));
+    await expect(getJsonWithRetry("https://x", { fetcher, sleep: noSleep, attempts: 2 }))
+      .rejects.toThrow(/https:\/\/x[\s\S]*after 2 attempts/);
+    expect(fetcher).toHaveBeenCalledTimes(2);
+  });
 });
 
 describe("steamSpyPage", () => {
