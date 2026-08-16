@@ -1,8 +1,8 @@
 name: Refresh games
 
-# Re-discovers games from RAWG + Steam weekly so new releases appear
-# automatically. Commits the regenerated dataset, which triggers Vercel's
-# auto-deploy. Can also be run on demand from the Actions tab.
+# Rebuilds the board from Steam weekly so new releases appear automatically.
+# Commits the regenerated dataset, which triggers Vercel's auto-deploy. Can
+# also be run on demand from the Actions tab.
 
 on:
   schedule:
@@ -16,6 +16,7 @@ permissions:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -24,36 +25,49 @@ jobs:
           cache: npm
       - run: npm ci
 
-      - name: Discover games from RAWG
-        env:
-          RAWG_API_KEY: ${{ secrets.RAWG_API_KEY }}
+      # Exits 75 (EX_TEMPFAIL) for transient upstream trouble — preflight
+      # failure, rate-limit budget trip, or a board too small to trust — and
+      # leaves the live dataset untouched in all three cases. Exit 1 means a
+      # real code fault. Both are failures here, and both must alert: a run
+      # that silently does nothing is exactly what this workflow guards against.
+      - name: Rebuild the board from Steam
         run: npm run data
 
-      - name: Add Steam player sentiment
-        run: npm run enrich
+      - name: Promote the candidate
+        run: mv src/data/games.candidate.json src/data/games.json
 
       - name: Sanity-check the dataset
         run: npm test
 
-      - name: Commit if the dataset changed
+      # Both paths must be committed. data/steam-meta.json is the Steam metadata
+      # cache that turns a ~2.5-hour cold build into a few minutes of weekly
+      # maintenance; Actions checks out fresh every run, so leaving it behind
+      # would re-pay hours of API calls (and get rate-limited) every Monday.
+      # The cache legitimately advances on runs where the board does not, hence
+      # the staged-diff check across both files rather than games.json alone.
+      - name: Commit if the board or the metadata cache changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet -- src/data/games.json; then
+          git add src/data/games.json data/steam-meta.json
+          if git diff --cached --quiet; then
             echo "No changes — nothing to deploy."
           else
-            git add src/data/games.json
-            git commit -m "chore: weekly RAWG + Steam refresh"
+            git commit -m "chore: weekly Steam refresh"
             git push
           fi
 
       # A cron that fails quietly is a cron you can't trust: this one went down
-      # for three weeks (RAWG returned 522) with no signal at all. These two
-      # steps make the pipeline say so — GitHub emails on issue activity, so the
-      # open issue IS the alert. One issue is reused rather than a new one
-      # weekly, and it self-closes once a run succeeds again.
+      # for three weeks (the old upstream returned 522) with no signal at all.
+      # These two steps make the pipeline say so — GitHub emails on issue
+      # activity, so the open issue IS the alert. One issue is reused rather
+      # than a new one weekly, and it self-closes once a run succeeds again.
+      #
+      # `cancelled()` is not optional: a job that blows through timeout-minutes
+      # is cancelled, NOT failed, so `failure()` alone would skip this step and
+      # recreate the silent outage above.
       - name: Raise an alert issue on failure
-        if: failure()
+        if: failure() || cancelled()
         env:
           GH_TOKEN: ${{ github.token }}
           TITLE: "🔴 Weekly game refresh is failing"
@@ -67,7 +81,7 @@ jobs:
 
           Failed run: $RUN_URL
 
-          Check the log for the \`RAWG preflight failed:\` line — it names the cause (auth / quota / upstream outage) and what to do about it.
+          Check the log for the \`SteamSpy preflight failed:\` or \`Steam preflight failed:\` line — it names which upstream is down.
 
           This issue closes itself automatically once a run succeeds."
           if [ -n "$existing" ]; then
