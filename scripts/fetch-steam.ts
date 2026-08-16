@@ -11,7 +11,9 @@
 // separate, reviewed step. A metadata cache at data/steam-meta.json (repo
 // root, not src/data — kept out of the Next.js client bundle) lets stage 3
 // skip appids it already has fresh data for, so a throttled run banks its
-// completed work instead of starting over.
+// completed work instead of starting over. That file IS committed to git:
+// GitHub Actions checks out fresh every run, so an uncommitted cache means
+// every scheduled run pays the full ~2-hour cold build and times out.
 //
 //   npm run data
 import { writeFileSync, readFileSync, existsSync, mkdirSync } from "node:fs";
@@ -44,7 +46,17 @@ const BOARD_FLOOR = 0.8;          // refuse to write a board this much smaller t
 // Metadata cache: bounds stage 3's weekly cost and makes the (multi-attempt)
 // first build resumable instead of all-or-nothing.
 const CACHE_MAX_AGE_MS = 180 * 24 * 60 * 60 * 1000; // re-check a cached appid after 180 days
-const CACHE_REFRESH_CAP = 300; // at most this many appdetails calls per run
+// Bounds ONE thing only: re-fetching entries that ARE in the cache but have
+// aged past CACHE_MAX_AGE_MS. That keeps a steady-state weekly run doing a
+// little maintenance rather than a lot.
+//
+// It deliberately does NOT bound appids absent from the cache — those are all
+// fetched, every run, uncapped. Applying this cap to absent appids too (an easy
+// mistake, since both populations "need a call") would make the first build
+// fetch 300 of ~3,900 and need ~13 consecutive runs to warm up. The long first
+// run is the intended trade; FAILURE_BUDGET below is what bounds a run that is
+// actually going wrong.
+const EXPIRED_REFRESH_CAP = 300;
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 const CURRENT_YEAR = new Date().getFullYear();
@@ -137,20 +149,39 @@ async function main() {
   const cache = loadCache();
   const now = Date.now();
 
-  // Absent (never cached) sorts as infinitely old, so it's prioritised over
-  // any merely-stale entry — the first several runs are entirely about
-  // filling in appids we've never seen, not refreshing old ones.
-  const ageMs = (appid: number): number => {
+  // Two distinct populations, kept apart on purpose (see EXPIRED_REFRESH_CAP):
+  //
+  //   absent   no cache entry at all -> fetched, ALL of them, no cap
+  //   expired  cached but older than CACHE_MAX_AGE_MS -> oldest-first,
+  //            at most EXPIRED_REFRESH_CAP of them per run
+  //
+  // Do not re-merge these into one "needs a call" list with a single cap: that
+  // starves the initial cache fill, which is the whole point of the cache.
+  // Returns null for absent (which is not a kind of "old"), age in ms otherwise.
+  const cachedAgeMs = (appid: number): number | null => {
     const entry = cache[String(appid)];
-    if (!entry) return Infinity;
+    if (!entry) return null;
     const fetchedAt = Date.parse(entry.fetchedAt);
+    // An entry with an unreadable timestamp is present but untrustworthy:
+    // treat it as maximally expired, so it refreshes under the cap rather
+    // than jumping the queue as if it were absent.
     return Number.isNaN(fetchedAt) ? Infinity : now - fetchedAt;
   };
 
-  const stale = gated.filter((row) => ageMs(row.appid) > CACHE_MAX_AGE_MS);
-  stale.sort((a, b) => ageMs(b.appid) - ageMs(a.appid)); // oldest (or absent) first
-  const toFetch = new Set(stale.slice(0, CACHE_REFRESH_CAP).map((r) => r.appid));
-  console.log(`\ndetail cache: ${gated.length - stale.length} fresh, ${stale.length} need a call, ${toFetch.size} will be fetched this run`);
+  const absent = gated.filter((row) => cachedAgeMs(row.appid) === null);
+  const expired = gated.filter((row) => {
+    const age = cachedAgeMs(row.appid);
+    return age !== null && age > CACHE_MAX_AGE_MS;
+  });
+  expired.sort((a, b) => cachedAgeMs(b.appid)! - cachedAgeMs(a.appid)!); // oldest first
+  const refreshing = expired.slice(0, EXPIRED_REFRESH_CAP);
+  const toFetch = new Set([...absent, ...refreshing].map((r) => r.appid));
+  const fresh = gated.length - absent.length - expired.length;
+  console.log(
+    `\ndetail cache: ${fresh} fresh, ${absent.length} absent (all fetched), ` +
+      `${expired.length} expired (${refreshing.length} refreshed this run) ` +
+      `-> ${toFetch.size} appdetails calls`,
+  );
 
   const kept: { row: SteamSpyRow; detail: SteamDetail; year: number }[] = [];
   let processed = 0;   // every gated row examined (cache hits + calls + still-absent)
@@ -181,8 +212,10 @@ async function main() {
         process.exit(75);
       }
     } else {
-      // A fresh cache hit, or an appid still absent because the refresh cap
-      // was reached this run — either way, no network call this iteration.
+      // A fresh cache hit, or an expired entry past this run's refresh cap
+      // (which still has usable, merely old, data) — either way, no network
+      // call this iteration. Absent appids never land here: they are all in
+      // `toFetch`.
       detail = cache[key]?.detail ?? null;
     }
 
