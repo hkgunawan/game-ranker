@@ -59,9 +59,16 @@ describe("isProvisional", () => {
 });
 
 describe("prior", () => {
-  it("averages every available Metacritic score", () => {
-    const p = prior([make({ metacritic: 80 }), make({ metacritic: 90 }), make({ metacritic: 100 })]);
-    expect(p).toBeCloseTo((80 + 90 + 100) / 3, 5);
+  it("averages the player signal across the board", () => {
+    const p = prior([
+      make({ steamPositive: 70, steamReviews: 10_000 }),
+      make({ steamPositive: 90, steamReviews: 10_000 }),
+    ]);
+    expect(p).toBeCloseTo(80, 5);
+  });
+
+  it("falls back to 80 when no game carries a player signal", () => {
+    expect(prior([make({ steamPositive: null, steamReviews: null })])).toBe(80);
   });
 });
 
@@ -106,9 +113,29 @@ describe("rank — critic/player blend", () => {
     expect(rank([g], 0.5)[0].composite).toBe(91);
   });
 
-  it("a game with no critic score rides on players alone", () => {
-    const g = make({ metacritic: null, steamPositive: 95, steamReviews: 200_000 });
-    expect(rank([g], 0)[0].composite).toBe(95); // critics-only weight ignored — no critic data
+  // Steam-era games mostly have no Metacritic score. Publishing their raw
+  // review percentage let a 200-review game outrank The Witcher 3.
+  it("pulls a thin players-only score toward the board prior", () => {
+    const board: Game[] = [
+      ...Array.from({ length: 9 }, (_, i) =>
+        make({ title: `Solid ${i}`, metacritic: 85, steamPositive: 80, steamReviews: 200_000 })
+      ),
+      make({ title: "Thin", metacritic: null, steamPositive: 98, steamReviews: 200 }),
+    ];
+    const thin = rank(board).find((g) => g.title === "Thin")!;
+    // prior = 81.8; confidence(200) ≈ 0.535 → 98·0.535 + 81.8·0.465 ≈ 90.5
+    expect(thin.composite).toBeGreaterThan(88);
+    expect(thin.composite).toBeLessThan(93);
+  });
+
+  it("leaves a players-only score alone once the sample is large", () => {
+    const board: Game[] = [
+      ...Array.from({ length: 9 }, (_, i) =>
+        make({ title: `Solid ${i}`, metacritic: 85, steamPositive: 80, steamReviews: 200_000 })
+      ),
+      make({ title: "Thick", metacritic: null, steamPositive: 98, steamReviews: 200_000 }),
+    ];
+    expect(rank(board).find((g) => g.title === "Thick")!.composite).toBe(98);
   });
 
   it("more reviews give player sentiment more pull", () => {
