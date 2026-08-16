@@ -28,6 +28,26 @@ describe("getJsonWithRetry", () => {
     await expect(getJsonWithRetry("https://x", { fetcher, sleep: noSleep })).resolves.toEqual({ ok: true });
   });
 
+  // A 429 means the rate window is blown for seconds-to-minutes, not the
+  // usual transient blip — it must wait far longer than a 5xx before retrying,
+  // or all four attempts burn inside the same throttle period. Sleep is
+  // injected and mocked instantly; only the requested delay is asserted.
+  it("waits longer after a 429 than after a 503", async () => {
+    const rateLimitSleep = vi.fn().mockResolvedValue(undefined);
+    const fetcher429 = vi.fn().mockResolvedValueOnce(status(429)).mockResolvedValueOnce(ok({ ok: true }));
+    await getJsonWithRetry("https://x", { fetcher: fetcher429, sleep: rateLimitSleep });
+
+    const serverErrorSleep = vi.fn().mockResolvedValue(undefined);
+    const fetcher503 = vi.fn().mockResolvedValueOnce(status(503)).mockResolvedValueOnce(ok({ ok: true }));
+    await getJsonWithRetry("https://x", { fetcher: fetcher503, sleep: serverErrorSleep });
+
+    expect(rateLimitSleep).toHaveBeenCalledTimes(1);
+    expect(serverErrorSleep).toHaveBeenCalledTimes(1);
+    const rateLimitDelay = rateLimitSleep.mock.calls[0][0] as number;
+    const serverErrorDelay = serverErrorSleep.mock.calls[0][0] as number;
+    expect(rateLimitDelay).toBeGreaterThan(serverErrorDelay);
+  });
+
   // A DNS failure or connection reset throws rather than returning a response.
   // Uncaught, it escapes as an opaque crash — the exact shape of the RAWG outage.
   it("retries a network-level throw", async () => {
