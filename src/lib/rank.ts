@@ -91,10 +91,13 @@ function playerSignal(g: Game): { score: number; source: PlayerSource; sample: n
   return null;
 }
 
+// The board's centre of gravity on the player scale, used to shrink
+// thin-sample scores. Player-scale rather than Metacritic-scale so both sides
+// of the blend are measured in the same units.
 export function prior(games: Game[]): number {
-  const crit = games.map((g) => g.metacritic).filter((s): s is number => s != null);
-  if (!crit.length) return 80;
-  return crit.reduce((a, b) => a + b, 0) / crit.length;
+  const scores = games.map(playerSignal).filter((s) => s != null).map((s) => s!.score);
+  if (!scores.length) return 80;
+  return scores.reduce((a, b) => a + b, 0) / scores.length;
 }
 
 export function isProvisional(g: Game): boolean {
@@ -120,6 +123,7 @@ export function tierOf(score: number): Tier {
 // userWeight: 0 = critics only, 1 = players only.
 export function rank(games: Game[], userWeight: number = DEFAULT_USER_WEIGHT): Ranked[] {
   const w = clamp(userWeight, 0, 1);
+  const boardPrior = prior(games);
   return games
     .map((g) => {
       const crit = g.metacritic;
@@ -132,7 +136,11 @@ export function rank(games: Game[], userWeight: number = DEFAULT_USER_WEIGHT): R
         composite = 0; // no signal at all — should be filtered out upstream
         effW = 0;
       } else if (crit == null) {
-        composite = ps!.score; // players-only
+        // No critic score — the Steam era's normal case. Trust the player
+        // score in proportion to its sample, and pull the rest toward the
+        // board average. Publishing the raw percentage let a 200-review game
+        // outscore a decade of classics.
+        composite = ps!.score * conf + boardPrior * (1 - conf);
         effW = 1;
       } else if (ps == null) {
         composite = crit; // critics-only
