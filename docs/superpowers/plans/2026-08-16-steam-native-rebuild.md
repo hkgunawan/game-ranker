@@ -21,6 +21,21 @@
 - **Every Steam request sends** `cc=us&l=english` so `release_date.date` is consistently `"Mon DD, YYYY"`, and a `User-Agent` header.
 - **The pipeline never overwrites good data.** On upstream failure exit 75 (`EX_TEMPFAIL`) leaving `src/data/games.json` untouched.
 
+## Defects in this plan, found during execution
+
+The code blocks below are the plan as written, not as shipped. Three of them were
+wrong and were corrected during implementation. **Read the commit, not the plan
+text, for these three.** They are left in place so the record of what was
+specified — and what review caught — stays honest.
+
+| Where | Defect | Fixed in |
+|---|---|---|
+| Task 3, the retry-budget test (~line 599) | `/after 3 attempts.*503/s` — the dotAll flag needs ES2018, this project targets ES2017, so `tsc --noEmit` failed while Vitest passed. Replaced with `[\s\S]*`. | `83fc9a7` |
+| Task 3, `appReviews` | The URL omits `cc=us&l=english` while the task's own constraint demanded them on every Steam request. Ruled: the constraint is scoped to `appdetails`, where it pins `release_date`'s format; `appreviews` returns no dates and already sends `language=all`. | `1ae14ce` |
+| Task 4, `preflight()` (~line 877) | Fetches SteamSpy page 0 and discards it, then stage 1 immediately refetches page 0 — two requests against a 1-per-minute endpoint, seconds apart, with a retry backoff too short to escape the window. `preflight()` now returns the rows and stage 1 starts at page 1. | `b93a1e8` |
+| Task 4, stage 6 (~line 969) | `steamReviews: exact?.totalReviews ?? g.steamReviews` — `??` misses zero, and the API layer coerces a missing count to 0, so a real `steamPositive` could pair with `steamReviews: 0`, which reads downstream as no player signal and scores the game 0. Both fields now share one `exact && exact.totalReviews > 0` guard. | `b93a1e8` |
+| Task 4, both long loops | No failure budget: a systematic Steam block would silently substitute SteamSpy's approximate counts for every game and write a full-size board of stale sentiment past the size floor. Now 10% with a 20-attempt minimum sample. | `b93a1e8` |
+
 ---
 
 ### Task 1: Pure catalogue logic
