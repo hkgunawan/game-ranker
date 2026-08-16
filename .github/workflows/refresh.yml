@@ -31,31 +31,66 @@ jobs:
       # real code fault. Both are failures here, and both must alert: a run
       # that silently does nothing is exactly what this workflow guards against.
       - name: Rebuild the board from Steam
+        id: build
         run: npm run data
 
       - name: Promote the candidate
         run: mv src/data/games.candidate.json src/data/games.json
 
       - name: Sanity-check the dataset
+        id: sanity
         run: npm test
 
-      # Both paths must be committed. data/steam-meta.json is the Steam metadata
-      # cache that turns a ~2.5-hour cold build into a few minutes of weekly
-      # maintenance; Actions checks out fresh every run, so leaving it behind
-      # would re-pay hours of API calls (and get rate-limited) every Monday.
-      # The cache legitimately advances on runs where the board does not, hence
-      # the staged-diff check across both files rather than games.json alone.
-      - name: Commit if the board or the metadata cache changed
+      # Runs on EVERY outcome, because the two artefacts have different rules.
+      #
+      # data/steam-meta.json is the Steam metadata cache that turns a ~2.5-hour
+      # cold build into a few minutes of weekly maintenance. Actions checks out
+      # fresh every run, so an uncommitted cache is a destroyed cache — and the
+      # script banks partial progress to it precisely so a run that trips exit
+      # 75 mid-stage-3 can be resumed. If this step only ran on success, that
+      # banked work would die with the runner and every retry would start cold,
+      # which is what makes a rate-limit trip unrecoverable rather than slow.
+      # So: the cache is staged whatever happened.
+      #
+      # src/data/games.json is different — it is what the live site serves. It
+      # is staged ONLY when the build AND the sanity check both passed, so a
+      # broken or half-built board can never reach production.
+      - name: Bank the cache, and the board if the run was clean
+        if: always()
+        env:
+          BUILD_OUTCOME: ${{ steps.build.outcome }}
+          SANITY_OUTCOME: ${{ steps.sanity.outcome }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add src/data/games.json data/steam-meta.json
+
+          # `git add` on a tracked-but-absent path stages a DELETION and exits 0.
+          # Unguarded, a run that lost the file would push a commit removing the
+          # cache and make every future run cold — silently. Only stage what is
+          # actually on disk.
+          if [ -f data/steam-meta.json ]; then
+            git add data/steam-meta.json
+          fi
+
+          if [ "$BUILD_OUTCOME" = "success" ] && [ "$SANITY_OUTCOME" = "success" ] \
+            && [ -f src/data/games.json ]; then
+            git add src/data/games.json
+          else
+            echo "Board withheld (build=$BUILD_OUTCOME sanity=$SANITY_OUTCOME) — banking cache only."
+          fi
+
           if git diff --cached --quiet; then
-            echo "No changes — nothing to deploy."
+            echo "No changes — nothing to commit."
+            exit 0
+          fi
+
+          # Keep the message honest: a cache-only commit is not a refresh.
+          if git diff --cached --quiet -- src/data/games.json; then
+            git commit -m "chore: bank Steam metadata cache"
           else
             git commit -m "chore: weekly Steam refresh"
-            git push
           fi
+          git push
 
       # A cron that fails quietly is a cron you can't trust: this one went down
       # for three weeks (the old upstream returned 522) with no signal at all.
