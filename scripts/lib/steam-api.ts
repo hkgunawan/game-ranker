@@ -12,15 +12,25 @@ export interface Deps {
 const UA = { "User-Agent": "game-ranker data build" };
 const defaultSleep = (ms: number) => new Promise<void>((r) => setTimeout(r, ms));
 
+// A 429 means the upstream's rate window is already blown for the next
+// several seconds to minutes — the normal 1s/2s/3s backoff burns all four
+// attempts inside the same throttle period and never actually waits it out.
+// 5xx and network errors are a different failure mode (a transient blip, not
+// a quota) and keep the short backoff.
+const RATE_LIMIT_BACKOFF_MS = [20_000, 40_000, 60_000];
+
 export async function getJsonWithRetry(url: string, deps: Deps = {}): Promise<unknown> {
   const { fetcher = fetch, sleep = defaultSleep, attempts = 4, baseDelayMs = 1_000 } = deps;
   let last = "no response";
   for (let i = 0; i < attempts; i++) {
+    let rateLimited = false;
     try {
       const res = await fetcher(url, { headers: UA });
       if (res.ok) return await res.json();
       last = `HTTP ${res.status}`;
-      if (res.status !== 429 && res.status < 500) {
+      if (res.status === 429) {
+        rateLimited = true;
+      } else if (res.status < 500) {
         throw Object.assign(new Error(`${url} failed: ${last}`), { nonRetryable: true });
       }
     } catch (err) {
@@ -32,7 +42,12 @@ export async function getJsonWithRetry(url: string, deps: Deps = {}): Promise<un
       const e = err as Error & { cause?: { code?: string } };
       last = `network error (${e.cause?.code ?? e.message})`;
     }
-    if (i < attempts - 1) await sleep(baseDelayMs * (i + 1));
+    if (i < attempts - 1) {
+      const delay = rateLimited
+        ? RATE_LIMIT_BACKOFF_MS[Math.min(i, RATE_LIMIT_BACKOFF_MS.length - 1)]
+        : baseDelayMs * (i + 1);
+      await sleep(delay);
+    }
   }
   throw new Error(`${url} unreachable after ${attempts} attempts (last: ${last})`);
 }
