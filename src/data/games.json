@@ -10,8 +10,8 @@
       "PlayStation"
     ],
     "metacritic": 97,
-    "rawgRating": 4.43,
-    "rawgRatingsCount": 1074,
+    "rawgRating": 4.42,
+    "rawgRatingsCount": 1075,
     "indie": false,
     "modes": [
       "Single-player",
@@ -22,7 +22,7 @@
     "rawgSlug": "baldurs-gate-3",
     "steamAppId": "1086940",
     "steamPositive": 96.8,
-    "steamReviews": 861769
+    "steamReviews": 862636
   },
   {
     "title": "Red Dead Redemption 2",
@@ -36,7 +36,7 @@
     ],
     "metacritic": 96,
     "rawgRating": 4.59,
-    "rawgRatingsCount": 5580,
+    "rawgRatingsCount": 5583,
     "indie": false,
     "modes": [
       "Single-player",
@@ -48,7 +48,7 @@
     "rawgSlug": "red-dead-redemption-2",
     "steamAppId": "1174180",
     "steamPositive": 92.5,
-    "steamReviews": 927119
+    "steamReviews": 929529
   },
   {
     "title": "Half-Life 2: Update",
@@ -70,7 +70,7 @@
     "rawgSlug": "half-life-2-update",
     "steamAppId": "220",
     "steamPositive": 97.6,
-    "steamReviews": 280873
+    "steamReviews": 281277
   },
   {
     "title": "XCOM 2: War of the Chosen",
@@ -93,7 +93,7 @@
     "rawgSlug": "xcom-2-war-of-the-chosen",
     "steamAppId": "268500",
     "steamPositive": 84.7,
-    "steamReviews": 109903
+    "steamReviews": 110002
   },
   {
     "title": "Elden Ring",
@@ -107,7 +107,7 @@
     ],
     "metacritic": 95,
     "rawgRating": 4.38,
-    "rawgRatingsCount": 1503,
+    "rawgRatingsCount": 1505,
     "indie": false,
     "modes": [
       "Single-player",
@@ -119,7 +119,7 @@
     "rawgSlug": "elden-ring",
     "steamAppId": "1245620",
     "steamPositive": 93,
-    "steamReviews": 1158551
+    "steamReviews": 1159327
   },
   {
     "title": "Divinity: Original Sin 2",
@@ -133,7 +133,7 @@
     ],
     "metacritic": 95,
     "rawgRating": 4.38,
-    "rawgRatingsCount": 1692,
+    "rawgRatingsCount": 1693,
     "indie": false,
     "modes": [
       "Single-player",
@@ -144,7 +144,7 @@
     "rawgSlug": "divinity-original-sin-2",
     "steamAppId": "435150",
     "steamPositive": 95.6,
-    "steamReviews": 206738
+    "steamReviews": 206886
   },
   {
     "title": "Persona 5 Royal",
@@ -158,7 +158,7 @@
     ],
     "metacritic": 94,
     "rawgRating": 4.75,
-    "rawgRatingsCount": 542,
+    "rawgRatingsCount": 543,
     "indie": false,
     "modes": [
       "Single-player"
@@ -167,7 +167,7 @@
     "rawgSlug": "persona-5-royal",
     "steamAppId": "1687950",
     "steamPositive": 96.3,
-    "steamReviews": 141782
+    "steamReviews": 142223
   },
   {
     "title": "God of War (2018)",
@@ -181,7 +181,7 @@
     ],
     "metacritic": 94,
     "rawgRating": 4.54,
-    "rawgRatingsCount": 5221,
+    "rawgRatingsCount": 5223,
     "indie": false,
     "modes": [
       "Single-player"
@@ -190,7 +190,7 @@
     "rawgSlug": "god-of-war-2",
     "steamAppId": "1593500",
     "steamPositive": 95.9,
-    "steamReviews": 185857
+    "steamReviews": 186178
   },
   {
     "title": "Divinity: Original Sin 2 - Definitive Edition",
@@ -214,7 +214,7 @@
     "rawgSlug": "divinity-original-sin-ii-definitive-edition",
     "steamAppId": "435150",
     "steamPositive": 95.6,
-    "steamReviews": 206738
+    "steamReviews": 206886
   },
   {
     "title": "Divinity: Original Sin - Enhanced Edition",
@@ -238,7 +238,7 @@
     "rawgSlug": "divinity-original-sin-enhanced-edition",
     "steamAppId": "373420",
     "steamPositive": 89.2,
-    "steamReviews": 33292
+    "steamReviews": 33346
   },
   {
     "title": "Uncharted 4: A Thief’s End",
@@ -251,7 +251,7 @@
     ],
     "metacritic": 93,
     "rawgRating": 4.48,
-    "rawgRatingsCount": 3773,
+    "rawgRatingsCount": 3776,
     "indie": false,
     "modes": [
       "Single-player"
@@ -260,7 +260,7 @@
     "rawgSlug": "uncharted-4-a-thiefs-end",
     "steamAppId": 1659420,
     "steamPositive": 90.6,
-    "steamReviews": 44523
+    "steamReviews": 44695
   },
   {
     "title": "The Last of Us Part II",
@@ -273,7 +273,7 @@
     ],
     "metacritic": 93,
     "rawgRating": 4.41,
-    "rawgRatingsCount": 2057,
+    "rawgRatingsCount": 2058,
     "indie": false,
     "modes": [
       "Single-player"
@@ -282,7 +282,7 @@
     "rawgSlug": "the-last-of-us-part-2",
     "steamAppId": "2531310",
     "steamPositive": 90.8,
-    "steamReviews": 57355
+    "steamReviews": 57818
   },
   {
     "title": "Hades",
@@ -296,7 +296,7 @@
     ],
     "metacritic": 93,
     "rawgRating": 4.41,
-    "rawgRatingsCount": 2124,
+    "rawgRatingsCount": 2128,
     "indie": true,
     "modes": [
       "Single-player"
@@ -305,7 +305,7 @@
     "rawgSlug": "hades-2018",
     "steamAppId": "1145360",
     "steamPositive": 98,
-    "steamReviews": 309832
+    "steamReviews": 310167
   },
   {
     "title": "Half-Life: Alyx",
@@ -318,7 +318,7 @@
     ],
     "metacritic": 93,
     "rawgRating": 4.34,
-    "rawgRatingsCount": 514,
+    "rawgRatingsCount": 515,
     "indie": false,
     "modes": [
       "Single-player"
@@ -327,7 +327,7 @@
     "rawgSlug": "half-life-alyx",
     "steamAppId": "546560",
     "steamPositive": 98.3,
-    "steamReviews": 105824
+    "steamReviews": 105925
   },
   {
     "title": "Persona 5",
@@ -349,7 +349,7 @@
     "rawgSlug": "persona-5",
     "steamAppId": "1687950",
     "steamPositive": 96.3,
-    "steamReviews": 141782
+    "steamReviews": 142223
   },
   {
     "title": "The Witcher 3: Wild Hunt – Blood and Wine",
@@ -409,7 +409,7 @@
     ],
     "metacritic": 92,
     "rawgRating": 4.64,
-    "rawgRatingsCount": 7289,
+    "rawgRatingsCount": 7290,
     "indie": false,
     "modes": [
       "Single-player"
@@ -418,7 +418,7 @@
     "rawgSlug": "the-witcher-3-wild-hunt",
     "steamAppId": "292030",
     "steamPositive": 96.4,
-    "steamReviews": 903603
+    "steamReviews": 905419
   },
   {
     "title": "Demon's Souls (2020)",
@@ -431,7 +431,7 @@
     ],
     "metacritic": 92,
     "rawgRating": 4.42,
-    "rawgRatingsCount": 231,
+    "rawgRatingsCount": 232,
     "indie": false,
     "modes": [
       "Single-player"
@@ -452,8 +452,8 @@
       "PlayStation"
     ],
     "metacritic": 92,
-    "rawgRating": 4.41,
-    "rawgRatingsCount": 2464,
+    "rawgRating": 4.4,
+    "rawgRatingsCount": 2465,
     "indie": false,
     "modes": [
       "Single-player"
@@ -485,7 +485,7 @@
     "rawgSlug": "undertale",
     "steamAppId": "391540",
     "steamPositive": 96.5,
-    "steamReviews": 344905
+    "steamReviews": 345605
   },
   {
     "title": "OKAMI HD",
@@ -508,7 +508,7 @@
     "rawgSlug": "okami-hd-da-shen-jue-jing-ban",
     "steamAppId": "587620",
     "steamPositive": 92,
-    "steamReviews": 10787
+    "steamReviews": 10798
   },
   {
     "title": "Alto's Adventure",
@@ -574,7 +574,7 @@
     "rawgSlug": "a-monsters-expedition",
     "steamAppId": "1052990",
     "steamPositive": 94.6,
-    "steamReviews": 1764
+    "steamReviews": 1767
   },
   {
     "title": "Out of the Park Baseball 17",
@@ -595,8 +595,8 @@
     "note": "Out of the Park Baseball 17 - winner of Metacritic's PC Game of the Year 2016 award and now officially licensed by MLB.com and the MLBPA - is the best baseball strategy game ever created!",
     "rawgSlug": "out-of-the-park-baseball-17",
     "steamAppId": "4045750",
-    "steamPositive": 83.5,
-    "steamReviews": 533
+    "steamPositive": 83.1,
+    "steamReviews": 545
   },
   {
     "title": "Resident Evil 2",
@@ -610,7 +610,7 @@
     ],
     "metacritic": 91,
     "rawgRating": 4.51,
-    "rawgRatingsCount": 2309,
+    "rawgRatingsCount": 2310,
     "indie": false,
     "modes": [
       "Single-player"
@@ -619,7 +619,7 @@
     "rawgSlug": "resident-evil-2-2019",
     "steamAppId": "883710",
     "steamPositive": 97,
-    "steamReviews": 225974
+    "steamReviews": 226671
   },
   {
     "title": "Ori and the Will of the Wisps",
@@ -632,7 +632,7 @@
     ],
     "metacritic": 91,
     "rawgRating": 4.41,
-    "rawgRatingsCount": 1323,
+    "rawgRatingsCount": 1324,
     "indie": false,
     "modes": [
       "Single-player"
@@ -641,7 +641,7 @@
     "rawgSlug": "ori-and-the-will-of-the-wisps",
     "steamAppId": "1057090",
     "steamPositive": 96.4,
-    "steamReviews": 151032
+    "steamReviews": 152122
   },
   {
     "title": "Celeste",
@@ -664,7 +664,7 @@
     "rawgSlug": "celeste",
     "steamAppId": "504230",
     "steamPositive": 97.4,
-    "steamReviews": 148592
+    "steamReviews": 148993
   },
   {
     "title": "Disco Elysium",
@@ -678,7 +678,7 @@
     ],
     "metacritic": 91,
     "rawgRating": 4.36,
-    "rawgRatingsCount": 1369,
+    "rawgRatingsCount": 1370,
     "indie": true,
     "modes": [
       "Single-player"
@@ -687,7 +687,7 @@
     "rawgSlug": "disco-elysium",
     "steamAppId": "632470",
     "steamPositive": 92.6,
-    "steamReviews": 132003
+    "steamReviews": 132191
   },
   {
     "title": "Shadow of the Colossus  (2018)",
@@ -731,8 +731,8 @@
     "note": "DRAGON QUEST® XI: Echoes of an Elusive Age™ follows the journey of a hunted Hero who must uncover the mystery of his fate with the aid of a charismatic cast of supporting characters. They embark on a quest taking them…",
     "rawgSlug": "dragon-quest-xi",
     "steamAppId": "1295510",
-    "steamPositive": 92.8,
-    "steamReviews": 12231
+    "steamPositive": 92.7,
+    "steamReviews": 12246
   },
   {
     "title": "NieR:Automata Game of the YoRHa Edition",
@@ -755,7 +755,7 @@
     "rawgSlug": "nier-automata-game-of-the-yorha-edition",
     "steamAppId": "524220",
     "steamPositive": 87.4,
-    "steamReviews": 154161
+    "steamReviews": 154332
   },
   {
     "title": "DRAGON QUEST XI S: Echoes of an Elusive Age - Definitive Edition",
@@ -777,8 +777,8 @@
     "note": "DEFINITIVE EDITION CONTENT",
     "rawgSlug": "dragon-quest-xi-s-echoes-of-an-elusive-age-definit",
     "steamAppId": "1295510",
-    "steamPositive": 92.8,
-    "steamReviews": 12231
+    "steamPositive": 92.7,
+    "steamReviews": 12246
   },
   {
     "title": "Metal Gear Solid V: The Phantom Pain",
@@ -801,7 +801,7 @@
     "rawgSlug": "metal-gear-solid-v-the-phantom-pain",
     "steamAppId": "287700",
     "steamPositive": 91.8,
-    "steamReviews": 108703
+    "steamReviews": 108788
   },
   {
     "title": "Overwatch",
@@ -824,7 +824,7 @@
     "rawgSlug": "overwatch",
     "steamAppId": "2357570",
     "steamPositive": 32,
-    "steamReviews": 427291
+    "steamReviews": 428088
   },
   {
     "title": "Rez Infinite",
@@ -871,7 +871,7 @@
     "rawgSlug": "death-road-to-canada",
     "steamAppId": "252610",
     "steamPositive": 92.7,
-    "steamReviews": 10552
+    "steamReviews": 10561
   },
   {
     "title": "Tumblestone",
@@ -895,7 +895,7 @@
     "rawgSlug": "tumblestone",
     "steamAppId": "269710",
     "steamPositive": 77.4,
-    "steamReviews": 1975
+    "steamReviews": 1974
   },
   {
     "title": "Cinco Paus",
@@ -963,7 +963,7 @@
     "rawgSlug": "disco-elysium-final-cut",
     "steamAppId": "632470",
     "steamPositive": 92.6,
-    "steamReviews": 132003
+    "steamReviews": 132191
   },
   {
     "title": "Sekiro: Shadows Die Twice",
@@ -977,7 +977,7 @@
     ],
     "metacritic": 90,
     "rawgRating": 4.38,
-    "rawgRatingsCount": 2150,
+    "rawgRatingsCount": 2151,
     "indie": false,
     "modes": [
       "Single-player"
@@ -986,7 +986,7 @@
     "rawgSlug": "shadows-die-twice",
     "steamAppId": "814380",
     "steamPositive": 95.2,
-    "steamReviews": 357521
+    "steamReviews": 358131
   },
   {
     "title": "The Stanley Parable: Ultra Deluxe",
@@ -1009,7 +1009,7 @@
     "rawgSlug": "the-stanley-parable-ultra-deluxe",
     "steamAppId": "1703340",
     "steamPositive": 94.1,
-    "steamReviews": 36329
+    "steamReviews": 36371
   },
   {
     "title": "Forza Horizon 4",
@@ -1057,7 +1057,7 @@
     "rawgSlug": "tetris-effect",
     "steamAppId": "1003590",
     "steamPositive": 94.5,
-    "steamReviews": 9071
+    "steamReviews": 9087
   },
   {
     "title": "Beat Saber",
@@ -1080,7 +1080,7 @@
     "rawgSlug": "beat-saber",
     "steamAppId": "620980",
     "steamPositive": 95.5,
-    "steamReviews": 76401
+    "steamReviews": 76426
   },
   {
     "title": "The Room Three",
@@ -1102,7 +1102,7 @@
     "rawgSlug": "the-room-three",
     "steamAppId": "456750",
     "steamPositive": 95.3,
-    "steamReviews": 13495
+    "steamReviews": 13508
   },
   {
     "title": "Into the Breach",
@@ -1124,7 +1124,7 @@
     "rawgSlug": "into-the-breach",
     "steamAppId": "590380",
     "steamPositive": 94.2,
-    "steamReviews": 22492
+    "steamReviews": 22511
   },
   {
     "title": "Sea of Stars",
@@ -1148,7 +1148,7 @@
     "rawgSlug": "sea-of-stars-2",
     "steamAppId": "1244090",
     "steamPositive": 88.4,
-    "steamReviews": 15689
+    "steamReviews": 15729
   },
   {
     "title": "Odin Sphere Leifthrasir",
@@ -1218,7 +1218,7 @@
     "rawgSlug": "tetris-effect-connected",
     "steamAppId": "1003590",
     "steamPositive": 94.5,
-    "steamReviews": 9071
+    "steamReviews": 9087
   },
   {
     "title": "Stephen's Sausage Roll",
@@ -1261,8 +1261,8 @@
     "note": "Microsoft Flight Simulator is the next generation of one of the most beloved simulation franchises. From light planes to wide-body jets, fly highly detailed and stunning aircraft in an incredibly realistic world. Crea…",
     "rawgSlug": "microsoft-flight-simulator",
     "steamAppId": "2537590",
-    "steamPositive": 60.6,
-    "steamReviews": 22983
+    "steamPositive": 60.8,
+    "steamReviews": 23174
   },
   {
     "title": "N++ (NPLUSPLUS)",
@@ -1312,7 +1312,7 @@
     "rawgSlug": "spelunky-2",
     "steamAppId": "418530",
     "steamPositive": 92.8,
-    "steamReviews": 22040
+    "steamReviews": 22052
   },
   {
     "title": "Diablo IV",
@@ -1337,8 +1337,8 @@
     "note": "Meet Your Maker",
     "rawgSlug": "diablo-iv",
     "steamAppId": "2344520",
-    "steamPositive": 65.2,
-    "steamReviews": 79828
+    "steamPositive": 65.3,
+    "steamReviews": 80155
   },
   {
     "title": "NBA 2K17",
@@ -1406,7 +1406,7 @@
     "rawgSlug": "cuphead-the-delicious-last-course",
     "steamAppId": "268910",
     "steamPositive": 96.1,
-    "steamReviews": 222800
+    "steamReviews": 223153
   },
   {
     "title": "Monster Hunter World: Iceborne",
@@ -1430,7 +1430,7 @@
     "rawgSlug": "monster-hunter-world-iceborne",
     "steamAppId": "582010",
     "steamPositive": 88.8,
-    "steamReviews": 519083
+    "steamReviews": 519649
   },
   {
     "title": "Dark Souls III",
@@ -1444,7 +1444,7 @@
     ],
     "metacritic": 89,
     "rawgRating": 4.4,
-    "rawgRatingsCount": 2806,
+    "rawgRatingsCount": 2807,
     "indie": false,
     "modes": [
       "Single-player",
@@ -1455,7 +1455,7 @@
     "rawgSlug": "dark-souls-iii",
     "steamAppId": "374320",
     "steamPositive": 94.3,
-    "steamReviews": 441763
+    "steamReviews": 442261
   },
   {
     "title": "Stardew Valley",
@@ -1469,7 +1469,7 @@
     ],
     "metacritic": 89,
     "rawgRating": 4.39,
-    "rawgRatingsCount": 2485,
+    "rawgRatingsCount": 2486,
     "indie": true,
     "modes": [
       "Single-player",
@@ -1479,7 +1479,7 @@
     "rawgSlug": "stardew-valley",
     "steamAppId": "413150",
     "steamPositive": 98.5,
-    "steamReviews": 1044486
+    "steamReviews": 1045875
   },
   {
     "title": "What Remains of Edith Finch",
@@ -1493,7 +1493,7 @@
     ],
     "metacritic": 89,
     "rawgRating": 4.38,
-    "rawgRatingsCount": 2046,
+    "rawgRatingsCount": 2047,
     "indie": true,
     "modes": [
       "Single-player"
@@ -1502,7 +1502,7 @@
     "rawgSlug": "what-remains-of-edith-finch",
     "steamAppId": "501300",
     "steamPositive": 95.6,
-    "steamReviews": 53277
+    "steamReviews": 53426
   },
   {
     "title": "Chained Echoes",
@@ -1524,8 +1524,8 @@
     "note": "Take up your sword, channel your magic or board your Mech. Chained Echoes is a 16-bit SNES style RPG set in a fantasy world where dragons are as common as piloted mechanical suits. Follow a group of heroes as they exp…",
     "rawgSlug": "chained-echoes",
     "steamAppId": "1229240",
-    "steamPositive": 88.6,
-    "steamReviews": 8233
+    "steamPositive": 88.5,
+    "steamReviews": 8251
   },
   {
     "title": "Lone Echo",
@@ -1561,7 +1561,7 @@
     ],
     "metacritic": 89,
     "rawgRating": 4.27,
-    "rawgRatingsCount": 3786,
+    "rawgRatingsCount": 3787,
     "indie": false,
     "modes": [
       "Single-player"
@@ -1570,7 +1570,7 @@
     "rawgSlug": "horizon-zero-dawn",
     "steamAppId": "1151640",
     "steamPositive": 88,
-    "steamReviews": 128359
+    "steamReviews": 128374
   },
   {
     "title": "Mark of the Ninja: Remastered",
@@ -1593,7 +1593,7 @@
     "rawgSlug": "mark-of-the-ninja-remastered",
     "steamAppId": "860950",
     "steamPositive": 96.1,
-    "steamReviews": 6965
+    "steamReviews": 6972
   },
   {
     "title": "Dicey Dungeons",
@@ -1615,7 +1615,7 @@
     "rawgSlug": "dicey-dungeons",
     "steamAppId": "861540",
     "steamPositive": 89.1,
-    "steamReviews": 11903
+    "steamReviews": 11912
   },
   {
     "title": "Dreams",
@@ -1637,7 +1637,7 @@
     "rawgSlug": "dreams",
     "steamAppId": "2444750",
     "steamPositive": 90,
-    "steamReviews": 21259
+    "steamReviews": 21382
   },
   {
     "title": "Mortal Kombat 11 Ultimate",
@@ -1660,7 +1660,7 @@
     "rawgSlug": "mortal-kombat-11-ultimate",
     "steamAppId": "976310",
     "steamPositive": 88.1,
-    "steamReviews": 116646
+    "steamReviews": 116760
   },
   {
     "title": "Monster Hunter: World",
@@ -1685,7 +1685,7 @@
     "rawgSlug": "monster-hunter-world-2",
     "steamAppId": "582010",
     "steamPositive": 88.8,
-    "steamReviews": 519083
+    "steamReviews": 519649
   },
   {
     "title": "Pillars of Eternity",
@@ -1708,7 +1708,7 @@
     "rawgSlug": "pillars-of-eternity",
     "steamAppId": "291650",
     "steamPositive": 88.5,
-    "steamReviews": 26184
+    "steamReviews": 26193
   },
   {
     "title": "Chicory: A Colorful Tale",
@@ -1732,7 +1732,7 @@
     "rawgSlug": "chicory-a-colorful-tale",
     "steamAppId": "1123450",
     "steamPositive": 97.4,
-    "steamReviews": 4015
+    "steamReviews": 4018
   },
   {
     "title": "Framed 2",
@@ -1826,7 +1826,7 @@
     "rawgSlug": "gravity-circuit",
     "steamAppId": "858710",
     "steamPositive": 91.3,
-    "steamReviews": 6404
+    "steamReviews": 6448
   },
   {
     "title": "Star Control: Kessari Quadrant",
@@ -1848,7 +1848,7 @@
     "rawgSlug": "star-control-kessari-quadrant",
     "steamAppId": "271260",
     "steamPositive": 74.1,
-    "steamReviews": 2696
+    "steamReviews": 2697
   },
   {
     "title": "StarСraft II: Legacy of the Void",
@@ -1893,7 +1893,7 @@
     "rawgSlug": "mass-effect-legendary-edition",
     "steamAppId": "1328670",
     "steamPositive": 91.2,
-    "steamReviews": 67796
+    "steamReviews": 67890
   },
   {
     "title": "It Takes Two",
@@ -1907,7 +1907,7 @@
     ],
     "metacritic": 88,
     "rawgRating": 4.45,
-    "rawgRatingsCount": 1765,
+    "rawgRatingsCount": 1767,
     "indie": false,
     "modes": [
       "Co-op",
@@ -1917,7 +1917,7 @@
     "rawgSlug": "it-takes-two-2",
     "steamAppId": "1426210",
     "steamPositive": 95.4,
-    "steamReviews": 271908
+    "steamReviews": 272412
   },
   {
     "title": "Ori and the Blind Forest: Definitive Edition",
@@ -1939,7 +1939,7 @@
     "rawgSlug": "ori-and-the-blind-forest-definitive-edition",
     "steamAppId": "387290",
     "steamPositive": 95,
-    "steamReviews": 72128
+    "steamReviews": 72296
   },
   {
     "title": "Hollow Knight",
@@ -1953,7 +1953,7 @@
     ],
     "metacritic": 88,
     "rawgRating": 4.4,
-    "rawgRatingsCount": 2778,
+    "rawgRatingsCount": 2781,
     "indie": true,
     "modes": [
       "Single-player"
@@ -1962,7 +1962,7 @@
     "rawgSlug": "hollow-knight",
     "steamAppId": "367520",
     "steamPositive": 96.9,
-    "steamReviews": 564876
+    "steamReviews": 565756
   },
   {
     "title": "Ratchet & Clank: Rift Apart",
@@ -1986,7 +1986,7 @@
     "rawgSlug": "ratchet-clank-rift-apart",
     "steamAppId": "1895880",
     "steamPositive": 90.7,
-    "steamReviews": 18259
+    "steamReviews": 18300
   },
   {
     "title": "Forza Horizon 3",
@@ -2021,7 +2021,7 @@
     ],
     "metacritic": 88,
     "rawgRating": 4.37,
-    "rawgRatingsCount": 1540,
+    "rawgRatingsCount": 1541,
     "indie": false,
     "modes": [
       "Single-player"
@@ -2030,7 +2030,7 @@
     "rawgSlug": "ori-and-the-blind-forest",
     "steamAppId": "387290",
     "steamPositive": 95,
-    "steamReviews": 72128
+    "steamReviews": 72296
   },
   {
     "title": "Psychonauts 2",
@@ -2052,8 +2052,8 @@
     "note": "Razputin Aquato, trained acrobat and powerful young psychic, has realized his life long dream of joining the international psychic espionage organization known as the Psychonauts! But these psychic super spies are in…",
     "rawgSlug": "psychonauts-2",
     "steamAppId": "607080",
-    "steamPositive": 95.6,
-    "steamReviews": 14564
+    "steamPositive": 95.5,
+    "steamReviews": 14592
   },
   {
     "title": "World of Warcraft: Legion",
@@ -2098,7 +2098,7 @@
     "rawgSlug": "neon-white",
     "steamAppId": "1533420",
     "steamPositive": 97.9,
-    "steamReviews": 20992
+    "steamReviews": 21043
   },
   {
     "title": "Return Of The Obra Dinn",
@@ -2112,7 +2112,7 @@
     ],
     "metacritic": 88,
     "rawgRating": 4.33,
-    "rawgRatingsCount": 764,
+    "rawgRatingsCount": 765,
     "indie": true,
     "modes": [
       "Single-player"
@@ -2121,7 +2121,7 @@
     "rawgSlug": "return-of-the-obra-dinn",
     "steamAppId": "653530",
     "steamPositive": 96.7,
-    "steamReviews": 35520
+    "steamReviews": 35610
   },
   {
     "title": "There Is No Game: Wrong Dimension",
@@ -2144,7 +2144,7 @@
     "rawgSlug": "there-is-no-game-wd",
     "steamAppId": "1240210",
     "steamPositive": 97.7,
-    "steamReviews": 26200
+    "steamReviews": 26232
   },
   {
     "title": "Tony Hawk's Pro Skater 1 + 2",
@@ -2169,7 +2169,7 @@
     "rawgSlug": "tony-hawks-pro-skater-12",
     "steamAppId": "2395210",
     "steamPositive": 90.6,
-    "steamReviews": 4681
+    "steamReviews": 4686
   },
   {
     "title": "Devil May Cry 5",
@@ -2194,7 +2194,7 @@
     "rawgSlug": "devil-may-cry-5",
     "steamAppId": "601150",
     "steamPositive": 96,
-    "steamReviews": 171643
+    "steamReviews": 171881
   },
   {
     "title": "Night in the Woods",
@@ -2217,7 +2217,7 @@
     "rawgSlug": "night-in-the-woods",
     "steamAppId": "481510",
     "steamPositive": 94.8,
-    "steamReviews": 20384
+    "steamReviews": 20418
   },
   {
     "title": "Dead Cells",
@@ -2231,7 +2231,7 @@
     ],
     "metacritic": 88,
     "rawgRating": 4.23,
-    "rawgRatingsCount": 1754,
+    "rawgRatingsCount": 1755,
     "indie": true,
     "modes": [
       "Single-player"
@@ -2240,7 +2240,7 @@
     "rawgSlug": "dead-cells",
     "steamAppId": "588650",
     "steamPositive": 97,
-    "steamReviews": 184243
+    "steamReviews": 184425
   },
   {
     "title": "West of Loathing",
@@ -2262,7 +2262,7 @@
     "rawgSlug": "west-of-loathing",
     "steamAppId": "597220",
     "steamPositive": 97.7,
-    "steamReviews": 10330
+    "steamReviews": 10340
   },
   {
     "title": "Rise of the Tomb Raider: 20 Year Celebration",
@@ -2285,7 +2285,7 @@
     "rawgSlug": "rise-of-the-tomb-raider-20-year-celebration",
     "steamAppId": "391220",
     "steamPositive": 94.2,
-    "steamReviews": 156812
+    "steamReviews": 156999
   },
   {
     "title": "Grindstone",
@@ -2332,30 +2332,7 @@
     "rawgSlug": "civilization-vi",
     "steamAppId": "289070",
     "steamPositive": 86.2,
-    "steamReviews": 380216
-  },
-  {
-    "title": "Kerbal Space Program",
-    "year": 2015,
-    "developer": "Squad",
-    "genre": "Survival & Sim",
-    "genreDetail": "Simulation, Indie",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": 88,
-    "rawgRating": 4.16,
-    "rawgRatingsCount": 412,
-    "indie": true,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "How to build a spaceship capable of delivering a human crew into space - and return this crew back? Even if we have all the necessary parts, engines, life support systems, rudders and accelerators, even if all this we…",
-    "rawgSlug": "kerbal-space-program",
-    "steamAppId": "220200",
-    "steamPositive": 95.6,
-    "steamReviews": 147840
+    "steamReviews": 380440
   },
   {
     "title": "Diablo III: Eternal Collection",
@@ -2380,6 +2357,29 @@
     "steamReviews": null
   },
   {
+    "title": "Kerbal Space Program",
+    "year": 2015,
+    "developer": "Squad",
+    "genre": "Survival & Sim",
+    "genreDetail": "Simulation, Indie",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": 88,
+    "rawgRating": 4.16,
+    "rawgRatingsCount": 412,
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "How to build a spaceship capable of delivering a human crew into space - and return this crew back? Even if we have all the necessary parts, engines, life support systems, rudders and accelerators, even if all this we…",
+    "rawgSlug": "kerbal-space-program",
+    "steamAppId": "220200",
+    "steamPositive": 95.6,
+    "steamReviews": 148003
+  },
+  {
     "title": "Final Fantasy XIV: Stormblood",
     "year": 2017,
     "developer": "Square Enix",
@@ -2400,7 +2400,7 @@
     "rawgSlug": "final-fantasy-xiv-stormblood",
     "steamAppId": "39210",
     "steamPositive": 86.5,
-    "steamReviews": 85926
+    "steamReviews": 85973
   },
   {
     "title": "Asgard's Wrath",
@@ -2446,7 +2446,7 @@
     "rawgSlug": "xcom-2",
     "steamAppId": "268500",
     "steamPositive": 84.7,
-    "steamReviews": 109903
+    "steamReviews": 110002
   },
   {
     "title": "Destiny: The Taken King",
@@ -2467,8 +2467,8 @@
     "note": "Destiny: The Taken King, now also includes Expansion I and Expansion II for Destiny owners at one great price. Includes level 25 character boost to get you immediately battle ready.",
     "rawgSlug": "destiny-the-taken-king",
     "steamAppId": "2377930",
-    "steamPositive": 80,
-    "steamReviews": 2056
+    "steamPositive": 79.8,
+    "steamReviews": 2076
   },
   {
     "title": "Alto's Odyssey",
@@ -2504,7 +2504,7 @@
     ],
     "metacritic": 88,
     "rawgRating": 4.08,
-    "rawgRatingsCount": 180,
+    "rawgRatingsCount": 181,
     "indie": false,
     "modes": [
       "Single-player"
@@ -2513,7 +2513,7 @@
     "rawgSlug": "final-fantasy-xvi",
     "steamAppId": "2515020",
     "steamPositive": 78.4,
-    "steamReviews": 34124
+    "steamReviews": 34226
   },
   {
     "title": "SteamWorld Dig 2",
@@ -2536,7 +2536,7 @@
     "rawgSlug": "steamworld-dig-2",
     "steamAppId": "571310",
     "steamPositive": 95.5,
-    "steamReviews": 9156
+    "steamReviews": 9167
   },
   {
     "title": "Rogue Legacy 2",
@@ -2558,7 +2558,7 @@
     "rawgSlug": "rogue-legacy-2",
     "steamAppId": "1253920",
     "steamPositive": 90.8,
-    "steamReviews": 15166
+    "steamReviews": 15175
   },
   {
     "title": "Her Story",
@@ -2580,7 +2580,7 @@
     "rawgSlug": "her-story",
     "steamAppId": "368370",
     "steamPositive": 89.3,
-    "steamReviews": 10435
+    "steamReviews": 10440
   },
   {
     "title": "Deathloop",
@@ -2604,7 +2604,7 @@
     "rawgSlug": "deathloop-2",
     "steamAppId": "1252330",
     "steamPositive": 76.1,
-    "steamReviews": 30529
+    "steamReviews": 30541
   },
   {
     "title": "Injustice 2",
@@ -2627,7 +2627,7 @@
     "rawgSlug": "injustice-2",
     "steamAppId": "627270",
     "steamPositive": 86.3,
-    "steamReviews": 24637
+    "steamReviews": 24667
   },
   {
     "title": "Battlefield 1",
@@ -2651,7 +2651,7 @@
     "rawgSlug": "battlefield-1",
     "steamAppId": "1238840",
     "steamPositive": 86.5,
-    "steamReviews": 229040
+    "steamReviews": 229308
   },
   {
     "title": "Owlboy",
@@ -2674,7 +2674,7 @@
     "rawgSlug": "owlboy",
     "steamAppId": "115800",
     "steamPositive": 83.5,
-    "steamReviews": 6135
+    "steamReviews": 6138
   },
   {
     "title": "The Last of Us: Left Behind Stand Alone",
@@ -2719,7 +2719,7 @@
     "rawgSlug": "nioh",
     "steamAppId": "485510",
     "steamPositive": 78.9,
-    "steamReviews": 39147
+    "steamReviews": 39183
   },
   {
     "title": "Forza Horizon 3 Hot Wheels",
@@ -2800,7 +2800,7 @@
     ],
     "metacritic": 88,
     "rawgRating": 3.25,
-    "rawgRatingsCount": 358,
+    "rawgRatingsCount": 359,
     "indie": false,
     "modes": [
       "Single-player"
@@ -2809,7 +2809,7 @@
     "rawgSlug": "starfield",
     "steamAppId": "1716740",
     "steamPositive": 56.9,
-    "steamReviews": 175726
+    "steamReviews": 175794
   },
   {
     "title": "Marvel's Spider-Man",
@@ -2822,8 +2822,8 @@
       "PlayStation"
     ],
     "metacritic": 87,
-    "rawgRating": 4.45,
-    "rawgRatingsCount": 3754,
+    "rawgRating": 4.44,
+    "rawgRatingsCount": 3755,
     "indie": false,
     "modes": [
       "Single-player"
@@ -2832,7 +2832,7 @@
     "rawgSlug": "marvels-spider-man",
     "steamAppId": 1817070,
     "steamPositive": 96,
-    "steamReviews": 145525
+    "steamReviews": 146053
   },
   {
     "title": "INSIDE",
@@ -2846,7 +2846,7 @@
     ],
     "metacritic": 87,
     "rawgRating": 4.38,
-    "rawgRatingsCount": 2599,
+    "rawgRatingsCount": 2601,
     "indie": true,
     "modes": [
       "Single-player"
@@ -2855,7 +2855,7 @@
     "rawgSlug": "inside",
     "steamAppId": "304430",
     "steamPositive": 97,
-    "steamReviews": 76270
+    "steamReviews": 76327
   },
   {
     "title": "Cuphead",
@@ -2879,7 +2879,7 @@
     "rawgSlug": "cuphead",
     "steamAppId": "268910",
     "steamPositive": 96.1,
-    "steamReviews": 222800
+    "steamReviews": 223153
   },
   {
     "title": "Final Fantasy VII",
@@ -2901,8 +2901,8 @@
     "note": "The world is under the control of Shinra, a corporation controlling the planet's life force as mako energy. In the city of Midgar, Cloud Strife, former member of Shinra's elite SOLDIER unit now turned mercenary lends…",
     "rawgSlug": "final-fantasy-vii-remake",
     "steamAppId": "3837340",
-    "steamPositive": 75.7,
-    "steamReviews": 1888
+    "steamPositive": 76.1,
+    "steamReviews": 1917
   },
   {
     "title": "RimWorld",
@@ -2923,8 +2923,8 @@
     "note": "RimWorld is a sci-fi colony sim driven by an intelligent AI storyteller. Inspired by Dwarf Fortress, Firefly, and Dune.",
     "rawgSlug": "rimworld",
     "steamAppId": "294100",
-    "steamPositive": 97.8,
-    "steamReviews": 247761
+    "steamPositive": 97.9,
+    "steamReviews": 248396
   },
   {
     "title": "Titanfall 2",
@@ -2948,7 +2948,7 @@
     "rawgSlug": "titanfall-2",
     "steamAppId": "1237970",
     "steamPositive": 95.7,
-    "steamReviews": 288192
+    "steamReviews": 288551
   },
   {
     "title": "Pistol Whip",
@@ -2971,7 +2971,7 @@
     "rawgSlug": "pistol-whip",
     "steamAppId": "1079800",
     "steamPositive": 94.1,
-    "steamReviews": 4125
+    "steamReviews": 4129
   },
   {
     "title": "Final Fantasy XII: The Zodiac Age",
@@ -2985,7 +2985,7 @@
     ],
     "metacritic": 87,
     "rawgRating": 4.23,
-    "rawgRatingsCount": 234,
+    "rawgRatingsCount": 235,
     "indie": false,
     "modes": [
       "Single-player"
@@ -2994,7 +2994,7 @@
     "rawgSlug": "final-fantasy-xii-the-zodiac-age",
     "steamAppId": "595520",
     "steamPositive": 88.7,
-    "steamReviews": 10354
+    "steamReviews": 10374
   },
   {
     "title": "Monster Hunter Rise",
@@ -3018,8 +3018,8 @@
     "note": "Set in the ninja-inspired land of Kamura Village, explore lush ecosystems and battle fearsome monsters to become the ultimate hunter. It’s been half a century since the last calamity struck, but a terrifying new monst…",
     "rawgSlug": "monster-hunter-rise",
     "steamAppId": "1446780",
-    "steamPositive": 83.5,
-    "steamReviews": 127760
+    "steamPositive": 83.6,
+    "steamReviews": 128096
   },
   {
     "title": "Dying Light: The Following - Enhanced Edition",
@@ -3043,7 +3043,7 @@
     "rawgSlug": "dying-light-the-following-enhanced-edition",
     "steamAppId": "239140",
     "steamPositive": 95.2,
-    "steamReviews": 497256
+    "steamReviews": 497693
   },
   {
     "title": "Vignettes",
@@ -3088,7 +3088,7 @@
     "rawgSlug": "the-witness",
     "steamAppId": "210970",
     "steamPositive": 84.4,
-    "steamReviews": 21578
+    "steamReviews": 21619
   },
   {
     "title": "Forza Motorsport 6",
@@ -3134,7 +3134,7 @@
     "rawgSlug": "crypt-of-the-necrodancer",
     "steamAppId": "247080",
     "steamPositive": 95.5,
-    "steamReviews": 26549
+    "steamReviews": 26551
   },
   {
     "title": "Sunless Skies",
@@ -3156,7 +3156,7 @@
     "rawgSlug": "sunless-skies",
     "steamAppId": "596970",
     "steamPositive": 84.3,
-    "steamReviews": 3481
+    "steamReviews": 3482
   },
   {
     "title": "F1 2019",
@@ -3224,7 +3224,7 @@
     "rawgSlug": "hellblade-senuas-sacrifice-vr-edition",
     "steamAppId": "747350",
     "steamPositive": 84.1,
-    "steamReviews": 1575
+    "steamReviews": 1580
   },
   {
     "title": "HEX: Shards of Fate",
@@ -3247,7 +3247,7 @@
     "rawgSlug": "hex-shards-of-fate",
     "steamAppId": "510420",
     "steamPositive": 94.1,
-    "steamReviews": 5589
+    "steamReviews": 5595
   },
   {
     "title": "Orcs Must Die! Unchained",
@@ -3273,7 +3273,7 @@
     "rawgSlug": "orcs-must-die-unchained",
     "steamAppId": "102600",
     "steamPositive": 95.8,
-    "steamReviews": 8543
+    "steamReviews": 8547
   },
   {
     "title": "The Nioh Collection",
@@ -3340,7 +3340,7 @@
     "rawgSlug": "final-fantasy-xiv-heavensward",
     "steamAppId": "39210",
     "steamPositive": 86.5,
-    "steamReviews": 85926
+    "steamReviews": 85973
   },
   {
     "title": "Shovel Knight: Plague of Shadows",
@@ -3362,7 +3362,7 @@
     "rawgSlug": "shovel-knight-plague-of-shadows",
     "steamAppId": "589500",
     "steamPositive": 94.1,
-    "steamReviews": 1015
+    "steamReviews": 1016
   },
   {
     "title": "Zero Escape: The Nonary Games",
@@ -3385,7 +3385,7 @@
     "rawgSlug": "zero-escape-the-nonary-games",
     "steamAppId": "477740",
     "steamPositive": 92.9,
-    "steamReviews": 7446
+    "steamReviews": 7468
   },
   {
     "title": "Inscryption",
@@ -3408,7 +3408,7 @@
     "rawgSlug": "inscryption",
     "steamAppId": "1092790",
     "steamPositive": 96.8,
-    "steamReviews": 149236
+    "steamReviews": 149410
   },
   {
     "title": "Baba Is You",
@@ -3430,7 +3430,7 @@
     "rawgSlug": "baba-is-you",
     "steamAppId": "736260",
     "steamPositive": 97.7,
-    "steamReviews": 24686
+    "steamReviews": 24719
   },
   {
     "title": "NieR:Automata",
@@ -3453,7 +3453,7 @@
     "rawgSlug": "nierautomata",
     "steamAppId": "524220",
     "steamPositive": 87.4,
-    "steamReviews": 154161
+    "steamReviews": 154332
   },
   {
     "title": "The Room 4: Old Sins",
@@ -3474,8 +3474,8 @@
     "note": "Enter The Room: Old Sins and be transported to a place where tactile exploration meets challenging puzzles and a captivating story.",
     "rawgSlug": "the-room-old-sins",
     "steamAppId": "1361320",
-    "steamPositive": 98.4,
-    "steamReviews": 18433
+    "steamPositive": 98.5,
+    "steamReviews": 18453
   },
   {
     "title": "DOOM Eternal",
@@ -3489,7 +3489,7 @@
     ],
     "metacritic": 86,
     "rawgRating": 4.37,
-    "rawgRatingsCount": 1434,
+    "rawgRatingsCount": 1435,
     "indie": false,
     "modes": [
       "Single-player",
@@ -3499,7 +3499,7 @@
     "rawgSlug": "doom-eternal",
     "steamAppId": "782330",
     "steamPositive": 91.4,
-    "steamReviews": 217803
+    "steamReviews": 217895
   },
   {
     "title": "KINGDOM HEARTS HD 1.5 +2.5 ReMIX",
@@ -3521,8 +3521,8 @@
     "note": "KINGDOM HEARTS HD 1.5 + 2.5 ReMIX is an HD remastered collection of 6 unforgettable KINGDOM HEARTS experiences available for the first time on the PlayStation® 4. The HD collection features:",
     "rawgSlug": "kingdom-hearts-hd-1525-remix",
     "steamAppId": "2552430",
-    "steamPositive": 87,
-    "steamReviews": 13115
+    "steamPositive": 87.1,
+    "steamReviews": 13248
   },
   {
     "title": "Slay the Spire",
@@ -3536,7 +3536,7 @@
     ],
     "metacritic": 86,
     "rawgRating": 4.35,
-    "rawgRatingsCount": 1097,
+    "rawgRatingsCount": 1099,
     "indie": true,
     "modes": [
       "Single-player"
@@ -3545,7 +3545,7 @@
     "rawgSlug": "slay-the-spire",
     "steamAppId": "646570",
     "steamPositive": 97.5,
-    "steamReviews": 219376
+    "steamReviews": 219562
   },
   {
     "title": "Black Mesa",
@@ -3568,7 +3568,7 @@
     "rawgSlug": "black-mesa",
     "steamAppId": "362890",
     "steamPositive": 95,
-    "steamReviews": 145211
+    "steamReviews": 145314
   },
   {
     "title": "Total War: WARHAMMER II",
@@ -3591,7 +3591,7 @@
     "rawgSlug": "total-war-warhammer-ii",
     "steamAppId": "594570",
     "steamPositive": 93,
-    "steamReviews": 121480
+    "steamReviews": 121494
   },
   {
     "title": "Crusader Kings III",
@@ -3613,8 +3613,8 @@
     "note": "An Heir is Born in Crusader Kings III",
     "rawgSlug": "crusader-kings-iii",
     "steamAppId": "1158310",
-    "steamPositive": 90.5,
-    "steamReviews": 142319
+    "steamPositive": 90.4,
+    "steamReviews": 142785
   },
   {
     "title": "13 Sentinels: Aegis Rim",
@@ -3650,7 +3650,7 @@
     ],
     "metacritic": 86,
     "rawgRating": 4.26,
-    "rawgRatingsCount": 2042,
+    "rawgRatingsCount": 2043,
     "indie": false,
     "modes": [
       "Single-player"
@@ -3659,7 +3659,7 @@
     "rawgSlug": "dishonored-2",
     "steamAppId": "403640",
     "steamPositive": 89.7,
-    "steamReviews": 67069
+    "steamReviews": 67128
   },
   {
     "title": "Marvel's Spider-Man: Miles Morales",
@@ -3682,7 +3682,7 @@
     "rawgSlug": "marvels-spider-man-miles-morales",
     "steamAppId": "1817190",
     "steamPositive": 93.3,
-    "steamReviews": 57240
+    "steamReviews": 57403
   },
   {
     "title": "Overcooked! All You Can Eat",
@@ -3707,8 +3707,8 @@
     "note": "Overcooked!, Overcooked! 2 and all additional content are blended together and remastered in this delicious definitive edition!",
     "rawgSlug": "overcooked-all-you-can-eat",
     "steamAppId": "1243830",
-    "steamPositive": 73,
-    "steamReviews": 8348
+    "steamPositive": 72.9,
+    "steamReviews": 8400
   },
   {
     "title": "Devil May Cry 5 Special Edition",
@@ -3753,7 +3753,7 @@
     "rawgSlug": "horizon-zero-dawn-2",
     "steamAppId": "2420110",
     "steamPositive": 88,
-    "steamReviews": 30744
+    "steamReviews": 30816
   },
   {
     "title": "STEINS;GATE ELITE",
@@ -3776,7 +3776,7 @@
     "rawgSlug": "steinsgate-elite",
     "steamAppId": "819030",
     "steamPositive": 90.2,
-    "steamReviews": 1689
+    "steamReviews": 1694
   },
   {
     "title": "Returnal",
@@ -3801,7 +3801,7 @@
     "rawgSlug": "returnal",
     "steamAppId": "1649240",
     "steamPositive": 80.9,
-    "steamReviews": 11178
+    "steamReviews": 11193
   },
   {
     "title": "Oxygen Not Included",
@@ -3823,7 +3823,7 @@
     "rawgSlug": "oxygen-not-included",
     "steamAppId": "457140",
     "steamPositive": 96.7,
-    "steamReviews": 144389
+    "steamReviews": 144531
   },
   {
     "title": "Synth Riders",
@@ -3846,7 +3846,7 @@
     "rawgSlug": "synth-riders",
     "steamAppId": "885000",
     "steamPositive": 91.7,
-    "steamReviews": 1683
+    "steamReviews": 1686
   },
   {
     "title": "Tunic",
@@ -3868,8 +3868,8 @@
     "note": "Explore a land filled with lost legends, ancient powers, and ferocious monsters in TUNIC, an isometric action game about a small fox on a big adventure. Stranded on a mysterious beach, armed with only your own curiosi…",
     "rawgSlug": "tunic",
     "steamAppId": "553420",
-    "steamPositive": 91,
-    "steamReviews": 18826
+    "steamPositive": 90.9,
+    "steamReviews": 18896
   },
   {
     "title": "Florence",
@@ -3891,7 +3891,7 @@
     "rawgSlug": "florence",
     "steamAppId": "1102130",
     "steamPositive": 93.2,
-    "steamReviews": 16556
+    "steamReviews": 16591
   },
   {
     "title": "Mega Man X Legacy Collection",
@@ -3913,8 +3913,8 @@
     "note": "The celebrated Mega Man X series returns! Play as Mega Man X – the",
     "rawgSlug": "mega-man-x-legacy-collection",
     "steamAppId": "743890",
-    "steamPositive": 78.7,
-    "steamReviews": 5040
+    "steamPositive": 78.8,
+    "steamReviews": 5048
   },
   {
     "title": "Nioh 2 – The Complete Edition",
@@ -3939,30 +3939,7 @@
     "rawgSlug": "nioh-2-the-complete-edition",
     "steamAppId": "1325200",
     "steamPositive": 87.4,
-    "steamReviews": 50756
-  },
-  {
-    "title": "Monster Train",
-    "year": 2020,
-    "developer": "Good Shepherd Entertainment",
-    "genre": "Strategy & 4X",
-    "genreDetail": "Strategy, Card",
-    "platforms": [
-      "PC"
-    ],
-    "metacritic": 86,
-    "rawgRating": 4.09,
-    "rawgRatingsCount": 127,
-    "indie": false,
-    "modes": [
-      "Single-player",
-      "PvP"
-    ],
-    "note": "Hell has frozen over. Only you can protect the final burning pyre from the forces of heaven and restore the inferno. Monster Train brings a new strategic layer to roguelike deck building, with three vertical play fiel…",
-    "rawgSlug": "monster-train",
-    "steamAppId": "1102190",
-    "steamPositive": 95.8,
-    "steamReviews": 22989
+    "steamReviews": 50779
   },
   {
     "title": "DRAGON BALL FighterZ",
@@ -3984,8 +3961,8 @@
     "note": "Pre-Purchase Offer",
     "rawgSlug": "dragon-ball-fighterz",
     "steamAppId": "678950",
-    "steamPositive": 90.5,
-    "steamReviews": 76977
+    "steamPositive": 90.4,
+    "steamReviews": 77015
   },
   {
     "title": "Wolfenstein II: The New Colossus",
@@ -4008,7 +3985,30 @@
     "rawgSlug": "wolfenstein-2-the-new-colossus",
     "steamAppId": "612880",
     "steamPositive": 81.4,
-    "steamReviews": 49809
+    "steamReviews": 49917
+  },
+  {
+    "title": "Monster Train",
+    "year": 2020,
+    "developer": "Good Shepherd Entertainment",
+    "genre": "Strategy & 4X",
+    "genreDetail": "Strategy, Card",
+    "platforms": [
+      "PC"
+    ],
+    "metacritic": 86,
+    "rawgRating": 4.09,
+    "rawgRatingsCount": 127,
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "PvP"
+    ],
+    "note": "Hell has frozen over. Only you can protect the final burning pyre from the forces of heaven and restore the inferno. Monster Train brings a new strategic layer to roguelike deck building, with three vertical play fiel…",
+    "rawgSlug": "monster-train",
+    "steamAppId": "1102190",
+    "steamPositive": 95.8,
+    "steamReviews": 22997
   },
   {
     "title": "Devotion",
@@ -4030,7 +4030,7 @@
     "rawgSlug": "devotion-2",
     "steamAppId": "718590",
     "steamPositive": 74.1,
-    "steamReviews": 2516
+    "steamReviews": 2518
   },
   {
     "title": "Teenage Mutant Ninja Turtles: Shredder's Revenge",
@@ -4055,7 +4055,7 @@
     "rawgSlug": "teenage-mutant-ninja-turtles-shredders-revenge",
     "steamAppId": "1361510",
     "steamPositive": 94.3,
-    "steamReviews": 15006
+    "steamReviews": 15024
   },
   {
     "title": "Football Manager 2019",
@@ -4100,7 +4100,7 @@
     "rawgSlug": "total-war-warhammer",
     "steamAppId": "364360",
     "steamPositive": 78.5,
-    "steamReviews": 52357
+    "steamReviews": 52375
   },
   {
     "title": "Rise of the Tomb Raider",
@@ -4114,7 +4114,7 @@
     ],
     "metacritic": 86,
     "rawgRating": 4.04,
-    "rawgRatingsCount": 2823,
+    "rawgRatingsCount": 2824,
     "indie": false,
     "modes": [
       "Single-player"
@@ -4123,7 +4123,7 @@
     "rawgSlug": "rise-of-the-tomb-raider",
     "steamAppId": "391220",
     "steamPositive": 94.2,
-    "steamReviews": 156812
+    "steamReviews": 156999
   },
   {
     "title": "Homeworld Remastered Collection",
@@ -4145,7 +4145,7 @@
     "rawgSlug": "homeworld-remastered-collection",
     "steamAppId": "244160",
     "steamPositive": 87.9,
-    "steamReviews": 14207
+    "steamReviews": 14213
   },
   {
     "title": "Ender Lilies: Quietus of the Knights",
@@ -4168,7 +4168,7 @@
     "rawgSlug": "ender-lilies-quietus-of-the-knights",
     "steamAppId": "1369630",
     "steamPositive": 93.7,
-    "steamReviews": 46174
+    "steamReviews": 46249
   },
   {
     "title": "Out of the Park Baseball 18",
@@ -4189,8 +4189,8 @@
     "note": "Out of the Park Baseball 18 - the follow-up to Metacritic's PC Game of the Year 2016 and officially licensed through MLB.com and the MLBPA - is a baseball fan's dream come true!",
     "rawgSlug": "out-of-the-park-baseball-18",
     "steamAppId": "4045750",
-    "steamPositive": 83.5,
-    "steamReviews": 533
+    "steamPositive": 83.1,
+    "steamReviews": 545
   },
   {
     "title": "Call of Duty: Modern Warfare Remastered",
@@ -4204,7 +4204,7 @@
     ],
     "metacritic": 86,
     "rawgRating": 3.98,
-    "rawgRatingsCount": 1146,
+    "rawgRatingsCount": 1147,
     "indie": false,
     "modes": [
       "Single-player",
@@ -4215,7 +4215,7 @@
     "rawgSlug": "call-of-duty-modern-warfare-remastered",
     "steamAppId": "393080",
     "steamPositive": 54.6,
-    "steamReviews": 15876
+    "steamReviews": 15883
   },
   {
     "title": "Pony Island",
@@ -4237,7 +4237,7 @@
     "rawgSlug": "pony-island",
     "steamAppId": "405640",
     "steamPositive": 94.8,
-    "steamReviews": 18844
+    "steamReviews": 19298
   },
   {
     "title": "Rocket League",
@@ -4251,7 +4251,7 @@
     ],
     "metacritic": 86,
     "rawgRating": 3.93,
-    "rawgRatingsCount": 2870,
+    "rawgRatingsCount": 2871,
     "indie": true,
     "modes": [
       "Single-player",
@@ -4332,7 +4332,7 @@
     "rawgSlug": "iconoclasts",
     "steamAppId": "393520",
     "steamPositive": 86.3,
-    "steamReviews": 5027
+    "steamReviews": 5034
   },
   {
     "title": "DiRT Rally",
@@ -4379,7 +4379,7 @@
     "rawgSlug": "day-of-the-tentacle-remastered",
     "steamAppId": "388210",
     "steamPositive": 96.9,
-    "steamReviews": 4743
+    "steamReviews": 4749
   },
   {
     "title": "Project CARS 2",
@@ -4424,8 +4424,8 @@
     "note": "Fight. Fall. Rise again.",
     "rawgSlug": "until-you-fall",
     "steamAppId": "858260",
-    "steamPositive": 94.2,
-    "steamReviews": 3318
+    "steamPositive": 94.1,
+    "steamReviews": 3319
   },
   {
     "title": "Monster Slayers",
@@ -4540,7 +4540,7 @@
     "rawgSlug": "the-binding-of-isaac-afterbirth",
     "steamAppId": "113200",
     "steamPositive": 94.6,
-    "steamReviews": 63005
+    "steamReviews": 63037
   },
   {
     "title": "A Space for the Unbound",
@@ -4562,7 +4562,7 @@
     "rawgSlug": "a-space-for-the-unbound",
     "steamAppId": "1201270",
     "steamPositive": 97,
-    "steamReviews": 7933
+    "steamReviews": 7960
   },
   {
     "title": "Sayonara Wild Hearts",
@@ -4585,7 +4585,7 @@
     "rawgSlug": "sayonara-wild-hearts",
     "steamAppId": "1122720",
     "steamPositive": 96.6,
-    "steamReviews": 8958
+    "steamReviews": 8962
   },
   {
     "title": "StarCraft: Remastered",
@@ -4629,7 +4629,7 @@
     "rawgSlug": "monument-valley-2",
     "steamAppId": "1927740",
     "steamPositive": 93.5,
-    "steamReviews": 4278
+    "steamReviews": 4291
   },
   {
     "title": "DOOM (2016)",
@@ -4653,30 +4653,7 @@
     "rawgSlug": "doom",
     "steamAppId": "379720",
     "steamPositive": 95.5,
-    "steamReviews": 222208
-  },
-  {
-    "title": "Planescape: Torment: Enhanced Edition",
-    "year": 2017,
-    "developer": "Black Isle Studios",
-    "genre": "Strategy & 4X",
-    "genreDetail": "Adventure, RPG, Strategy",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": 85,
-    "rawgRating": 4.37,
-    "rawgRatingsCount": 280,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "The original Planescape: Torment was released in 1999 to widespread critical acclaim. It won RPG of the Year from multiple outlets for its unconventional story, characters, and amazing soundtrack. Since then, millions…",
-    "rawgSlug": "planescape-torment-enhanced-edition",
-    "steamAppId": "466300",
-    "steamPositive": 94.6,
-    "steamReviews": 5718
+    "steamReviews": 222321
   },
   {
     "title": "SUPERHOT VR",
@@ -4699,7 +4676,30 @@
     "rawgSlug": "superhot-vr",
     "steamAppId": "617830",
     "steamPositive": 81.5,
-    "steamReviews": 9765
+    "steamReviews": 9770
+  },
+  {
+    "title": "Planescape: Torment: Enhanced Edition",
+    "year": 2017,
+    "developer": "Black Isle Studios",
+    "genre": "Strategy & 4X",
+    "genreDetail": "Adventure, RPG, Strategy",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": 85,
+    "rawgRating": 4.37,
+    "rawgRatingsCount": 280,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "The original Planescape: Torment was released in 1999 to widespread critical acclaim. It won RPG of the Year from multiple outlets for its unconventional story, characters, and amazing soundtrack. Since then, millions…",
+    "rawgSlug": "planescape-torment-enhanced-edition",
+    "steamAppId": "466300",
+    "steamPositive": 94.6,
+    "steamReviews": 5728
   },
   {
     "title": "Yakuza Kiwami 2",
@@ -4721,8 +4721,31 @@
     "note": "Kazuma Kiryu thought his Tojo Clan days were behind him. He and the young girl in his care, Haruka Sawamura, have built a peaceful life from the ashes of conflict. All it took was a single gunshot to shatter that peac…",
     "rawgSlug": "yakuza-kiwami-2",
     "steamAppId": "3717340",
-    "steamPositive": 81.5,
-    "steamReviews": 1515
+    "steamPositive": 81.8,
+    "steamReviews": 1538
+  },
+  {
+    "title": "Yakuza: Like a Dragon",
+    "year": 2020,
+    "developer": "SEGA",
+    "genre": "RPG",
+    "genreDetail": "Action, Adventure, RPG",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": 85,
+    "rawgRating": 4.36,
+    "rawgRatingsCount": 376,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "RISE LIKE A DRAGON",
+    "rawgSlug": "yakuza-7",
+    "steamAppId": "1235140",
+    "steamPositive": 94,
+    "steamReviews": 37773
   },
   {
     "title": "Yakuza 0",
@@ -4736,7 +4759,7 @@
     ],
     "metacritic": 85,
     "rawgRating": 4.36,
-    "rawgRatingsCount": 1152,
+    "rawgRatingsCount": 1153,
     "indie": false,
     "modes": [
       "Single-player"
@@ -4744,31 +4767,8 @@
     "note": "Yakuza 0 is an action-adventure game developed by Sega for Microsoft and PlayStation in 2015.",
     "rawgSlug": "yakuza-0",
     "steamAppId": "2988580",
-    "steamPositive": 82.7,
-    "steamReviews": 2054
-  },
-  {
-    "title": "Yakuza: Like a Dragon",
-    "year": 2020,
-    "developer": "SEGA",
-    "genre": "RPG",
-    "genreDetail": "Action, Adventure, RPG",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": 85,
-    "rawgRating": 4.35,
-    "rawgRatingsCount": 375,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "RISE LIKE A DRAGON",
-    "rawgSlug": "yakuza-7",
-    "steamAppId": "1235140",
-    "steamPositive": 94,
-    "steamReviews": 37725
+    "steamPositive": 83,
+    "steamReviews": 2104
   },
   {
     "title": "Resident Evil 7: Biohazard",
@@ -4782,7 +4782,7 @@
     ],
     "metacritic": 85,
     "rawgRating": 4.33,
-    "rawgRatingsCount": 2002,
+    "rawgRatingsCount": 2004,
     "indie": false,
     "modes": [
       "Single-player"
@@ -4791,7 +4791,7 @@
     "rawgSlug": "resident-evil-7-biohazard",
     "steamAppId": "418370",
     "steamPositive": 95.3,
-    "steamReviews": 128295
+    "steamReviews": 128662
   },
   {
     "title": "HUNTDOWN",
@@ -4815,7 +4815,7 @@
     "rawgSlug": "huntdown",
     "steamAppId": "598550",
     "steamPositive": 94.8,
-    "steamReviews": 4458
+    "steamReviews": 4466
   },
   {
     "title": "428: Shibuya Scramble",
@@ -4837,8 +4837,8 @@
     "note": "A kidnapping on the streets of Shibuya brings together a hot-blooded detective, hard-hitting journalist, former gang leader, the head researcher of a big pharma manufacturer and a part-timer stuck in cat costume for a…",
     "rawgSlug": "428-shibuya-scramble",
     "steamAppId": "648580",
-    "steamPositive": 94.8,
-    "steamReviews": 4023
+    "steamPositive": 94.7,
+    "steamReviews": 4036
   },
   {
     "title": "Age of Empires II: Definitive Edition",
@@ -4860,7 +4860,7 @@
     "rawgSlug": "age-of-empires-2-definitive-edition",
     "steamAppId": "813780",
     "steamPositive": 94.9,
-    "steamReviews": 183295
+    "steamReviews": 183482
   },
   {
     "title": "Uncharted: The Lost Legacy",
@@ -4873,7 +4873,7 @@
     ],
     "metacritic": 85,
     "rawgRating": 4.27,
-    "rawgRatingsCount": 1277,
+    "rawgRatingsCount": 1278,
     "indie": false,
     "modes": [
       "Single-player"
@@ -4906,7 +4906,7 @@
     "rawgSlug": "guilty-gear-2020",
     "steamAppId": "850980",
     "steamPositive": 78.9,
-    "steamReviews": 764
+    "steamReviews": 766
   },
   {
     "title": "Unsighted",
@@ -4929,7 +4929,7 @@
     "rawgSlug": "unsighted",
     "steamAppId": "1062110",
     "steamPositive": 92.9,
-    "steamReviews": 2252
+    "steamReviews": 2259
   },
   {
     "title": "Frostpunk",
@@ -4952,7 +4952,7 @@
     "rawgSlug": "frostpunk",
     "steamAppId": "323190",
     "steamPositive": 92.7,
-    "steamReviews": 138003
+    "steamReviews": 138104
   },
   {
     "title": "Tales from the Borderlands: A Telltale Game Series",
@@ -4975,7 +4975,7 @@
     "rawgSlug": "tales-from-the-borderlands",
     "steamAppId": "330830",
     "steamPositive": 94.3,
-    "steamReviews": 19617
+    "steamReviews": 19626
   },
   {
     "title": "Kingdom: Two Crowns",
@@ -5000,7 +5000,7 @@
     "rawgSlug": "kingdom-two-crowns",
     "steamAppId": "701160",
     "steamPositive": 90,
-    "steamReviews": 40871
+    "steamReviews": 41300
   },
   {
     "title": "Cities: Skylines",
@@ -5014,7 +5014,7 @@
     ],
     "metacritic": 85,
     "rawgRating": 4.12,
-    "rawgRatingsCount": 1539,
+    "rawgRatingsCount": 1540,
     "indie": false,
     "modes": [
       "Single-player"
@@ -5023,7 +5023,7 @@
     "rawgSlug": "cities-skylines",
     "steamAppId": "255710",
     "steamPositive": 92.9,
-    "steamReviews": 291104
+    "steamReviews": 291026
   },
   {
     "title": "Guacamelee! 2",
@@ -5047,7 +5047,7 @@
     "rawgSlug": "guacamelee-2",
     "steamAppId": "534550",
     "steamPositive": 91.1,
-    "steamReviews": 3397
+    "steamReviews": 3398
   },
   {
     "title": "Thumper",
@@ -5070,7 +5070,7 @@
     "rawgSlug": "thumper",
     "steamAppId": "356400",
     "steamPositive": 91.8,
-    "steamReviews": 4426
+    "steamReviews": 4429
   },
   {
     "title": "Shadow Tactics: Blades of the Shogun",
@@ -5093,7 +5093,32 @@
     "rawgSlug": "shadow-tactics",
     "steamAppId": "418240",
     "steamPositive": 96,
-    "steamReviews": 38507
+    "steamReviews": 38521
+  },
+  {
+    "title": "Dragon Quest Builders 2",
+    "year": 2019,
+    "developer": "Square Enix",
+    "genre": "RPG",
+    "genreDetail": "Action, Adventure, RPG",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": 85,
+    "rawgRating": 4.05,
+    "rawgRatingsCount": 106,
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Co-op",
+      "Live-service"
+    ],
+    "note": "PRE-PURCHASE AND EARLY PURCHASE OFFER",
+    "rawgSlug": "dragon-quest-builders-2",
+    "steamAppId": "1072420",
+    "steamPositive": 92.4,
+    "steamReviews": 8136
   },
   {
     "title": "Ratchet & Clank",
@@ -5115,32 +5140,7 @@
     "rawgSlug": "ratchet-clank",
     "steamAppId": "1895880",
     "steamPositive": 90.7,
-    "steamReviews": 18259
-  },
-  {
-    "title": "Dragon Quest Builders 2",
-    "year": 2019,
-    "developer": "Square Enix",
-    "genre": "RPG",
-    "genreDetail": "Action, Adventure, RPG",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": 85,
-    "rawgRating": 4.04,
-    "rawgRatingsCount": 105,
-    "indie": false,
-    "modes": [
-      "Single-player",
-      "Co-op",
-      "Live-service"
-    ],
-    "note": "PRE-PURCHASE AND EARLY PURCHASE OFFER",
-    "rawgSlug": "dragon-quest-builders-2",
-    "steamAppId": "1072420",
-    "steamPositive": 92.4,
-    "steamReviews": 8126
+    "steamReviews": 18300
   },
   {
     "title": "Total War: WARHAMMER III",
@@ -5165,7 +5165,7 @@
     "rawgSlug": "total-war-warhammer-iii",
     "steamAppId": "1142710",
     "steamPositive": 72.2,
-    "steamReviews": 150377
+    "steamReviews": 150800
   },
   {
     "title": "Amid Evil",
@@ -5187,7 +5187,7 @@
     "rawgSlug": "amid-evil",
     "steamAppId": "673130",
     "steamPositive": 92.9,
-    "steamReviews": 7758
+    "steamReviews": 7766
   },
   {
     "title": "Far Cry 3: Classic Edition",
@@ -5208,8 +5208,8 @@
     "note": "Far Cry 3 is absolute madness. Being the third instalment of the franchise, it has a unique plot. Playing as Jason Brody, you will understand what it is like, to be a Rambo. Vacation on Rook Islands with your friends…",
     "rawgSlug": "far-cry-3-classic-edition-2",
     "steamAppId": "220240",
-    "steamPositive": 87.7,
-    "steamReviews": 135003
+    "steamPositive": 87.6,
+    "steamReviews": 135272
   },
   {
     "title": "Total War: THREE KINGDOMS",
@@ -5232,7 +5232,7 @@
     "rawgSlug": "total-war-three-kingdoms",
     "steamAppId": "779340",
     "steamPositive": 82.2,
-    "steamReviews": 93930
+    "steamReviews": 94007
   },
   {
     "title": "BlazBlue: Central Fiction",
@@ -5254,8 +5254,8 @@
     "note": "BlazBlue: Central Fiction is the newest installment in the storied BlazBlue franchise and stands alone as the pinnacle of next gen 2D fighters! Like a well-timed 2D punch, BlazBlue: Central Fiction bashes massive amou…",
     "rawgSlug": "blazblue-centralfiction",
     "steamAppId": "586140",
-    "steamPositive": 93.9,
-    "steamReviews": 12394
+    "steamPositive": 94,
+    "steamReviews": 12431
   },
   {
     "title": "Assassin's Creed Odyssey",
@@ -5278,7 +5278,7 @@
     "rawgSlug": "assassins-creed-odyssey",
     "steamAppId": "812140",
     "steamPositive": 88.7,
-    "steamReviews": 189641
+    "steamReviews": 189844
   },
   {
     "title": "Monster Boy and the Cursed Kingdom",
@@ -5301,7 +5301,7 @@
     "rawgSlug": "monster-boy-and-the-cursed-kingdom",
     "steamAppId": "449610",
     "steamPositive": 88.2,
-    "steamReviews": 2675
+    "steamReviews": 2681
   },
   {
     "title": "Nioh 2",
@@ -5324,7 +5324,7 @@
     "rawgSlug": "nioh-2",
     "steamAppId": "1325200",
     "steamPositive": 87.4,
-    "steamReviews": 50756
+    "steamReviews": 50779
   },
   {
     "title": "Tales of Arise",
@@ -5347,7 +5347,7 @@
     "rawgSlug": "tales-of-arise",
     "steamAppId": "740130",
     "steamPositive": 86.5,
-    "steamReviews": 36830
+    "steamReviews": 36844
   },
   {
     "title": "Gears of War 4",
@@ -5360,7 +5360,7 @@
     ],
     "metacritic": 85,
     "rawgRating": 3.91,
-    "rawgRatingsCount": 685,
+    "rawgRatingsCount": 686,
     "indie": false,
     "modes": [
       "Single-player"
@@ -5415,7 +5415,7 @@
     "rawgSlug": "sonic-mania",
     "steamAppId": "584400",
     "steamPositive": 93.9,
-    "steamReviews": 29022
+    "steamReviews": 29050
   },
   {
     "title": "MLB The Show 17",
@@ -5504,7 +5504,7 @@
     "rawgSlug": "the-last-door-season-2-collectors-edition-2",
     "steamAppId": "402530",
     "steamPositive": 93.9,
-    "steamReviews": 991
+    "steamReviews": 992
   },
   {
     "title": "Chime Sharp",
@@ -5618,7 +5618,7 @@
     "rawgSlug": "chaos-reborn",
     "steamAppId": "319050",
     "steamPositive": 74.9,
-    "steamReviews": 1147
+    "steamReviews": 1146
   },
   {
     "title": "Falcon 4.0",
@@ -5709,7 +5709,7 @@
     "rawgSlug": "dark-souls8482-remastered",
     "steamAppId": "570940",
     "steamPositive": 92.4,
-    "steamReviews": 157024
+    "steamReviews": 157484
   },
   {
     "title": "Yakuza 6: The Song of Life",
@@ -5732,7 +5732,7 @@
     "rawgSlug": "yakuza-6",
     "steamAppId": "1388590",
     "steamPositive": 92.7,
-    "steamReviews": 8378
+    "steamReviews": 8387
   },
   {
     "title": "Outer Wilds",
@@ -5746,7 +5746,7 @@
     ],
     "metacritic": 84,
     "rawgRating": 4.36,
-    "rawgRatingsCount": 902,
+    "rawgRatingsCount": 903,
     "indie": true,
     "modes": [
       "Single-player"
@@ -5755,7 +5755,7 @@
     "rawgSlug": "outer-wilds",
     "steamAppId": "753640",
     "steamPositive": 95.6,
-    "steamReviews": 109164
+    "steamReviews": 109469
   },
   {
     "title": "A Short Hike",
@@ -5778,7 +5778,7 @@
     "rawgSlug": "a-short-hike",
     "steamAppId": "1055540",
     "steamPositive": 99.1,
-    "steamReviews": 22877
+    "steamReviews": 22942
   },
   {
     "title": "The Walking Dead: The Telltale Definitive Series",
@@ -5801,7 +5801,7 @@
     "rawgSlug": "the-walking-dead-the-telltale-definitive-series",
     "steamAppId": "1449690",
     "steamPositive": 96.5,
-    "steamReviews": 47663
+    "steamReviews": 47748
   },
   {
     "title": "Desperados III",
@@ -5824,7 +5824,7 @@
     "rawgSlug": "desperados-iii",
     "steamAppId": "610370",
     "steamPositive": 96.5,
-    "steamReviews": 16696
+    "steamReviews": 16714
   },
   {
     "title": "Death Stranding",
@@ -5838,7 +5838,7 @@
     ],
     "metacritic": 84,
     "rawgRating": 4.31,
-    "rawgRatingsCount": 2120,
+    "rawgRatingsCount": 2121,
     "indie": false,
     "modes": [
       "Single-player"
@@ -5847,7 +5847,7 @@
     "rawgSlug": "death-stranding",
     "steamAppId": "1850570",
     "steamPositive": 92.2,
-    "steamReviews": 69697
+    "steamReviews": 69978
   },
   {
     "title": "The Messenger",
@@ -5870,7 +5870,7 @@
     "rawgSlug": "the-messenger-2018",
     "steamAppId": "764790",
     "steamPositive": 92.6,
-    "steamReviews": 13312
+    "steamReviews": 13335
   },
   {
     "title": "Horizon Zero Dawn Complete Edition",
@@ -5893,7 +5893,7 @@
     "rawgSlug": "horizon-zero-dawn-complete-edition",
     "steamAppId": "1151640",
     "steamPositive": 88,
-    "steamReviews": 128359
+    "steamReviews": 128374
   },
   {
     "title": "TRIANGLE STRATEGY",
@@ -5915,7 +5915,7 @@
     "rawgSlug": "project-triangle-strategy",
     "steamAppId": "1850510",
     "steamPositive": 79.5,
-    "steamReviews": 3809
+    "steamReviews": 3818
   },
   {
     "title": "OneShot",
@@ -5937,7 +5937,7 @@
     "rawgSlug": "oneshot",
     "steamAppId": "420530",
     "steamPositive": 98.2,
-    "steamReviews": 65657
+    "steamReviews": 65754
   },
   {
     "title": "Star of Providence",
@@ -5982,7 +5982,7 @@
     "rawgSlug": "manifold-garden",
     "steamAppId": "473950",
     "steamPositive": 95.2,
-    "steamReviews": 8611
+    "steamReviews": 8626
   },
   {
     "title": "Card Crawl",
@@ -6027,7 +6027,7 @@
     "rawgSlug": "far-lone-sails",
     "steamAppId": "609320",
     "steamPositive": 95.3,
-    "steamReviews": 26538
+    "steamReviews": 26560
   },
   {
     "title": "Gran Turismo 7",
@@ -6071,8 +6071,8 @@
     "note": "Darkest Dungeon is a roguelike RPG developed by Red Hook Studios.",
     "rawgSlug": "darkest-dungeon",
     "steamAppId": "262060",
-    "steamPositive": 91.7,
-    "steamReviews": 163120
+    "steamPositive": 91.6,
+    "steamReviews": 163309
   },
   {
     "title": "SOMA",
@@ -6095,7 +6095,7 @@
     "rawgSlug": "soma",
     "steamAppId": "282140",
     "steamPositive": 95.8,
-    "steamReviews": 53271
+    "steamReviews": 53351
   },
   {
     "title": "Pyre",
@@ -6117,7 +6117,7 @@
     "note": "Pyre is an action-adventure game developed by Supergiant games.",
     "rawgSlug": "pyre",
     "steamAppId": "462770",
-    "steamPositive": 90.4,
+    "steamPositive": 90.3,
     "steamReviews": 9360
   },
   {
@@ -6142,7 +6142,7 @@
     "rawgSlug": "destiny-2-forsaken-complete-collection",
     "steamAppId": "1085660",
     "steamPositive": 78.7,
-    "steamReviews": 663539
+    "steamReviews": 663807
   },
   {
     "title": "Control",
@@ -6156,7 +6156,7 @@
     ],
     "metacritic": 84,
     "rawgRating": 4.14,
-    "rawgRatingsCount": 2067,
+    "rawgRatingsCount": 2069,
     "indie": false,
     "modes": [
       "Single-player"
@@ -6164,8 +6164,8 @@
     "note": "Control is a surrealist low-fantasy game about a secret organization that deals with the paranormal activities.",
     "rawgSlug": "control",
     "steamAppId": "3669870",
-    "steamPositive": 91.5,
-    "steamReviews": 16620
+    "steamPositive": 91.6,
+    "steamReviews": 18627
   },
   {
     "title": "Hyper Light Drifter",
@@ -6189,7 +6189,7 @@
     "rawgSlug": "hyper-light-drifter",
     "steamAppId": "257850",
     "steamPositive": 92.9,
-    "steamReviews": 19259
+    "steamReviews": 19281
   },
   {
     "title": "Spiritfarer",
@@ -6213,7 +6213,7 @@
     "rawgSlug": "spiritfire",
     "steamAppId": "972660",
     "steamPositive": 94.9,
-    "steamReviews": 53597
+    "steamReviews": 53695
   },
   {
     "title": "If Found...",
@@ -6234,8 +6234,8 @@
     "note": "If Found… is an interactive visual novel from Dreamfeel about searching for connection.",
     "rawgSlug": "if-found",
     "steamAppId": "1041920",
-    "steamPositive": 90.3,
-    "steamReviews": 2373
+    "steamPositive": 90.4,
+    "steamReviews": 2376
   },
   {
     "title": "Deep Rock Galactic",
@@ -6260,7 +6260,7 @@
     "rawgSlug": "deep-rock-galactic",
     "steamAppId": "548430",
     "steamPositive": 97.1,
-    "steamReviews": 380898
+    "steamReviews": 381060
   },
   {
     "title": "Streets of Rage 4",
@@ -6284,7 +6284,7 @@
     "rawgSlug": "streets-of-rage-4",
     "steamAppId": "985890",
     "steamPositive": 92.4,
-    "steamReviews": 19820
+    "steamReviews": 19840
   },
   {
     "title": "Thimbleweed Park",
@@ -6307,7 +6307,7 @@
     "rawgSlug": "thimbleweed-park",
     "steamAppId": "569860",
     "steamPositive": 93,
-    "steamReviews": 4247
+    "steamReviews": 4250
   },
   {
     "title": "Enter the Gungeon",
@@ -6331,7 +6331,7 @@
     "rawgSlug": "enter-the-gungeon",
     "steamAppId": "311690",
     "steamPositive": 95.1,
-    "steamReviews": 90006
+    "steamReviews": 90066
   },
   {
     "title": "Forza Motorsport 7",
@@ -6376,7 +6376,7 @@
     "rawgSlug": "ni-no-kuni-wrath-of-the-white-witch-remastered",
     "steamAppId": "798460",
     "steamPositive": 83.5,
-    "steamReviews": 5180
+    "steamReviews": 5188
   },
   {
     "title": "Shin Megami Tensei V: Vengeance",
@@ -6398,8 +6398,8 @@
     "note": "The ambitions of god and human clash amidst the horror of a dying world. Neither human nor demon, the newly-forged Nahobino and his friends must decide what is worth saving... and prepare to sacrifice everything in it…",
     "rawgSlug": "shin-megami-tensei-v",
     "steamAppId": "1875830",
-    "steamPositive": 91.7,
-    "steamReviews": 13031
+    "steamPositive": 91.6,
+    "steamReviews": 13070
   },
   {
     "title": "Unpacking",
@@ -6422,7 +6422,7 @@
     "rawgSlug": "unpacking-2",
     "steamAppId": "1135690",
     "steamPositive": 93.2,
-    "steamReviews": 41082
+    "steamReviews": 41130
   },
   {
     "title": "Moss",
@@ -6443,9 +6443,9 @@
     ],
     "note": "Moss™ is a single-player action-adventure puzzle game and new IP from Polyarc tailor-made for the VR platform. It combines classic components of a great game—such as compelling characters, gripping combat, and captiva…",
     "rawgSlug": "moss",
-    "steamAppId": "1772830",
-    "steamPositive": 89.1,
-    "steamReviews": 1769
+    "steamAppId": "846470",
+    "steamPositive": 95.2,
+    "steamReviews": 3467
   },
   {
     "title": "Football Manager 2020",
@@ -6489,8 +6489,8 @@
     "note": "Grim Fandango Remastered is a rebuilt version of the original 1998 adventure game Grim Fandango. The game is set in the Land of the Dead, which is a unique in-between world on the souls’ way from the mortal world to t…",
     "rawgSlug": "grim-fandango-remastered",
     "steamAppId": "316790",
-    "steamPositive": 90.5,
-    "steamReviews": 8983
+    "steamPositive": 90.6,
+    "steamReviews": 8996
   },
   {
     "title": "Ape Out",
@@ -6512,7 +6512,7 @@
     "rawgSlug": "ape-out",
     "steamAppId": "447150",
     "steamPositive": 94.8,
-    "steamReviews": 4137
+    "steamReviews": 4148
   },
   {
     "title": "Eliza",
@@ -6559,7 +6559,7 @@
     "rawgSlug": "nioh-complete-edition-ren-wang-complete-edition",
     "steamAppId": "485510",
     "steamPositive": 78.9,
-    "steamReviews": 39147
+    "steamReviews": 39183
   },
   {
     "title": "Supraland",
@@ -6583,7 +6583,7 @@
     "rawgSlug": "supraland",
     "steamAppId": "813630",
     "steamPositive": 95.2,
-    "steamReviews": 15464
+    "steamReviews": 15495
   },
   {
     "title": "Magic: The Gathering Arena",
@@ -6605,7 +6605,7 @@
     "rawgSlug": "magic-the-gathering-arena",
     "steamAppId": "2141910",
     "steamPositive": 61.1,
-    "steamReviews": 32448
+    "steamReviews": 32626
   },
   {
     "title": "Yakuza Remastered Collection",
@@ -6650,8 +6650,8 @@
     "note": "Neo Cortex and N. Tropy are back at it again and launching an all-out assault on not just this universe, but the entire multiverse! Crash and Coco are here to save the day by reuniting the Four Quantum masks and bendi…",
     "rawgSlug": "crash-bandicoot-4-its-about-time",
     "steamAppId": "1378990",
-    "steamPositive": 86.4,
-    "steamReviews": 4302
+    "steamPositive": 86.5,
+    "steamReviews": 4320
   },
   {
     "title": "DmC: Devil May Cry: Definitive Edition",
@@ -6697,7 +6697,7 @@
     "rawgSlug": "salt-and-sanctuary",
     "steamAppId": "283640",
     "steamPositive": 89.3,
-    "steamReviews": 21970
+    "steamReviews": 22001
   },
   {
     "title": "Griftlands",
@@ -6720,7 +6720,7 @@
     "rawgSlug": "griftlands",
     "steamAppId": "601840",
     "steamPositive": 93.5,
-    "steamReviews": 14518
+    "steamReviews": 14522
   },
   {
     "title": "Paradise Killer",
@@ -6742,8 +6742,8 @@
     "note": "An island outside of reality. A rogue human civilization hoping to resurrect dead alien gods. A murder behind locked doors.",
     "rawgSlug": "paradise-killer",
     "steamAppId": "1160220",
-    "steamPositive": 92.7,
-    "steamReviews": 4550
+    "steamPositive": 92.6,
+    "steamReviews": 4553
   },
   {
     "title": "Reventure",
@@ -6765,7 +6765,7 @@
     "rawgSlug": "lonks-adventure",
     "steamAppId": "900270",
     "steamPositive": 94.9,
-    "steamReviews": 9899
+    "steamReviews": 9903
   },
   {
     "title": "Humanity",
@@ -6802,7 +6802,7 @@
     ],
     "metacritic": 84,
     "rawgRating": 3.81,
-    "rawgRatingsCount": 3447,
+    "rawgRatingsCount": 3449,
     "indie": false,
     "modes": [
       "Single-player"
@@ -6811,7 +6811,7 @@
     "rawgSlug": "fallout-4",
     "steamAppId": "377160",
     "steamPositive": 81.2,
-    "steamReviews": 429858
+    "steamReviews": 430174
   },
   {
     "title": "SpeedRunners",
@@ -6836,7 +6836,7 @@
     "rawgSlug": "speedrunners",
     "steamAppId": "207140",
     "steamPositive": 94,
-    "steamReviews": 37215
+    "steamReviews": 37209
   },
   {
     "title": "Two Point Hospital",
@@ -6859,7 +6859,7 @@
     "rawgSlug": "two-point-hospital",
     "steamAppId": "535930",
     "steamPositive": 92,
-    "steamReviews": 35043
+    "steamReviews": 35065
   },
   {
     "title": "Lara Croft GO",
@@ -6882,7 +6882,7 @@
     "rawgSlug": "lara-croft-go",
     "steamAppId": "540840",
     "steamPositive": 93.1,
-    "steamReviews": 4103
+    "steamReviews": 4108
   },
   {
     "title": "Halo Infinite",
@@ -6907,7 +6907,7 @@
     "rawgSlug": "halo-infinite",
     "steamAppId": "1240440",
     "steamPositive": 69.3,
-    "steamReviews": 181329
+    "steamReviews": 181357
   },
   {
     "title": "Hatsune Miku: Project DIVA Future Tone",
@@ -6928,8 +6928,8 @@
     "note": "Explore the infinite world of Hatsune Miku through the most comprehensive Project DIVA game ever released!",
     "rawgSlug": "hatsune-miku-project-diva-future-tone",
     "steamAppId": "707300",
-    "steamPositive": 72,
-    "steamReviews": 660
+    "steamPositive": 71.9,
+    "steamReviews": 661
   },
   {
     "title": "Pro Evolution Soccer 2018",
@@ -6977,7 +6977,7 @@
     "rawgSlug": "icey",
     "steamAppId": "553640",
     "steamPositive": 90,
-    "steamReviews": 28842
+    "steamReviews": 28957
   },
   {
     "title": "Pinball FX3",
@@ -7022,8 +7022,8 @@
     "note": "One gloomy night, Bulb Boy wakes suddenly from a frightening nightmare to discover that evil has overshadowed the Bulbhouse. His family has disappeared and there are horrid monsters lurking in the shadows. Gather the…",
     "rawgSlug": "bulb-boy",
     "steamAppId": "390290",
-    "steamPositive": 85.9,
-    "steamReviews": 2297
+    "steamPositive": 85.8,
+    "steamReviews": 2302
   },
   {
     "title": "F1 2018",
@@ -7069,8 +7069,8 @@
     "note": "Call of Duty: Black Ops 4 is a multiplayer-only installment in the famous series of first-person shooters. It does not include a single player option.",
     "rawgSlug": "call-of-duty-black-ops-4",
     "steamAppId": "1938090",
-    "steamPositive": 58.6,
-    "steamReviews": 783193
+    "steamPositive": 58.7,
+    "steamReviews": 786270
   },
   {
     "title": "Rakuen",
@@ -7092,7 +7092,7 @@
     "rawgSlug": "rakuen",
     "steamAppId": "559210",
     "steamPositive": 96.1,
-    "steamReviews": 5932
+    "steamReviews": 5934
   },
   {
     "title": "Madden NFL 16",
@@ -7181,7 +7181,7 @@
     "rawgSlug": "labyrinth-of-galleria-coven-of-dusk",
     "steamAppId": "1998340",
     "steamPositive": 82,
-    "steamReviews": 611
+    "steamReviews": 616
   },
   {
     "title": "Valkyria Chronicles Remaster",
@@ -7248,7 +7248,7 @@
     "rawgSlug": "dark-souls-iii-the-ringed-city",
     "steamAppId": "374320",
     "steamPositive": 94.3,
-    "steamReviews": 441763
+    "steamReviews": 442261
   },
   {
     "title": "BioShock: The Collection",
@@ -7271,7 +7271,7 @@
     "rawgSlug": "bioshock-the-collection",
     "steamAppId": "7670",
     "steamPositive": 94,
-    "steamReviews": 32254
+    "steamReviews": 32273
   },
   {
     "title": "Ghost of Tsushima",
@@ -7285,7 +7285,7 @@
     ],
     "metacritic": 83,
     "rawgRating": 4.41,
-    "rawgRatingsCount": 1172,
+    "rawgRatingsCount": 1174,
     "indie": false,
     "modes": [
       "Single-player"
@@ -7294,7 +7294,7 @@
     "rawgSlug": "ghost-of-tsushima",
     "steamAppId": "2215430",
     "steamPositive": 94,
-    "steamReviews": 97695
+    "steamReviews": 98017
   },
   {
     "title": "Resident Evil: Village",
@@ -7308,7 +7308,7 @@
     ],
     "metacritic": 83,
     "rawgRating": 4.39,
-    "rawgRatingsCount": 1075,
+    "rawgRatingsCount": 1077,
     "indie": false,
     "modes": [
       "Single-player"
@@ -7317,7 +7317,7 @@
     "rawgSlug": "resident-evil-village",
     "steamAppId": "1196590",
     "steamPositive": 95.6,
-    "steamReviews": 155503
+    "steamReviews": 155857
   },
   {
     "title": "Katana ZERO",
@@ -7330,7 +7330,7 @@
     ],
     "metacritic": 83,
     "rawgRating": 4.39,
-    "rawgRatingsCount": 1160,
+    "rawgRatingsCount": 1164,
     "indie": true,
     "modes": [
       "Single-player"
@@ -7339,7 +7339,7 @@
     "rawgSlug": "katana-zero",
     "steamAppId": "460950",
     "steamPositive": 97.9,
-    "steamReviews": 76347
+    "steamReviews": 76438
   },
   {
     "title": "Horizon Zero Dawn: The Frozen Wilds",
@@ -7362,7 +7362,7 @@
     "rawgSlug": "horizon-zero-dawn-the-frozen-wilds",
     "steamAppId": "1151640",
     "steamPositive": 88,
-    "steamReviews": 128359
+    "steamReviews": 128374
   },
   {
     "title": "Astro's Playroom",
@@ -7407,7 +7407,7 @@
     "rawgSlug": "factorio",
     "steamAppId": "427520",
     "steamPositive": 97.5,
-    "steamReviews": 235732
+    "steamReviews": 236008
   },
   {
     "title": "Astalon: Tears of the Earth",
@@ -7429,8 +7429,8 @@
     "note": "Three explorers wander through a post-apocalyptic desert to find a way to save the people in their village. A dark, twisted tower has been pushed up from the depths of the Earth... but does it hold the answers they seek?",
     "rawgSlug": "astalon-tears-of-the-earth",
     "steamAppId": "1046400",
-    "steamPositive": 90.5,
-    "steamReviews": 1584
+    "steamPositive": 90.4,
+    "steamReviews": 1590
   },
   {
     "title": "CLANNAD",
@@ -7453,7 +7453,7 @@
     "rawgSlug": "clannad",
     "steamAppId": "324160",
     "steamPositive": 98.4,
-    "steamReviews": 11084
+    "steamReviews": 11102
   },
   {
     "title": "Hitman 3",
@@ -7499,7 +7499,7 @@
     "rawgSlug": "the-banner-saga-3",
     "steamAppId": "485460",
     "steamPositive": 78.5,
-    "steamReviews": 3116
+    "steamReviews": 3118
   },
   {
     "title": "Subnautica",
@@ -7522,7 +7522,7 @@
     "rawgSlug": "subnautica",
     "steamAppId": "264710",
     "steamPositive": 97.1,
-    "steamReviews": 381657
+    "steamReviews": 382025
   },
   {
     "title": "Hellblade: Senua's Sacrifice",
@@ -7545,7 +7545,7 @@
     "rawgSlug": "hellblade-senuas-sacrifice",
     "steamAppId": "414340",
     "steamPositive": 89.9,
-    "steamReviews": 76764
+    "steamReviews": 76808
   },
   {
     "title": "Gris",
@@ -7568,7 +7568,7 @@
     "rawgSlug": "gris",
     "steamAppId": "683320",
     "steamPositive": 96,
-    "steamReviews": 96699
+    "steamReviews": 96794
   },
   {
     "title": "Parkitect",
@@ -7590,7 +7590,7 @@
     "rawgSlug": "parkitect",
     "steamAppId": "453090",
     "steamPositive": 94.2,
-    "steamReviews": 8164
+    "steamReviews": 8168
   },
   {
     "title": "Mini Motorways",
@@ -7612,7 +7612,7 @@
     "rawgSlug": "mini-motorways",
     "steamAppId": "1127500",
     "steamPositive": 96.3,
-    "steamReviews": 24533
+    "steamReviews": 24557
   },
   {
     "title": "Danganronpa 1•2 Reload",
@@ -7657,7 +7657,7 @@
     "rawgSlug": "the-legend-of-heroes-trails-of-cold-steel-iii",
     "steamAppId": "991270",
     "steamPositive": 91.2,
-    "steamReviews": 3270
+    "steamReviews": 3271
   },
   {
     "title": "Life is Strange",
@@ -7671,7 +7671,7 @@
     ],
     "metacritic": 83,
     "rawgRating": 4.12,
-    "rawgRatingsCount": 3786,
+    "rawgRatingsCount": 3787,
     "indie": false,
     "modes": [
       "Single-player"
@@ -7680,7 +7680,7 @@
     "rawgSlug": "life-is-strange-episode-1-2",
     "steamAppId": "319630",
     "steamPositive": 96.3,
-    "steamReviews": 176474
+    "steamReviews": 176611
   },
   {
     "title": "Yakuza Kiwami",
@@ -7693,8 +7693,8 @@
       "PlayStation"
     ],
     "metacritic": 83,
-    "rawgRating": 4.1,
-    "rawgRatingsCount": 782,
+    "rawgRating": 4.11,
+    "rawgRatingsCount": 784,
     "indie": false,
     "modes": [
       "Single-player"
@@ -7703,7 +7703,7 @@
     "rawgSlug": "yakuza-kiwami",
     "steamAppId": "3717330",
     "steamPositive": 83.3,
-    "steamReviews": 1581
+    "steamReviews": 1616
   },
   {
     "title": "Detention",
@@ -7726,7 +7726,7 @@
     "rawgSlug": "detention",
     "steamAppId": "555220",
     "steamPositive": 95.7,
-    "steamReviews": 11854
+    "steamReviews": 11864
   },
   {
     "title": "Wasteland 3",
@@ -7750,7 +7750,7 @@
     "rawgSlug": "wasteland-3",
     "steamAppId": "719040",
     "steamPositive": 84.6,
-    "steamReviews": 22475
+    "steamReviews": 22489
   },
   {
     "title": "Thronebreaker: The Witcher Tales",
@@ -7773,7 +7773,7 @@
     "rawgSlug": "gwent-thronebreaker",
     "steamAppId": "973760",
     "steamPositive": 89.8,
-    "steamReviews": 17419
+    "steamReviews": 17445
   },
   {
     "title": "Hakuoki: Kyoto Winds",
@@ -7795,7 +7795,7 @@
     "rawgSlug": "hakuoki-kyoto-winds",
     "steamAppId": "589530",
     "steamPositive": 93.1,
-    "steamReviews": 2350
+    "steamReviews": 2354
   },
   {
     "title": "Hearts of Iron IV",
@@ -7818,7 +7818,7 @@
     "rawgSlug": "hearts-of-iron-iv",
     "steamAppId": "394360",
     "steamPositive": 89.8,
-    "steamReviews": 361221
+    "steamReviews": 360675
   },
   {
     "title": "Dishonored: Death of the Outsider",
@@ -7841,7 +7841,7 @@
     "rawgSlug": "dishonored-death-of-the-outsider",
     "steamAppId": "614570",
     "steamPositive": 87.6,
-    "steamReviews": 13429
+    "steamReviews": 13437
   },
   {
     "title": "Loop Hero",
@@ -7863,7 +7863,7 @@
     "rawgSlug": "loop-hero",
     "steamAppId": "1282730",
     "steamPositive": 92.7,
-    "steamReviews": 36603
+    "steamReviews": 36622
   },
   {
     "title": "Hitman 2",
@@ -7877,7 +7877,7 @@
     ],
     "metacritic": 83,
     "rawgRating": 4.04,
-    "rawgRatingsCount": 1228,
+    "rawgRatingsCount": 1229,
     "indie": false,
     "modes": [
       "Single-player",
@@ -7887,7 +7887,7 @@
     "rawgSlug": "hitman-2",
     "steamAppId": "6850",
     "steamPositive": 82.1,
-    "steamReviews": 4935
+    "steamReviews": 4941
   },
   {
     "title": "Quern - Undying Thoughts",
@@ -7909,7 +7909,7 @@
     "rawgSlug": "quern-undying-thoughts",
     "steamAppId": "512790",
     "steamPositive": 90.7,
-    "steamReviews": 4115
+    "steamReviews": 4120
   },
   {
     "title": "Broforce",
@@ -7933,7 +7933,7 @@
     "rawgSlug": "broforce",
     "steamAppId": "274190",
     "steamPositive": 96.9,
-    "steamReviews": 61092
+    "steamReviews": 61127
   },
   {
     "title": "Infernax",
@@ -7955,8 +7955,8 @@
     "note": "Using a revolutionary, or at least it was back in 1988, leveling system, Infernax is an old school adventure platformer game with puzzle elements. It's a whole new innovative style and since nobody has ever done anyth…",
     "rawgSlug": "infernax",
     "steamAppId": "374190",
-    "steamPositive": 93.1,
-    "steamReviews": 2276
+    "steamPositive": 93,
+    "steamReviews": 2280
   },
   {
     "title": "Deus Ex: Mankind Divided",
@@ -7979,7 +7979,7 @@
     "rawgSlug": "deus-ex-mankind-divided",
     "steamAppId": "337000",
     "steamPositive": 76.5,
-    "steamReviews": 42393
+    "steamReviews": 42416
   },
   {
     "title": "Grim Dawn",
@@ -8002,7 +8002,7 @@
     "rawgSlug": "grim-dawn",
     "steamAppId": "219990",
     "steamPositive": 93.4,
-    "steamReviews": 110275
+    "steamReviews": 110383
   },
   {
     "title": "Valkyria Chronicles 4",
@@ -8025,7 +8025,7 @@
     "rawgSlug": "valkyria-chronicles-4",
     "steamAppId": "790820",
     "steamPositive": 86.1,
-    "steamReviews": 7125
+    "steamReviews": 7137
   },
   {
     "title": "Hitman",
@@ -8039,7 +8039,7 @@
     ],
     "metacritic": 83,
     "rawgRating": 3.93,
-    "rawgRatingsCount": 2037,
+    "rawgRatingsCount": 2038,
     "indie": false,
     "modes": [
       "Single-player"
@@ -8048,7 +8048,7 @@
     "rawgSlug": "hitman",
     "steamAppId": "203140",
     "steamPositive": 93.2,
-    "steamReviews": 64141
+    "steamReviews": 64232
   },
   {
     "title": "Devil Daggers",
@@ -8070,7 +8070,7 @@
     "rawgSlug": "devil-daggers",
     "steamAppId": "422970",
     "steamPositive": 95.3,
-    "steamReviews": 9536
+    "steamReviews": 9540
   },
   {
     "title": "Gears 5",
@@ -8083,7 +8083,7 @@
     ],
     "metacritic": 83,
     "rawgRating": 3.91,
-    "rawgRatingsCount": 845,
+    "rawgRatingsCount": 846,
     "indie": false,
     "modes": [
       "Single-player",
@@ -8094,7 +8094,7 @@
     "rawgSlug": "gears-5",
     "steamAppId": "1097840",
     "steamPositive": 70.8,
-    "steamReviews": 25409
+    "steamReviews": 25451
   },
   {
     "title": "ABZU",
@@ -8117,7 +8117,7 @@
     "rawgSlug": "abzu-2",
     "steamAppId": "384190",
     "steamPositive": 92.9,
-    "steamReviews": 27731
+    "steamReviews": 27739
   },
   {
     "title": "Steel Division: Normandy 44",
@@ -8139,7 +8139,7 @@
     "rawgSlug": "steel-division-normandy-44",
     "steamAppId": "572410",
     "steamPositive": 74.5,
-    "steamReviews": 6324
+    "steamReviews": 6329
   },
   {
     "title": "Four Last Things",
@@ -8186,7 +8186,7 @@
     "rawgSlug": "borderlands-3",
     "steamAppId": "397540",
     "steamPositive": 81.1,
-    "steamReviews": 164290
+    "steamReviews": 164344
   },
   {
     "title": "Chicken Police – Paint it RED!",
@@ -8232,7 +8232,7 @@
     "rawgSlug": "planet-coaster",
     "steamAppId": "493340",
     "steamPositive": 91.3,
-    "steamReviews": 72264
+    "steamReviews": 72272
   },
   {
     "title": "Don't Starve Together",
@@ -8257,7 +8257,7 @@
     "rawgSlug": "dont-starve-together",
     "steamAppId": "322330",
     "steamPositive": 94.9,
-    "steamReviews": 544395
+    "steamReviews": 544739
   },
   {
     "title": "MLB The Show 20",
@@ -8302,7 +8302,7 @@
     "rawgSlug": "the-sexy-brutale",
     "steamAppId": "552590",
     "steamPositive": 91.9,
-    "steamReviews": 4187
+    "steamReviews": 4189
   },
   {
     "title": "Tom Clancy’s The Division 2",
@@ -8342,7 +8342,7 @@
     ],
     "metacritic": 83,
     "rawgRating": 3.72,
-    "rawgRatingsCount": 588,
+    "rawgRatingsCount": 589,
     "indie": true,
     "modes": [
       "Single-player"
@@ -8596,8 +8596,8 @@
       "PlayStation"
     ],
     "metacritic": 83,
-    "rawgRating": 3.27,
-    "rawgRatingsCount": 80,
+    "rawgRating": 3.29,
+    "rawgRatingsCount": 81,
     "indie": false,
     "modes": [
       "Single-player"
@@ -9173,7 +9173,7 @@
     ],
     "metacritic": 82,
     "rawgRating": 4.15,
-    "rawgRatingsCount": 1277,
+    "rawgRatingsCount": 1279,
     "indie": true,
     "modes": [
       "Single-player"
@@ -9268,7 +9268,7 @@
     ],
     "metacritic": 82,
     "rawgRating": 4.14,
-    "rawgRatingsCount": 831,
+    "rawgRatingsCount": 832,
     "indie": false,
     "modes": [
       "Single-player"
@@ -9523,7 +9523,7 @@
     ],
     "metacritic": 82,
     "rawgRating": 3.97,
-    "rawgRatingsCount": 1146,
+    "rawgRatingsCount": 1147,
     "indie": false,
     "modes": [
       "Single-player"
@@ -10011,7 +10011,7 @@
     ],
     "metacritic": 82,
     "rawgRating": 3.8,
-    "rawgRatingsCount": 44,
+    "rawgRatingsCount": 45,
     "indie": false,
     "modes": [
       "Single-player"
@@ -10045,6 +10045,29 @@
     "steamReviews": null
   },
   {
+    "title": "DRAGON QUEST BUILDERS",
+    "year": 2016,
+    "developer": "Square Enix",
+    "genre": "Strategy & 4X",
+    "genreDetail": "Action, Adventure, RPG, Strategy",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": 82,
+    "rawgRating": 3.76,
+    "rawgRatingsCount": 114,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Generations ago, the realm of Alefgard was plunged into darkness by the terrible and treacherous Dragonlord, ruler of all monsters. Mankind was robbed of the power to build and forced to wander the ruins of their form…",
+    "rawgSlug": "dragon-quest-builders",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "BlazBlue: Chrono Phantasma EXTEND",
     "year": 2015,
     "developer": "Arc System Works",
@@ -10068,29 +10091,6 @@
     "steamReviews": null
   },
   {
-    "title": "DRAGON QUEST BUILDERS",
-    "year": 2016,
-    "developer": "Square Enix",
-    "genre": "Strategy & 4X",
-    "genreDetail": "Action, Adventure, RPG, Strategy",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": 82,
-    "rawgRating": 3.75,
-    "rawgRatingsCount": 113,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Generations ago, the realm of Alefgard was plunged into darkness by the terrible and treacherous Dragonlord, ruler of all monsters. Mankind was robbed of the power to build and forced to wander the ruins of their form…",
-    "rawgSlug": "dragon-quest-builders",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
     "title": "Moonlighter",
     "year": 2018,
     "developer": "11 Bit Studios",
@@ -10102,13 +10102,35 @@
     ],
     "metacritic": 82,
     "rawgRating": 3.75,
-    "rawgRatingsCount": 499,
+    "rawgRatingsCount": 500,
     "indie": true,
     "modes": [
       "Single-player"
     ],
     "note": "During an archeological excavation – a set of Gates were discovered. People quickly realized that these ancient passages lead to different realms and dimensions. Rynoka, a small commercial village, was found near the…",
     "rawgSlug": "moonlighter",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "Disc Room",
+    "year": 2020,
+    "developer": "Terri Vellmann",
+    "genre": "Narrative & Tactics",
+    "genreDetail": "Action, Adventure, Indie",
+    "platforms": [
+      "PC"
+    ],
+    "metacritic": 82,
+    "rawgRating": 3.69,
+    "rawgRatingsCount": 58,
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Are you ready to get sliced in half? The year is 2089 and a giant disc has appeared in orbit of Jupiter. Step into the oversized space suit of a brave scientist and explore this sprawling intergalactic slaughterhouse.",
+    "rawgSlug": "disc-room-2",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -10132,28 +10154,6 @@
     ],
     "note": "In 1972 a crack commando unit threw you in prison for a crime you didn't commit. You promptly escaped from a maxumum-security stockade to the underground trying to survive from these soldiers of fortune.",
     "rawgSlug": "unmetal",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Disc Room",
-    "year": 2020,
-    "developer": "Terri Vellmann",
-    "genre": "Narrative & Tactics",
-    "genreDetail": "Action, Adventure, Indie",
-    "platforms": [
-      "PC"
-    ],
-    "metacritic": 82,
-    "rawgRating": 3.69,
-    "rawgRatingsCount": 58,
-    "indie": true,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Are you ready to get sliced in half? The year is 2089 and a giant disc has appeared in orbit of Jupiter. Step into the oversized space suit of a brave scientist and explore this sprawling intergalactic slaughterhouse.",
-    "rawgSlug": "disc-room-2",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -10747,8 +10747,8 @@
       "PlayStation"
     ],
     "metacritic": 82,
-    "rawgRating": 3.01,
-    "rawgRatingsCount": 68,
+    "rawgRating": 3.04,
+    "rawgRatingsCount": 69,
     "indie": false,
     "modes": [
       "Single-player"
@@ -11144,6 +11144,29 @@
     "steamReviews": null
   },
   {
+    "title": "Alba: A Wildlife Adventure",
+    "year": 2020,
+    "developer": "ustwo games",
+    "genre": "Action & Adventure",
+    "genreDetail": "Adventure, Casual",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": 81,
+    "rawgRating": 4.16,
+    "rawgRatingsCount": 83,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Alba: a Wildlife Adventure is a new tale from the creators of Monument Valley and Assemble with Care. When Alba visits her grandparents on a Mediterranean island, she is ready for a peaceful summer of wildlife explora…",
+    "rawgSlug": "alba-a-wildlife-adventure",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "Overcooked",
     "year": 2016,
     "developer": "Team17 Digital",
@@ -11230,6 +11253,29 @@
     ],
     "note": "Steamworld Heist is a pirate-themed turn-based strategy with shooter and platformer elements. You take on the role of a pirate captain, Piper, as she recruits robots and leads them through space to capture enemy ships…",
     "rawgSlug": "steamworld-heist",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "Stories Untold",
+    "year": 2017,
+    "developer": "No Code",
+    "genre": "Survival & Sim",
+    "genreDetail": "Adventure, Simulation, Indie",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": 81,
+    "rawgRating": 3.9,
+    "rawgRatingsCount": 179,
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "“Stories Untold” is a narrative-driven experimental adventure game, that bends the genre into something completely unique. Combining a mix of classic text-adventure, point-and-click and more, 4 short stories are packa…",
+    "rawgSlug": "stories-untold",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -11351,28 +11397,6 @@
     "steamReviews": null
   },
   {
-    "title": "SteamWorld Quest: Hand of Gilgamech",
-    "year": 2019,
-    "developer": "Image & Form",
-    "genre": "RPG",
-    "genreDetail": "Action, Adventure, RPG, Card",
-    "platforms": [
-      "PC"
-    ],
-    "metacritic": 81,
-    "rawgRating": 3.81,
-    "rawgRatingsCount": 82,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "SteamWorld Quest is the roleplaying card game you’ve been waiting for! Lead a party of aspiring heroes through a beautifully hand-drawn world and intense battles using only your wits and a handful of cards. Take on wh…",
-    "rawgSlug": "steamworld-quest",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
     "title": "Barotrauma",
     "year": 2023,
     "developer": "FakeFish",
@@ -11466,24 +11490,23 @@
     "steamReviews": null
   },
   {
-    "title": "Gunvolt Chronicles: Luminous Avenger iX",
-    "year": 2019,
-    "developer": "Inti Creates",
-    "genre": "Action & Adventure",
-    "genreDetail": "Action",
+    "title": "Sunless Sea",
+    "year": 2015,
+    "developer": "Failbetter Games",
+    "genre": "RPG",
+    "genreDetail": "Adventure, RPG, Indie",
     "platforms": [
-      "PC",
-      "PlayStation"
+      "PC"
     ],
     "metacritic": 81,
-    "rawgRating": 3.67,
-    "rawgRatingsCount": 9,
-    "indie": false,
+    "rawgRating": 3.69,
+    "rawgRatingsCount": 242,
+    "indie": true,
     "modes": [
       "Single-player"
     ],
-    "note": "\"Get ready for the apeX of 2D action!\"<br/>",
-    "rawgSlug": "gunvolt-chronicles-luminous-avenger-ix",
+    "note": "###The help from Kickstarter backers",
+    "rawgSlug": "sunless-sea",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -11530,29 +11553,6 @@
     ],
     "note": "The battle for suburbia grows to crazy new heights in Plants vs. Zombies™ Garden Warfare 2! In this hilarious, action-packed shooter, zombie leader Dr. Zomboss has strengthened his horde and rebuilt suburbia as a zomb…",
     "rawgSlug": "plants-vs-zombies-garden-warfare-2",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Torment: Tides of Numenera",
-    "year": 2017,
-    "developer": "Techland",
-    "genre": "Strategy & 4X",
-    "genreDetail": "Adventure, RPG, Strategy, Indie",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": 81,
-    "rawgRating": 3.59,
-    "rawgRatingsCount": 206,
-    "indie": true,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Torment: Tides of Numenera is a role-playing game developed by inXile Entertainment in 2017.",
-    "rawgSlug": "torment-tides-of-numenera",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -11698,6 +11698,29 @@
     "steamReviews": null
   },
   {
+    "title": "The Journey Down: Chapter Three",
+    "year": 2017,
+    "developer": "BlitWorks",
+    "genre": "Puzzle & Exploration",
+    "genreDetail": "Adventure, Indie, Puzzle",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": 81,
+    "rawgRating": 2.7,
+    "rawgRatingsCount": 23,
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "In the jungles of the Underland, scattered remnants of an ancient culture speak of a great evil that dwells in the shadowy depths of the Kwayerumoshi caves. But even the darkest secrets of this lost age are about to b…",
+    "rawgSlug": "the-journey-down-chapter-three",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "Nelly Cootalot: The Fowl Fleet",
     "year": 2016,
     "developer": "Application Systems Heidelberg Software",
@@ -11715,28 +11738,6 @@
     ],
     "note": "Join Nelly in this point and click adventure, and rescue birds hypnotised by the villainous Baron Widebeard. Meet a hilarious cast of characters including Tom Baker (Dr Who) and explore a hand-drawn world created by a…",
     "rawgSlug": "nelly-cootalot-the-fowl-fleet",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Ynglet",
-    "year": 2021,
-    "developer": "Nifflas' Games",
-    "genre": "Narrative & Tactics",
-    "genreDetail": "Action, Casual, Indie",
-    "platforms": [
-      "PC"
-    ],
-    "metacritic": 81,
-    "rawgRating": 0,
-    "rawgRatingsCount": 4,
-    "indie": true,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Swim, launch and bounce through this meditative floating platformer.",
-    "rawgSlug": "ynglet",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -12468,7 +12469,7 @@
     ],
     "metacritic": 73,
     "rawgRating": 3.85,
-    "rawgRatingsCount": 634,
+    "rawgRatingsCount": 635,
     "indie": false,
     "modes": [
       "Single-player"
@@ -13323,7 +13324,7 @@
     ],
     "metacritic": null,
     "rawgRating": 4.69,
-    "rawgRatingsCount": 478,
+    "rawgRatingsCount": 479,
     "indie": false,
     "modes": [
       "Single-player"
@@ -13346,7 +13347,7 @@
     ],
     "metacritic": null,
     "rawgRating": 4.67,
-    "rawgRatingsCount": 577,
+    "rawgRatingsCount": 578,
     "indie": false,
     "modes": [
       "Single-player"
@@ -13391,8 +13392,8 @@
       "PlayStation"
     ],
     "metacritic": null,
-    "rawgRating": 4.49,
-    "rawgRatingsCount": 136,
+    "rawgRating": 4.5,
+    "rawgRatingsCount": 137,
     "indie": false,
     "modes": [
       "Single-player"
@@ -13473,9 +13474,9 @@
     "steamReviews": null
   },
   {
-    "title": "Resident Evil 9: Requiem",
+    "title": "007 First Light",
     "year": 2026,
-    "developer": "Capcom",
+    "developer": "IO Interactive",
     "genre": "Action & Adventure",
     "genreDetail": "Action",
     "platforms": [
@@ -13484,13 +13485,13 @@
     ],
     "metacritic": null,
     "rawgRating": 4.43,
-    "rawgRatingsCount": 183,
+    "rawgRatingsCount": 97,
     "indie": false,
     "modes": [
       "Single-player"
     ],
-    "note": "Resident Evil Requiem is the ninth title in the mainline Resident Evil series.",
-    "rawgSlug": "resident-evil-9-requiem",
+    "note": "007 First Light is a brand new James Bond video game developed and published by IO Interactive.",
+    "rawgSlug": "007-first-light",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -13507,7 +13508,7 @@
     ],
     "metacritic": null,
     "rawgRating": 4.42,
-    "rawgRatingsCount": 813,
+    "rawgRatingsCount": 815,
     "indie": false,
     "modes": [
       "Single-player"
@@ -13530,7 +13531,7 @@
     ],
     "metacritic": null,
     "rawgRating": 4.42,
-    "rawgRatingsCount": 508,
+    "rawgRatingsCount": 509,
     "indie": false,
     "modes": [
       "Single-player"
@@ -13542,9 +13543,9 @@
     "steamReviews": null
   },
   {
-    "title": "007 First Light",
+    "title": "Resident Evil 9: Requiem",
     "year": 2026,
-    "developer": "IO Interactive",
+    "developer": "Capcom",
     "genre": "Action & Adventure",
     "genreDetail": "Action",
     "platforms": [
@@ -13553,36 +13554,13 @@
     ],
     "metacritic": null,
     "rawgRating": 4.42,
-    "rawgRatingsCount": 95,
+    "rawgRatingsCount": 185,
     "indie": false,
     "modes": [
       "Single-player"
     ],
-    "note": "007 First Light is a brand new James Bond video game developed and published by IO Interactive.",
-    "rawgSlug": "007-first-light",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Dispatch",
-    "year": 2025,
-    "developer": "AdHoc Studio",
-    "genre": "Strategy & 4X",
-    "genreDetail": "Action, Adventure, Strategy, Casual, Indie",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 4.4,
-    "rawgRatingsCount": 244,
-    "indie": true,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Dispatch is a superhero workplace comedy where choices matter. Manage a dysfunctional team of misfit heroes and strategize who to send to emergencies around the city, all while balancing office politics, personal rela…",
-    "rawgSlug": "dispatch-2",
+    "note": "Resident Evil Requiem is the ninth title in the mainline Resident Evil series.",
+    "rawgSlug": "resident-evil-9-requiem",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -13599,7 +13577,7 @@
     ],
     "metacritic": null,
     "rawgRating": 4.39,
-    "rawgRatingsCount": 257,
+    "rawgRatingsCount": 258,
     "indie": false,
     "modes": [
       "Co-op",
@@ -13607,6 +13585,29 @@
     ],
     "note": "Embrace mind-blowing moments as you’re pulled deep into the many worlds of Split Fiction, a boundary-pushing co-op action adventure from the studio behind 2021 Game of the Year Winner, It Takes Two. Mio and Zoe are co…",
     "rawgSlug": "split-fiction",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "Dispatch",
+    "year": 2025,
+    "developer": "AdHoc Studio",
+    "genre": "Strategy & 4X",
+    "genreDetail": "Action, Adventure, Strategy, Casual, Indie",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 4.39,
+    "rawgRatingsCount": 245,
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Dispatch is a superhero workplace comedy where choices matter. Manage a dysfunctional team of misfit heroes and strategize who to send to emergencies around the city, all while balancing office politics, personal rela…",
+    "rawgSlug": "dispatch-2",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -13636,29 +13637,6 @@
     "steamReviews": null
   },
   {
-    "title": "Hollow Knight: Silksong",
-    "year": 2025,
-    "developer": "Team Cherry",
-    "genre": "Platformer & Metroidvania",
-    "genreDetail": "Action, Adventure, Indie, Platformer",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 4.38,
-    "rawgRatingsCount": 265,
-    "indie": true,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Hollow Knight: Silksong is the epic sequel to Hollow Knight, the epic action-adventure of bugs and heroes. As the lethal hunter Hornet, journey to all-new lands, discover new powers, battle vast hordes of bugs and bea…",
-    "rawgSlug": "hollow-knight-silksong",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
     "title": "Lost in Play",
     "year": 2022,
     "developer": "Happy Juice Games",
@@ -13682,6 +13660,29 @@
     "steamReviews": null
   },
   {
+    "title": "Hollow Knight: Silksong",
+    "year": 2025,
+    "developer": "Team Cherry",
+    "genre": "Platformer & Metroidvania",
+    "genreDetail": "Action, Adventure, Indie, Platformer",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 4.37,
+    "rawgRatingsCount": 266,
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Hollow Knight: Silksong is the epic sequel to Hollow Knight, the epic action-adventure of bugs and heroes. As the lethal hunter Hornet, journey to all-new lands, discover new powers, battle vast hordes of bugs and bea…",
+    "rawgSlug": "hollow-knight-silksong",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "Cocoon",
     "year": 2023,
     "developer": "Geometric Interactive",
@@ -13693,7 +13694,7 @@
     ],
     "metacritic": null,
     "rawgRating": 4.37,
-    "rawgRatingsCount": 201,
+    "rawgRatingsCount": 202,
     "indie": true,
     "modes": [
       "Single-player"
@@ -13739,7 +13740,7 @@
     ],
     "metacritic": null,
     "rawgRating": 4.37,
-    "rawgRatingsCount": 116,
+    "rawgRatingsCount": 117,
     "indie": false,
     "modes": [
       "Single-player"
@@ -13751,23 +13752,24 @@
     "steamReviews": null
   },
   {
-    "title": "Hades II",
+    "title": "Kingdom Come: Deliverance II",
     "year": 2025,
-    "developer": "Supergiant Games",
+    "developer": "Warhorse Studios",
     "genre": "RPG",
-    "genreDetail": "Action, Adventure, RPG, Indie",
+    "genreDetail": "Action, Adventure, RPG",
     "platforms": [
-      "PC"
+      "PC",
+      "PlayStation"
     ],
     "metacritic": null,
     "rawgRating": 4.36,
-    "rawgRatingsCount": 143,
-    "indie": true,
+    "rawgRatingsCount": 186,
+    "indie": false,
     "modes": [
       "Single-player"
     ],
-    "note": "The first-ever sequel from Supergiant Games builds on the best aspects of the original god-like rogue-like dungeon crawler in an all-new, action-packed, endlessly replayable experience rooted in the Underworld of Gree…",
-    "rawgSlug": "hades-ii",
+    "note": "Kingdom of Bohemia, Early 15th Century: chaos has befallen the kingdom. As invaders pillage this ungoverned land, sowing fear and terror, Henry of Skalitz seeks revenge for his murdered family.",
+    "rawgSlug": "kingdom-come-deliverance-ii",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -13795,48 +13797,23 @@
     "steamReviews": null
   },
   {
-    "title": "Marvel's Spider-Man 2",
-    "year": 2023,
-    "developer": "Insomniac Games",
-    "genre": "Action & Adventure",
-    "genreDetail": "Action, Adventure",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 4.35,
-    "rawgRatingsCount": 371,
-    "indie": false,
-    "modes": [
-      "Single-player",
-      "Co-op"
-    ],
-    "note": "Marvel's Spider-Man 2 is a 2023 action-adventure game developed by Insomniac Games and published by Sony Interactive Entertainment. It is based on the Marvel Comics character Spider-Man, and features a narrative inspi…",
-    "rawgSlug": "marvels-spider-man-2",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Kingdom Come: Deliverance II",
+    "title": "Hades II",
     "year": 2025,
-    "developer": "Warhorse Studios",
+    "developer": "Supergiant Games",
     "genre": "RPG",
-    "genreDetail": "Action, Adventure, RPG",
+    "genreDetail": "Action, Adventure, RPG, Indie",
     "platforms": [
-      "PC",
-      "PlayStation"
+      "PC"
     ],
     "metacritic": null,
     "rawgRating": 4.35,
-    "rawgRatingsCount": 184,
-    "indie": false,
+    "rawgRatingsCount": 144,
+    "indie": true,
     "modes": [
       "Single-player"
     ],
-    "note": "Kingdom of Bohemia, Early 15th Century: chaos has befallen the kingdom. As invaders pillage this ungoverned land, sowing fear and terror, Henry of Skalitz seeks revenge for his murdered family.",
-    "rawgSlug": "kingdom-come-deliverance-ii",
+    "note": "The first-ever sequel from Supergiant Games builds on the best aspects of the original god-like rogue-like dungeon crawler in an all-new, action-packed, endlessly replayable experience rooted in the Underworld of Gree…",
+    "rawgSlug": "hades-ii",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -13860,6 +13837,53 @@
     ],
     "note": "Embark on an inspiring mission of human connection beyond the UCA. Sam—with companions by his side—sets out on a new journey to save humanity from extinction. Join them as they traverse a world beset by otherworldly e…",
     "rawgSlug": "death-stranding-2",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "Marvel's Spider-Man 2",
+    "year": 2023,
+    "developer": "Insomniac Games",
+    "genre": "Action & Adventure",
+    "genreDetail": "Action, Adventure",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 4.34,
+    "rawgRatingsCount": 373,
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Co-op"
+    ],
+    "note": "Marvel's Spider-Man 2 is a 2023 action-adventure game developed by Insomniac Games and published by Sony Interactive Entertainment. It is based on the Marvel Comics character Spider-Man, and features a narrative inspi…",
+    "rawgSlug": "marvels-spider-man-2",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "Pragmata",
+    "year": 2026,
+    "developer": "Capcom",
+    "genre": "Action & Adventure",
+    "genreDetail": "Action",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 4.34,
+    "rawgRatingsCount": 101,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Capcom’s newest IP—PRAGMATA. An all-new Science Fiction action adventure with its own unique hacking twist!",
+    "rawgSlug": "pragmata",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -13922,7 +13946,7 @@
     ],
     "metacritic": null,
     "rawgRating": 4.33,
-    "rawgRatingsCount": 458,
+    "rawgRatingsCount": 460,
     "indie": false,
     "modes": [
       "Single-player"
@@ -13945,36 +13969,13 @@
     ],
     "metacritic": null,
     "rawgRating": 4.33,
-    "rawgRatingsCount": 103,
+    "rawgRatingsCount": 104,
     "indie": false,
     "modes": [
       "Single-player"
     ],
     "note": "The Unknown Journey Continues...",
     "rawgSlug": "final-fantasy-vii-rebirth",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Pragmata",
-    "year": 2026,
-    "developer": "Capcom",
-    "genre": "Action & Adventure",
-    "genreDetail": "Action",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 4.33,
-    "rawgRatingsCount": 101,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Capcom’s newest IP—PRAGMATA. An all-new Science Fiction action adventure with its own unique hacking twist!",
-    "rawgSlug": "pragmata",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -14013,7 +14014,7 @@
     ],
     "metacritic": null,
     "rawgRating": 4.33,
-    "rawgRatingsCount": 49,
+    "rawgRatingsCount": 50,
     "indie": false,
     "modes": [
       "Single-player"
@@ -14083,7 +14084,7 @@
     ],
     "metacritic": null,
     "rawgRating": 4.32,
-    "rawgRatingsCount": 72,
+    "rawgRatingsCount": 73,
     "indie": true,
     "modes": [
       "Single-player"
@@ -14129,13 +14130,36 @@
     ],
     "metacritic": null,
     "rawgRating": 4.31,
-    "rawgRatingsCount": 74,
+    "rawgRatingsCount": 75,
     "indie": false,
     "modes": [
       "Single-player"
     ],
     "note": "The Talos Principle 2 is a thought-provoking first-person puzzle experience that greatly expands on the first game's philosophical themes and stunning environments with increasingly mind-bending challenges.",
     "rawgSlug": "talos-principle-2",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "Bomb Rush Cyberfunk",
+    "year": 2023,
+    "developer": "Team Reptile",
+    "genre": "Narrative & Tactics",
+    "genreDetail": "Action, Adventure, Indie",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 4.31,
+    "rawgRatingsCount": 45,
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Team Reptile brings you Bomb Rush Cyberfunk, 1 second per second of highly advanced funkstyle. In a world from the mind of Dion Koster, where self-styled crews are equipped with personal boostpacks, new heights of gra…",
+    "rawgSlug": "bomb-rush-cyberfunk",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -14234,24 +14258,24 @@
     "steamReviews": null
   },
   {
-    "title": "Bomb Rush Cyberfunk",
+    "title": "Horizon Forbidden West Complete Edition",
     "year": 2023,
-    "developer": "Team Reptile",
-    "genre": "Narrative & Tactics",
-    "genreDetail": "Action, Adventure, Indie",
+    "developer": "Guerrilla Games",
+    "genre": "RPG",
+    "genreDetail": "Action, Adventure, RPG",
     "platforms": [
       "PC",
       "PlayStation"
     ],
     "metacritic": null,
     "rawgRating": 4.3,
-    "rawgRatingsCount": 44,
-    "indie": true,
+    "rawgRatingsCount": 46,
+    "indie": false,
     "modes": [
       "Single-player"
     ],
-    "note": "Team Reptile brings you Bomb Rush Cyberfunk, 1 second per second of highly advanced funkstyle. In a world from the mind of Dion Koster, where self-styled crews are equipped with personal boostpacks, new heights of gra…",
-    "rawgSlug": "bomb-rush-cyberfunk",
+    "note": "Join Aloy as she braves the Forbidden West, a deadly frontier that conceals mysterious new threats.",
+    "rawgSlug": "horizon-forbidden-westtm-complete-edition",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -14268,7 +14292,7 @@
     ],
     "metacritic": null,
     "rawgRating": 4.29,
-    "rawgRatingsCount": 196,
+    "rawgRatingsCount": 198,
     "indie": false,
     "modes": [
       "Single-player"
@@ -14321,29 +14345,6 @@
     ],
     "note": "Man cannot remake himself without suffering, for he is both the marble and the sculptor - Alexis Carrel",
     "rawgSlug": "the-alters",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Horizon Forbidden West Complete Edition",
-    "year": 2023,
-    "developer": "Guerrilla Games",
-    "genre": "RPG",
-    "genreDetail": "Action, Adventure, RPG",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 4.29,
-    "rawgRatingsCount": 45,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Join Aloy as she braves the Forbidden West, a deadly frontier that conceals mysterious new threats.",
-    "rawgSlug": "horizon-forbidden-westtm-complete-edition",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -14417,6 +14418,29 @@
     "steamReviews": null
   },
   {
+    "title": "Metaphor: ReFantazio",
+    "year": 2024,
+    "developer": "Atlus",
+    "genre": "RPG",
+    "genreDetail": "Action, Adventure, RPG",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 4.27,
+    "rawgRatingsCount": 78,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "\"Write your destiny and rise above fear as you step into a fantasy world unlike anything you’ve seen before. Fraught with unsettling mystery, the kingdom stands on a precipice. Now, you must embark on a journey, overc…",
+    "rawgSlug": "metaphor-refantazio",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "Bramble: The Mountain King",
     "year": 2023,
     "developer": "Dimfrost",
@@ -14440,6 +14464,28 @@
     "steamReviews": null
   },
   {
+    "title": "Dave the Diver",
+    "year": 2023,
+    "developer": "MINTROCKET",
+    "genre": "RPG",
+    "genreDetail": "Action, Adventure, RPG, Simulation",
+    "platforms": [
+      "PC"
+    ],
+    "metacritic": null,
+    "rawgRating": 4.26,
+    "rawgRatingsCount": 195,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Welcome to 'DAVE THE DIVER', a marine adventure set in the mysterious Blue Hole. Explore the sea with Dave by day, and run a sushi restaurant at night. Uncover the secrets of the Blue Hole, and unwrap this deep sea my…",
+    "rawgSlug": "dave-the-diver",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "Fortnite Looping",
     "year": 2023,
     "developer": "Germans Projects",
@@ -14457,29 +14503,6 @@
     ],
     "note": "Get ready to drop into the ultimate Zone Wars experience with our action-packed Fortnite fangame! Available on Android and PC, players will build structures, and engage in intense combat against other players in a fig…",
     "rawgSlug": "fortnite-looping",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Metaphor: ReFantazio",
-    "year": 2024,
-    "developer": "Atlus",
-    "genre": "RPG",
-    "genreDetail": "Action, Adventure, RPG",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 4.26,
-    "rawgRatingsCount": 77,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "\"Write your destiny and rise above fear as you step into a fantasy world unlike anything you’ve seen before. Fraught with unsettling mystery, the kingdom stands on a precipice. Now, you must embark on a journey, overc…",
-    "rawgSlug": "metaphor-refantazio",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -14525,28 +14548,6 @@
     ],
     "note": "An unusual fishing RPG with a sinister undercurrent. Catch more than 125 deep sea denizens and pack them into your cargo hold for maximum profit. Dredge the seabed for valuables and relics. Get acquainted with the loc…",
     "rawgSlug": "dredge",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Dave the Diver",
-    "year": 2023,
-    "developer": "MINTROCKET",
-    "genre": "RPG",
-    "genreDetail": "Action, Adventure, RPG, Simulation",
-    "platforms": [
-      "PC"
-    ],
-    "metacritic": null,
-    "rawgRating": 4.25,
-    "rawgRatingsCount": 195,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Welcome to 'DAVE THE DIVER', a marine adventure set in the mysterious Blue Hole. Explore the sea with Dave by day, and run a sushi restaurant at night. Uncover the secrets of the Blue Hole, and unwrap this deep sea my…",
-    "rawgSlug": "dave-the-diver",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -14690,6 +14691,29 @@
     "steamReviews": null
   },
   {
+    "title": "Animal Well",
+    "year": 2024,
+    "developer": "Shared Memory",
+    "genre": "Narrative & Tactics",
+    "genreDetail": "Action, Adventure, Indie",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 4.24,
+    "rawgRatingsCount": 82,
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Explore a dense, interconnected labyrinth, and unravel its many secrets. Collect items to manipulate your environment in surprising and meaningful ways. Encounter creatures both beautiful and unsettling, as you attemp…",
+    "rawgSlug": "animal-well",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "Little Red Riding Hood and the Mysterious Cave",
     "year": 2022,
     "developer": "—",
@@ -14804,29 +14828,6 @@
     "steamReviews": null
   },
   {
-    "title": "Animal Well",
-    "year": 2024,
-    "developer": "Shared Memory",
-    "genre": "Narrative & Tactics",
-    "genreDetail": "Action, Adventure, Indie",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 4.23,
-    "rawgRatingsCount": 81,
-    "indie": true,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Explore a dense, interconnected labyrinth, and unravel its many secrets. Collect items to manipulate your environment in surprising and meaningful ways. Encounter creatures both beautiful and unsettling, as you attemp…",
-    "rawgSlug": "animal-well",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
     "title": "Helldivers II",
     "year": 2024,
     "developer": "Arrowhead Game Studios",
@@ -14850,6 +14851,29 @@
     "steamReviews": null
   },
   {
+    "title": "Horizon Zero Dawn Remastered",
+    "year": 2024,
+    "developer": "Guerrilla Games",
+    "genre": "Shooter & FPS",
+    "genreDetail": "Action, Shooter, Adventure, RPG",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 4.23,
+    "rawgRatingsCount": 51,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "",
+    "rawgSlug": "horizon-zero-dawn-remastered",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "Star Wars Jedi: Survivor",
     "year": 2023,
     "developer": "Respawn Entertainment",
@@ -14868,29 +14892,6 @@
     ],
     "note": "Star Wars Jedi: Survivor picks up five years after the events of Star Wars Jedi: Fallen Order. Cal must stay one step ahead of the Empire’s constant pursuit as he continues to feel the weight of being one of the last…",
     "rawgSlug": "star-wars-jedi-survivor",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Horizon Zero Dawn Remastered",
-    "year": 2024,
-    "developer": "Guerrilla Games",
-    "genre": "Shooter & FPS",
-    "genreDetail": "Action, Shooter, Adventure, RPG",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 4.22,
-    "rawgRatingsCount": 50,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "",
-    "rawgSlug": "horizon-zero-dawn-remastered",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -14942,6 +14943,28 @@
     "steamReviews": null
   },
   {
+    "title": "Ghost of Yotei",
+    "year": 2025,
+    "developer": "Sucker Punch Productions",
+    "genre": "RPG",
+    "genreDetail": "Action, RPG",
+    "platforms": [
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 4.21,
+    "rawgRatingsCount": 54,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Taking place 300 years after the critically acclaimed Ghost of Tsushima, this standalone experience follows a haunted, lone mercenary named Atsu in the 1600s. Thirsty for revenge, she sets out to hunt down those who k…",
+    "rawgSlug": "ghost-of-yotei",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "Citizen Sleeper",
     "year": 2022,
     "developer": "Jump Over The Age",
@@ -14981,6 +15004,28 @@
     ],
     "note": "Tiny Bunny Is A Non-linear Horror Visual Novel.We're planning to release the game as 5 episodes; The first & second of them is already out for you to enjoy.",
     "rawgSlug": "tiny-bunny",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "Lovecraft Locker: Tentacle Lust",
+    "year": 2022,
+    "developer": "Strange Girl Studios",
+    "genre": "Strategy & 4X",
+    "genreDetail": "Strategy, Indie",
+    "platforms": [
+      "PC"
+    ],
+    "metacritic": null,
+    "rawgRating": 4.2,
+    "rawgRatingsCount": 158,
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Lovecraft Locker: Tentacle Lust is a casual strategy adult game loosely inspired by the original Tentacle Locker by Hotpinkgames from 2018. We're a huge fan of tentacles stuff in NSFW/adult games, media, and art, as w…",
+    "rawgSlug": "lovecraft-locker",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -15026,50 +15071,6 @@
     ],
     "note": "Vampire Survivors is currently a time survival game with minimalistic gameplay and roguelite elements.",
     "rawgSlug": "vampire-survivors",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Lovecraft Locker: Tentacle Lust",
-    "year": 2022,
-    "developer": "Strange Girl Studios",
-    "genre": "Strategy & 4X",
-    "genreDetail": "Strategy, Indie",
-    "platforms": [
-      "PC"
-    ],
-    "metacritic": null,
-    "rawgRating": 4.19,
-    "rawgRatingsCount": 157,
-    "indie": true,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Lovecraft Locker: Tentacle Lust is a casual strategy adult game loosely inspired by the original Tentacle Locker by Hotpinkgames from 2018. We're a huge fan of tentacles stuff in NSFW/adult games, media, and art, as w…",
-    "rawgSlug": "lovecraft-locker",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Ghost of Yotei",
-    "year": 2025,
-    "developer": "Sucker Punch Productions",
-    "genre": "RPG",
-    "genreDetail": "Action, RPG",
-    "platforms": [
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 4.19,
-    "rawgRatingsCount": 53,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Taking place 300 years after the critically acclaimed Ghost of Tsushima, this standalone experience follows a haunted, lone mercenary named Atsu in the 1600s. Thirsty for revenge, she sets out to hunt down those who k…",
-    "rawgSlug": "ghost-of-yotei",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -15142,6 +15143,31 @@
     "steamReviews": null
   },
   {
+    "title": "Monster Hunter Wilds",
+    "year": 2025,
+    "developer": "Capcom",
+    "genre": "RPG",
+    "genreDetail": "Action, Adventure, RPG",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 4.16,
+    "rawgRatingsCount": 41,
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Co-op",
+      "Live-service"
+    ],
+    "note": "Monster Hunter Wilds. The next generation in the genre defining series.",
+    "rawgSlug": "monster-hunter-wilds",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "Blue Prince",
     "year": 2025,
     "developer": "Dogubomb",
@@ -15160,31 +15186,6 @@
     ],
     "note": "Welcome to Mt. Holly, the mysterious manor with shifting rooms. In Blue Prince, you embark on a genre-defying experience, filled with a unique mix of mystery, strategy, and puzzles that weave together to create an unp…",
     "rawgSlug": "blue-prince",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Battlefield 6",
-    "year": 2025,
-    "developer": "Battlefield Studios",
-    "genre": "Shooter & FPS",
-    "genreDetail": "Action, Shooter",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 4.16,
-    "rawgRatingsCount": 68,
-    "indie": false,
-    "modes": [
-      "Single-player",
-      "Co-op",
-      "PvP"
-    ],
-    "note": "Lock & load for the ultimate all-out warfare experience. Fight in high-intensity infantry combat. Rip through the skies in aerial dogfights. Demolish your environment for a strategic advantage. In a war of tanks, figh…",
-    "rawgSlug": "battlefield-6-2",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -15213,31 +15214,6 @@
     "steamReviews": null
   },
   {
-    "title": "Monster Hunter Wilds",
-    "year": 2025,
-    "developer": "Capcom",
-    "genre": "RPG",
-    "genreDetail": "Action, Adventure, RPG",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 4.14,
-    "rawgRatingsCount": 40,
-    "indie": false,
-    "modes": [
-      "Single-player",
-      "Co-op",
-      "Live-service"
-    ],
-    "note": "Monster Hunter Wilds. The next generation in the genre defining series.",
-    "rawgSlug": "monster-hunter-wilds",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
     "title": "Needy Girl Overdose",
     "year": 2022,
     "developer": "Why so serious?",
@@ -15255,6 +15231,53 @@
     ],
     "note": "Turn “Ame-chan” – somewhat of a hot mess of a girl – into an OMGWTF-cute internet angel and jumpstart her career as a live streamer for the most hardcore otakus online!",
     "rawgSlug": "needy-girl-overdose",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "The Looker",
+    "year": 2022,
+    "developer": "Subcreation Studio",
+    "genre": "Puzzle & Exploration",
+    "genreDetail": "Indie, Puzzle",
+    "platforms": [
+      "PC"
+    ],
+    "metacritic": null,
+    "rawgRating": 4.12,
+    "rawgRatingsCount": 48,
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Explore several charmed locations on a mysterious island replete with over 55 creative puzzles. Over an approximately two-hour playing duration, you will face unique challenges, ponderous ideas, and feebly amusing in-…",
+    "rawgSlug": "the-looker",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "Battlefield 6",
+    "year": 2025,
+    "developer": "Battlefield Studios",
+    "genre": "Shooter & FPS",
+    "genreDetail": "Action, Shooter",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 4.12,
+    "rawgRatingsCount": 70,
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Co-op",
+      "PvP"
+    ],
+    "note": "Lock & load for the ultimate all-out warfare experience. Fight in high-intensity infantry combat. Rip through the skies in aerial dogfights. Demolish your environment for a strategic advantage. In a war of tanks, figh…",
+    "rawgSlug": "battlefield-6-2",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -15305,28 +15328,6 @@
     "steamReviews": null
   },
   {
-    "title": "No I'm not a Human",
-    "year": 2025,
-    "developer": "Trioskaz",
-    "genre": "Survival & Sim",
-    "genreDetail": "Simulation, Indie",
-    "platforms": [
-      "PC"
-    ],
-    "metacritic": null,
-    "rawgRating": 4.11,
-    "rawgRatingsCount": 57,
-    "indie": true,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Don’t PanicSunrise. Twilight of Earth. The world is ending. Acrid auromas of sun-scorched streets fill the air. Blackened corpses gnarled into shapes of agony line streets. Peering outside is enough to scorch eyes fro…",
-    "rawgSlug": "no-im-not-a-human",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
     "title": "Armored Core VI: Fires of Rubicon",
     "year": 2023,
     "developer": "FromSoftware",
@@ -15346,28 +15347,6 @@
     ],
     "note": "Dynamic, Fast-Paced Mech Action",
     "rawgSlug": "armored-core-vi",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "The Looker",
-    "year": 2022,
-    "developer": "Subcreation Studio",
-    "genre": "Puzzle & Exploration",
-    "genreDetail": "Indie, Puzzle",
-    "platforms": [
-      "PC"
-    ],
-    "metacritic": null,
-    "rawgRating": 4.1,
-    "rawgRatingsCount": 47,
-    "indie": true,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Explore several charmed locations on a mysterious island replete with over 55 creative puzzles. Over an approximately two-hour playing duration, you will face unique challenges, ponderous ideas, and feebly amusing in-…",
-    "rawgSlug": "the-looker",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -15396,6 +15375,28 @@
     "steamReviews": null
   },
   {
+    "title": "No I'm not a Human",
+    "year": 2025,
+    "developer": "Trioskaz",
+    "genre": "Survival & Sim",
+    "genreDetail": "Simulation, Indie",
+    "platforms": [
+      "PC"
+    ],
+    "metacritic": null,
+    "rawgRating": 4.1,
+    "rawgRatingsCount": 58,
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Don’t PanicSunrise. Twilight of Earth. The world is ending. Acrid auromas of sun-scorched streets fill the air. Blackened corpses gnarled into shapes of agony line streets. Peering outside is enough to scorch eyes fro…",
+    "rawgSlug": "no-im-not-a-human",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "PEAK.",
     "year": 2025,
     "developer": "—",
@@ -15413,28 +15414,6 @@
     ],
     "note": "PEAK is a co-op climbing game made together with Aggro Crab where the slightest mistake can spell your doom. Either solo or as a group of lost nature scouts, your only hope of rescue from a mysterious island is to sca…",
     "rawgSlug": "peak-3",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "ANOMALOUS COFFEE MACHINE",
-    "year": 2024,
-    "developer": "HoruBrain Interactive",
-    "genre": "Survival & Sim",
-    "genreDetail": "Simulation, Indie",
-    "platforms": [
-      "PC"
-    ],
-    "metacritic": null,
-    "rawgRating": 4.09,
-    "rawgRatingsCount": 103,
-    "indie": true,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Anomalous Coffee Machine is a unique visual novel interactive simulation style game where you encounter a mysterious girl that, for unknown reasons, asks you to use and explore her mysterious and seemingly anomalous c…",
-    "rawgSlug": "anomalous-coffee-machine",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -15503,6 +15482,28 @@
     ],
     "note": "Venba is a narrative cooking game where you play as an Indian mom who immigrates to Canada with her family in the 1980s. Players will cook various dishes and restore lost recipes, hold branching conversations and expl…",
     "rawgSlug": "venba",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "ANOMALOUS COFFEE MACHINE",
+    "year": 2024,
+    "developer": "HoruBrain Interactive",
+    "genre": "Survival & Sim",
+    "genreDetail": "Simulation, Indie",
+    "platforms": [
+      "PC"
+    ],
+    "metacritic": null,
+    "rawgRating": 4.08,
+    "rawgRatingsCount": 104,
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Anomalous Coffee Machine is a unique visual novel interactive simulation style game where you encounter a mysterious girl that, for unknown reasons, asks you to use and explore her mysterious and seemingly anomalous c…",
+    "rawgSlug": "anomalous-coffee-machine",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -15723,7 +15724,7 @@
     ],
     "metacritic": null,
     "rawgRating": 4.02,
-    "rawgRatingsCount": 84,
+    "rawgRatingsCount": 85,
     "indie": false,
     "modes": [
       "Single-player"
@@ -15745,7 +15746,7 @@
     ],
     "metacritic": null,
     "rawgRating": 4.02,
-    "rawgRatingsCount": 46,
+    "rawgRatingsCount": 47,
     "indie": true,
     "modes": [
       "Single-player"
@@ -15966,6 +15967,29 @@
     "steamReviews": null
   },
   {
+    "title": "Mixtape",
+    "year": 2026,
+    "developer": "—",
+    "genre": "Action & Adventure",
+    "genreDetail": "Adventure",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 3.98,
+    "rawgRatingsCount": 41,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "",
+    "rawgSlug": "mixtape",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "Not For Broadcast",
     "year": 2022,
     "developer": "NotGames",
@@ -16036,6 +16060,29 @@
     "steamReviews": null
   },
   {
+    "title": "Indika",
+    "year": 2024,
+    "developer": "Odd Meter",
+    "genre": "Action & Adventure",
+    "genreDetail": "Adventure",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 3.97,
+    "rawgRatingsCount": 141,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "- The game is set in alternative Russia of the 19th century. Gloomy and sinister, at the same time enchanting world.",
+    "rawgSlug": "indika",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "Deep Rock Galactic: Survivor",
     "year": 2024,
     "developer": "Funday Games",
@@ -16100,29 +16147,6 @@
     ],
     "note": "POWERWASH SIMULATORHunt down dirt wherever it’s hiding, respond to calls from across the world, build your own power-washing business and unlock new tools, upgrades and more – all with the soothing satisfaction of pow…",
     "rawgSlug": "powerwash-simulator",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Indika",
-    "year": 2024,
-    "developer": "Odd Meter",
-    "genre": "Action & Adventure",
-    "genreDetail": "Adventure",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 3.96,
-    "rawgRatingsCount": 140,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "- The game is set in alternative Russia of the 19th century. Gloomy and sinister, at the same time enchanting world.",
-    "rawgSlug": "indika",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -16215,29 +16239,6 @@
     ],
     "note": "Avalon is dying. King Arthur is long gone, and Knights of the Round Table are in disarray. Guardian Menhirs, the only thing that makes it possible for humans to survive in this remote land, are going dark. Your villag…",
     "rawgSlug": "tainted-grail-the-fall-of-avalon",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Mixtape",
-    "year": 2026,
-    "developer": "—",
-    "genre": "Action & Adventure",
-    "genreDetail": "Adventure",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 3.95,
-    "rawgRatingsCount": 40,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "",
-    "rawgSlug": "mixtape",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -16514,6 +16515,28 @@
     "steamReviews": null
   },
   {
+    "title": "Anger Foot",
+    "year": 2024,
+    "developer": "Free Lives",
+    "genre": "Shooter & FPS",
+    "genreDetail": "Action, Shooter, Indie",
+    "platforms": [
+      "PC"
+    ],
+    "metacritic": null,
+    "rawgRating": 3.91,
+    "rawgRatingsCount": 43,
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Anger Foot is a lightning-fast hard bass blast of kicking doors and kicking ass. Crash through the caffeine-fueled fever dream of Shit City, putting the boot to a menacing menagerie of merciless gangsters.",
+    "rawgSlug": "anger-foot",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "We Were Here Expeditions: The FriendShip",
     "year": 2023,
     "developer": "Total Mayhem Games",
@@ -16619,7 +16642,7 @@
     ],
     "metacritic": null,
     "rawgRating": 3.9,
-    "rawgRatingsCount": 45,
+    "rawgRatingsCount": 47,
     "indie": false,
     "modes": [
       "Single-player",
@@ -16680,28 +16703,6 @@
     "steamReviews": null
   },
   {
-    "title": "Anger Foot",
-    "year": 2024,
-    "developer": "Free Lives",
-    "genre": "Shooter & FPS",
-    "genreDetail": "Action, Shooter, Indie",
-    "platforms": [
-      "PC"
-    ],
-    "metacritic": null,
-    "rawgRating": 3.89,
-    "rawgRatingsCount": 42,
-    "indie": true,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Anger Foot is a lightning-fast hard bass blast of kicking doors and kicking ass. Crash through the caffeine-fueled fever dream of Shit City, putting the boot to a menacing menagerie of merciless gangsters.",
-    "rawgSlug": "anger-foot",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
     "title": "Dorfromantik",
     "year": 2022,
     "developer": "Toukana Interactive",
@@ -16735,7 +16736,7 @@
     ],
     "metacritic": null,
     "rawgRating": 3.88,
-    "rawgRatingsCount": 64,
+    "rawgRatingsCount": 65,
     "indie": false,
     "modes": [
       "Single-player"
@@ -16765,29 +16766,6 @@
     ],
     "note": "Set sail and discover the wonders of a flooded world filled with mystery. Traverse the ruins of a once great society and use the pieces from its past to build a brighter future. Dive into unknown depths on the hunt fo…",
     "rawgSlug": "far-changing-tides",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "The Plucky Squire",
-    "year": 2024,
-    "developer": "All Possible Futures",
-    "genre": "Narrative & Tactics",
-    "genreDetail": "Adventure, Indie",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 3.87,
-    "rawgRatingsCount": 60,
-    "indie": true,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "The Plucky Squire follows the magical adventures of Jot and his friends - storybook characters who discover a three-dimensional world outside the pages of their book.",
-    "rawgSlug": "the-plucky-squire",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -16859,6 +16837,31 @@
     ],
     "note": "You are trapped in an endless underground passageway.",
     "rawgSlug": "the-exit-8",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "Elden Ring Nightreign",
+    "year": 2025,
+    "developer": "FromSoftware",
+    "genre": "RPG",
+    "genreDetail": "Action, RPG",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 3.87,
+    "rawgRatingsCount": 54,
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Co-op",
+      "Live-service"
+    ],
+    "note": "Elden Ring Nightreign is a roguelike action role-playing game developed by FromSoftware and published by Bandai Namco Entertainment.",
+    "rawgSlug": "elden-ring-nightreign",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -17026,6 +17029,29 @@
     "steamReviews": null
   },
   {
+    "title": "The Plucky Squire",
+    "year": 2024,
+    "developer": "All Possible Futures",
+    "genre": "Narrative & Tactics",
+    "genreDetail": "Adventure, Indie",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 3.85,
+    "rawgRatingsCount": 60,
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "The Plucky Squire follows the magical adventures of Jot and his friends - storybook characters who discover a three-dimensional world outside the pages of their book.",
+    "rawgSlug": "the-plucky-squire",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "The Thaumaturge",
     "year": 2024,
     "developer": "Fool's Theory",
@@ -17043,31 +17069,6 @@
     ],
     "note": "The Thaumaturge is an isometric, story-rich RPG with a unique take on tactical combat, character development features, and investigation mechanics, facing you with morally ambiguous choices – set in a world teeming wi…",
     "rawgSlug": "the-thaumaturge",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Elden Ring Nightreign",
-    "year": 2025,
-    "developer": "FromSoftware",
-    "genre": "RPG",
-    "genreDetail": "Action, RPG",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 3.85,
-    "rawgRatingsCount": 53,
-    "indie": false,
-    "modes": [
-      "Single-player",
-      "Co-op",
-      "Live-service"
-    ],
-    "note": "Elden Ring Nightreign is a roguelike action role-playing game developed by FromSoftware and published by Bandai Namco Entertainment.",
-    "rawgSlug": "elden-ring-nightreign",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -17214,6 +17215,32 @@
     "steamReviews": null
   },
   {
+    "title": "Call of Duty: Black Ops 6",
+    "year": 2024,
+    "developer": "Raven Software",
+    "genre": "Shooter & FPS",
+    "genreDetail": "Action, Shooter",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 3.83,
+    "rawgRatingsCount": 117,
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Co-op",
+      "PvP",
+      "Live-service"
+    ],
+    "note": "Initial Intel: Campaign: The Black Ops 6 Campaign takes players to a new point in time – the early 1990s. In true Black Ops fashion, the fictional story builds on the history of the time, thrusting you into a strange…",
+    "rawgSlug": "call-of-duty-black-ops-6",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "High on Life",
     "year": 2022,
     "developer": "Squanch Games",
@@ -17232,6 +17259,32 @@
     ],
     "note": "From the mind of Justin Roiland (Rick and Morty, Solar Opposites) comes High On Life. Humanity is being threatened by an alien cartel who wants to use them as drugs. It’s up to you to rescue and partner with charismat…",
     "rawgSlug": "high-on-life",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "Call of Duty: Modern Warfare II",
+    "year": 2022,
+    "developer": "Raven Software",
+    "genre": "Shooter & FPS",
+    "genreDetail": "Action, Shooter",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 3.82,
+    "rawgRatingsCount": 238,
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Co-op",
+      "PvP",
+      "Live-service"
+    ],
+    "note": "Welcome to the new era of Call of Duty®.",
+    "rawgSlug": "call-of-duty-modern-warfare-ii",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -17260,32 +17313,6 @@
     "steamReviews": null
   },
   {
-    "title": "Call of Duty: Black Ops 6",
-    "year": 2024,
-    "developer": "Raven Software",
-    "genre": "Shooter & FPS",
-    "genreDetail": "Action, Shooter",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 3.82,
-    "rawgRatingsCount": 116,
-    "indie": false,
-    "modes": [
-      "Single-player",
-      "Co-op",
-      "PvP",
-      "Live-service"
-    ],
-    "note": "Initial Intel: Campaign: The Black Ops 6 Campaign takes players to a new point in time – the early 1990s. In true Black Ops fashion, the fictional story builds on the history of the time, thrusting you into a strange…",
-    "rawgSlug": "call-of-duty-black-ops-6",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
     "title": "Darkest Dungeon 2",
     "year": 2023,
     "developer": "Red Hook Studios",
@@ -17303,32 +17330,6 @@
     ],
     "note": "The eagerly awaited follow-up to Red Hook's smash hit gothic horror RPG! DDII will test your mettle and drive you to the brink of madness. Armor yourself with purpose and provision your party for the journey ahead. It…",
     "rawgSlug": "darkest-dungeon-2",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Call of Duty: Modern Warfare II",
-    "year": 2022,
-    "developer": "Raven Software",
-    "genre": "Shooter & FPS",
-    "genreDetail": "Action, Shooter",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 3.81,
-    "rawgRatingsCount": 237,
-    "indie": false,
-    "modes": [
-      "Single-player",
-      "Co-op",
-      "PvP",
-      "Live-service"
-    ],
-    "note": "Welcome to the new era of Call of Duty®.",
-    "rawgSlug": "call-of-duty-modern-warfare-ii",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -17352,6 +17353,29 @@
     ],
     "note": "The story begins in an underground gaol where the Dragon's voice echoes in the fog of lost memories.",
     "rawgSlug": "dragons-dogma-2",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "Mafia: The Old Country",
+    "year": 2025,
+    "developer": "Hangar 13",
+    "genre": "Action & Adventure",
+    "genreDetail": "Action, Adventure",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 3.81,
+    "rawgRatingsCount": 87,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Uncover the origins of organized crime in Mafia: The Old Country, a gritty mob story set in the brutal underworld of 1900s Sicily.",
+    "rawgSlug": "mafia-the-old-country",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -17424,6 +17448,31 @@
     "steamReviews": null
   },
   {
+    "title": "Party Animals",
+    "year": 2023,
+    "developer": "Recreate Games",
+    "genre": "Narrative & Tactics",
+    "genreDetail": "Action, Casual, Indie",
+    "platforms": [
+      "PC"
+    ],
+    "metacritic": null,
+    "rawgRating": 3.8,
+    "rawgRatingsCount": 42,
+    "indie": true,
+    "modes": [
+      "Single-player",
+      "Co-op",
+      "PvP",
+      "Live-service"
+    ],
+    "note": "Fight with or against your friends in Party Animals! Choose your character from a diverse cast of adorable animals as you battle it out across multiple game modes to be the last one left standing in the ultimate compe…",
+    "rawgSlug": "party-animals-2",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "Victoria 3",
     "year": 2022,
     "developer": "Paradox Development Studio",
@@ -17464,29 +17513,6 @@
     ],
     "note": "It has been a hundred years since the world saw the fall of the once great Edoran Empire at the hands of an unprecedented plague that swept the nation. In the turmoil and uncertainty that has followed, mercenary work,…",
     "rawgSlug": "wartales",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Mafia: The Old Country",
-    "year": 2025,
-    "developer": "Hangar 13",
-    "genre": "Action & Adventure",
-    "genreDetail": "Action, Adventure",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 3.79,
-    "rawgRatingsCount": 86,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Uncover the origins of organized crime in Mafia: The Old Country, a gritty mob story set in the brutal underworld of 1900s Sicily.",
-    "rawgSlug": "mafia-the-old-country",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -17607,31 +17633,6 @@
     "steamReviews": null
   },
   {
-    "title": "Party Animals",
-    "year": 2023,
-    "developer": "Recreate Games",
-    "genre": "Narrative & Tactics",
-    "genreDetail": "Action, Casual, Indie",
-    "platforms": [
-      "PC"
-    ],
-    "metacritic": null,
-    "rawgRating": 3.77,
-    "rawgRatingsCount": 41,
-    "indie": true,
-    "modes": [
-      "Single-player",
-      "Co-op",
-      "PvP",
-      "Live-service"
-    ],
-    "note": "Fight with or against your friends in Party Animals! Choose your character from a diverse cast of adorable animals as you battle it out across multiple game modes to be the last one left standing in the ultimate compe…",
-    "rawgSlug": "party-animals-2",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
     "title": "S.T.A.L.K.E.R. 2: Heart of Chornobyl",
     "year": 2024,
     "developer": "GSC Game World",
@@ -17671,6 +17672,29 @@
     ],
     "note": "How much contraband, you think can be smuggled in one truck on a third-world country border?",
     "rawgSlug": "contraband-police",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "Silent Hill f",
+    "year": 2025,
+    "developer": "NeoBards Entertainment",
+    "genre": "Action & Adventure",
+    "genreDetail": "Action, Adventure",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 3.75,
+    "rawgRatingsCount": 101,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "SILENT HILL f – will be a completely new story set in 1960's Japan featuring a beautiful, yet horrifying world. Written by Ryūkishi07, famed for Japanese visual novels dealing with murder mysteries, psychological and…",
+    "rawgSlug": "silent-hill-f",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -17768,29 +17792,6 @@
     "steamReviews": null
   },
   {
-    "title": "Silent Hill f",
-    "year": 2025,
-    "developer": "NeoBards Entertainment",
-    "genre": "Action & Adventure",
-    "genreDetail": "Action, Adventure",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 3.74,
-    "rawgRatingsCount": 99,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "SILENT HILL f – will be a completely new story set in 1960's Japan featuring a beautiful, yet horrifying world. Written by Ryūkishi07, famed for Japanese visual novels dealing with murder mysteries, psychological and…",
-    "rawgSlug": "silent-hill-f",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
     "title": "OlliOlli World",
     "year": 2022,
     "developer": "Roll7",
@@ -17871,7 +17872,7 @@
     ],
     "metacritic": null,
     "rawgRating": 3.72,
-    "rawgRatingsCount": 179,
+    "rawgRatingsCount": 180,
     "indie": false,
     "modes": [
       "Single-player",
@@ -18012,7 +18013,7 @@
     ],
     "metacritic": null,
     "rawgRating": 3.67,
-    "rawgRatingsCount": 218,
+    "rawgRatingsCount": 219,
     "indie": false,
     "modes": [
       "PvP"
@@ -18057,7 +18058,7 @@
     ],
     "metacritic": null,
     "rawgRating": 3.66,
-    "rawgRatingsCount": 92,
+    "rawgRatingsCount": 93,
     "indie": false,
     "modes": [
       "Single-player"
