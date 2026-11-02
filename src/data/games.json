@@ -10,8 +10,8 @@
       "PlayStation"
     ],
     "metacritic": 97,
-    "rawgRating": 4.43,
-    "rawgRatingsCount": 1075,
+    "rawgRating": 4.42,
+    "rawgRatingsCount": 1077,
     "indie": false,
     "modes": [
       "Single-player",
@@ -36,7 +36,7 @@
     ],
     "metacritic": 96,
     "rawgRating": 4.59,
-    "rawgRatingsCount": 5590,
+    "rawgRatingsCount": 5594,
     "indie": false,
     "modes": [
       "Single-player",
@@ -107,7 +107,7 @@
     ],
     "metacritic": 95,
     "rawgRating": 4.38,
-    "rawgRatingsCount": 1505,
+    "rawgRatingsCount": 1506,
     "indie": false,
     "modes": [
       "Single-player",
@@ -158,7 +158,7 @@
     ],
     "metacritic": 94,
     "rawgRating": 4.75,
-    "rawgRatingsCount": 543,
+    "rawgRatingsCount": 544,
     "indie": false,
     "modes": [
       "Single-player"
@@ -181,7 +181,7 @@
     ],
     "metacritic": 94,
     "rawgRating": 4.54,
-    "rawgRatingsCount": 5227,
+    "rawgRatingsCount": 5229,
     "indie": false,
     "modes": [
       "Single-player"
@@ -251,13 +251,35 @@
     ],
     "metacritic": 93,
     "rawgRating": 4.48,
-    "rawgRatingsCount": 3778,
+    "rawgRatingsCount": 3779,
     "indie": false,
     "modes": [
       "Single-player"
     ],
     "note": "Uncharted 4 is the final installment in the Uncharted series. The story follows Nathan Drake for the last time as he now searches for Captain Henry Avery's treasure.",
     "rawgSlug": "uncharted-4-a-thiefs-end",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "The Last of Us Part II",
+    "year": 2020,
+    "developer": "Naughty Dog",
+    "genre": "Shooter & FPS",
+    "genreDetail": "Action, Shooter, Adventure",
+    "platforms": [
+      "PlayStation"
+    ],
+    "metacritic": 93,
+    "rawgRating": 4.41,
+    "rawgRatingsCount": 2059,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "The Last of Us Part II is the sequel to the post-apocalyptic zombie game The Last of Us.",
+    "rawgSlug": "the-last-of-us-part-2",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -274,35 +296,13 @@
     ],
     "metacritic": 93,
     "rawgRating": 4.41,
-    "rawgRatingsCount": 2129,
+    "rawgRatingsCount": 2131,
     "indie": true,
     "modes": [
       "Single-player"
     ],
     "note": "Hades is a rogue-like dungeon crawler that combines the best aspects of Supergiant's critically acclaimed titles, including the fast-paced action of Bastion, the rich atmosphere and depth of Transistor, and the charac…",
     "rawgSlug": "hades-2018",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "The Last of Us Part II",
-    "year": 2020,
-    "developer": "Naughty Dog",
-    "genre": "Shooter & FPS",
-    "genreDetail": "Action, Shooter, Adventure",
-    "platforms": [
-      "PlayStation"
-    ],
-    "metacritic": 93,
-    "rawgRating": 4.41,
-    "rawgRatingsCount": 2058,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "The Last of Us Part II is the sequel to the post-apocalyptic zombie game The Last of Us.",
-    "rawgSlug": "the-last-of-us-part-2",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -409,7 +409,7 @@
     ],
     "metacritic": 92,
     "rawgRating": 4.64,
-    "rawgRatingsCount": 7296,
+    "rawgRatingsCount": 7299,
     "indie": false,
     "modes": [
       "Single-player"
@@ -476,7 +476,7 @@
     ],
     "metacritic": 92,
     "rawgRating": 4.35,
-    "rawgRatingsCount": 1903,
+    "rawgRatingsCount": 1902,
     "indie": true,
     "modes": [
       "Single-player"
@@ -678,7 +678,7 @@
     ],
     "metacritic": 91,
     "rawgRating": 4.36,
-    "rawgRatingsCount": 1372,
+    "rawgRatingsCount": 1373,
     "indie": true,
     "modes": [
       "Single-player"
@@ -792,7 +792,7 @@
     ],
     "metacritic": 91,
     "rawgRating": 4.16,
-    "rawgRatingsCount": 2541,
+    "rawgRatingsCount": 2542,
     "indie": false,
     "modes": [
       "Single-player"
@@ -954,7 +954,7 @@
     ],
     "metacritic": 90,
     "rawgRating": 4.66,
-    "rawgRatingsCount": 667,
+    "rawgRatingsCount": 669,
     "indie": false,
     "modes": [
       "Single-player"
@@ -977,7 +977,7 @@
     ],
     "metacritic": 90,
     "rawgRating": 4.38,
-    "rawgRatingsCount": 2153,
+    "rawgRatingsCount": 2155,
     "indie": false,
     "modes": [
       "Single-player"
@@ -1000,7 +1000,7 @@
     ],
     "metacritic": 90,
     "rawgRating": 4.37,
-    "rawgRatingsCount": 372,
+    "rawgRatingsCount": 374,
     "indie": true,
     "modes": [
       "Single-player"
@@ -1243,28 +1243,6 @@
     "steamReviews": null
   },
   {
-    "title": "Microsoft Flight Simulator 2020",
-    "year": 2020,
-    "developer": "Asobo Studio",
-    "genre": "Survival & Sim",
-    "genreDetail": "Simulation",
-    "platforms": [
-      "PC"
-    ],
-    "metacritic": 90,
-    "rawgRating": 4.13,
-    "rawgRatingsCount": 271,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Microsoft Flight Simulator is the next generation of one of the most beloved simulation franchises. From light planes to wide-body jets, fly highly detailed and stunning aircraft in an incredibly realistic world. Crea…",
-    "rawgSlug": "microsoft-flight-simulator",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
     "title": "N++ (NPLUSPLUS)",
     "year": 2015,
     "developer": "Metanet Software",
@@ -1284,6 +1262,28 @@
     ],
     "note": "N++ is a fast-paced, momentum-based platformer about darting around obstacles, narrowly evading enemies and collecting gold in a beautiful minimalist landscape. It’s the first N game on PC since 2004 and we’ve spent t…",
     "rawgSlug": "n-nplusplus",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "Microsoft Flight Simulator 2020",
+    "year": 2020,
+    "developer": "Asobo Studio",
+    "genre": "Survival & Sim",
+    "genreDetail": "Simulation",
+    "platforms": [
+      "PC"
+    ],
+    "metacritic": 90,
+    "rawgRating": 4.13,
+    "rawgRatingsCount": 271,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Microsoft Flight Simulator is the next generation of one of the most beloved simulation franchises. From light planes to wide-body jets, fly highly detailed and stunning aircraft in an incredibly realistic world. Crea…",
+    "rawgSlug": "microsoft-flight-simulator",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -1444,7 +1444,7 @@
     ],
     "metacritic": 89,
     "rawgRating": 4.4,
-    "rawgRatingsCount": 2808,
+    "rawgRatingsCount": 2809,
     "indie": false,
     "modes": [
       "Single-player",
@@ -1493,7 +1493,7 @@
     ],
     "metacritic": 89,
     "rawgRating": 4.38,
-    "rawgRatingsCount": 2047,
+    "rawgRatingsCount": 2049,
     "indie": true,
     "modes": [
       "Single-player"
@@ -1698,8 +1698,8 @@
       "PlayStation"
     ],
     "metacritic": 89,
-    "rawgRating": 3.96,
-    "rawgRatingsCount": 727,
+    "rawgRating": 3.95,
+    "rawgRatingsCount": 728,
     "indie": false,
     "modes": [
       "Single-player"
@@ -1883,8 +1883,8 @@
       "PlayStation"
     ],
     "metacritic": 88,
-    "rawgRating": 4.57,
-    "rawgRatingsCount": 586,
+    "rawgRating": 4.58,
+    "rawgRatingsCount": 587,
     "indie": false,
     "modes": [
       "Single-player"
@@ -1953,7 +1953,7 @@
     ],
     "metacritic": 88,
     "rawgRating": 4.4,
-    "rawgRatingsCount": 2783,
+    "rawgRatingsCount": 2782,
     "indie": true,
     "modes": [
       "Single-player"
@@ -2056,6 +2056,29 @@
     "steamReviews": null
   },
   {
+    "title": "Neon White",
+    "year": 2022,
+    "developer": "Ben Esposito",
+    "genre": "Shooter & FPS",
+    "genreDetail": "Action, Shooter, Adventure, Indie",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": 88,
+    "rawgRating": 4.34,
+    "rawgRatingsCount": 246,
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "A lightning fast first-person action platformer set beyond the pearly gates of Heaven.",
+    "rawgSlug": "neon-white",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "World of Warcraft: Legion",
     "year": 2016,
     "developer": "—",
@@ -2073,29 +2096,6 @@
     ],
     "note": "",
     "rawgSlug": "world-of-warcraft-legion",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Neon White",
-    "year": 2022,
-    "developer": "Ben Esposito",
-    "genre": "Shooter & FPS",
-    "genreDetail": "Action, Shooter, Adventure, Indie",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": 88,
-    "rawgRating": 4.33,
-    "rawgRatingsCount": 245,
-    "indie": true,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "A lightning fast first-person action platformer set beyond the pearly gates of Heaven.",
-    "rawgSlug": "neon-white",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -2183,7 +2183,7 @@
     ],
     "metacritic": 88,
     "rawgRating": 4.25,
-    "rawgRatingsCount": 1548,
+    "rawgRatingsCount": 1549,
     "indie": false,
     "modes": [
       "Single-player",
@@ -2265,29 +2265,6 @@
     "steamReviews": null
   },
   {
-    "title": "Rise of the Tomb Raider: 20 Year Celebration",
-    "year": 2016,
-    "developer": "Crystal Dynamics",
-    "genre": "Action & Adventure",
-    "genreDetail": "Action, Adventure",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": 88,
-    "rawgRating": 4.17,
-    "rawgRatingsCount": 148,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "In Rise of the Tomb Raider, Lara Croft becomes more than a survivor as she embarks on her first Tomb Raiding expedition to the most treacherous and remote regions of Siberia.",
-    "rawgSlug": "rise-of-the-tomb-raider-20-year-celebration",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
     "title": "Grindstone",
     "year": 2019,
     "developer": "Capybara Games",
@@ -2345,36 +2322,13 @@
     ],
     "metacritic": 88,
     "rawgRating": 4.16,
-    "rawgRatingsCount": 332,
+    "rawgRatingsCount": 331,
     "indie": false,
     "modes": [
       "Co-op"
     ],
     "note": "Return to the mortal realms with deadly new powers of blood, bone and essence. The Rise of the Necromancer pack unearths a trove of new content, including the Necromancer hero class and two additional character slots.…",
     "rawgSlug": "diablo-iii-eternal-collection",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Kerbal Space Program",
-    "year": 2015,
-    "developer": "Squad",
-    "genre": "Survival & Sim",
-    "genreDetail": "Simulation, Indie",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": 88,
-    "rawgRating": 4.16,
-    "rawgRatingsCount": 412,
-    "indie": true,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "How to build a spaceship capable of delivering a human crew into space - and return this crew back? Even if we have all the necessary parts, engines, life support systems, rudders and accelerators, even if all this we…",
-    "rawgSlug": "kerbal-space-program",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -2398,6 +2352,52 @@
     ],
     "note": "",
     "rawgSlug": "final-fantasy-xiv-stormblood",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "Kerbal Space Program",
+    "year": 2015,
+    "developer": "Squad",
+    "genre": "Survival & Sim",
+    "genreDetail": "Simulation, Indie",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": 88,
+    "rawgRating": 4.15,
+    "rawgRatingsCount": 413,
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "How to build a spaceship capable of delivering a human crew into space - and return this crew back? Even if we have all the necessary parts, engines, life support systems, rudders and accelerators, even if all this we…",
+    "rawgSlug": "kerbal-space-program",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "Rise of the Tomb Raider: 20 Year Celebration",
+    "year": 2016,
+    "developer": "Crystal Dynamics",
+    "genre": "Action & Adventure",
+    "genreDetail": "Action, Adventure",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": 88,
+    "rawgRating": 4.14,
+    "rawgRatingsCount": 149,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "In Rise of the Tomb Raider, Lara Croft becomes more than a survivor as she embarks on her first Tomb Raiding expedition to the most treacherous and remote regions of Siberia.",
+    "rawgSlug": "rise-of-the-tomb-raider-20-year-celebration",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -2527,7 +2527,7 @@
     ],
     "metacritic": 88,
     "rawgRating": 4.06,
-    "rawgRatingsCount": 432,
+    "rawgRatingsCount": 433,
     "indie": true,
     "modes": [
       "Single-player"
@@ -2571,7 +2571,7 @@
     ],
     "metacritic": 88,
     "rawgRating": 3.98,
-    "rawgRatingsCount": 625,
+    "rawgRatingsCount": 626,
     "indie": true,
     "modes": [
       "Single-player"
@@ -2593,8 +2593,8 @@
       "PlayStation"
     ],
     "metacritic": 88,
-    "rawgRating": 3.96,
-    "rawgRatingsCount": 552,
+    "rawgRating": 3.95,
+    "rawgRatingsCount": 554,
     "indie": false,
     "modes": [
       "Single-player",
@@ -2641,7 +2641,7 @@
     ],
     "metacritic": 88,
     "rawgRating": 3.84,
-    "rawgRatingsCount": 1987,
+    "rawgRatingsCount": 1988,
     "indie": false,
     "modes": [
       "Single-player",
@@ -2710,7 +2710,7 @@
     ],
     "metacritic": 88,
     "rawgRating": 3.8,
-    "rawgRatingsCount": 698,
+    "rawgRatingsCount": 699,
     "indie": false,
     "modes": [
       "Single-player"
@@ -2823,7 +2823,7 @@
     ],
     "metacritic": 87,
     "rawgRating": 4.45,
-    "rawgRatingsCount": 3754,
+    "rawgRatingsCount": 3756,
     "indie": false,
     "modes": [
       "Single-player"
@@ -2846,7 +2846,7 @@
     ],
     "metacritic": 87,
     "rawgRating": 4.38,
-    "rawgRatingsCount": 2603,
+    "rawgRatingsCount": 2602,
     "indie": true,
     "modes": [
       "Single-player"
@@ -3008,7 +3008,7 @@
     ],
     "metacritic": 87,
     "rawgRating": 4.17,
-    "rawgRatingsCount": 183,
+    "rawgRatingsCount": 184,
     "indie": false,
     "modes": [
       "Single-player",
@@ -3421,7 +3421,7 @@
     ],
     "metacritic": 86,
     "rawgRating": 4.37,
-    "rawgRatingsCount": 612,
+    "rawgRatingsCount": 613,
     "indie": true,
     "modes": [
       "Single-player"
@@ -3444,7 +3444,7 @@
     ],
     "metacritic": 86,
     "rawgRating": 4.37,
-    "rawgRatingsCount": 2189,
+    "rawgRatingsCount": 2190,
     "indie": false,
     "modes": [
       "Single-player"
@@ -3673,7 +3673,7 @@
     ],
     "metacritic": 86,
     "rawgRating": 4.25,
-    "rawgRatingsCount": 966,
+    "rawgRatingsCount": 967,
     "indie": false,
     "modes": [
       "Single-player"
@@ -3975,7 +3975,7 @@
     ],
     "metacritic": 86,
     "rawgRating": 4.09,
-    "rawgRatingsCount": 127,
+    "rawgRatingsCount": 128,
     "indie": false,
     "modes": [
       "Single-player",
@@ -4089,8 +4089,8 @@
       "PC"
     ],
     "metacritic": 86,
-    "rawgRating": 4.06,
-    "rawgRatingsCount": 324,
+    "rawgRating": 4.05,
+    "rawgRatingsCount": 325,
     "indie": false,
     "modes": [
       "Single-player",
@@ -4114,7 +4114,7 @@
     ],
     "metacritic": 86,
     "rawgRating": 4.04,
-    "rawgRatingsCount": 2824,
+    "rawgRatingsCount": 2825,
     "indie": false,
     "modes": [
       "Single-player"
@@ -4158,8 +4158,8 @@
       "PC"
     ],
     "metacritic": 86,
-    "rawgRating": 4.03,
-    "rawgRatingsCount": 171,
+    "rawgRating": 4.02,
+    "rawgRatingsCount": 172,
     "indie": false,
     "modes": [
       "Single-player"
@@ -4251,7 +4251,7 @@
     ],
     "metacritic": 86,
     "rawgRating": 3.93,
-    "rawgRatingsCount": 2872,
+    "rawgRatingsCount": 2873,
     "indie": true,
     "modes": [
       "Single-player",
@@ -4276,7 +4276,7 @@
     ],
     "metacritic": 86,
     "rawgRating": 3.79,
-    "rawgRatingsCount": 295,
+    "rawgRatingsCount": 294,
     "indie": false,
     "modes": [
       "Single-player"
@@ -4460,8 +4460,8 @@
       "PC"
     ],
     "metacritic": 86,
-    "rawgRating": 3.17,
-    "rawgRatingsCount": 44,
+    "rawgRating": 3.13,
+    "rawgRatingsCount": 45,
     "indie": true,
     "modes": [
       "Single-player"
@@ -4643,7 +4643,7 @@
     ],
     "metacritic": 85,
     "rawgRating": 4.38,
-    "rawgRatingsCount": 3645,
+    "rawgRatingsCount": 3646,
     "indie": false,
     "modes": [
       "Single-player",
@@ -4725,29 +4725,6 @@
     "steamReviews": null
   },
   {
-    "title": "Yakuza 0",
-    "year": 2015,
-    "developer": "SEGA",
-    "genre": "RPG",
-    "genreDetail": "Action, RPG",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": 85,
-    "rawgRating": 4.36,
-    "rawgRatingsCount": 1153,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Yakuza 0 is an action-adventure game developed by Sega for Microsoft and PlayStation in 2015.",
-    "rawgSlug": "yakuza-0",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
     "title": "Yakuza Kiwami 2",
     "year": 2017,
     "developer": "SEGA",
@@ -4766,6 +4743,29 @@
     ],
     "note": "Kazuma Kiryu thought his Tojo Clan days were behind him. He and the young girl in his care, Haruka Sawamura, have built a peaceful life from the ashes of conflict. All it took was a single gunshot to shatter that peac…",
     "rawgSlug": "yakuza-kiwami-2",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "Yakuza 0",
+    "year": 2015,
+    "developer": "SEGA",
+    "genre": "RPG",
+    "genreDetail": "Action, RPG",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": 85,
+    "rawgRating": 4.36,
+    "rawgRatingsCount": 1155,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Yakuza 0 is an action-adventure game developed by Sega for Microsoft and PlayStation in 2015.",
+    "rawgSlug": "yakuza-0",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -4873,7 +4873,7 @@
     ],
     "metacritic": 85,
     "rawgRating": 4.27,
-    "rawgRatingsCount": 1279,
+    "rawgRatingsCount": 1280,
     "indie": false,
     "modes": [
       "Single-player"
@@ -4895,8 +4895,8 @@
       "PlayStation"
     ],
     "metacritic": 85,
-    "rawgRating": 4.23,
-    "rawgRatingsCount": 99,
+    "rawgRating": 4.24,
+    "rawgRatingsCount": 100,
     "indie": false,
     "modes": [
       "Single-player",
@@ -4943,7 +4943,7 @@
     ],
     "metacritic": 85,
     "rawgRating": 4.19,
-    "rawgRatingsCount": 1073,
+    "rawgRatingsCount": 1074,
     "indie": false,
     "modes": [
       "Single-player"
@@ -5036,8 +5036,8 @@
       "PlayStation"
     ],
     "metacritic": 85,
-    "rawgRating": 4.1,
-    "rawgRatingsCount": 252,
+    "rawgRating": 4.09,
+    "rawgRatingsCount": 253,
     "indie": true,
     "modes": [
       "Single-player",
@@ -5143,31 +5143,6 @@
     "steamReviews": null
   },
   {
-    "title": "Total War: WARHAMMER III",
-    "year": 2022,
-    "developer": "Creative Assembly",
-    "genre": "Strategy & 4X",
-    "genreDetail": "Action, Strategy",
-    "platforms": [
-      "PC"
-    ],
-    "metacritic": 85,
-    "rawgRating": 4.03,
-    "rawgRatingsCount": 69,
-    "indie": false,
-    "modes": [
-      "Single-player",
-      "Co-op",
-      "PvP",
-      "Live-service"
-    ],
-    "note": "Far beyond the world and its petty wars there exists a dimension of pure, malevolent magic: The Realm of Chaos. It is a terrible place, incomprehensible to the mortal mind. It whispers promises of power, but to behold…",
-    "rawgSlug": "total-war-warhammer-iii",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
     "title": "Amid Evil",
     "year": 2019,
     "developer": "Indefatigable",
@@ -5212,24 +5187,26 @@
     "steamReviews": null
   },
   {
-    "title": "Total War: THREE KINGDOMS",
-    "year": 2019,
-    "developer": "Feral Interactive",
+    "title": "Total War: WARHAMMER III",
+    "year": 2022,
+    "developer": "Creative Assembly",
     "genre": "Strategy & 4X",
-    "genreDetail": "Action, Strategy, Simulation",
+    "genreDetail": "Action, Strategy",
     "platforms": [
       "PC"
     ],
     "metacritic": 85,
-    "rawgRating": 3.98,
-    "rawgRatingsCount": 168,
+    "rawgRating": 3.99,
+    "rawgRatingsCount": 70,
     "indie": false,
     "modes": [
       "Single-player",
-      "Co-op"
+      "Co-op",
+      "PvP",
+      "Live-service"
     ],
-    "note": "The year is 190CE. China is in turmoil.",
-    "rawgSlug": "total-war-three-kingdoms",
+    "note": "Far beyond the world and its petty wars there exists a dimension of pure, malevolent magic: The Realm of Chaos. It is a terrible place, incomprehensible to the mortal mind. It whispers promises of power, but to behold…",
+    "rawgSlug": "total-war-warhammer-iii",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -5269,7 +5246,7 @@
     ],
     "metacritic": 85,
     "rawgRating": 3.97,
-    "rawgRatingsCount": 2114,
+    "rawgRatingsCount": 2115,
     "indie": false,
     "modes": [
       "Single-player"
@@ -5299,6 +5276,29 @@
     ],
     "note": "A legendary series returns with a grand new adventure!",
     "rawgSlug": "monster-boy-and-the-cursed-kingdom",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "Total War: THREE KINGDOMS",
+    "year": 2019,
+    "developer": "Feral Interactive",
+    "genre": "Strategy & 4X",
+    "genreDetail": "Action, Strategy, Simulation",
+    "platforms": [
+      "PC"
+    ],
+    "metacritic": 85,
+    "rawgRating": 3.96,
+    "rawgRatingsCount": 169,
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Co-op"
+    ],
+    "note": "The year is 190CE. China is in turmoil.",
+    "rawgSlug": "total-war-three-kingdoms",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -5838,7 +5838,7 @@
     ],
     "metacritic": 84,
     "rawgRating": 4.31,
-    "rawgRatingsCount": 2121,
+    "rawgRatingsCount": 2122,
     "indie": false,
     "modes": [
       "Single-player"
@@ -6156,7 +6156,7 @@
     ],
     "metacritic": 84,
     "rawgRating": 4.14,
-    "rawgRatingsCount": 2072,
+    "rawgRatingsCount": 2074,
     "indie": false,
     "modes": [
       "Single-player"
@@ -6481,7 +6481,7 @@
     ],
     "metacritic": 84,
     "rawgRating": 4,
-    "rawgRatingsCount": 909,
+    "rawgRatingsCount": 912,
     "indie": false,
     "modes": [
       "Single-player"
@@ -6562,30 +6562,6 @@
     "steamReviews": null
   },
   {
-    "title": "Supraland",
-    "year": 2019,
-    "developer": "Supra Games",
-    "genre": "Puzzle & Exploration",
-    "genreDetail": "Action, Adventure, Indie, Puzzle",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": 84,
-    "rawgRating": 3.98,
-    "rawgRatingsCount": 183,
-    "indie": true,
-    "modes": [
-      "Single-player",
-      "Co-op"
-    ],
-    "note": "Supraland is a mix of Metroid, Portal, Mario and Zelda.",
-    "rawgSlug": "supraland",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
     "title": "Magic: The Gathering Arena",
     "year": 2018,
     "developer": "Wizards of the Coast",
@@ -6626,6 +6602,30 @@
     ],
     "note": "Celebrate Kazuma Kiryu's saga with the beautifully remastered Yakuza 3, 4, and 5. With restored content and updated localization in 1080p and 60fps, experience the complete Yakuza collection on one console for the fir…",
     "rawgSlug": "yakuza-remastered-collection",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "Supraland",
+    "year": 2019,
+    "developer": "Supra Games",
+    "genre": "Puzzle & Exploration",
+    "genreDetail": "Action, Adventure, Indie, Puzzle",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": 84,
+    "rawgRating": 3.96,
+    "rawgRatingsCount": 184,
+    "indie": true,
+    "modes": [
+      "Single-player",
+      "Co-op"
+    ],
+    "note": "Supraland is a mix of Metroid, Portal, Mario and Zelda.",
+    "rawgSlug": "supraland",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -6686,8 +6686,8 @@
       "PlayStation"
     ],
     "metacritic": 84,
-    "rawgRating": 3.92,
-    "rawgRatingsCount": 350,
+    "rawgRating": 3.91,
+    "rawgRatingsCount": 351,
     "indie": true,
     "modes": [
       "Single-player",
@@ -6802,7 +6802,7 @@
     ],
     "metacritic": 84,
     "rawgRating": 3.81,
-    "rawgRatingsCount": 3451,
+    "rawgRatingsCount": 3452,
     "indie": false,
     "modes": [
       "Single-player"
@@ -6825,7 +6825,7 @@
     ],
     "metacritic": 84,
     "rawgRating": 3.75,
-    "rawgRatingsCount": 526,
+    "rawgRatingsCount": 525,
     "indie": true,
     "modes": [
       "Single-player",
@@ -7261,8 +7261,8 @@
       "PlayStation"
     ],
     "metacritic": 83,
-    "rawgRating": 4.49,
-    "rawgRatingsCount": 220,
+    "rawgRating": 4.48,
+    "rawgRatingsCount": 221,
     "indie": false,
     "modes": [
       "Single-player"
@@ -7559,7 +7559,7 @@
     ],
     "metacritic": 83,
     "rawgRating": 4.2,
-    "rawgRatingsCount": 1076,
+    "rawgRatingsCount": 1077,
     "indie": true,
     "modes": [
       "Single-player"
@@ -7671,7 +7671,7 @@
     ],
     "metacritic": 83,
     "rawgRating": 4.12,
-    "rawgRatingsCount": 3790,
+    "rawgRatingsCount": 3791,
     "indie": false,
     "modes": [
       "Single-player"
@@ -7844,28 +7844,6 @@
     "steamReviews": null
   },
   {
-    "title": "Loop Hero",
-    "year": 2021,
-    "developer": "Four Quarters",
-    "genre": "Strategy & 4X",
-    "genreDetail": "RPG, Strategy, Simulation, Indie",
-    "platforms": [
-      "PC"
-    ],
-    "metacritic": 83,
-    "rawgRating": 4.04,
-    "rawgRatingsCount": 482,
-    "indie": true,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "The Lich has thrown the world into a timeless loop and plunged its inhabitants into never ending chaos. Wield an expanding deck of mystical cards to place enemies, buildings, and terrain along each unique expedition l…",
-    "rawgSlug": "loop-hero",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
     "title": "Hitman 2",
     "year": 2018,
     "developer": "IO Interactive",
@@ -7885,6 +7863,28 @@
     ],
     "note": "Hitman 2 is the seventh game in its series. It is the sequel to Hitman and a prequel to all other entries of the franchise.",
     "rawgSlug": "hitman-2",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "Loop Hero",
+    "year": 2021,
+    "developer": "Four Quarters",
+    "genre": "Strategy & 4X",
+    "genreDetail": "RPG, Strategy, Simulation, Indie",
+    "platforms": [
+      "PC"
+    ],
+    "metacritic": 83,
+    "rawgRating": 4.03,
+    "rawgRatingsCount": 483,
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "The Lich has thrown the world into a timeless loop and plunged its inhabitants into never ending chaos. Wield an expanding deck of mystical cards to place enemies, buildings, and terrain along each unique expedition l…",
+    "rawgSlug": "loop-hero",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -7970,7 +7970,7 @@
     ],
     "metacritic": 83,
     "rawgRating": 3.96,
-    "rawgRatingsCount": 2024,
+    "rawgRatingsCount": 2025,
     "indie": false,
     "modes": [
       "Single-player"
@@ -8039,7 +8039,7 @@
     ],
     "metacritic": 83,
     "rawgRating": 3.93,
-    "rawgRatingsCount": 2039,
+    "rawgRatingsCount": 2040,
     "indie": false,
     "modes": [
       "Single-player"
@@ -8292,8 +8292,8 @@
       "PlayStation"
     ],
     "metacritic": 83,
-    "rawgRating": 3.74,
-    "rawgRatingsCount": 149,
+    "rawgRating": 3.73,
+    "rawgRatingsCount": 150,
     "indie": true,
     "modes": [
       "Single-player"
@@ -8315,8 +8315,8 @@
       "PlayStation"
     ],
     "metacritic": 83,
-    "rawgRating": 3.74,
-    "rawgRatingsCount": 778,
+    "rawgRating": 3.73,
+    "rawgRatingsCount": 779,
     "indie": false,
     "modes": [
       "Single-player",
@@ -8341,8 +8341,8 @@
       "PlayStation"
     ],
     "metacritic": 83,
-    "rawgRating": 3.73,
-    "rawgRatingsCount": 590,
+    "rawgRating": 3.72,
+    "rawgRatingsCount": 591,
     "indie": true,
     "modes": [
       "Single-player"
@@ -8483,7 +8483,7 @@
     ],
     "metacritic": 83,
     "rawgRating": 3.58,
-    "rawgRatingsCount": 334,
+    "rawgRatingsCount": 335,
     "indie": false,
     "modes": [
       "Single-player"
@@ -8530,35 +8530,13 @@
     ],
     "metacritic": 83,
     "rawgRating": 3.55,
-    "rawgRatingsCount": 1109,
+    "rawgRatingsCount": 1110,
     "indie": false,
     "modes": [
       "Single-player"
     ],
     "note": "You have arrived in Teyvat — a fantasy world where the seven elements flow and converge.",
     "rawgSlug": "genshin-impact",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Duskers",
-    "year": 2016,
-    "developer": "Misfits Attic",
-    "genre": "Strategy & 4X",
-    "genreDetail": "Strategy, Indie",
-    "platforms": [
-      "PC"
-    ],
-    "metacritic": 83,
-    "rawgRating": 3.54,
-    "rawgRatingsCount": 46,
-    "indie": true,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "In Duskers you pilot drones into derelict spaceships to find the means to survive and piece together how the universe became a giant graveyard.ExploreYou are a drone operator, surrounded by old gritty tech that acts a…",
-    "rawgSlug": "duskers",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -8582,6 +8560,28 @@
     ],
     "note": "The Games on Demand version supports English and French. PES 2016 comes with a whole host of new and improved features that is set to raise the bar once again in a bid to retain its title of ‘Best Sports Game’. Featur…",
     "rawgSlug": "pes-2016",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "Duskers",
+    "year": 2016,
+    "developer": "Misfits Attic",
+    "genre": "Strategy & 4X",
+    "genreDetail": "Strategy, Indie",
+    "platforms": [
+      "PC"
+    ],
+    "metacritic": 83,
+    "rawgRating": 3.49,
+    "rawgRatingsCount": 47,
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "In Duskers you pilot drones into derelict spaceships to find the means to survive and piece together how the universe became a giant graveyard.ExploreYou are a drone operator, surrounded by old gritty tech that acts a…",
+    "rawgSlug": "duskers",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -8850,8 +8850,8 @@
       "PlayStation"
     ],
     "metacritic": 82,
-    "rawgRating": 4.37,
-    "rawgRatingsCount": 267,
+    "rawgRating": 4.36,
+    "rawgRatingsCount": 268,
     "indie": false,
     "modes": [
       "Single-player"
@@ -9105,7 +9105,7 @@
     ],
     "metacritic": 82,
     "rawgRating": 4.2,
-    "rawgRatingsCount": 199,
+    "rawgRatingsCount": 200,
     "indie": true,
     "modes": [
       "Single-player"
@@ -9963,7 +9963,7 @@
     ],
     "metacritic": 82,
     "rawgRating": 3.83,
-    "rawgRatingsCount": 1353,
+    "rawgRatingsCount": 1354,
     "indie": false,
     "modes": [
       "Co-op",
@@ -10192,7 +10192,7 @@
     ],
     "metacritic": 82,
     "rawgRating": 3.67,
-    "rawgRatingsCount": 813,
+    "rawgRatingsCount": 814,
     "indie": false,
     "modes": [
       "Single-player"
@@ -10262,7 +10262,7 @@
     ],
     "metacritic": 82,
     "rawgRating": 3.56,
-    "rawgRatingsCount": 171,
+    "rawgRatingsCount": 172,
     "indie": true,
     "modes": [
       "Single-player"
@@ -10297,29 +10297,6 @@
     "steamReviews": null
   },
   {
-    "title": "Invisible, Inc.",
-    "year": 2015,
-    "developer": "Klei Entertainment",
-    "genre": "Strategy & 4X",
-    "genreDetail": "Adventure, Strategy",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": 82,
-    "rawgRating": 3.53,
-    "rawgRatingsCount": 346,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Developed by the Canadian Klei Entertainment, Invisible Inc. is a turn-based strategy with elements of stealth and roguelike. The game takes place in a dystopian future: in 2074 and the huge multinational corporations…",
-    "rawgSlug": "invisible-inc",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
     "title": "Destiny 2",
     "year": 2017,
     "developer": "Bungie",
@@ -10331,7 +10308,7 @@
     ],
     "metacritic": 82,
     "rawgRating": 3.52,
-    "rawgRatingsCount": 2675,
+    "rawgRatingsCount": 2676,
     "indie": false,
     "modes": [
       "Single-player",
@@ -10341,6 +10318,29 @@
     ],
     "note": "Destiny 2 is an online multiplayer first-person shooter. You take on the role of a Guardian that needs to protect the last city on Earth from alien invaders. The game follows its predecessor, Destiny. The goal of the…",
     "rawgSlug": "destiny-2",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "Invisible, Inc.",
+    "year": 2015,
+    "developer": "Klei Entertainment",
+    "genre": "Strategy & 4X",
+    "genreDetail": "Adventure, Strategy",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": 82,
+    "rawgRating": 3.52,
+    "rawgRatingsCount": 347,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Developed by the Canadian Klei Entertainment, Invisible Inc. is a turn-based strategy with elements of stealth and roguelike. The game takes place in a dystopian future: in 2074 and the huge multinational corporations…",
+    "rawgSlug": "invisible-inc",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -10647,6 +10647,28 @@
     "steamReviews": null
   },
   {
+    "title": "Hacknet",
+    "year": 2015,
+    "developer": "Team Fractal Alligator",
+    "genre": "Survival & Sim",
+    "genreDetail": "Simulation, Indie",
+    "platforms": [
+      "PC"
+    ],
+    "metacritic": 82,
+    "rawgRating": 3.19,
+    "rawgRatingsCount": 489,
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Hacknet is a computer hacking simulator. You take on the role of a user nicknamed Bit and need to investigate the death of the previous \"Bit\" that was probably involved in illegal activity. To get through the story, y…",
+    "rawgSlug": "hacknet",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "WildStar",
     "year": 2016,
     "developer": "Carbine Studios",
@@ -10666,28 +10688,6 @@
     ],
     "note": "WildStar is a fantasy and science fiction themed massively multiplayer online role-playing game. It was initially released as with paid subscription but in 2015 became free-to-play.",
     "rawgSlug": "wildstar",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Hacknet",
-    "year": 2015,
-    "developer": "Team Fractal Alligator",
-    "genre": "Survival & Sim",
-    "genreDetail": "Simulation, Indie",
-    "platforms": [
-      "PC"
-    ],
-    "metacritic": 82,
-    "rawgRating": 3.19,
-    "rawgRatingsCount": 489,
-    "indie": true,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Hacknet is a computer hacking simulator. You take on the role of a user nicknamed Bit and need to investigate the death of the previous \"Bit\" that was probably involved in illegal activity. To get through the story, y…",
-    "rawgSlug": "hacknet",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -10725,8 +10725,8 @@
       "PlayStation"
     ],
     "metacritic": 82,
-    "rawgRating": 3.15,
-    "rawgRatingsCount": 95,
+    "rawgRating": 3.13,
+    "rawgRatingsCount": 96,
     "indie": true,
     "modes": [
       "PvP"
@@ -11122,6 +11122,28 @@
     "steamReviews": null
   },
   {
+    "title": "Anno 1800",
+    "year": 2019,
+    "developer": "Blue Byte",
+    "genre": "Strategy & 4X",
+    "genreDetail": "Strategy, Simulation",
+    "platforms": [
+      "PC"
+    ],
+    "metacritic": 81,
+    "rawgRating": 4.22,
+    "rawgRatingsCount": 186,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Anno 1800 is the seventh installment of its franchise of real-time economic strategies. Like its predecessors, it is based around building cities.",
+    "rawgSlug": "anno-1800",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "Alba: A Wildlife Adventure",
     "year": 2020,
     "developer": "ustwo games",
@@ -11132,8 +11154,8 @@
       "PlayStation"
     ],
     "metacritic": 81,
-    "rawgRating": 4.16,
-    "rawgRatingsCount": 83,
+    "rawgRating": 4.13,
+    "rawgRatingsCount": 84,
     "indie": false,
     "modes": [
       "Single-player"
@@ -11156,7 +11178,7 @@
     ],
     "metacritic": 81,
     "rawgRating": 4.07,
-    "rawgRatingsCount": 1358,
+    "rawgRatingsCount": 1357,
     "indie": true,
     "modes": [
       "Single-player",
@@ -11236,29 +11258,6 @@
     "steamReviews": null
   },
   {
-    "title": "Stories Untold",
-    "year": 2017,
-    "developer": "No Code",
-    "genre": "Survival & Sim",
-    "genreDetail": "Adventure, Simulation, Indie",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": 81,
-    "rawgRating": 3.9,
-    "rawgRatingsCount": 179,
-    "indie": true,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "“Stories Untold” is a narrative-driven experimental adventure game, that bends the genre into something completely unique. Combining a mix of classic text-adventure, point-and-click and more, 4 short stories are packa…",
-    "rawgSlug": "stories-untold",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
     "title": "Slime Rancher",
     "year": 2016,
     "developer": "Monomi Park",
@@ -11270,7 +11269,7 @@
     ],
     "metacritic": 81,
     "rawgRating": 3.87,
-    "rawgRatingsCount": 586,
+    "rawgRatingsCount": 585,
     "indie": true,
     "modes": [
       "Single-player"
@@ -11375,6 +11374,28 @@
     "steamReviews": null
   },
   {
+    "title": "SteamWorld Quest: Hand of Gilgamech",
+    "year": 2019,
+    "developer": "Image & Form",
+    "genre": "RPG",
+    "genreDetail": "Action, Adventure, RPG, Card",
+    "platforms": [
+      "PC"
+    ],
+    "metacritic": 81,
+    "rawgRating": 3.81,
+    "rawgRatingsCount": 82,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "SteamWorld Quest is the roleplaying card game you’ve been waiting for! Lead a party of aspiring heroes through a beautifully hand-drawn world and intense battles using only your wits and a handful of cards. Take on wh…",
+    "rawgSlug": "steamworld-quest",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "Barotrauma",
     "year": 2023,
     "developer": "FakeFish",
@@ -11468,24 +11489,23 @@
     "steamReviews": null
   },
   {
-    "title": "Gunvolt Chronicles: Luminous Avenger iX",
-    "year": 2019,
-    "developer": "Inti Creates",
-    "genre": "Action & Adventure",
-    "genreDetail": "Action",
+    "title": "Sunless Sea",
+    "year": 2015,
+    "developer": "Failbetter Games",
+    "genre": "RPG",
+    "genreDetail": "Adventure, RPG, Indie",
     "platforms": [
-      "PC",
-      "PlayStation"
+      "PC"
     ],
     "metacritic": 81,
-    "rawgRating": 3.67,
-    "rawgRatingsCount": 9,
-    "indie": false,
+    "rawgRating": 3.69,
+    "rawgRatingsCount": 242,
+    "indie": true,
     "modes": [
       "Single-player"
     ],
-    "note": "\"Get ready for the apeX of 2D action!\"<br/>",
-    "rawgSlug": "gunvolt-chronicles-luminous-avenger-ix",
+    "note": "###The help from Kickstarter backers",
+    "rawgSlug": "sunless-sea",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -11583,30 +11603,6 @@
     "steamReviews": null
   },
   {
-    "title": "Galactic Civilizations III",
-    "year": 2015,
-    "developer": "Stardock Entertainment",
-    "genre": "Strategy & 4X",
-    "genreDetail": "Strategy, Simulation, Indie",
-    "platforms": [
-      "PC"
-    ],
-    "metacritic": 81,
-    "rawgRating": 3.51,
-    "rawgRatingsCount": 67,
-    "indie": true,
-    "modes": [
-      "Single-player",
-      "Co-op",
-      "Live-service"
-    ],
-    "note": "Galactic Civilizations III is a turn-based strategy with a high focus on explorations, expanding, exploitation, and extermination also called 4X strategy subgenre. This is the third part of the franchise of the same n…",
-    "rawgSlug": "galactic-civilizations-iii",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
     "title": "Chess Ultra",
     "year": 2017,
     "developer": "Ripstone",
@@ -11662,7 +11658,7 @@
     ],
     "metacritic": 81,
     "rawgRating": 3.17,
-    "rawgRatingsCount": 284,
+    "rawgRatingsCount": 283,
     "indie": false,
     "modes": [
       "Single-player",
@@ -11744,6 +11740,29 @@
     "steamReviews": null
   },
   {
+    "title": "Fantasian",
+    "year": 2024,
+    "developer": "Mistwalker",
+    "genre": "RPG",
+    "genreDetail": "RPG",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": 80,
+    "rawgRating": 4.17,
+    "rawgRatingsCount": 12,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "From the creator of Final Fantasy, comes the next breathtaking adventure from industry legend Hironobu Sakaguchi. Fantasian is an exciting, new RPG set against a spectacular backdrop made from over 150 handmade dioram…",
+    "rawgSlug": "fantasian",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "Teardown",
     "year": 2022,
     "developer": "Tuxedo Labs",
@@ -11799,7 +11818,7 @@
       "PlayStation"
     ],
     "metacritic": 80,
-    "rawgRating": 3.93,
+    "rawgRating": 3.92,
     "rawgRatingsCount": 70,
     "indie": false,
     "modes": [
@@ -11890,8 +11909,8 @@
       "PlayStation"
     ],
     "metacritic": 79,
-    "rawgRating": 4.07,
-    "rawgRatingsCount": 392,
+    "rawgRating": 4.06,
+    "rawgRatingsCount": 393,
     "indie": false,
     "modes": [
       "Single-player"
@@ -12237,8 +12256,8 @@
       "PC"
     ],
     "metacritic": 76,
-    "rawgRating": 3.29,
-    "rawgRatingsCount": 14,
+    "rawgRating": 3.13,
+    "rawgRatingsCount": 15,
     "indie": true,
     "modes": [
       "Single-player"
@@ -12421,8 +12440,8 @@
       "PlayStation"
     ],
     "metacritic": 74,
-    "rawgRating": 3.6,
-    "rawgRatingsCount": 144,
+    "rawgRating": 3.59,
+    "rawgRatingsCount": 145,
     "indie": false,
     "modes": [
       "Single-player",
@@ -12447,7 +12466,7 @@
     ],
     "metacritic": 73,
     "rawgRating": 3.85,
-    "rawgRatingsCount": 638,
+    "rawgRatingsCount": 639,
     "indie": false,
     "modes": [
       "Single-player"
@@ -12469,8 +12488,8 @@
       "PlayStation"
     ],
     "metacritic": 73,
-    "rawgRating": 3.52,
-    "rawgRatingsCount": 40,
+    "rawgRating": 3.53,
+    "rawgRatingsCount": 41,
     "indie": false,
     "modes": [
       "Single-player"
@@ -12539,8 +12558,8 @@
       "PC"
     ],
     "metacritic": 72,
-    "rawgRating": 3.56,
-    "rawgRatingsCount": 16,
+    "rawgRating": 3.41,
+    "rawgRatingsCount": 17,
     "indie": false,
     "modes": [
       "Single-player"
@@ -12793,8 +12812,8 @@
       "PlayStation"
     ],
     "metacritic": 69,
-    "rawgRating": 3.54,
-    "rawgRatingsCount": 259,
+    "rawgRating": 3.55,
+    "rawgRatingsCount": 260,
     "indie": false,
     "modes": [
       "Single-player"
@@ -13302,7 +13321,7 @@
     ],
     "metacritic": null,
     "rawgRating": 4.68,
-    "rawgRatingsCount": 483,
+    "rawgRatingsCount": 484,
     "indie": false,
     "modes": [
       "Single-player"
@@ -13371,7 +13390,7 @@
     ],
     "metacritic": null,
     "rawgRating": 4.5,
-    "rawgRatingsCount": 137,
+    "rawgRatingsCount": 139,
     "indie": false,
     "modes": [
       "Single-player"
@@ -13452,29 +13471,6 @@
     "steamReviews": null
   },
   {
-    "title": "Clair Obscur: Expedition 33",
-    "year": 2025,
-    "developer": "Sundial Interactive",
-    "genre": "RPG",
-    "genreDetail": "RPG",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 4.43,
-    "rawgRatingsCount": 515,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Once a year, the Paintress wakes and paints upon her monolith. Paints her cursed number. And everyone of that age turns to smoke and fades away. Year by year, that number ticks down and more of us are erased. Tomorrow…",
-    "rawgSlug": "clair-obscur-expedition-33",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
     "title": "Resident Evil 9: Requiem",
     "year": 2026,
     "developer": "Capcom",
@@ -13485,8 +13481,8 @@
       "PlayStation"
     ],
     "metacritic": null,
-    "rawgRating": 4.43,
-    "rawgRatingsCount": 189,
+    "rawgRating": 4.44,
+    "rawgRatingsCount": 191,
     "indie": false,
     "modes": [
       "Single-player"
@@ -13498,24 +13494,24 @@
     "steamReviews": null
   },
   {
-    "title": "007 First Light",
-    "year": 2026,
-    "developer": "IO Interactive",
-    "genre": "Action & Adventure",
-    "genreDetail": "Action",
+    "title": "Clair Obscur: Expedition 33",
+    "year": 2025,
+    "developer": "Sundial Interactive",
+    "genre": "RPG",
+    "genreDetail": "RPG",
     "platforms": [
       "PC",
       "PlayStation"
     ],
     "metacritic": null,
     "rawgRating": 4.43,
-    "rawgRatingsCount": 99,
+    "rawgRatingsCount": 516,
     "indie": false,
     "modes": [
       "Single-player"
     ],
-    "note": "007 First Light is a brand new James Bond video game developed and published by IO Interactive.",
-    "rawgSlug": "007-first-light",
+    "note": "Once a year, the Paintress wakes and paints upon her monolith. Paints her cursed number. And everyone of that age turns to smoke and fades away. Year by year, that number ticks down and more of us are erased. Tomorrow…",
+    "rawgSlug": "clair-obscur-expedition-33",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -13544,6 +13540,29 @@
     "steamReviews": null
   },
   {
+    "title": "007 First Light",
+    "year": 2026,
+    "developer": "IO Interactive",
+    "genre": "Action & Adventure",
+    "genreDetail": "Action",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 4.42,
+    "rawgRatingsCount": 100,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "007 First Light is a brand new James Bond video game developed and published by IO Interactive.",
+    "rawgSlug": "007-first-light",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "Dispatch",
     "year": 2025,
     "developer": "AdHoc Studio",
@@ -13555,7 +13574,7 @@
     ],
     "metacritic": null,
     "rawgRating": 4.4,
-    "rawgRatingsCount": 248,
+    "rawgRatingsCount": 249,
     "indie": true,
     "modes": [
       "Single-player"
@@ -13578,7 +13597,7 @@
     ],
     "metacritic": null,
     "rawgRating": 4.39,
-    "rawgRatingsCount": 260,
+    "rawgRatingsCount": 262,
     "indie": false,
     "modes": [
       "Co-op",
@@ -13638,52 +13657,6 @@
     "steamReviews": null
   },
   {
-    "title": "Resident Evil 4 - Separate Ways",
-    "year": 2023,
-    "developer": "Capcom",
-    "genre": "Shooter & FPS",
-    "genreDetail": "Action, Shooter, Adventure",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 4.37,
-    "rawgRatingsCount": 117,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Separate Ways – the missing link in the main story – is a thrilling survival-horror adventure starring Ada Wong. See the other side of the story from her eyes as her mission, and fate, intertwines with Leon Kennedy's…",
-    "rawgSlug": "resident-evil-4-separate-ways",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Kingdom Come: Deliverance II",
-    "year": 2025,
-    "developer": "Warhorse Studios",
-    "genre": "RPG",
-    "genreDetail": "Action, Adventure, RPG",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 4.36,
-    "rawgRatingsCount": 186,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Kingdom of Bohemia, Early 15th Century: chaos has befallen the kingdom. As invaders pillage this ungoverned land, sowing fear and terror, Henry of Skalitz seeks revenge for his murdered family.",
-    "rawgSlug": "kingdom-come-deliverance-ii",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
     "title": "Cocoon",
     "year": 2023,
     "developer": "Geometric Interactive",
@@ -13694,8 +13667,8 @@
       "PlayStation"
     ],
     "metacritic": null,
-    "rawgRating": 4.36,
-    "rawgRatingsCount": 203,
+    "rawgRating": 4.37,
+    "rawgRatingsCount": 204,
     "indie": true,
     "modes": [
       "Single-player"
@@ -13717,14 +13690,37 @@
       "PlayStation"
     ],
     "metacritic": null,
-    "rawgRating": 4.36,
-    "rawgRatingsCount": 111,
+    "rawgRating": 4.37,
+    "rawgRatingsCount": 112,
     "indie": false,
     "modes": [
       "Single-player"
     ],
     "note": "Step into the shoes of a transfer student thrust into an unexpected fate when entering the hour \"hidden\" between one day and the next. Awaken an incredible power and chase the mysteries of the Dark Hour, fight for you…",
     "rawgSlug": "persona-3-reload",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "Resident Evil 4 - Separate Ways",
+    "year": 2023,
+    "developer": "Capcom",
+    "genre": "Shooter & FPS",
+    "genreDetail": "Action, Shooter, Adventure",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 4.37,
+    "rawgRatingsCount": 117,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Separate Ways – the missing link in the main story – is a thrilling survival-horror adventure starring Ada Wong. See the other side of the story from her eyes as her mission, and fate, intertwines with Leon Kennedy's…",
+    "rawgSlug": "resident-evil-4-separate-ways",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -13820,6 +13816,29 @@
     "steamReviews": null
   },
   {
+    "title": "Pragmata",
+    "year": 2026,
+    "developer": "Capcom",
+    "genre": "Action & Adventure",
+    "genreDetail": "Action",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 4.35,
+    "rawgRatingsCount": 103,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Capcom’s newest IP—PRAGMATA. An all-new Science Fiction action adventure with its own unique hacking twist!",
+    "rawgSlug": "pragmata",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "Marvel's Spider-Man 2",
     "year": 2023,
     "developer": "Insomniac Games",
@@ -13831,7 +13850,7 @@
     ],
     "metacritic": null,
     "rawgRating": 4.34,
-    "rawgRatingsCount": 373,
+    "rawgRatingsCount": 374,
     "indie": false,
     "modes": [
       "Single-player",
@@ -13844,24 +13863,24 @@
     "steamReviews": null
   },
   {
-    "title": "Pragmata",
-    "year": 2026,
-    "developer": "Capcom",
-    "genre": "Action & Adventure",
-    "genreDetail": "Action",
+    "title": "Kingdom Come: Deliverance II",
+    "year": 2025,
+    "developer": "Warhorse Studios",
+    "genre": "RPG",
+    "genreDetail": "Action, Adventure, RPG",
     "platforms": [
       "PC",
       "PlayStation"
     ],
     "metacritic": null,
     "rawgRating": 4.34,
-    "rawgRatingsCount": 101,
+    "rawgRatingsCount": 188,
     "indie": false,
     "modes": [
       "Single-player"
     ],
-    "note": "Capcom’s newest IP—PRAGMATA. An all-new Science Fiction action adventure with its own unique hacking twist!",
-    "rawgSlug": "pragmata",
+    "note": "Kingdom of Bohemia, Early 15th Century: chaos has befallen the kingdom. As invaders pillage this ungoverned land, sowing fear and terror, Henry of Skalitz seeks revenge for his murdered family.",
+    "rawgSlug": "kingdom-come-deliverance-ii",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -13924,13 +13943,36 @@
     ],
     "metacritic": null,
     "rawgRating": 4.33,
-    "rawgRatingsCount": 462,
+    "rawgRatingsCount": 464,
     "indie": false,
     "modes": [
       "Single-player"
     ],
     "note": "Alan Wake 2 is a survival horror game with an intense atmosphere and a twisted, layered, psychological story - it is the long awaited sequel to Remedy Entertainment's award-winning 2010 psychological thriller, Alan Wa…",
     "rawgSlug": "alan-wake-2",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "Chants of Sennaar",
+    "year": 2023,
+    "developer": "Rundisc",
+    "genre": "Puzzle & Exploration",
+    "genreDetail": "Adventure, Indie, Puzzle",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 4.33,
+    "rawgRatingsCount": 121,
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Unveil mysteries behind the fragments of the past",
+    "rawgSlug": "chants-of-sennaar",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -13982,28 +14024,6 @@
     "steamReviews": null
   },
   {
-    "title": "Forza Horizon 6",
-    "year": 2026,
-    "developer": "Playground Games",
-    "genre": "Racing & Sports",
-    "genreDetail": "Racing",
-    "platforms": [
-      "PC"
-    ],
-    "metacritic": null,
-    "rawgRating": 4.33,
-    "rawgRatingsCount": 50,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Forza Horizon 6 is the next entry in the critically acclaimed and award-winning series of open world driving games. Forza Horizon 6 will launch first on Xbox Series X|S consoles and PC in 2026.",
-    "rawgSlug": "forza-horizon-6",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
     "title": "We Were Here Forever",
     "year": 2022,
     "developer": "Total Mayhem Games",
@@ -14023,29 +14043,6 @@
     ],
     "note": "You and your friend are trapped in the realm of Castle Rock with no way out - were you betrayed, or simply not that clever? Work together to explore and solve puzzles in this mysterious Antarctic adventure. Be aware,…",
     "rawgSlug": "we-were-here-forever",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Chants of Sennaar",
-    "year": 2023,
-    "developer": "Rundisc",
-    "genre": "Puzzle & Exploration",
-    "genreDetail": "Adventure, Indie, Puzzle",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 4.32,
-    "rawgRatingsCount": 120,
-    "indie": true,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Unveil mysteries behind the fragments of the past",
-    "rawgSlug": "chants-of-sennaar",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -14143,6 +14140,28 @@
     "steamReviews": null
   },
   {
+    "title": "Forza Horizon 6",
+    "year": 2026,
+    "developer": "Playground Games",
+    "genre": "Racing & Sports",
+    "genreDetail": "Racing",
+    "platforms": [
+      "PC"
+    ],
+    "metacritic": null,
+    "rawgRating": 4.31,
+    "rawgRatingsCount": 50,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Forza Horizon 6 is the next entry in the critically acclaimed and award-winning series of open world driving games. Forza Horizon 6 will launch first on Xbox Series X|S consoles and PC in 2026.",
+    "rawgSlug": "forza-horizon-6",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "Satisfactory",
     "year": 2024,
     "developer": "Coffee Stain Studios",
@@ -14201,7 +14220,7 @@
     ],
     "metacritic": null,
     "rawgRating": 4.3,
-    "rawgRatingsCount": 199,
+    "rawgRatingsCount": 200,
     "indie": false,
     "modes": [
       "Single-player"
@@ -14282,29 +14301,6 @@
     "steamReviews": null
   },
   {
-    "title": "Balatro",
-    "year": 2024,
-    "developer": "LocalThunk",
-    "genre": "Strategy & 4X",
-    "genreDetail": "Strategy, Casual, Indie",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 4.29,
-    "rawgRatingsCount": 285,
-    "indie": true,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Balatro is a poker-inspired roguelike deck builder all about creating powerful synergies and winning big.",
-    "rawgSlug": "balatro",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
     "title": "The Alters",
     "year": 2025,
     "developer": "11 Bit Studios",
@@ -14351,6 +14347,52 @@
     "steamReviews": null
   },
   {
+    "title": "Balatro",
+    "year": 2024,
+    "developer": "LocalThunk",
+    "genre": "Strategy & 4X",
+    "genreDetail": "Strategy, Casual, Indie",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 4.28,
+    "rawgRatingsCount": 288,
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Balatro is a poker-inspired roguelike deck builder all about creating powerful synergies and winning big.",
+    "rawgSlug": "balatro",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "Metaphor: ReFantazio",
+    "year": 2024,
+    "developer": "Atlus",
+    "genre": "RPG",
+    "genreDetail": "Action, Adventure, RPG",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 4.28,
+    "rawgRatingsCount": 79,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "\"Write your destiny and rise above fear as you step into a fantasy world unlike anything you’ve seen before. Fraught with unsettling mystery, the kingdom stands on a precipice. Now, you must embark on a journey, overc…",
+    "rawgSlug": "metaphor-refantazio",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "Indiana Jones and the Great Circle",
     "year": 2024,
     "developer": "Machine Games",
@@ -14384,36 +14426,13 @@
     ],
     "metacritic": null,
     "rawgRating": 4.27,
-    "rawgRatingsCount": 81,
+    "rawgRatingsCount": 82,
     "indie": false,
     "modes": [
       "Single-player"
     ],
     "note": "Check out other amazing games featured on our special Digital Dragons partner page",
     "rawgSlug": "against-the-storm",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Metaphor: ReFantazio",
-    "year": 2024,
-    "developer": "Atlus",
-    "genre": "RPG",
-    "genreDetail": "Action, Adventure, RPG",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 4.27,
-    "rawgRatingsCount": 78,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "\"Write your destiny and rise above fear as you step into a fantasy world unlike anything you’ve seen before. Fraught with unsettling mystery, the kingdom stands on a precipice. Now, you must embark on a journey, overc…",
-    "rawgSlug": "metaphor-refantazio",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -14508,29 +14527,6 @@
     "steamReviews": null
   },
   {
-    "title": "Dredge",
-    "year": 2023,
-    "developer": "Black Salt Games",
-    "genre": "RPG",
-    "genreDetail": "Adventure, RPG",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 4.25,
-    "rawgRatingsCount": 252,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "An unusual fishing RPG with a sinister undercurrent. Catch more than 125 deep sea denizens and pack them into your cargo hold for maximum profit. Dredge the seabed for valuables and relics. Get acquainted with the loc…",
-    "rawgSlug": "dredge",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
     "title": "Pentiment",
     "year": 2022,
     "developer": "Obsidian Entertainment",
@@ -14542,7 +14538,7 @@
     ],
     "metacritic": null,
     "rawgRating": 4.25,
-    "rawgRatingsCount": 135,
+    "rawgRatingsCount": 136,
     "indie": false,
     "modes": [
       "Single-player"
@@ -14577,6 +14573,29 @@
     "steamReviews": null
   },
   {
+    "title": "Reanimal",
+    "year": 2026,
+    "developer": "Tarsier Studios",
+    "genre": "Action & Adventure",
+    "genreDetail": "Adventure",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 4.25,
+    "rawgRatingsCount": 68,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "The original creators of Little Nightmares™ & Little Nightmares™ II have returned to take you on a more terrifying journey than ever before. In this co-op horror adventure game, you play as a brother & sister who go t…",
+    "rawgSlug": "reanimal",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "The True Ingredients",
     "year": 2022,
     "developer": "RenderPi",
@@ -14599,6 +14618,29 @@
     "steamReviews": null
   },
   {
+    "title": "Dredge",
+    "year": 2023,
+    "developer": "Black Salt Games",
+    "genre": "RPG",
+    "genreDetail": "Adventure, RPG",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 4.24,
+    "rawgRatingsCount": 253,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "An unusual fishing RPG with a sinister undercurrent. Catch more than 125 deep sea denizens and pack them into your cargo hold for maximum profit. Dredge the seabed for valuables and relics. Get acquainted with the loc…",
+    "rawgSlug": "dredge",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "HELLDIVERS 2",
     "year": 2024,
     "developer": "Arrowhead Game Studios",
@@ -14610,7 +14652,7 @@
     ],
     "metacritic": null,
     "rawgRating": 4.24,
-    "rawgRatingsCount": 131,
+    "rawgRatingsCount": 132,
     "indie": false,
     "modes": [
       "Co-op",
@@ -14641,29 +14683,6 @@
     ],
     "note": "Explore a dense, interconnected labyrinth, and unravel its many secrets. Collect items to manipulate your environment in surprising and meaningful ways. Encounter creatures both beautiful and unsettling, as you attemp…",
     "rawgSlug": "animal-well",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Reanimal",
-    "year": 2026,
-    "developer": "Tarsier Studios",
-    "genre": "Action & Adventure",
-    "genreDetail": "Adventure",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 4.24,
-    "rawgRatingsCount": 67,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "The original creators of Little Nightmares™ & Little Nightmares™ II have returned to take you on a more terrifying journey than ever before. In this co-op horror adventure game, you play as a brother & sister who go t…",
-    "rawgSlug": "reanimal",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -15009,51 +15028,6 @@
     "steamReviews": null
   },
   {
-    "title": "Thank Goodness You're Here!",
-    "year": 2024,
-    "developer": "Coal Supper",
-    "genre": "Platformer & Metroidvania",
-    "genreDetail": "Adventure, Casual, Indie, Puzzle, Platformer",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 4.2,
-    "rawgRatingsCount": 51,
-    "indie": true,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Thank Goodness You're Here! is an absurd comedy slapformer set in the bizarre Northern English town of Barnsworth. As a traveling salesman, take the time to see the sights and meet the locals, who are very eager to gi…",
-    "rawgSlug": "thank-goodness-youre-here",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Vampire Survivors",
-    "year": 2022,
-    "developer": "poncle",
-    "genre": "RPG",
-    "genreDetail": "Action, RPG, Casual, Indie",
-    "platforms": [
-      "PC"
-    ],
-    "metacritic": null,
-    "rawgRating": 4.19,
-    "rawgRatingsCount": 805,
-    "indie": true,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Vampire Survivors is currently a time survival game with minimalistic gameplay and roguelite elements.",
-    "rawgSlug": "vampire-survivors",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
     "title": "Mouthwashing",
     "year": 2024,
     "developer": "Wrong Organ",
@@ -15076,6 +15050,74 @@
     "steamReviews": null
   },
   {
+    "title": "Vampire Survivors",
+    "year": 2022,
+    "developer": "poncle",
+    "genre": "RPG",
+    "genreDetail": "Action, RPG, Casual, Indie",
+    "platforms": [
+      "PC"
+    ],
+    "metacritic": null,
+    "rawgRating": 4.18,
+    "rawgRatingsCount": 806,
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Vampire Survivors is currently a time survival game with minimalistic gameplay and roguelite elements.",
+    "rawgSlug": "vampire-survivors",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "Thank Goodness You're Here!",
+    "year": 2024,
+    "developer": "Coal Supper",
+    "genre": "Platformer & Metroidvania",
+    "genreDetail": "Adventure, Casual, Indie, Puzzle, Platformer",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 4.18,
+    "rawgRatingsCount": 52,
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Thank Goodness You're Here! is an absurd comedy slapformer set in the bizarre Northern English town of Barnsworth. As a traveling salesman, take the time to see the sights and meet the locals, who are very eager to gi…",
+    "rawgSlug": "thank-goodness-youre-here",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "Lies Of P",
+    "year": 2023,
+    "developer": "Round8 Studio",
+    "genre": "RPG",
+    "genreDetail": "Action, RPG",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 4.17,
+    "rawgRatingsCount": 324,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "You wake up at an abandoned train station in Krat, a city overwhelmed by madness and bloodlust. In front of you lies a single note that reads:",
+    "rawgSlug": "lies-of-p",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "Pizza Tower",
     "year": 2023,
     "developer": "Tour De Pizza",
@@ -15093,29 +15135,6 @@
     ],
     "note": "Pizza Tower is a fast paced 2D platformer inspired by the Wario Land series, with an emphasis on movement, exploration and score attack. Featuring highly stylized pixel art inspired by the cartoons from the '90s, and…",
     "rawgSlug": "pizza-tower",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Lies Of P",
-    "year": 2023,
-    "developer": "Round8 Studio",
-    "genre": "RPG",
-    "genreDetail": "Action, RPG",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 4.16,
-    "rawgRatingsCount": 323,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "You wake up at an abandoned train station in Krat, a city overwhelmed by madness and bloodlust. In front of you lies a single note that reads:",
-    "rawgSlug": "lies-of-p",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -15180,7 +15199,7 @@
     ],
     "metacritic": null,
     "rawgRating": 4.15,
-    "rawgRatingsCount": 172,
+    "rawgRatingsCount": 173,
     "indie": false,
     "modes": [
       "Single-player"
@@ -15272,7 +15291,7 @@
     ],
     "metacritic": null,
     "rawgRating": 4.11,
-    "rawgRatingsCount": 458,
+    "rawgRatingsCount": 459,
     "indie": true,
     "modes": [
       "Single-player"
@@ -15353,6 +15372,28 @@
     "steamReviews": null
   },
   {
+    "title": "PEAK.",
+    "year": 2025,
+    "developer": "—",
+    "genre": "Action & Adventure",
+    "genreDetail": "Adventure",
+    "platforms": [
+      "PC"
+    ],
+    "metacritic": null,
+    "rawgRating": 4.1,
+    "rawgRatingsCount": 61,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "PEAK is a co-op climbing game made together with Aggro Crab where the slightest mistake can spell your doom. Either solo or as a group of lost nature scouts, your only hope of rescue from a mysterious island is to sca…",
+    "rawgSlug": "peak-3",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "No I'm not a Human",
     "year": 2025,
     "developer": "Trioskaz",
@@ -15370,28 +15411,6 @@
     ],
     "note": "Don’t PanicSunrise. Twilight of Earth. The world is ending. Acrid auromas of sun-scorched streets fill the air. Blackened corpses gnarled into shapes of agony line streets. Peering outside is enough to scorch eyes fro…",
     "rawgSlug": "no-im-not-a-human",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "PEAK.",
-    "year": 2025,
-    "developer": "—",
-    "genre": "Action & Adventure",
-    "genreDetail": "Adventure",
-    "platforms": [
-      "PC"
-    ],
-    "metacritic": null,
-    "rawgRating": 4.1,
-    "rawgRatingsCount": 60,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "PEAK is a co-op climbing game made together with Aggro Crab where the slightest mistake can spell your doom. Either solo or as a group of lost nature scouts, your only hope of rescue from a mysterious island is to sca…",
-    "rawgSlug": "peak-3",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -15532,28 +15551,6 @@
     "steamReviews": null
   },
   {
-    "title": "Brotato",
-    "year": 2022,
-    "developer": "Blobfish",
-    "genre": "RPG",
-    "genreDetail": "Action, RPG, Casual, Indie",
-    "platforms": [
-      "PC"
-    ],
-    "metacritic": null,
-    "rawgRating": 4.05,
-    "rawgRatingsCount": 145,
-    "indie": true,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "A spaceship from Potato World crashes onto an alien planet. The sole survivor: Brotato, the only potato capable of handling 6 weapons at the same time. Waiting to be rescued by his mates, Brotato must survive in this…",
-    "rawgSlug": "brotato",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
     "title": "Return to Monkey Island",
     "year": 2022,
     "developer": "Lucasfilm",
@@ -15588,13 +15585,35 @@
     ],
     "metacritic": null,
     "rawgRating": 4.04,
-    "rawgRatingsCount": 69,
+    "rawgRatingsCount": 70,
     "indie": false,
     "modes": [
       "Single-player"
     ],
     "note": "Rebuilt and enhanced for PC – Until Dawn invites you to relive the nightmare, and immerse yourself in a gripping slasher horror where every decision can make the difference between life and death.",
     "rawgSlug": "until-dawn-2",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "Brotato",
+    "year": 2022,
+    "developer": "Blobfish",
+    "genre": "RPG",
+    "genreDetail": "Action, RPG, Casual, Indie",
+    "platforms": [
+      "PC"
+    ],
+    "metacritic": null,
+    "rawgRating": 4.03,
+    "rawgRatingsCount": 146,
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "A spaceship from Potato World crashes onto an alien planet. The sole survivor: Brotato, the only potato capable of handling 6 weapons at the same time. Waiting to be rescued by his mates, Brotato must survive in this…",
+    "rawgSlug": "brotato",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -15761,28 +15780,6 @@
     "steamReviews": null
   },
   {
-    "title": "Strange Horticulture",
-    "year": 2022,
-    "developer": "Bad Viking",
-    "genre": "Survival & Sim",
-    "genreDetail": "Adventure, Simulation",
-    "platforms": [
-      "PC"
-    ],
-    "metacritic": null,
-    "rawgRating": 4,
-    "rawgRatingsCount": 68,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Find and identify new plants, pet your cat, speak to a coven, or join a cult. Use your growing collection to influence the story and unravel Undermere’s dark mysteries.",
-    "rawgSlug": "strange-horticulture",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
     "title": "Age of Wonders 4",
     "year": 2023,
     "developer": "Triumph Studios",
@@ -15794,7 +15791,7 @@
     ],
     "metacritic": null,
     "rawgRating": 4,
-    "rawgRatingsCount": 46,
+    "rawgRatingsCount": 47,
     "indie": false,
     "modes": [
       "Single-player",
@@ -15808,47 +15805,25 @@
     "steamReviews": null
   },
   {
-    "title": "Alan Wake 2: Night Springs",
-    "year": 2024,
-    "developer": "—",
-    "genre": "Action & Adventure",
-    "genreDetail": "Action",
+    "title": "Valheim",
+    "year": 2026,
+    "developer": "Dvoid",
+    "genre": "Narrative & Tactics",
+    "genreDetail": "Action, Adventure, Indie",
     "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 4,
-    "rawgRatingsCount": 63,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "",
-    "rawgSlug": "alan-wake-2-night-springs",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Prince of Persia: The Lost Crown",
-    "year": 2024,
-    "developer": "—",
-    "genre": "Platformer & Metroidvania",
-    "genreDetail": "Action, Adventure, Platformer",
-    "platforms": [
-      "PC",
-      "PlayStation"
+      "PC"
     ],
     "metacritic": null,
     "rawgRating": 3.99,
-    "rawgRatingsCount": 143,
-    "indie": false,
+    "rawgRatingsCount": 657,
+    "indie": true,
     "modes": [
-      "Single-player"
+      "Single-player",
+      "Co-op",
+      "Live-service"
     ],
-    "note": "UNLEASH YOUR INNER WARRIOR",
-    "rawgSlug": "prince-of-persia-the-lost-crown",
+    "note": "Prove your worth!",
+    "rawgSlug": "valheim",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -15872,30 +15847,6 @@
     ],
     "note": "Enjoy meditative vibes in Jusant, an action-puzzle climbing game. Scale an immeasurably tall tower and ascend to new heights alongside your watery companion. Master your climbing tools, find your way up through divers…",
     "rawgSlug": "jusant",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Valheim",
-    "year": 2026,
-    "developer": "Dvoid",
-    "genre": "Narrative & Tactics",
-    "genreDetail": "Action, Adventure, Indie",
-    "platforms": [
-      "PC"
-    ],
-    "metacritic": null,
-    "rawgRating": 3.98,
-    "rawgRatingsCount": 653,
-    "indie": true,
-    "modes": [
-      "Single-player",
-      "Co-op",
-      "Live-service"
-    ],
-    "note": "Prove your worth!",
-    "rawgSlug": "valheim",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -15968,6 +15919,29 @@
     "steamReviews": null
   },
   {
+    "title": "Alan Wake 2: Night Springs",
+    "year": 2024,
+    "developer": "—",
+    "genre": "Action & Adventure",
+    "genreDetail": "Action",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 3.98,
+    "rawgRatingsCount": 64,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "",
+    "rawgSlug": "alan-wake-2-night-springs",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "Mixtape",
     "year": 2026,
     "developer": "—",
@@ -15991,26 +15965,24 @@
     "steamReviews": null
   },
   {
-    "title": "Escape Academy",
-    "year": 2022,
-    "developer": "Coin Crew Games",
-    "genre": "Puzzle & Exploration",
-    "genreDetail": "Adventure, Puzzle",
+    "title": "Prince of Persia: The Lost Crown",
+    "year": 2024,
+    "developer": "—",
+    "genre": "Platformer & Metroidvania",
+    "genreDetail": "Action, Adventure, Platformer",
     "platforms": [
       "PC",
       "PlayStation"
     ],
     "metacritic": null,
     "rawgRating": 3.97,
-    "rawgRatingsCount": 64,
+    "rawgRatingsCount": 144,
     "indie": false,
     "modes": [
-      "Single-player",
-      "Co-op",
-      "Live-service"
+      "Single-player"
     ],
-    "note": "You've just arrived at Escape Academy, a school where promising students train to become the ultimate Escapist.",
-    "rawgSlug": "escape-academy",
+    "note": "UNLEASH YOUR INNER WARRIOR",
+    "rawgSlug": "prince-of-persia-the-lost-crown",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -16027,7 +15999,7 @@
     ],
     "metacritic": null,
     "rawgRating": 3.97,
-    "rawgRatingsCount": 141,
+    "rawgRatingsCount": 142,
     "indie": false,
     "modes": [
       "Single-player"
@@ -16108,6 +16080,28 @@
     "steamReviews": null
   },
   {
+    "title": "Strange Horticulture",
+    "year": 2022,
+    "developer": "Bad Viking",
+    "genre": "Survival & Sim",
+    "genreDetail": "Adventure, Simulation",
+    "platforms": [
+      "PC"
+    ],
+    "metacritic": null,
+    "rawgRating": 3.96,
+    "rawgRatingsCount": 69,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Find and identify new plants, pet your cat, speak to a coven, or join a cult. Use your growing collection to influence the story and unravel Undermere’s dark mysteries.",
+    "rawgSlug": "strange-horticulture",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "Tekken 8",
     "year": 2024,
     "developer": "Bandai Namco Entertainment",
@@ -16172,6 +16166,51 @@
     ],
     "note": "A short horror game where you pilot a tiny submarine through an ocean of blood on an alien moon.",
     "rawgSlug": "iron-lung",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "Norco",
+    "year": 2022,
+    "developer": "Geography of Robots",
+    "genre": "Narrative & Tactics",
+    "genreDetail": "Adventure, Indie",
+    "platforms": [
+      "PC"
+    ],
+    "metacritic": null,
+    "rawgRating": 3.95,
+    "rawgRatingsCount": 75,
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "NORCO is a sci-fi Southern Gothic Adventure that immerses the player in the sinking suburbs and verdant industrial swamps of Louisiana's petrochemical hinterlands. Your brother Blake has gone missing in the aftermath…",
+    "rawgSlug": "norco",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "Crimson Desert",
+    "year": 2026,
+    "developer": "Pearl Abyss",
+    "genre": "RPG",
+    "genreDetail": "Action, RPG",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 3.95,
+    "rawgRatingsCount": 47,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Crimson Desert is an open-world action-adventure set in the beautiful yet brutal continent of Pywel. Discover adventure, uncover wonders, and experience thrilling action as you witness the saga surrounding Kliff, lead…",
+    "rawgSlug": "crimson-desert",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -16336,6 +16375,31 @@
     "steamReviews": null
   },
   {
+    "title": "Escape Academy",
+    "year": 2022,
+    "developer": "Coin Crew Games",
+    "genre": "Puzzle & Exploration",
+    "genreDetail": "Adventure, Puzzle",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 3.93,
+    "rawgRatingsCount": 65,
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Co-op",
+      "Live-service"
+    ],
+    "note": "You've just arrived at Escape Academy, a school where promising students train to become the ultimate Escapist.",
+    "rawgSlug": "escape-academy",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "Life is Strange Remastered",
     "year": 2022,
     "developer": "DONTNOD Entertainment",
@@ -16354,29 +16418,6 @@
     ],
     "note": "Experience the BAFTA award-winning story of Life is Strange now beautifully remastered with enhanced visuals and vastly improved animation using mocap technology.",
     "rawgSlug": "life-is-strange-remastered",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Crimson Desert",
-    "year": 2026,
-    "developer": "Pearl Abyss",
-    "genre": "RPG",
-    "genreDetail": "Action, RPG",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 3.93,
-    "rawgRatingsCount": 46,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Crimson Desert is an open-world action-adventure set in the beautiful yet brutal continent of Pywel. Discover adventure, uncover wonders, and experience thrilling action as you witness the saga surrounding Kliff, lead…",
-    "rawgSlug": "crimson-desert",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -16427,28 +16468,6 @@
     "steamReviews": null
   },
   {
-    "title": "Norco",
-    "year": 2022,
-    "developer": "Geography of Robots",
-    "genre": "Narrative & Tactics",
-    "genreDetail": "Adventure, Indie",
-    "platforms": [
-      "PC"
-    ],
-    "metacritic": null,
-    "rawgRating": 3.92,
-    "rawgRatingsCount": 73,
-    "indie": true,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "NORCO is a sci-fi Southern Gothic Adventure that immerses the player in the sinking suburbs and verdant industrial swamps of Louisiana's petrochemical hinterlands. Your brother Blake has gone missing in the aftermath…",
-    "rawgSlug": "norco",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
     "title": "Oxenfree II: Lost Signals",
     "year": 2023,
     "developer": "Netflix",
@@ -16467,6 +16486,31 @@
     ],
     "note": "Five years after the events of OXENFREE, Riley returns to her hometown of Camena to investigate mysterious radio signals. What she finds is more than she bargained for.",
     "rawgSlug": "oxenfree-ii-lost-signals",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "Dying Light: The Beast",
+    "year": 2025,
+    "developer": "Techland",
+    "genre": "Shooter & FPS",
+    "genreDetail": "Action, Shooter, Adventure, RPG",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 3.92,
+    "rawgRatingsCount": 48,
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Co-op",
+      "Live-service"
+    ],
+    "note": "Pre-Order BonusPre-order the Standard Edition now to get the exclusive Hero of Harran Bundle, which contains:- Ultimate Survivor Outfit",
+    "rawgSlug": "dying-light-the-beast",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -16587,31 +16631,6 @@
     "steamReviews": null
   },
   {
-    "title": "Dying Light: The Beast",
-    "year": 2025,
-    "developer": "Techland",
-    "genre": "Shooter & FPS",
-    "genreDetail": "Action, Shooter, Adventure, RPG",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 3.9,
-    "rawgRatingsCount": 47,
-    "indie": false,
-    "modes": [
-      "Single-player",
-      "Co-op",
-      "Live-service"
-    ],
-    "note": "Pre-Order BonusPre-order the Standard Edition now to get the exclusive Hero of Harran Bundle, which contains:- Ultimate Survivor Outfit",
-    "rawgSlug": "dying-light-the-beast",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
     "title": "Raft",
     "year": 2022,
     "developer": "Redbeet Interactive",
@@ -16659,6 +16678,29 @@
     "steamReviews": null
   },
   {
+    "title": "Cronos: The New Dawn",
+    "year": 2025,
+    "developer": "Bloober Team",
+    "genre": "Action & Adventure",
+    "genreDetail": "Action, Adventure",
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "metacritic": null,
+    "rawgRating": 3.89,
+    "rawgRatingsCount": 61,
+    "indie": false,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Cronos: The New Dawn is a pulse-pounding, third-person survival horror game where time is your deadliest weapon — and your worst enemy. Survive a brutal future, dive back in time, and stop nightmarish creatures from m…",
+    "rawgSlug": "cronos-the-new-dawn",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "Nobody Wants to Die",
     "year": 2024,
     "developer": "Critical Hit Games",
@@ -16677,29 +16719,6 @@
     ],
     "note": "Lose yourself in the world of New York, 2329, where immortality comes at a price that someone has to pay. Following a near-death experience, Detective James Karra takes an off-the-books case from his chief with only t…",
     "rawgSlug": "nobody-wants-to-die",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Cronos: The New Dawn",
-    "year": 2025,
-    "developer": "Bloober Team",
-    "genre": "Action & Adventure",
-    "genreDetail": "Action, Adventure",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 3.88,
-    "rawgRatingsCount": 61,
-    "indie": false,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Cronos: The New Dawn is a pulse-pounding, third-person survival horror game where time is your deadliest weapon — and your worst enemy. Survive a brutal future, dive back in time, and stop nightmarish creatures from m…",
-    "rawgSlug": "cronos-the-new-dawn",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -16924,7 +16943,7 @@
     ],
     "metacritic": null,
     "rawgRating": 3.85,
-    "rawgRatingsCount": 357,
+    "rawgRatingsCount": 356,
     "indie": false,
     "modes": [
       "Single-player",
@@ -17016,7 +17035,7 @@
     ],
     "metacritic": null,
     "rawgRating": 3.85,
-    "rawgRatingsCount": 59,
+    "rawgRatingsCount": 60,
     "indie": false,
     "modes": [
       "Single-player"
@@ -17083,7 +17102,7 @@
     ],
     "metacritic": null,
     "rawgRating": 3.83,
-    "rawgRatingsCount": 357,
+    "rawgRatingsCount": 358,
     "indie": false,
     "modes": [
       "Single-player"
@@ -17205,7 +17224,7 @@
     ],
     "metacritic": null,
     "rawgRating": 3.82,
-    "rawgRatingsCount": 278,
+    "rawgRatingsCount": 279,
     "indie": false,
     "modes": [
       "Single-player"
@@ -17228,7 +17247,7 @@
     ],
     "metacritic": null,
     "rawgRating": 3.82,
-    "rawgRatingsCount": 239,
+    "rawgRatingsCount": 241,
     "indie": false,
     "modes": [
       "Single-player",
@@ -17324,7 +17343,7 @@
     ],
     "metacritic": null,
     "rawgRating": 3.81,
-    "rawgRatingsCount": 93,
+    "rawgRatingsCount": 94,
     "indie": false,
     "modes": [
       "Single-player"
@@ -17347,7 +17366,7 @@
     ],
     "metacritic": null,
     "rawgRating": 3.81,
-    "rawgRatingsCount": 88,
+    "rawgRatingsCount": 89,
     "indie": false,
     "modes": [
       "Single-player"
@@ -17621,7 +17640,7 @@
     ],
     "metacritic": null,
     "rawgRating": 3.76,
-    "rawgRatingsCount": 330,
+    "rawgRatingsCount": 332,
     "indie": false,
     "modes": [
       "Single-player"
@@ -17770,6 +17789,31 @@
     "steamReviews": null
   },
   {
+    "title": "V Rising",
+    "year": 2024,
+    "developer": "Stunlock Studios",
+    "genre": "MMO & Online",
+    "genreDetail": "Action, Adventure, Massively Multiplayer",
+    "platforms": [
+      "PC"
+    ],
+    "metacritic": null,
+    "rawgRating": 3.73,
+    "rawgRatingsCount": 182,
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Co-op",
+      "PvP",
+      "Live-service"
+    ],
+    "note": "A Vampire Survival Experience",
+    "rawgSlug": "v-rising",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "OlliOlli World",
     "year": 2022,
     "developer": "Roll7",
@@ -17812,54 +17856,6 @@
     ],
     "note": "Build your university, your way!",
     "rawgSlug": "two-point-campus",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Amnesia: The Bunker",
-    "year": 2023,
-    "developer": "Frictional Games",
-    "genre": "Narrative & Tactics",
-    "genreDetail": "Action, Adventure, Indie",
-    "platforms": [
-      "PC",
-      "PlayStation"
-    ],
-    "metacritic": null,
-    "rawgRating": 3.73,
-    "rawgRatingsCount": 101,
-    "indie": true,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Amnesia: The Bunker is a first-person horror game from the makers of SOMA and Amnesia.",
-    "rawgSlug": "amnesia-the-bunker",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "V Rising",
-    "year": 2024,
-    "developer": "Stunlock Studios",
-    "genre": "MMO & Online",
-    "genreDetail": "Action, Adventure, Massively Multiplayer",
-    "platforms": [
-      "PC"
-    ],
-    "metacritic": null,
-    "rawgRating": 3.72,
-    "rawgRatingsCount": 181,
-    "indie": false,
-    "modes": [
-      "Single-player",
-      "Co-op",
-      "PvP",
-      "Live-service"
-    ],
-    "note": "A Vampire Survival Experience",
-    "rawgSlug": "v-rising",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -17955,25 +17951,24 @@
     "steamReviews": null
   },
   {
-    "title": "Enshrouded",
-    "year": 2026,
-    "developer": "Keen Games",
-    "genre": "RPG",
-    "genreDetail": "Action, Adventure, RPG",
+    "title": "Amnesia: The Bunker",
+    "year": 2023,
+    "developer": "Frictional Games",
+    "genre": "Narrative & Tactics",
+    "genreDetail": "Action, Adventure, Indie",
     "platforms": [
-      "PC"
+      "PC",
+      "PlayStation"
     ],
     "metacritic": null,
-    "rawgRating": 3.71,
-    "rawgRatingsCount": 41,
-    "indie": false,
+    "rawgRating": 3.7,
+    "rawgRatingsCount": 102,
+    "indie": true,
     "modes": [
-      "Single-player",
-      "Co-op",
-      "Live-service"
+      "Single-player"
     ],
-    "note": "JOIN OUR DISCORD",
-    "rawgSlug": "enshrouded-2",
+    "note": "Amnesia: The Bunker is a first-person horror game from the makers of SOMA and Amnesia.",
+    "rawgSlug": "amnesia-the-bunker",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -18049,6 +18044,28 @@
     "steamReviews": null
   },
   {
+    "title": "Trepang2",
+    "year": 2023,
+    "developer": "Trepang Studios",
+    "genre": "Narrative & Tactics",
+    "genreDetail": "Action, Indie",
+    "platforms": [
+      "PC"
+    ],
+    "metacritic": null,
+    "rawgRating": 3.66,
+    "rawgRatingsCount": 79,
+    "indie": true,
+    "modes": [
+      "Single-player"
+    ],
+    "note": "Dodge bullets, sneak in the shadows and unleash your deadly gun-fu skills on the bad guys who took everything from you.",
+    "rawgSlug": "trepang2",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
     "title": "Resident Evil Village - Shadows of Rose",
     "year": 2022,
     "developer": "Capcom",
@@ -18067,28 +18084,6 @@
     ],
     "note": "16 years have passed since that incident...",
     "rawgSlug": "resident-evil-village-shadows-of-rose",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Trepang2",
-    "year": 2023,
-    "developer": "Trepang Studios",
-    "genre": "Narrative & Tactics",
-    "genreDetail": "Action, Indie",
-    "platforms": [
-      "PC"
-    ],
-    "metacritic": null,
-    "rawgRating": 3.65,
-    "rawgRatingsCount": 77,
-    "indie": true,
-    "modes": [
-      "Single-player"
-    ],
-    "note": "Dodge bullets, sneak in the shadows and unleash your deadly gun-fu skills on the bad guys who took everything from you.",
-    "rawgSlug": "trepang2",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -18133,6 +18128,30 @@
     ],
     "note": "Discover and explore the darkly-charming, procedurally-generated departments of Death Inc., where you’ll meet a diverse cast of memorable characters—like your affable pumpkin-headed assistant, Pump Quinn—who are alway…",
     "rawgSlug": "have-a-nice-death",
+    "steamAppId": null,
+    "steamPositive": null,
+    "steamReviews": null
+  },
+  {
+    "title": "Enshrouded",
+    "year": 2026,
+    "developer": "Keen Games",
+    "genre": "RPG",
+    "genreDetail": "Action, Adventure, RPG",
+    "platforms": [
+      "PC"
+    ],
+    "metacritic": null,
+    "rawgRating": 3.64,
+    "rawgRatingsCount": 42,
+    "indie": false,
+    "modes": [
+      "Single-player",
+      "Co-op",
+      "Live-service"
+    ],
+    "note": "JOIN OUR DISCORD",
+    "rawgSlug": "enshrouded-2",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
@@ -18319,29 +18338,6 @@
     ],
     "note": "Embark on an epic adventure full of whimsy, wonder, and high-powered weaponry! Bullets, magic, and broadswords collide across this chaotic fantasy world brought to life by the unpredictable Tiny Tina.",
     "rawgSlug": "tiny-tinas-wonderlands",
-    "steamAppId": null,
-    "steamPositive": null,
-    "steamReviews": null
-  },
-  {
-    "title": "Counter-Strike 2",
-    "year": 2023,
-    "developer": "Valve Software",
-    "genre": "Shooter & FPS",
-    "genreDetail": "Shooter",
-    "platforms": [
-      "PC"
-    ],
-    "metacritic": null,
-    "rawgRating": 3.6,
-    "rawgRatingsCount": 225,
-    "indie": false,
-    "modes": [
-      "PvP",
-      "Single-player"
-    ],
-    "note": "For over two decades, Counter-Strike has offered an elite competitive experience, one shaped by millions of players from across the globe. And now the next chapter in the CS story is about to begin. This is Counter-St…",
-    "rawgSlug": "counter-strike-2-2",
     "steamAppId": null,
     "steamPositive": null,
     "steamReviews": null
