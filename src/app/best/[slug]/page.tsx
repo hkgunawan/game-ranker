@@ -89,6 +89,17 @@ export default async function BestPage({ params }: { params: Promise<{ slug: str
                   <td className="py-2 pr-3">
                     <span className="text-sm text-[#e6edf3]">{g.title}</span>
                     {g.indie && <span className="ml-1.5 text-[10px] text-[#a371f7]">◆</span>}
+                    {g.steamAppId && (
+                      <a
+                        href={`https://store.steampowered.com/app/${g.steamAppId}/`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title={`${g.title} on Steam`}
+                        className="ml-1.5 font-mono text-[11px] text-[#7d8590] hover:text-[#e6edf3]"
+                      >
+                        steam↗
+                      </a>
+                    )}
                     <span className="ml-2 font-mono text-[11px] text-[#7d8590]">{g.developer}</span>
                   </td>
                   <td className="py-2 pr-3 font-mono text-xs text-[#8b949e]">{g.year}</td>

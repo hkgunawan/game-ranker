@@ -42,9 +42,17 @@ const jaccard = (a, b) => {
   return inter / (A.size + B.size - inter);
 };
 
+// `redirect: "manual"` is deliberate. Steam retires endpoints by 302-ing them to
+// the store home page; following that redirect yields a 200 full of HTML, which
+// used to surface as a cryptic JSON parse error on every single title.
 async function getJson(url) {
-  const res = await fetch(url, { headers: UA });
+  const res = await fetch(url, { headers: UA, redirect: "manual" });
+  if (res.status >= 300 && res.status < 400) {
+    throw new Error(`HTTP ${res.status} redirect — endpoint moved or retired`);
+  }
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const type = res.headers.get("content-type") ?? "";
+  if (!type.includes("json")) throw new Error(`expected JSON, got ${type || "no content-type"}`);
   return res.json();
 }
 
@@ -113,51 +121,98 @@ async function resolve(title) {
   return best;
 }
 
-async function reviews(appid) {
-  const d = await getJson(
-    `https://store.steampowered.com/appreviews/${appid}?json=1&language=all&purchase_type=all&num_per_page=0`
-  );
-  const q = d.query_summary ?? {};
-  const tot = q.total_reviews ?? 0;
-  if (!tot) return null;
-  return { positive: Math.round((1000 * q.total_positive) / tot) / 10, reviews: tot, desc: q.review_score_desc ?? "" };
+// Review summaries come from Steam's official Web API (keyless), many apps per
+// call. The old per-app store endpoint (/appreviews/<id>?json=1) was retired in
+// Oct 2026 — it now 302s to the store home page — which silently emptied Steam
+// data for the whole dataset. Batching also cuts ~800 requests down to ~16.
+const BATCH = 50;
+async function reviewsFor(appids) {
+  const out = new Map();
+  for (let i = 0; i < appids.length; i += BATCH) {
+    const input = {
+      ids: appids.slice(i, i + BATCH).map((appid) => ({ appid })),
+      context: { language: "english", country_code: "US" },
+      data_request: { include_reviews: true },
+    };
+    const d = await getJson(
+      `https://api.steampowered.com/IStoreBrowseService/GetItems/v1?input_json=${encodeURIComponent(JSON.stringify(input))}`
+    );
+    for (const item of d.response?.store_items ?? []) {
+      const r = item.reviews?.summary_filtered;
+      if (item.success !== 1 || !r?.review_count) continue;
+      out.set(Number(item.appid), { positive: r.percent_positive, reviews: r.review_count });
+    }
+    await sleep(500);
+  }
+  return out;
 }
 
 const games = JSON.parse(readFileSync(FILE, "utf8"));
-let matched = 0, missing = 0, weak = 0;
+let matched = 0, missing = 0, errors = 0;
 const report = [];
 
+// Pass 1: resolve each title to a Steam appid.
+const resolved = new Map(); // game -> { appid, name }
 for (const g of games) {
   g.steamAppId = null;
   g.steamPositive = null;
   g.steamReviews = null;
   try {
     const m = await resolve(g.title);
+    await sleep(120);
     if (!m || m.appid == null) {
       missing++;
       report.push(`  ✗ ${g.title} — not found`);
       continue;
     }
-    if (m.weak) weak++;
-    const rv = await reviews(m.appid);
-    await sleep(250);
-    if (!rv) {
-      missing++;
-      report.push(`  ✗ ${g.title} — no reviews [${m.name}]`);
-      continue;
-    }
-    g.steamAppId = m.appid;
-    g.steamPositive = rv.positive;
-    g.steamReviews = rv.reviews;
-    matched++;
-    const flag = m.weak ? " ⚠ weak-match" : "";
-    report.push(`  ✓ ${g.title} → ${m.name} [${m.appid}] ${rv.positive}% (${rv.reviews.toLocaleString()})${flag}`);
+    resolved.set(g, { appid: Number(m.appid), name: m.name });
   } catch (e) {
     missing++;
+    errors++;
     report.push(`  ✗ ${g.title} — error ${e.message}`);
   }
 }
 
-writeFileSync(FILE, JSON.stringify(games, null, 2) + "\n");
+// Pass 2: review summaries for every resolved appid, in batches.
+let summaries = new Map();
+try {
+  summaries = await reviewsFor([...new Set([...resolved.values()].map((m) => m.appid))]);
+} catch (e) {
+  errors += resolved.size;
+  report.push(`  ✗ review lookup failed — ${e.message}`);
+}
+
+for (const [g, m] of resolved) {
+  const rv = summaries.get(m.appid);
+  if (!rv) {
+    missing++;
+    report.push(`  ✗ ${g.title} — no reviews [${m.name}]`);
+    continue;
+  }
+  g.steamAppId = m.appid;
+  g.steamPositive = rv.positive;
+  g.steamReviews = rv.reviews;
+  matched++;
+  report.push(`  ✓ ${g.title} → ${m.name} [${m.appid}] ${rv.positive}% (${rv.reviews.toLocaleString()})`);
+}
+
 console.log(report.join("\n"));
-console.log(`\nmatched: ${matched} · missing: ${missing} · weak matches (review these): ${weak}`);
+console.log(`\nmatched: ${matched} · missing: ${missing} · errors: ${errors}`);
+
+// Fail loudly instead of committing a hollowed-out dataset. Healthy runs match
+// ~85% of titles; when Steam changes something the rate collapses, and before
+// this guard the workflow happily committed 0/798 for weeks while reporting
+// success. A non-zero exit stops the commit step, so the site keeps the last
+// good data and the workflow raises its alert issue.
+const MIN_MATCH_RATE = 0.6;
+const rate = games.length ? matched / games.length : 0;
+if (rate < MIN_MATCH_RATE) {
+  console.error(
+    `\nSteam enrichment matched only ${(rate * 100).toFixed(0)}% of ${games.length} games ` +
+      `(need ${MIN_MATCH_RATE * 100}%). Not writing the dataset — check the errors above; ` +
+      `a Steam endpoint has probably changed.`
+  );
+  process.exit(1);
+}
+
+writeFileSync(FILE, JSON.stringify(games, null, 2) + "\n");
