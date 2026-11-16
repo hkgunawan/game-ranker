@@ -1,3 +1,4 @@
+import { bestGenre as sharedBestGenre } from "../../scripts/lib/genre.mjs";
 // Decision logic for building the board from Steam data. Pure — no network,
 // no filesystem — so every rule here is unit-tested.
 
@@ -58,44 +59,11 @@ export function passesCatalogueGate(d: SteamDetail, currentYear: number): boolea
   return year >= FROM_YEAR && year <= currentYear;
 }
 
-const canonicalGenre = (raw: string): string => {
-  const t = (raw || "").toLowerCase();
-  if (/soulslike/.test(t)) return "Soulslike";
-  if (/fighting/.test(t)) return "Fighting";
-  if (/racing|vehicular|sports/.test(t)) return "Racing & Sports";
-  if (/massively|mmo|moba/.test(t)) return "MMO & Online";
-  if (/metroidvania|platformer/.test(t)) return "Platformer & Metroidvania";
-  if (/fps|shooter|run-and-gun|battle royale/.test(t)) return "Shooter & FPS";
-  if (/horror/.test(t)) return "Horror";
-  if (/strategy|4x|\brts\b/.test(t)) return "Strategy & 4X";
-  if (/roguelike|rogue-like/.test(t)) return "Roguelike";
-  if (/rpg|role-playing/.test(t)) return "RPG";
-  if (/puzzle|exploration|mystery|point-and-click|educational/.test(t)) return "Puzzle & Exploration";
-  if (/stealth/.test(t)) return "Stealth";
-  if (/simulation|survival|sim|card|board/.test(t)) return "Survival & Sim";
-  if (/narrative|visual novel|tactics|indie/.test(t)) return "Narrative & Tactics";
-  if (/action|adventure|arcade|casual|family|western/.test(t)) return "Action & Adventure";
-  return "Other";
-};
-
-const ORDER = [
-  "Soulslike", "Fighting", "Racing & Sports", "MMO & Online", "Platformer & Metroidvania",
-  "Shooter & FPS", "Horror", "Strategy & 4X", "Roguelike", "RPG", "Puzzle & Exploration",
-  "Stealth", "Survival & Sim", "Narrative & Tactics", "Action & Adventure", "Other",
-];
-
+// Genre bucketing is shared with the RAWG script: one mapping, one set of tests
+// (src/lib/genre.test.ts). Steam's genre list has the same two traps RAWG's did —
+// "Indie" is not a kind of game, and turn-based RPGs are also tagged "Strategy".
 export function bestGenre(genreNames: string[]): string {
-  let best = "Other";
-  let bestRank = ORDER.length;
-  for (const name of genreNames) {
-    const bucket = canonicalGenre(name);
-    const r = ORDER.indexOf(bucket);
-    if (r < bestRank) {
-      bestRank = r;
-      best = bucket;
-    }
-  }
-  return best;
+  return sharedBestGenre(genreNames) as string;
 }
 
 // Steam "categories" are feature flags (Single-player, Online Co-op, MMO, ...).

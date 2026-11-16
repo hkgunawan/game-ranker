@@ -102,8 +102,10 @@ describe("bestGenre", () => {
     expect(bestGenre(["Massively Multiplayer", "Action"])).toBe("MMO & Online");
   });
 
-  it("falls back to Other for an unrecognised genre", () => {
-    expect(bestGenre(["Utilities"])).toBe("Other");
+  it("gives a game with only unrecognised genres a home in the filter", () => {
+    // "Other" would be a filter bucket nobody can reason about; software is
+    // excluded upstream by the catalogue gate (type !== "game"), not here.
+    expect(bestGenre(["Utilities"])).toBe("Action & Adventure");
     expect(bestGenre([])).toBe("Other");
   });
 });
