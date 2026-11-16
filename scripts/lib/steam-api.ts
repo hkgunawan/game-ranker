@@ -59,7 +59,12 @@ export async function getJsonWithRetry(url: string, deps: Deps = {}): Promise<un
 export async function steamSpyPage(page: number, deps: Deps = {}): Promise<SteamSpyRow[]> {
   const body = (await getJsonWithRetry(
     `https://steamspy.com/api.php?request=all&page=${page}`,
-    deps
+    // SteamSpy's usual failure is its own database refusing connections
+    // ("Connection failed: Too many connections", served as a 200). That lasts
+    // minutes, not seconds, so the default 1s/2s/3s backoff gives up while the
+    // outage is still in progress. Wait 60s/120s/180s/240s instead — the `all`
+    // endpoint is capped at one request a minute anyway.
+    { attempts: 5, baseDelayMs: 60_000, ...deps }
   )) as Record<string, SteamSpyRow>;
   return Object.values(body).map((r) => ({
     appid: Number(r.appid),
