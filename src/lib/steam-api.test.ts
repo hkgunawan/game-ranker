@@ -147,14 +147,31 @@ describe("appDetails", () => {
 describe("appReviews", () => {
   it("reads the review summary", async () => {
     const fetcher = vi.fn().mockResolvedValue(ok({
-      success: 1, query_summary: { total_positive: 9_500, total_reviews: 10_000 },
+      response: {
+        store_items: [
+          { appid: 1, success: 1, reviews: { summary_filtered: { review_count: 10_000, percent_positive: 95 } } },
+        ],
+      },
     }));
     await expect(appReviews(1, { fetcher, sleep: noSleep }))
       .resolves.toEqual({ totalPositive: 9_500, totalReviews: 10_000 });
+    expect(String(fetcher.mock.calls[0][0])).toContain("IStoreBrowseService/GetItems");
   });
 
-  it("returns null when Steam reports no summary", async () => {
-    const fetcher = vi.fn().mockResolvedValue(ok({ success: 0 }));
+  it("returns null when Steam does not know the app", async () => {
+    const fetcher = vi.fn().mockResolvedValue(ok({ response: { store_items: [{ success: 15 }] } }));
     await expect(appReviews(1, { fetcher, sleep: noSleep })).resolves.toBeNull();
+  });
+
+  it("returns null when the app has no review summary", async () => {
+    const fetcher = vi.fn().mockResolvedValue(ok({ response: { store_items: [{ appid: 1, success: 1 }] } }));
+    await expect(appReviews(1, { fetcher, sleep: noSleep })).resolves.toBeNull();
+  });
+
+  it("does not follow redirects, so a retired endpoint fails fast", async () => {
+    const fetcher = vi.fn().mockResolvedValue({ ok: false, status: 302, json: async () => ({}) });
+    await expect(appReviews(1, { fetcher, sleep: noSleep })).rejects.toThrow("HTTP 302");
+    expect(fetcher).toHaveBeenCalledTimes(1);
+    expect(fetcher.mock.calls[0][1]).toMatchObject({ redirect: "manual" });
   });
 });

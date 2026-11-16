@@ -25,7 +25,11 @@ export async function getJsonWithRetry(url: string, deps: Deps = {}): Promise<un
   for (let i = 0; i < attempts; i++) {
     let rateLimited = false;
     try {
-      const res = await fetcher(url, { headers: UA });
+      // `redirect: "manual"`: Steam retires endpoints by 302-ing them to the
+      // store home page. Followed, that is a 200 full of HTML — four slow
+      // retries of a parse error per app. Unfollowed, it is a 3xx, which falls
+      // into the non-retryable branch below and fails fast with the URL.
+      const res = await fetcher(url, { headers: UA, redirect: "manual" });
       if (res.ok) return await res.json();
       last = `HTTP ${res.status}`;
       if (res.status === 429) {
@@ -102,14 +106,32 @@ export async function appReviews(
   appid: number,
   deps: Deps = {}
 ): Promise<{ totalPositive: number; totalReviews: number } | null> {
-  // No cc/l here, unlike appDetails: those exist to pin release_date's format,
-  // and this endpoint returns no dates. `language=all` is the locale parameter
-  // that actually applies to reviews.
+  // Steam's official Web API (keyless). The store's per-app endpoint,
+  // /appreviews/<id>?json=1, was retired in Oct 2026 and now redirects to the
+  // store home page. `summary_filtered` is the all-languages summary the store
+  // page shows. It reports a whole-number percentage rather than a raw positive
+  // count, so totalPositive is reconstructed from it — accurate to ±0.5 points,
+  // where the old endpoint gave one decimal place.
+  const input = {
+    ids: [{ appid }],
+    context: { language: "english", country_code: "US" },
+    data_request: { include_reviews: true },
+  };
   const body = (await getJsonWithRetry(
-    `https://store.steampowered.com/appreviews/${appid}?json=1&language=all&purchase_type=all&num_per_page=0`,
+    `https://api.steampowered.com/IStoreBrowseService/GetItems/v1?input_json=${encodeURIComponent(JSON.stringify(input))}`,
     deps
-  )) as { success?: number; query_summary?: { total_positive?: number; total_reviews?: number } };
-  const s = body.query_summary;
-  if (!body.success || !s) return null;
-  return { totalPositive: s.total_positive ?? 0, totalReviews: s.total_reviews ?? 0 };
+  )) as {
+    response?: {
+      store_items?: {
+        appid?: number;
+        success?: number;
+        reviews?: { summary_filtered?: { review_count?: number; percent_positive?: number } };
+      }[];
+    };
+  };
+  const item = body.response?.store_items?.find((i) => Number(i.appid) === appid);
+  const s = item?.reviews?.summary_filtered;
+  if (item?.success !== 1 || !s) return null;
+  const totalReviews = s.review_count ?? 0;
+  return { totalPositive: Math.round((totalReviews * (s.percent_positive ?? 0)) / 100), totalReviews };
 }
