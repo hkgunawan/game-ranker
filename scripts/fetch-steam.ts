@@ -34,6 +34,7 @@ const OUT = join(ROOT, "src/data/games.candidate.json");
 const CACHE_PATH = join(ROOT, "data/steam-meta.json"); // NOT src/data — never shipped to the client
 
 const SPY_PAGES = 10;             // ~10,000 games by ownership
+const MAX_SKIPPED_PAGES = 2;      // tolerate this many broken SteamSpy pages per run
 const SPY_SPACING_MS = 62_000;    // SteamSpy caps `all` at 1 request/minute
 // appdetails and appreviews throttle independently and get separate pacing —
 // named distinctly so nobody re-merges them. Steam appdetails 429s at 250ms
@@ -143,18 +144,31 @@ async function main() {
   const candidates = new Map<number, SteamSpyRow>();
   for (const r of page0) candidates.set(r.appid, r);
   console.log(`  steamspy page 0: ${page0.length} rows (${candidates.size} unique)`);
-  try {
-    for (let page = 1; page < SPY_PAGES; page++) {
-      await sleep(SPY_SPACING_MS);
+  // SteamSpy sometimes serves one broken page for hours ("Connection failed:
+  // Too many connections" on page 5 while pages 0-4 and 6-9 answer normally).
+  // One bad page out of ten should cost ~1,000 mid-popularity candidates, not
+  // the whole build — so up to MAX_SKIPPED_PAGES are skipped, loudly. More than
+  // that means SteamSpy itself is down, and the run stops as before.
+  const skippedPages: number[] = [];
+  for (let page = 1; page < SPY_PAGES; page++) {
+    await sleep(SPY_SPACING_MS);
+    try {
       const rows = await steamSpyPage(page);
       for (const r of rows) candidates.set(r.appid, r);
       console.log(`  steamspy page ${page}: ${rows.length} rows (${candidates.size} unique)`);
+    } catch (err) {
+      skippedPages.push(page);
+      console.warn(`  steamspy page ${page}: SKIPPED — ${(err as Error).message}`);
+      if (skippedPages.length > MAX_SKIPPED_PAGES) {
+        console.error(`\nSteamSpy discovery failed: ${skippedPages.length} pages unreachable (${skippedPages.join(", ")}).`);
+        console.error("SteamSpy is a third-party service. Nothing is wrong with this repo.");
+        console.error("\nsrc/data/games.json is untouched; the live site keeps its last good data.\n");
+        process.exit(75);
+      }
     }
-  } catch (err) {
-    console.error(`\nSteamSpy discovery failed: ${(err as Error).message}`);
-    console.error("SteamSpy is a third-party service. Nothing is wrong with this repo.");
-    console.error("\nsrc/data/games.json is untouched; the live site keeps its last good data.\n");
-    process.exit(75);
+  }
+  if (skippedPages.length) {
+    console.warn(`\n⚠ built without SteamSpy page(s) ${skippedPages.join(", ")} — ~${skippedPages.length * 1000} candidates missing this run.`);
   }
 
   // --- 2. sentiment gate ---------------------------------------------------
