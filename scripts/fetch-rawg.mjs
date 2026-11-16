@@ -14,6 +14,7 @@
 import { writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
+import { bestGenre } from "./lib/genre.mjs";
 
 const KEY = process.env.RAWG_API_KEY;
 if (!KEY) {
@@ -129,48 +130,7 @@ async function* discover(params, cap) {
   }
 }
 
-// --- genre canonicalization (same buckets the UI filter expects) ------------
-
-const canonicalGenre = (raw) => {
-  const t = (raw || "").toLowerCase();
-  if (/soulslike/.test(t)) return "Soulslike";
-  if (/fighting/.test(t)) return "Fighting";
-  if (/racing|vehicular|sports/.test(t)) return "Racing & Sports";
-  if (/massively|mmo|moba/.test(t)) return "MMO & Online";
-  if (/metroidvania|platformer/.test(t)) return "Platformer & Metroidvania";
-  if (/fps|shooter|run-and-gun|battle royale/.test(t)) return "Shooter & FPS";
-  if (/horror/.test(t)) return "Horror";
-  if (/strategy|4x|\brts\b/.test(t)) return "Strategy & 4X";
-  if (/roguelike|rogue-like/.test(t)) return "Roguelike";
-  if (/rpg|role-playing/.test(t)) return "RPG";
-  if (/puzzle|exploration|mystery|point-and-click|educational/.test(t)) return "Puzzle & Exploration";
-  if (/stealth/.test(t)) return "Stealth";
-  if (/simulation|survival|sim|card|board/.test(t)) return "Survival & Sim";
-  if (/narrative|visual novel|tactics|indie/.test(t)) return "Narrative & Tactics";
-  if (/action|adventure|arcade|casual|family|western/.test(t)) return "Action & Adventure";
-  return "Other";
-};
-
-// Pick the most specific genre bucket from RAWG's genre list (first match wins
-// the canonicalGenre ordering, so test each and keep the earliest non-Other).
-const ORDER = [
-  "Soulslike", "Fighting", "Racing & Sports", "MMO & Online", "Platformer & Metroidvania",
-  "Shooter & FPS", "Horror", "Strategy & 4X", "Roguelike", "RPG", "Puzzle & Exploration",
-  "Stealth", "Survival & Sim", "Narrative & Tactics", "Action & Adventure", "Other",
-];
-function bestGenre(genreNames) {
-  let best = "Other";
-  let bestRank = ORDER.length;
-  for (const name of genreNames) {
-    const bucket = canonicalGenre(name);
-    const r = ORDER.indexOf(bucket);
-    if (r < bestRank) {
-      bestRank = r;
-      best = bucket;
-    }
-  }
-  return best;
-}
+// --- genre canonicalization lives in scripts/lib/genre.mjs (unit-tested) ---
 
 // derive play modes from RAWG tags
 function modesFromTags(tagNames) {

@@ -3,7 +3,7 @@
     "title": "Baldur's Gate III",
     "year": 2023,
     "developer": "Larian Studios",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "Adventure, RPG, Strategy",
     "platforms": [
       "PC",
@@ -125,7 +125,7 @@
     "title": "Divinity: Original Sin 2",
     "year": 2017,
     "developer": "Larian Studios",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "RPG, Strategy",
     "platforms": [
       "PC",
@@ -830,7 +830,7 @@
     "title": "Rez Infinite",
     "year": 2016,
     "developer": "Monstars",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Casual, Indie",
     "platforms": [
       "PC",
@@ -992,7 +992,7 @@
     "title": "The Stanley Parable: Ultra Deluxe",
     "year": 2022,
     "developer": "Crows Crows Crows",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Adventure, Casual, Indie",
     "platforms": [
       "PC",
@@ -1063,7 +1063,7 @@
     "title": "Beat Saber",
     "year": 2019,
     "developer": "Hyperbolic Magnetism",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Indie",
     "platforms": [
       "PC",
@@ -1108,7 +1108,7 @@
     "title": "Into the Breach",
     "year": 2018,
     "developer": "Subset Games",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "RPG, Strategy, Indie",
     "platforms": [
       "PC"
@@ -1224,7 +1224,7 @@
     "title": "Stephen's Sausage Roll",
     "year": 2016,
     "developer": "increpare games",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Indie",
     "platforms": [
       "PC"
@@ -1367,7 +1367,7 @@
     "title": "Tadpole Treble",
     "year": 2016,
     "developer": "BitFinity",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Adventure, Indie",
     "platforms": [
       "PC"
@@ -1485,7 +1485,7 @@
     "title": "What Remains of Edith Finch",
     "year": 2017,
     "developer": "Annapurna Interactive",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Adventure, Indie",
     "platforms": [
       "PC",
@@ -1599,7 +1599,7 @@
     "title": "Dicey Dungeons",
     "year": 2019,
     "developer": "Terry Cavanagh",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "RPG, Strategy, Indie",
     "platforms": [
       "PC"
@@ -1760,7 +1760,7 @@
     "title": "Nex Machina",
     "year": 2017,
     "developer": "Housemarque",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Indie",
     "platforms": [
       "PC",
@@ -1809,7 +1809,7 @@
     "title": "Gravity Circuit",
     "year": 2023,
     "developer": "Domesticated Ants",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Indie",
     "platforms": [
       "PC",
@@ -2104,7 +2104,7 @@
     "title": "Return Of The Obra Dinn",
     "year": 2018,
     "developer": "Lucas Pope",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Adventure, Indie",
     "platforms": [
       "PC",
@@ -2428,7 +2428,7 @@
     "title": "XCOM 2",
     "year": 2016,
     "developer": "Feral Interactive",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "RPG, Strategy",
     "platforms": [
       "PC",
@@ -3185,7 +3185,7 @@
     "title": "Wasteland 2: Director's Cut",
     "year": 2015,
     "developer": "InXile Entertainment",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "Adventure, RPG, Strategy, Indie",
     "platforms": [
       "PC",
@@ -3208,7 +3208,7 @@
     "title": "Hellblade: Senua's Sacrifice VR Edition",
     "year": 2018,
     "developer": "Ninja Theory",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Adventure, Indie",
     "platforms": [
       "PC"
@@ -3230,7 +3230,7 @@
     "title": "HEX: Shards of Fate",
     "year": 2016,
     "developer": "Hex Entertainment",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "Adventure, RPG, Strategy",
     "platforms": [
       "PC"
@@ -3528,7 +3528,7 @@
     "title": "Slay the Spire",
     "year": 2019,
     "developer": "Humble Bundle",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "RPG, Strategy, Card, Indie",
     "platforms": [
       "PC",
@@ -3597,7 +3597,7 @@
     "title": "Crusader Kings III",
     "year": 2020,
     "developer": "Paradox Developement Studios",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "RPG, Strategy, Simulation",
     "platforms": [
       "PC",
@@ -3829,7 +3829,7 @@
     "title": "Synth Riders",
     "year": 2018,
     "developer": "Retrowave VR",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Casual, Indie",
     "platforms": [
       "PC",
@@ -3852,7 +3852,7 @@
     "title": "Tunic",
     "year": 2022,
     "developer": "ISOMETRICORP Games",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Adventure, Indie",
     "platforms": [
       "PC",
@@ -4014,7 +4014,7 @@
     "title": "Devotion",
     "year": 2019,
     "developer": "RedCandleGames",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Adventure, Indie",
     "platforms": [
       "PC"
@@ -4083,7 +4083,7 @@
     "title": "Total War: WARHAMMER",
     "year": 2016,
     "developer": "Feral Interactive",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "RPG, Strategy",
     "platforms": [
       "PC"
@@ -4269,7 +4269,7 @@
     "title": "Heroes of the Storm",
     "year": 2015,
     "developer": "—",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "Action, RPG, Strategy",
     "platforms": [
       "PC"
@@ -4408,7 +4408,7 @@
     "title": "Until You Fall",
     "year": 2020,
     "developer": "Schell Games",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Adventure, Indie",
     "platforms": [
       "PC",
@@ -4546,7 +4546,7 @@
     "title": "A Space for the Unbound",
     "year": 2023,
     "developer": "Mojiken",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Adventure, Indie",
     "platforms": [
       "PC"
@@ -4568,7 +4568,7 @@
     "title": "Sayonara Wild Hearts",
     "year": 2019,
     "developer": "Simogo",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Casual, Indie",
     "platforms": [
       "PC",
@@ -4659,7 +4659,7 @@
     "title": "Planescape: Torment: Enhanced Edition",
     "year": 2017,
     "developer": "Black Isle Studios",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "Adventure, RPG, Strategy",
     "platforms": [
       "PC",
@@ -4797,7 +4797,7 @@
     "title": "HUNTDOWN",
     "year": 2020,
     "developer": "Coffee Stain Publishing",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Indie",
     "platforms": [
       "PC",
@@ -4981,7 +4981,7 @@
     "title": "Kingdom: Two Crowns",
     "year": 2018,
     "developer": "Raw Fury",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "Adventure, RPG, Strategy, Simulation, Indie",
     "platforms": [
       "PC",
@@ -5053,7 +5053,7 @@
     "title": "Thumper",
     "year": 2016,
     "developer": "Drool",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Indie",
     "platforms": [
       "PC",
@@ -5533,7 +5533,7 @@
     "title": "Mighty Switch Force! Hyper Drive Edition",
     "year": 2015,
     "developer": "WayForward Technologies",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Indie",
     "platforms": [
       "PC"
@@ -5578,7 +5578,7 @@
     "title": "Shu",
     "year": 2016,
     "developer": "Coatsink",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Adventure, Indie",
     "platforms": [
       "PC",
@@ -5601,7 +5601,7 @@
     "title": "Chaos Reborn",
     "year": 2015,
     "developer": "Snapshot Games",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "RPG, Strategy, Indie",
     "platforms": [
       "PC"
@@ -5646,7 +5646,7 @@
     "title": "Roche Fusion",
     "year": 2015,
     "developer": "amulware",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Casual, Indie",
     "platforms": [
       "PC"
@@ -5668,7 +5668,7 @@
     "title": "Zenzizenzic",
     "year": 2015,
     "developer": "bitHuffel",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Indie",
     "platforms": [
       "PC"
@@ -5761,7 +5761,7 @@
     "title": "A Short Hike",
     "year": 2019,
     "developer": "adamgryu",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Adventure, Indie",
     "platforms": [
       "PC",
@@ -5899,7 +5899,7 @@
     "title": "TRIANGLE STRATEGY",
     "year": 2022,
     "developer": "Square Enix",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "Adventure, RPG, Strategy, Simulation",
     "platforms": [
       "PC"
@@ -5921,7 +5921,7 @@
     "title": "OneShot",
     "year": 2016,
     "developer": "Little Cat Feet",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Adventure, Casual, Indie",
     "platforms": [
       "PC"
@@ -5943,7 +5943,7 @@
     "title": "Star of Providence",
     "year": 2017,
     "developer": "Team D-13",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Adventure, Indie",
     "platforms": [
       "PC"
@@ -5965,7 +5965,7 @@
     "title": "Manifold Garden",
     "year": 2019,
     "developer": "William Chyr Studio",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Adventure, Indie",
     "platforms": [
       "PC",
@@ -6055,7 +6055,7 @@
     "title": "Darkest Dungeon",
     "year": 2016,
     "developer": "Red Hook Studios",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "RPG, Strategy, Indie",
     "platforms": [
       "PC",
@@ -6078,7 +6078,7 @@
     "title": "SOMA",
     "year": 2015,
     "developer": "Frictional Games",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Adventure, Indie",
     "platforms": [
       "PC",
@@ -6219,7 +6219,7 @@
     "title": "If Found...",
     "year": 2020,
     "developer": "Annapurna Interactive",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Adventure, Casual, Indie",
     "platforms": [
       "PC"
@@ -6241,7 +6241,7 @@
     "title": "Deep Rock Galactic",
     "year": 2020,
     "developer": "Ghost Ship Games",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Indie",
     "platforms": [
       "PC",
@@ -6496,7 +6496,7 @@
     "title": "Ape Out",
     "year": 2019,
     "developer": "Devolver Digital",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Indie",
     "platforms": [
       "PC"
@@ -6518,7 +6518,7 @@
     "title": "Eliza",
     "year": 2019,
     "developer": "Zachtronics",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Indie",
     "platforms": [
       "PC"
@@ -6703,7 +6703,7 @@
     "title": "Griftlands",
     "year": 2019,
     "developer": "Klei Entertainment",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "Adventure, RPG, Strategy, Card",
     "platforms": [
       "PC",
@@ -7142,7 +7142,7 @@
     "title": "Ticket to Earth",
     "year": 2017,
     "developer": "Robot Circus",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "RPG, Strategy, Indie, Puzzle",
     "platforms": [
       "PC"
@@ -7209,7 +7209,7 @@
     "title": "Aliens Go Home Run",
     "year": 2017,
     "developer": "ANIM•ACE",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Indie",
     "platforms": [
       "PC"
@@ -7482,7 +7482,7 @@
     "title": "The Banner Saga 3",
     "year": 2018,
     "developer": "Versus Evil",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "RPG, Strategy, Indie",
     "platforms": [
       "PC",
@@ -7505,7 +7505,7 @@
     "title": "Subnautica",
     "year": 2018,
     "developer": "Unknown Worlds Entertainment",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Adventure, Indie",
     "platforms": [
       "PC",
@@ -7528,7 +7528,7 @@
     "title": "Hellblade: Senua's Sacrifice",
     "year": 2017,
     "developer": "Ninja Theory",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Adventure, Indie",
     "platforms": [
       "PC",
@@ -7732,7 +7732,7 @@
     "title": "Wasteland 3",
     "year": 2020,
     "developer": "InXile Entertainment",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "RPG, Strategy",
     "platforms": [
       "PC",
@@ -7756,7 +7756,7 @@
     "title": "Thronebreaker: The Witcher Tales",
     "year": 2018,
     "developer": "CD PROJEKT RED",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "Adventure, RPG, Strategy",
     "platforms": [
       "PC",
@@ -7871,7 +7871,7 @@
     "title": "Loop Hero",
     "year": 2021,
     "developer": "Four Quarters",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "RPG, Strategy, Simulation, Indie",
     "platforms": [
       "PC"
@@ -8008,7 +8008,7 @@
     "title": "Valkyria Chronicles 4",
     "year": 2018,
     "developer": "SEGA",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "Action, RPG, Strategy",
     "platforms": [
       "PC",
@@ -8031,7 +8031,7 @@
     "title": "Devil Daggers",
     "year": 2016,
     "developer": "Sorath",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Indie",
     "platforms": [
       "PC"
@@ -8285,7 +8285,7 @@
     "title": "The Sexy Brutale",
     "year": 2017,
     "developer": "Tequila Works",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Adventure, Indie",
     "platforms": [
       "PC",
@@ -8380,7 +8380,7 @@
     "title": "The End Is Nigh",
     "year": 2017,
     "developer": "Nicalis",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Adventure, Indie",
     "platforms": [
       "PC",
@@ -8428,7 +8428,7 @@
     "title": "Sunlight",
     "year": 2021,
     "developer": "Krillbite Studio",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Adventure, Indie",
     "platforms": [
       "PC"
@@ -8612,7 +8612,7 @@
     "title": "Bleed 2",
     "year": 2017,
     "developer": "Digerati Distribution",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Indie",
     "platforms": [
       "PC",
@@ -8866,7 +8866,7 @@
     "title": "Signalis",
     "year": 2022,
     "developer": "rose-engine",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Adventure, Indie",
     "platforms": [
       "PC",
@@ -9026,7 +9026,7 @@
     "title": "The Banner Saga 2",
     "year": 2016,
     "developer": "Versus Evil",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "RPG, Strategy, Indie",
     "platforms": [
       "PC",
@@ -9072,7 +9072,7 @@
     "title": "Duck Game",
     "year": 2015,
     "developer": "Adult Swim",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Indie",
     "platforms": [
       "PC",
@@ -9097,7 +9097,7 @@
     "title": "The Life and Suffering of Sir Brante",
     "year": 2021,
     "developer": "Sever",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "Adventure, RPG, Strategy, Simulation, Indie",
     "platforms": [
       "PC",
@@ -9188,7 +9188,7 @@
     "title": "Overcooked! 2",
     "year": 2018,
     "developer": "Team17 Digital",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Casual, Indie",
     "platforms": [
       "PC",
@@ -9283,7 +9283,7 @@
     "title": "Demeo",
     "year": 2021,
     "developer": "Resolution Games",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "Adventure, RPG, Strategy, Indie",
     "platforms": [
       "PC"
@@ -9442,7 +9442,7 @@
     "title": "The Last Campfire",
     "year": 2020,
     "developer": "Hello Games",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Adventure, Indie",
     "platforms": [
       "PC",
@@ -9587,7 +9587,7 @@
     "title": "The Last Spell",
     "year": 2023,
     "developer": "CCCP",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "Action, RPG, Strategy, Indie",
     "platforms": [
       "PC",
@@ -9773,7 +9773,7 @@
     "title": "Before I Forget",
     "year": 2020,
     "developer": "Plug In Digital",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Adventure, Casual, Indie",
     "platforms": [
       "PC"
@@ -9932,7 +9932,7 @@
     "title": "Gloomhaven",
     "year": 2019,
     "developer": "Flaming Fowl Studios",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "Adventure, RPG, Strategy",
     "platforms": [
       "PC"
@@ -9979,7 +9979,7 @@
     "title": "Grounded",
     "year": 2022,
     "developer": "Obsidian Entertainment",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Adventure, Indie",
     "platforms": [
       "PC",
@@ -10048,7 +10048,7 @@
     "title": "DRAGON QUEST BUILDERS",
     "year": 2016,
     "developer": "Square Enix",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "Action, Adventure, RPG, Strategy",
     "platforms": [
       "PC",
@@ -10094,7 +10094,7 @@
     "title": "Moonlighter",
     "year": 2018,
     "developer": "11 Bit Studios",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Adventure, Indie",
     "platforms": [
       "PC",
@@ -10117,7 +10117,7 @@
     "title": "Disc Room",
     "year": 2020,
     "developer": "Terri Vellmann",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Adventure, Indie",
     "platforms": [
       "PC"
@@ -10139,7 +10139,7 @@
     "title": "UnMetal",
     "year": 2021,
     "developer": "@unepic_fran",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Adventure, Indie",
     "platforms": [
       "PC",
@@ -10207,7 +10207,7 @@
     "title": "Warhammer: Vermintide 2",
     "year": 2018,
     "developer": "Fatshark",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Indie",
     "platforms": [
       "PC",
@@ -10785,7 +10785,7 @@
     "title": "RunGunJumpGun",
     "year": 2016,
     "developer": "Good Shepherd Entertainment",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Indie",
     "platforms": [
       "PC"
@@ -10853,7 +10853,7 @@
     "title": "HoPiKo",
     "year": 2015,
     "developer": "Merge Games",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Arcade, Casual, Indie",
     "platforms": [
       "PC",
@@ -11308,7 +11308,7 @@
     "title": "AVICII Invector",
     "year": 2019,
     "developer": "Hello There",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Casual, Indie",
     "platforms": [
       "PC",
@@ -11331,7 +11331,7 @@
     "title": "Shadowrun: Hong Kong - Extended Edition",
     "year": 2015,
     "developer": "Harebrained Schemes",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "Adventure, RPG, Strategy, Indie",
     "platforms": [
       "PC"
@@ -11470,7 +11470,7 @@
     "title": "Audioshield",
     "year": 2016,
     "developer": "Dylan Fitterer",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Indie",
     "platforms": [
       "PC"
@@ -11561,7 +11561,7 @@
     "title": "Torment: Tides of Numenera",
     "year": 2017,
     "developer": "Techland",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "Adventure, RPG, Strategy, Indie",
     "platforms": [
       "PC",
@@ -11584,7 +11584,7 @@
     "title": "FORM",
     "year": 2017,
     "developer": "Charm Games",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Adventure, Casual, Indie",
     "platforms": [
       "PC",
@@ -11701,7 +11701,7 @@
     "title": "Nelly Cootalot: The Fowl Fleet",
     "year": 2016,
     "developer": "Application Systems Heidelberg Software",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Adventure, Family, Indie",
     "platforms": [
       "PC"
@@ -11723,7 +11723,7 @@
     "title": "Ynglet",
     "year": 2021,
     "developer": "Nifflas' Games",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Casual, Indie",
     "platforms": [
       "PC"
@@ -11813,7 +11813,7 @@
     "title": "Prodeus",
     "year": 2022,
     "developer": "—",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Adventure, Indie",
     "platforms": [
       "PC",
@@ -11882,7 +11882,7 @@
     "title": "Ghost Song",
     "year": 2022,
     "developer": "Old Moon",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Indie",
     "platforms": [
       "PC"
@@ -11950,7 +11950,7 @@
     "title": "Mount & Blade II: Bannerlord",
     "year": 2022,
     "developer": "TaleWorlds Entertainment",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "Action, RPG, Strategy, Simulation",
     "platforms": [
       "PC",
@@ -12183,7 +12183,7 @@
     "title": "Children of Silentown",
     "year": 2023,
     "developer": "Elf Games",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Adventure, Casual, Indie",
     "platforms": [
       "PC",
@@ -12206,7 +12206,7 @@
     "title": "Midnight Fight Express",
     "year": 2022,
     "developer": "Jacob Dzwinel",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Indie",
     "platforms": [
       "PC",
@@ -12229,7 +12229,7 @@
     "title": "King Arthur: Knight's Tale",
     "year": 2022,
     "developer": "NeoCoreGames",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "RPG, Strategy",
     "platforms": [
       "PC",
@@ -12321,7 +12321,7 @@
     "title": "Digimon Survive",
     "year": 2022,
     "developer": "Bandai Namco Entertainment",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "RPG, Strategy",
     "platforms": [
       "PC",
@@ -12366,7 +12366,7 @@
     "title": "Coromon",
     "year": 2022,
     "developer": "TRAGsoft",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "Adventure, RPG, Strategy, Indie",
     "platforms": [
       "PC"
@@ -12412,7 +12412,7 @@
     "title": "9 Years of Shadows",
     "year": 2023,
     "developer": "Halberd Studios",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Adventure, Indie",
     "platforms": [
       "PC",
@@ -12506,7 +12506,7 @@
     "title": "FOBIA - St. Dinfna Hotel",
     "year": 2022,
     "developer": "Pulsatrix Studios",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Indie",
     "platforms": [
       "PC",
@@ -12554,7 +12554,7 @@
     "title": "Bear and Breakfast",
     "year": 2022,
     "developer": "Gummy Cat",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "Adventure, RPG, Strategy, Simulation, Casual",
     "platforms": [
       "PC"
@@ -12599,7 +12599,7 @@
     "title": "Serial Cleaners",
     "year": 2022,
     "developer": "Draw Distance",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Indie",
     "platforms": [
       "PC",
@@ -12830,7 +12830,7 @@
     "title": "Pupperazzi",
     "year": 2022,
     "developer": "Sundae Month",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Casual, Indie",
     "platforms": [
       "PC"
@@ -12852,7 +12852,7 @@
     "title": "Puzzle Quest 3",
     "year": 2022,
     "developer": "Infinity Plus 2",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "Action, Adventure, RPG, Strategy, Casual, Puzzle",
     "platforms": [
       "PC",
@@ -12946,7 +12946,7 @@
     "title": "Scorn",
     "year": 2022,
     "developer": "Ebb Software",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Adventure, Indie",
     "platforms": [
       "PC"
@@ -12968,7 +12968,7 @@
     "title": "Chinatown Detective Agency",
     "year": 2022,
     "developer": "General Interactive Co.",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Adventure, Indie",
     "platforms": [
       "PC"
@@ -13015,7 +13015,7 @@
     "title": "Know by Heart",
     "year": 2022,
     "developer": "Ice-Pick Lodge",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Adventure, Indie",
     "platforms": [
       "PC",
@@ -13038,7 +13038,7 @@
     "title": "Broken Pieces",
     "year": 2022,
     "developer": "Elseware Experience",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Adventure, Indie",
     "platforms": [
       "PC",
@@ -13615,7 +13615,7 @@
     "title": "Warhammer 40,000: Rogue Trader",
     "year": 2023,
     "developer": "Owlcat Games",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "Adventure, RPG, Strategy, Indie",
     "platforms": [
       "PC"
@@ -13685,7 +13685,7 @@
     "title": "Persona 3 Reload",
     "year": 2024,
     "developer": "Atlus",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "Action, Adventure, RPG, Strategy",
     "platforms": [
       "PC",
@@ -13776,7 +13776,7 @@
     "title": "Lost in Play",
     "year": 2022,
     "developer": "Happy Juice Games",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Adventure, Casual, Indie",
     "platforms": [
       "PC",
@@ -14121,7 +14121,7 @@
     "title": "Bomb Rush Cyberfunk",
     "year": 2023,
     "developer": "Team Reptile",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Adventure, Indie",
     "platforms": [
       "PC",
@@ -14443,7 +14443,7 @@
     "title": "Bramble: The Mountain King",
     "year": 2023,
     "developer": "Dimfrost",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Adventure, Indie",
     "platforms": [
       "PC",
@@ -14488,7 +14488,7 @@
     "title": "Ball x Pit",
     "year": 2025,
     "developer": "Kenny Sun",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Indie",
     "platforms": [
       "PC"
@@ -14670,7 +14670,7 @@
     "title": "Animal Well",
     "year": 2024,
     "developer": "Shared Memory",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Adventure, Indie",
     "platforms": [
       "PC",
@@ -14715,7 +14715,7 @@
     "title": "Lethal Company",
     "year": 2023,
     "developer": "Zeekerss",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Adventure, Indie",
     "platforms": [
       "PC"
@@ -14762,7 +14762,7 @@
     "title": "Viewfinder",
     "year": 2023,
     "developer": "Sad Owl Studios",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Adventure, Indie",
     "platforms": [
       "PC",
@@ -14899,7 +14899,7 @@
     "title": "Tinykin",
     "year": 2022,
     "developer": "Splashteam",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Adventure, Indie",
     "platforms": [
       "PC",
@@ -14989,7 +14989,7 @@
     "title": "Tiny Bunny",
     "year": 2025,
     "developer": "RUzura Interactive",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Adventure, Indie",
     "platforms": [
       "PC"
@@ -15033,7 +15033,7 @@
     "title": "Mouthwashing",
     "year": 2024,
     "developer": "Wrong Organ",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Adventure, Indie",
     "platforms": [
       "PC"
@@ -15100,7 +15100,7 @@
     "title": "Pizza Tower",
     "year": 2023,
     "developer": "Tour De Pizza",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Indie",
     "platforms": [
       "PC"
@@ -15624,7 +15624,7 @@
     "title": "The Invincible",
     "year": 2023,
     "developer": "Starward Industries",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Adventure, Indie",
     "platforms": [
       "PC",
@@ -15738,7 +15738,7 @@
     "title": "Megabonk",
     "year": 2025,
     "developer": "vedinad",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Casual, Indie",
     "platforms": [
       "PC"
@@ -15810,7 +15810,7 @@
     "title": "Valheim",
     "year": 2026,
     "developer": "Dvoid",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Adventure, Indie",
     "platforms": [
       "PC"
@@ -15834,7 +15834,7 @@
     "title": "Jusant",
     "year": 2023,
     "developer": "DONTNOD Entertainment",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Adventure, Indie",
     "platforms": [
       "PC",
@@ -15857,7 +15857,7 @@
     "title": "Marvel's Midnight Suns",
     "year": 2022,
     "developer": "Firaxis",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "RPG, Strategy",
     "platforms": [
       "PC",
@@ -16131,7 +16131,7 @@
     "title": "The Bookwalker: Thief of Tales",
     "year": 2023,
     "developer": "Do My Best",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Adventure, Indie",
     "platforms": [
       "PC",
@@ -16176,7 +16176,7 @@
     "title": "Norco",
     "year": 2022,
     "developer": "Geography of Robots",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Adventure, Indie",
     "platforms": [
       "PC"
@@ -16498,7 +16498,7 @@
     "title": "Oxenfree II: Lost Signals",
     "year": 2023,
     "developer": "Netflix",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Adventure, Indie",
     "platforms": [
       "PC",
@@ -16565,7 +16565,7 @@
     "title": "We Were Here Expeditions: The FriendShip",
     "year": 2023,
     "developer": "Total Mayhem Games",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Adventure, Casual, Indie",
     "platforms": [
       "PC",
@@ -16751,7 +16751,7 @@
     "title": "FAR: Changing Tides",
     "year": 2022,
     "developer": "Okomotive",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Adventure, Indie",
     "platforms": [
       "PC",
@@ -16961,7 +16961,7 @@
     "title": "20 Minutes Till Dawn",
     "year": 2023,
     "developer": "flanne",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "Action, Adventure, RPG, Strategy, Casual, Indie",
     "platforms": [
       "PC"
@@ -17006,7 +17006,7 @@
     "title": "The Plucky Squire",
     "year": 2024,
     "developer": "All Possible Futures",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Adventure, Indie",
     "platforms": [
       "PC",
@@ -17315,7 +17315,7 @@
     "title": "Darkest Dungeon 2",
     "year": 2023,
     "developer": "Red Hook Studios",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "RPG, Strategy",
     "platforms": [
       "PC"
@@ -17428,7 +17428,7 @@
     "title": "Dome Keeper",
     "year": 2022,
     "developer": "bippinbits",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Indie",
     "platforms": [
       "PC"
@@ -17450,7 +17450,7 @@
     "title": "Party Animals",
     "year": 2023,
     "developer": "Recreate Games",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Casual, Indie",
     "platforms": [
       "PC"
@@ -17498,7 +17498,7 @@
     "title": "Wartales",
     "year": 2023,
     "developer": "Shiro Games",
-    "genre": "Strategy & 4X",
+    "genre": "RPG",
     "genreDetail": "Adventure, RPG, Strategy, Indie",
     "platforms": [
       "PC"
@@ -17956,7 +17956,7 @@
     "title": "Amnesia: The Bunker",
     "year": 2023,
     "developer": "Frictional Games",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Adventure, Indie",
     "platforms": [
       "PC",
@@ -18049,7 +18049,7 @@
     "title": "Trepang2",
     "year": 2023,
     "developer": "Trepang Studios",
-    "genre": "Narrative & Tactics",
+    "genre": "Action & Adventure",
     "genreDetail": "Action, Indie",
     "platforms": [
       "PC"
